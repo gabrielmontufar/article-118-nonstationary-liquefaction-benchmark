@@ -6,7 +6,7 @@ This folder contains the reproducible benchmark for the manuscript:
 
 Public repository: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark>
 
-Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.3>
+Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.5-site-validation-loo>
 
 ## Purpose
 
@@ -20,7 +20,8 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 
 - `scripts/run_118_nonstationary_liquefaction_benchmark.py`: self-contained Python script.
 - `scripts/run_119_site_calibrated_application.py`: site-calibrated Nisqually extension using DesignSafe PRJ-3758 CPT case histories.
-- `src/`: modular support code for groundwater calibration, stress calculations, vertical random-field diagnostics and validation metrics.
+- `scripts/run_120_canterbury_temporal_site_application.py`: Canterbury PRJ-2937 temporal site application for 100 Osbourne St CPT01.
+- `src/`: modular support code for groundwater calibration, gradation-status handling, stress calculations, triggering-model registry, vertical random-field diagnostics and validation metrics.
 - `data/synthetic_layer_profile.csv`: synthetic layered profile.
 - `data/liquefaction_benchmark_results.csv`: layer-time-scenario Monte Carlo results.
 - `data/liquefaction_benchmark_summary.csv`: scenario-level summary.
@@ -39,9 +40,9 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `data/external_case_history_calibration_bins.csv`: five-bin probability calibration table for the external screening scores.
 - `data/external_static_limit_state_proxy.csv`: static proxy application of the benchmark limit-state variables to Hu et al. cases where CSR, resistance and fines data are available.
 - `data/external_static_limit_state_metrics.csv`: AUC, five-fold Brier score and classification metrics for the static proxy check.
-- `data/field_validation_cases.csv`: field case-history validation table from Hu et al. (2021), including the Wenchuan subset, groundwater depth, PGA/CSR, N120/Vs, fines/gravel content, and observed liquefied/non-liquefied labels.
-- `data/field_validation_metrics.csv`: Hu full-set and Wenchuan-subset AUC, five-fold Brier score, confusion matrix, sensitivity, specificity, and threshold diagnostics.
-- `data/field_validation_thresholds.csv`: prespecified and apparent Youden thresholds for the field validation scores.
+- `data/external_case_history_compatibility_cases.csv`: external Hu et al. (2021) case-history compatibility table, including the Wenchuan subset, groundwater depth, PGA/CSR, N120/Vs, fines/gravel content, and observed liquefied/non-liquefied labels.
+- `data/external_case_history_compatibility_metrics.csv`: Hu full-set and Wenchuan-subset AUC, five-fold Brier score, confusion matrix, sensitivity, specificity, and threshold diagnostics. These checks are not the calibrated site validation.
+- `data/external_case_history_compatibility_thresholds.csv`: prespecified and apparent Youden thresholds for the external compatibility scores.
 - `data/site_profile_calibrated.csv`: measured Nisqually CPT profile summaries by site/layer.
 - `data/site_groundwater_timeseries.csv`: reported Nisqually water-table depths with dates.
 - `data/site_gradation_timeseries.csv`: gradation-status table; FC/D50 are not reported in PRJ-3758 and are therefore not treated as calibrated time-varying quantities.
@@ -49,9 +50,21 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `data/site_groundwater_model_parameters.csv`: calibrated groundwater trajectory coefficients.
 - `data/site_gradation_model_parameters.csv`: gradation model status by layer.
 - `data/site_vertical_variogram_parameters.csv`: CPT-derived vertical variogram diagnostics.
-- `outputs/site_validation_metrics.csv`: out-of-sample M0-M3 validation metrics using a held-out SODO+UW family split.
+- `data/triggering_model_uncertainty_treatment.csv`: triggering-model registry, activation status and uncertainty treatment.
+- `data/canterbury_100_osbourne_cpt01_profile_points.csv`: point CPT profile for the temporal site application.
+- `data/canterbury_100_osbourne_site_profile_calibrated.csv`: layer summaries for the Canterbury CPT profile.
+- `data/canterbury_100_osbourne_groundwater_timeseries.csv`: event-specific groundwater depths for 2010, 2011 and 2016.
+- `data/canterbury_100_osbourne_event_observations.csv`: event-specific Mw, PGA, groundwater and manifestation observations.
+- `outputs/site_validation_metrics.csv`: pooled out-of-sample M0-M3 validation metrics from leave-one-site-family-out spatial validation.
+- `outputs/site_validation_leave_one_family_metrics.csv`: fold-level leave-one-family-out metrics.
+- `outputs/site_validation_paired_family_metrics.csv`: pooled sensitivity metrics from exhaustive paired-family spatial holdouts.
+- `outputs/site_validation_paired_family_fold_metrics.csv`: fold-level paired-family holdout metrics.
+- `outputs/site_validation_sodo_uw_sensitivity.csv`: strict SODO+UW holdout sensitivity check.
 - `outputs/site_model_form_comparison.csv`: site-calibrated model-form probability comparison.
 - `outputs/site_random_field_system_probability.csv`: random-field system-probability diagnostic for the site extension.
+- `outputs/site_triggering_stress_profile.csv`: layer-wise total stress, pore pressure, effective stress, depth-only rd and CSR seed terms for the site application.
+- `outputs/canterbury_temporal_prediction_probabilities.csv`: M0-M3 probability predictions for the Canterbury event sequence.
+- `outputs/canterbury_temporal_validation_metrics.csv`: Brier, log-loss, AUC, calibration, sensitivity and specificity for the Canterbury temporal transfer.
 - `figures/fig01_pf_time_extreme_accumulation.png`: layer probability histories.
 - `figures/fig02_profile_mean_pf_by_scenario.png`: profile-average probability by groundwater scenario.
 - `figures/fig03_depth_time_pf_heatmap.png`: depth-time probability map.
@@ -59,6 +72,8 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `figures/fig05_external_case_history_sanity_auc.png`: AUC chart for the external case-history sanity check.
 - `figures/fig06_site_groundwater_calibration.png`: observed Nisqually WTD points, calibrated mean trajectory, 95% interval and event date.
 - `figures/fig07_model_form_comparison_site.png`: M0-M3 out-of-sample Brier comparison for the site application.
+- `figures/fig08_vertical_variogram_fit.png`: empirical and fitted vertical variogram for the CPT log(qc) diagnostic.
+- `figures/fig09_canterbury_temporal_pf.png`: Canterbury 100 Osbourne Pf(t) over the three documented events.
 
 SVG versions of the figures are also included for editable vector use.
 
@@ -72,7 +87,16 @@ py -m venv .venv
 python -m pip install -r requirements.txt
 python .\scripts\run_118_nonstationary_liquefaction_benchmark.py
 python .\scripts\run_119_site_calibrated_application.py
+python .\scripts\run_120_canterbury_temporal_site_application.py
 ```
+
+The synthetic benchmark is fully self-contained. The two site-extension scripts
+use public DesignSafe source files that were downloaded separately because the
+raw datasets are large: Nisqually PRJ-3758 (`10.17603/ds2-nsf8-7944`) and
+Canterbury PRJ-2937. The normalized CSV inputs and all generated outputs used
+in the manuscript are included in this supplement; rerunning the raw extraction
+requires placing the public DesignSafe files in the paths stated at the top of
+the site scripts or editing those paths to the local download location.
 
 Python dependencies:
 
@@ -118,7 +142,9 @@ The Hu et al. and Wenchuan tables are external case-history compatibility checks
 
 The Nisqually extension uses the DesignSafe PRJ-3758 CPT case-history dataset. It separates the reproducible synthetic benchmark from a documented-site application. The available data include CPT depth profiles, coordinates, CPT dates, reported water-table depth, conditional PGA and liquefaction manifestation. FC, D50 and laboratory gradation histories are not reported in the downloaded PRJ-3758 XLSX files; gradation is therefore treated as baseline uncertainty/proxy information through CPT-derived Ic, and the synthetic fines-accumulation/fines-washout paths remain scenario sensitivities rather than validated site predictions.
 
-The validation protocol is intentionally out-of-sample: M0-M3 are trained on 16 non-SODO/UW case histories and evaluated on the held-out SODO+UW site families. In the current strict split, M2 and M3 improve model richness but do not improve Brier score relative to the simple M0 baseline. This negative/mixed result is retained because it is a scientifically useful stress test: the site extension demonstrates data insertion, groundwater calibration and random-field diagnostics, but it does not claim that non-stationarity improves predictive calibration for this small Nisqually holdout.
+The validation protocol is intentionally out-of-sample. The primary protocol uses leave-one-site-family-out spatial validation, pools the held-out predictions, and reports calibration diagnostics on those predictions. Under this protocol, M2 (`nonstationary_groundwater_gradation`) improves Brier score relative to M0 (`static_stationary`), from 0.072 to 0.026 in pooled predictions and from 0.088 to 0.025 as mean fold Brier. Calibration remains imperfect because the dataset is small and strongly separable; calibration slopes are reported explicitly rather than hidden. Exhaustive paired-family and strict SODO+UW holdouts are also retained as sensitivity checks; the paired-family protocol also favours M2, while the single SODO+UW split does not.
+
+The Canterbury temporal extension adds a one-site event sequence using DesignSafe PRJ-2937, `100 Osbourne St - CPT01 TabulatedData`. The same CPT profile is evaluated for the 2010, 2011 and 2016 earthquake states using documented Mw, PGA, groundwater depth and manifestation codes. A transfer model trained on the Nisqually case histories is then applied to the Canterbury sequence. This is intentionally described as a minimal temporal site application because only three event states are available for that CPT, but it directly demonstrates that event time and observed groundwater/PGA states modify `Pf(t)` using documented field data. In that temporal transfer, M2 lowers Brier score relative to M0 from 0.326 to 0.306, and M3 lowers it to 0.146.
 
 ## Methodological note
 

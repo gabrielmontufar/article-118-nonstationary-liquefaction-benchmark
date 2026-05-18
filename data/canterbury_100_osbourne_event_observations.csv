@@ -1,0 +1,4 @@
+site_id,borehole_id,event_name,event_date,year,mw,pga_g,pga_lnsd,gw_depth_m,observed_liquefaction,manifestation_code,manifestation_type,evidence_quality,data_source
+Canterbury_100_Osbourne_CPT01,CPT01,2010 Darfield earthquake,2010-09-04,2010,7.1,0.225,0.320310546,1.40755057334899,0,0,published Canterbury manifestation code,curated DesignSafe case-history event state,DesignSafe PRJ-2937 CANTERBURYDATASET.mat
+Canterbury_100_Osbourne_CPT01,CPT01,2011 Christchurch earthquake,2011-02-22,2011,6.2,0.537,0.342880954,1.28991222381591,1,1,published Canterbury manifestation code,curated DesignSafe case-history event state,DesignSafe PRJ-2937 CANTERBURYDATASET.mat
+Canterbury_100_Osbourne_CPT01,CPT01,2016 Valentine earthquake,2016-02-14,2016,5.7,0.146294832,0.345882446,1.29435420036315,0,0,published Canterbury manifestation code,curated DesignSafe case-history event state,DesignSafe PRJ-2937 CANTERBURYDATASET.mat

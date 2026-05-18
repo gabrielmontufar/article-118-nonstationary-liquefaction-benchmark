@@ -1,0 +1,5 @@
+site_id,borehole_id,layer_id,z_top_m,z_bot_m,z_mid_m,soil_type,gamma_total_kN_m3,gamma_sat_kN_m3,n60,n160,qc,fs_cpt,ic,vs1,fc_pct,d50_mm,pi,gravel_pct,measurement_date,data_source
+Canterbury_100_Osbourne_CPT01,CPT01,L1,0,2,1.0,CPT-derived Canterbury alluvial soil,18.0,19.0,,,2.0312400000000004,0.0608,1.620746976098305,,,,,,site CPT in PRJ-2937,DesignSafe PRJ-2937 CANTERBURYDATASET.mat
+Canterbury_100_Osbourne_CPT01,CPT01,L2,2,5,3.5,CPT-derived Canterbury alluvial soil,18.0,19.0,,,1.61003,0.019799999999999998,1.3824789802342279,,,,,,site CPT in PRJ-2937,DesignSafe PRJ-2937 CANTERBURYDATASET.mat
+Canterbury_100_Osbourne_CPT01,CPT01,L3,5,10,7.5,CPT-derived Canterbury alluvial soil,18.0,19.0,,,14.95479,0.09864999999999999,1.24891922872485,,,,,,site CPT in PRJ-2937,DesignSafe PRJ-2937 CANTERBURYDATASET.mat
+Canterbury_100_Osbourne_CPT01,CPT01,L4,10,20,15.0,CPT-derived Canterbury alluvial soil,18.0,19.0,,,14.338519999999999,0.11145,1.3391020662928343,,,,,,site CPT in PRJ-2937,DesignSafe PRJ-2937 CANTERBURYDATASET.mat

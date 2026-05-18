@@ -390,7 +390,7 @@ def make_model_availability_diagnostics() -> pd.DataFrame:
             "required_inputs": "N1,60cs, CSR/state demand, magnitude scaling",
             "available_in_synthetic_benchmark": "yes",
             "available_in_hu_field_cases": "proxy via N120, FC, CSR7.5",
-            "output_files": "standard_model_comparison.csv; standard_model_comparison_summary.csv; field_validation_metrics.csv",
+            "output_files": "standard_model_comparison.csv; standard_model_comparison_summary.csv; external_case_history_compatibility_metrics.csv",
             "interpretation": "formal model-form and field transferability comparison",
         },
         {
@@ -440,7 +440,7 @@ def make_model_availability_diagnostics() -> pd.DataFrame:
             "required_inputs": "Vs1, demand term, groundwater/capping descriptors, observed outcome",
             "available_in_synthetic_benchmark": "no Vs profile",
             "available_in_hu_field_cases": "yes",
-            "output_files": "field_validation_cases.csv; field_validation_metrics.csv",
+            "output_files": "external_case_history_compatibility_cases.csv; external_case_history_compatibility_metrics.csv",
             "interpretation": "formal Vs-based field discrimination check, not a full Kayen equation calibration",
         },
     ]
@@ -1145,9 +1145,9 @@ def main() -> None:
         static_cases.to_csv(DATA / "external_static_limit_state_proxy.csv", index=False)
         static_metrics.to_csv(DATA / "external_static_limit_state_metrics.csv", index=False)
         field_cases, field_metrics, field_thresholds = field_case_history_validation(ext_cases)
-        field_cases.to_csv(DATA / "field_validation_cases.csv", index=False)
-        field_metrics.to_csv(DATA / "field_validation_metrics.csv", index=False)
-        field_thresholds.to_csv(DATA / "field_validation_thresholds.csv", index=False)
+        field_cases.to_csv(DATA / "external_case_history_compatibility_cases.csv", index=False)
+        field_metrics.to_csv(DATA / "external_case_history_compatibility_metrics.csv", index=False)
+        field_thresholds.to_csv(DATA / "external_case_history_compatibility_thresholds.csv", index=False)
         ext_plot = ext_summary[ext_summary["check"].isin(["combined_instrument_score", "dpt_screening_score", "vs_screening_score", "demand_index", "shallow_groundwater_index"])]
         svg_bar(
             FIGURES / "fig05_external_case_history_sanity_auc.svg",

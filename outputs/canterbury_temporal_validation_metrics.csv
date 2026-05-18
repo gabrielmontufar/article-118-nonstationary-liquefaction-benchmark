@@ -1,0 +1,5 @@
+auc,brier_score,log_loss,calibration_intercept,calibration_slope,sensitivity,specificity,tp,fp,tn,fn,model_name,n_train,n_test,validation_protocol
+1.0,0.325989175865331,1.474551649219049,-0.7903861235694993,0.7839580905295522,1.0,0.5,1,1,1,0,M0_static_stationary,24,3,Nisqually-trained temporal transfer to Canterbury 100 Osbourne CPT01
+1.0,0.3268951631980908,1.5006887300573606,-0.7904084915028576,0.7842538353515274,1.0,0.5,1,1,1,0,M1_nonstationary_groundwater_only,24,3,Nisqually-trained temporal transfer to Canterbury 100 Osbourne CPT01
+1.0,0.3057979562769195,1.0622211307466773,-0.7914239929485768,0.8030766621700152,1.0,0.5,1,1,1,0,M2_nonstationary_groundwater_gradation,24,3,Nisqually-trained temporal transfer to Canterbury 100 Osbourne CPT01
+1.0,0.14636324535815276,0.3629344509348844,-0.7915782887722307,0.8108917480876565,1.0,0.5,1,1,1,0,M3_full_nonstationary_random_field,24,3,Nisqually-trained temporal transfer to Canterbury 100 Osbourne CPT01

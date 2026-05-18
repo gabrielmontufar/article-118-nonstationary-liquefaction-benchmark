@@ -1,97 +1,829 @@
-site_id,site_family,model_name,predicted_pf,observed_liquefaction,validation_split
-Capitol_Lake_01,Capitol Lake,M0_static_stationary,,1,train_development
-SODO_01,SODO,M0_static_stationary,0.8674114002334676,1,heldout_SODO_UW
-Capitol_Lake_02,Capitol Lake,M0_static_stationary,,1,train_development
-Harbor_Island_01,Harbor Island,M0_static_stationary,,1,train_development
-Harbor_Island_02,Harbor Island,M0_static_stationary,,1,train_development
-SODO_02,SODO,M0_static_stationary,0.6341289023767129,1,heldout_SODO_UW
-SODO_03,SODO,M0_static_stationary,0.6252798892518805,1,heldout_SODO_UW
-SODO_04,SODO,M0_static_stationary,0.6163463387379681,1,heldout_SODO_UW
-Boeing_Field_01,Boeing Field,M0_static_stationary,,1,train_development
-Duwamish_01,Duwamish,M0_static_stationary,,0,train_development
-Discovery_Park_01,Discovery Park,M0_static_stationary,,0,train_development
-Elliott_Ave_01,Elliott Ave,M0_static_stationary,,0,train_development
-Smith_Cove_01,Smith Cove,M0_static_stationary,,0,train_development
-Smith_Cove_02,Smith Cove,M0_static_stationary,,0,train_development
-Emerald_Downs_01,Emerald Downs,M0_static_stationary,,0,train_development
-Bush_School_01,Bush School,M0_static_stationary,,0,train_development
-Factoria_01,Factoria,M0_static_stationary,,0,train_development
-UW_01,UW,M0_static_stationary,0.10845592195146073,0,heldout_SODO_UW
-UW_02,UW,M0_static_stationary,0.10845592195146073,0,heldout_SODO_UW
-UW_03,UW,M0_static_stationary,0.1013318202378062,0,heldout_SODO_UW
-UW_04,UW,M0_static_stationary,0.097927758307666,0,heldout_SODO_UW
-Issaquah_01,Issaquah,M0_static_stationary,,0,train_development
-Blair_Waterway_01,Blair Waterway,M0_static_stationary,,0,train_development
-Green_River_01,Green River,M0_static_stationary,,0,train_development
-Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,,1,train_development
-SODO_01,SODO,M1_nonstationary_groundwater_only,0.8446442697264743,1,heldout_SODO_UW
-Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,,1,train_development
-Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,,1,train_development
-Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,,1,train_development
-SODO_02,SODO,M1_nonstationary_groundwater_only,0.6403073116720435,1,heldout_SODO_UW
-SODO_03,SODO,M1_nonstationary_groundwater_only,0.6050618227282916,1,heldout_SODO_UW
-SODO_04,SODO,M1_nonstationary_groundwater_only,0.6716582828626463,1,heldout_SODO_UW
-Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,,1,train_development
-Duwamish_01,Duwamish,M1_nonstationary_groundwater_only,,0,train_development
-Discovery_Park_01,Discovery Park,M1_nonstationary_groundwater_only,,0,train_development
-Elliott_Ave_01,Elliott Ave,M1_nonstationary_groundwater_only,,0,train_development
-Smith_Cove_01,Smith Cove,M1_nonstationary_groundwater_only,,0,train_development
-Smith_Cove_02,Smith Cove,M1_nonstationary_groundwater_only,,0,train_development
-Emerald_Downs_01,Emerald Downs,M1_nonstationary_groundwater_only,,0,train_development
-Bush_School_01,Bush School,M1_nonstationary_groundwater_only,,0,train_development
-Factoria_01,Factoria,M1_nonstationary_groundwater_only,,0,train_development
-UW_01,UW,M1_nonstationary_groundwater_only,0.14914712506151762,0,heldout_SODO_UW
-UW_02,UW,M1_nonstationary_groundwater_only,0.14914712506151762,0,heldout_SODO_UW
-UW_03,UW,M1_nonstationary_groundwater_only,0.10654731887307983,0,heldout_SODO_UW
-UW_04,UW,M1_nonstationary_groundwater_only,0.1030984654325745,0,heldout_SODO_UW
-Issaquah_01,Issaquah,M1_nonstationary_groundwater_only,,0,train_development
-Blair_Waterway_01,Blair Waterway,M1_nonstationary_groundwater_only,,0,train_development
-Green_River_01,Green River,M1_nonstationary_groundwater_only,,0,train_development
-Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,,1,train_development
-SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.5821745217086376,1,heldout_SODO_UW
-Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,,1,train_development
-Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,,1,train_development
-Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,,1,train_development
-SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.8702046978705364,1,heldout_SODO_UW
-SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.3863713825093943,1,heldout_SODO_UW
-SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.7429001147447986,1,heldout_SODO_UW
-Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,,1,train_development
-Duwamish_01,Duwamish,M2_nonstationary_groundwater_gradation,,0,train_development
-Discovery_Park_01,Discovery Park,M2_nonstationary_groundwater_gradation,,0,train_development
-Elliott_Ave_01,Elliott Ave,M2_nonstationary_groundwater_gradation,,0,train_development
-Smith_Cove_01,Smith Cove,M2_nonstationary_groundwater_gradation,,0,train_development
-Smith_Cove_02,Smith Cove,M2_nonstationary_groundwater_gradation,,0,train_development
-Emerald_Downs_01,Emerald Downs,M2_nonstationary_groundwater_gradation,,0,train_development
-Bush_School_01,Bush School,M2_nonstationary_groundwater_gradation,,0,train_development
-Factoria_01,Factoria,M2_nonstationary_groundwater_gradation,,0,train_development
-UW_01,UW,M2_nonstationary_groundwater_gradation,0.06561709103045565,0,heldout_SODO_UW
-UW_02,UW,M2_nonstationary_groundwater_gradation,0.11540123851533798,0,heldout_SODO_UW
-UW_03,UW,M2_nonstationary_groundwater_gradation,0.03782113327605755,0,heldout_SODO_UW
-UW_04,UW,M2_nonstationary_groundwater_gradation,0.010334368649342224,0,heldout_SODO_UW
-Issaquah_01,Issaquah,M2_nonstationary_groundwater_gradation,,0,train_development
-Blair_Waterway_01,Blair Waterway,M2_nonstationary_groundwater_gradation,,0,train_development
-Green_River_01,Green River,M2_nonstationary_groundwater_gradation,,0,train_development
-Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,,1,train_development
-SODO_01,SODO,M3_full_nonstationary_random_field,0.5494440524239113,1,heldout_SODO_UW
-Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,,1,train_development
-Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,,1,train_development
-Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,,1,train_development
-SODO_02,SODO,M3_full_nonstationary_random_field,0.7831626659613734,1,heldout_SODO_UW
-SODO_03,SODO,M3_full_nonstationary_random_field,0.38408720179976125,1,heldout_SODO_UW
-SODO_04,SODO,M3_full_nonstationary_random_field,0.776286556582786,1,heldout_SODO_UW
-Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,,1,train_development
-Duwamish_01,Duwamish,M3_full_nonstationary_random_field,,0,train_development
-Discovery_Park_01,Discovery Park,M3_full_nonstationary_random_field,,0,train_development
-Elliott_Ave_01,Elliott Ave,M3_full_nonstationary_random_field,,0,train_development
-Smith_Cove_01,Smith Cove,M3_full_nonstationary_random_field,,0,train_development
-Smith_Cove_02,Smith Cove,M3_full_nonstationary_random_field,,0,train_development
-Emerald_Downs_01,Emerald Downs,M3_full_nonstationary_random_field,,0,train_development
-Bush_School_01,Bush School,M3_full_nonstationary_random_field,,0,train_development
-Factoria_01,Factoria,M3_full_nonstationary_random_field,,0,train_development
-UW_01,UW,M3_full_nonstationary_random_field,0.10536771000486546,0,heldout_SODO_UW
-UW_02,UW,M3_full_nonstationary_random_field,0.14916244468986092,0,heldout_SODO_UW
-UW_03,UW,M3_full_nonstationary_random_field,0.050345045308266924,0,heldout_SODO_UW
-UW_04,UW,M3_full_nonstationary_random_field,0.011556844078548111,0,heldout_SODO_UW
-Issaquah_01,Issaquah,M3_full_nonstationary_random_field,,0,train_development
-Blair_Waterway_01,Blair Waterway,M3_full_nonstationary_random_field,,0,train_development
-Green_River_01,Green River,M3_full_nonstationary_random_field,,0,train_development
+holdout_family,site_id,site_family,model_name,predicted_pf,observed_liquefaction,validation_protocol,holdout_family_pair,validation_split
+Blair Waterway,Blair_Waterway_01,Blair Waterway,M0_static_stationary,0.0012357935768193687,0,leave-one-site-family-out spatial validation,,
+Blair Waterway,Blair_Waterway_01,Blair Waterway,M1_nonstationary_groundwater_only,0.001249442832703555,0,leave-one-site-family-out spatial validation,,
+Blair Waterway,Blair_Waterway_01,Blair Waterway,M2_nonstationary_groundwater_gradation,5.9502199453535624e-05,0,leave-one-site-family-out spatial validation,,
+Blair Waterway,Blair_Waterway_01,Blair Waterway,M3_full_nonstationary_random_field,3.89758444617881e-05,0,leave-one-site-family-out spatial validation,,
+Boeing Field,Boeing_Field_01,Boeing Field,M0_static_stationary,0.8855306541786367,1,leave-one-site-family-out spatial validation,,
+Boeing Field,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.8883691676629341,1,leave-one-site-family-out spatial validation,,
+Boeing Field,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.8979422876090006,1,leave-one-site-family-out spatial validation,,
+Boeing Field,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9379899975888961,1,leave-one-site-family-out spatial validation,,
+Bush School,Bush_School_01,Bush School,M0_static_stationary,0.005169737944580944,0,leave-one-site-family-out spatial validation,,
+Bush School,Bush_School_01,Bush School,M1_nonstationary_groundwater_only,0.005146255050524211,0,leave-one-site-family-out spatial validation,,
+Bush School,Bush_School_01,Bush School,M2_nonstationary_groundwater_gradation,0.0042030170818960575,0,leave-one-site-family-out spatial validation,,
+Bush School,Bush_School_01,Bush School,M3_full_nonstationary_random_field,0.004126985537062889,0,leave-one-site-family-out spatial validation,,
+Capitol Lake,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9815025250642916,1,leave-one-site-family-out spatial validation,,
+Capitol Lake,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9735659570278508,1,leave-one-site-family-out spatial validation,,
+Capitol Lake,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.9840886183981365,1,leave-one-site-family-out spatial validation,,
+Capitol Lake,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9754417852484573,1,leave-one-site-family-out spatial validation,,
+Capitol Lake,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.99264215336433,1,leave-one-site-family-out spatial validation,,
+Capitol Lake,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9948944885977898,1,leave-one-site-family-out spatial validation,,
+Capitol Lake,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9917445925470895,1,leave-one-site-family-out spatial validation,,
+Capitol Lake,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9979153794786896,1,leave-one-site-family-out spatial validation,,
+Discovery Park,Discovery_Park_01,Discovery Park,M0_static_stationary,0.0001721904894686203,0,leave-one-site-family-out spatial validation,,
+Discovery Park,Discovery_Park_01,Discovery Park,M1_nonstationary_groundwater_only,0.0001611182853490907,0,leave-one-site-family-out spatial validation,,
+Discovery Park,Discovery_Park_01,Discovery Park,M2_nonstationary_groundwater_gradation,0.00017855307200212743,0,leave-one-site-family-out spatial validation,,
+Discovery Park,Discovery_Park_01,Discovery Park,M3_full_nonstationary_random_field,9.522085431202584e-05,0,leave-one-site-family-out spatial validation,,
+Duwamish,Duwamish_01,Duwamish,M0_static_stationary,0.907222874618539,0,leave-one-site-family-out spatial validation,,
+Duwamish,Duwamish_01,Duwamish,M1_nonstationary_groundwater_only,0.9174889029236405,0,leave-one-site-family-out spatial validation,,
+Duwamish,Duwamish_01,Duwamish,M2_nonstationary_groundwater_gradation,0.5084830078112565,0,leave-one-site-family-out spatial validation,,
+Duwamish,Duwamish_01,Duwamish,M3_full_nonstationary_random_field,0.7051003892242096,0,leave-one-site-family-out spatial validation,,
+Elliott Ave,Elliott_Ave_01,Elliott Ave,M0_static_stationary,0.044442894892240015,0,leave-one-site-family-out spatial validation,,
+Elliott Ave,Elliott_Ave_01,Elliott Ave,M1_nonstationary_groundwater_only,0.050799926610531516,0,leave-one-site-family-out spatial validation,,
+Elliott Ave,Elliott_Ave_01,Elliott Ave,M2_nonstationary_groundwater_gradation,0.10104519413036159,0,leave-one-site-family-out spatial validation,,
+Elliott Ave,Elliott_Ave_01,Elliott Ave,M3_full_nonstationary_random_field,0.12989932518724245,0,leave-one-site-family-out spatial validation,,
+Emerald Downs,Emerald_Downs_01,Emerald Downs,M0_static_stationary,0.17981552473048307,0,leave-one-site-family-out spatial validation,,
+Emerald Downs,Emerald_Downs_01,Emerald Downs,M1_nonstationary_groundwater_only,0.27556582563956655,0,leave-one-site-family-out spatial validation,,
+Emerald Downs,Emerald_Downs_01,Emerald Downs,M2_nonstationary_groundwater_gradation,0.03026072440163824,0,leave-one-site-family-out spatial validation,,
+Emerald Downs,Emerald_Downs_01,Emerald Downs,M3_full_nonstationary_random_field,0.0400632500190236,0,leave-one-site-family-out spatial validation,,
+Factoria,Factoria_01,Factoria,M0_static_stationary,0.0010186170407622836,0,leave-one-site-family-out spatial validation,,
+Factoria,Factoria_01,Factoria,M1_nonstationary_groundwater_only,0.0012253593837828905,0,leave-one-site-family-out spatial validation,,
+Factoria,Factoria_01,Factoria,M2_nonstationary_groundwater_gradation,0.00039919739816849606,0,leave-one-site-family-out spatial validation,,
+Factoria,Factoria_01,Factoria,M3_full_nonstationary_random_field,0.00021804959683779192,0,leave-one-site-family-out spatial validation,,
+Green River,Green_River_01,Green River,M0_static_stationary,0.323351579603359,0,leave-one-site-family-out spatial validation,,
+Green River,Green_River_01,Green River,M1_nonstationary_groundwater_only,0.7047639318201128,0,leave-one-site-family-out spatial validation,,
+Green River,Green_River_01,Green River,M2_nonstationary_groundwater_gradation,0.1138385931050188,0,leave-one-site-family-out spatial validation,,
+Green River,Green_River_01,Green River,M3_full_nonstationary_random_field,0.3209154563807357,0,leave-one-site-family-out spatial validation,,
+Harbor Island,Harbor_Island_01,Harbor Island,M0_static_stationary,0.3895988990816008,1,leave-one-site-family-out spatial validation,,
+Harbor Island,Harbor_Island_02,Harbor Island,M0_static_stationary,0.48196504855118055,1,leave-one-site-family-out spatial validation,,
+Harbor Island,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.2689232310963901,1,leave-one-site-family-out spatial validation,,
+Harbor Island,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.45025935676242135,1,leave-one-site-family-out spatial validation,,
+Harbor Island,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9992120060003069,1,leave-one-site-family-out spatial validation,,
+Harbor Island,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.9997919243038751,1,leave-one-site-family-out spatial validation,,
+Harbor Island,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.9975133951554244,1,leave-one-site-family-out spatial validation,,
+Harbor Island,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.9979409978142761,1,leave-one-site-family-out spatial validation,,
+Issaquah,Issaquah_01,Issaquah,M0_static_stationary,0.00910342207561673,0,leave-one-site-family-out spatial validation,,
+Issaquah,Issaquah_01,Issaquah,M1_nonstationary_groundwater_only,0.009672149050380824,0,leave-one-site-family-out spatial validation,,
+Issaquah,Issaquah_01,Issaquah,M2_nonstationary_groundwater_gradation,0.014942698180176173,0,leave-one-site-family-out spatial validation,,
+Issaquah,Issaquah_01,Issaquah,M3_full_nonstationary_random_field,0.030077742232835835,0,leave-one-site-family-out spatial validation,,
+SODO,SODO_01,SODO,M0_static_stationary,0.9876956209824298,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_02,SODO,M0_static_stationary,0.8164642500753239,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_03,SODO,M0_static_stationary,0.8037534706220638,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_04,SODO,M0_static_stationary,0.7903884019311108,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9877477694605447,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_02,SODO,M1_nonstationary_groundwater_only,0.8161698077455946,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_03,SODO,M1_nonstationary_groundwater_only,0.8039414524383619,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_04,SODO,M1_nonstationary_groundwater_only,0.7890527037277095,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.8701829749184723,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9887865642137048,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.4591827434671663,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9243178210827839,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_01,SODO,M3_full_nonstationary_random_field,0.8696688970526614,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_02,SODO,M3_full_nonstationary_random_field,0.9405230812594405,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_03,SODO,M3_full_nonstationary_random_field,0.4833105677261138,1,leave-one-site-family-out spatial validation,,
+SODO,SODO_04,SODO,M3_full_nonstationary_random_field,0.9387352200025537,1,leave-one-site-family-out spatial validation,,
+Smith Cove,Smith_Cove_01,Smith Cove,M0_static_stationary,0.011803021578957035,0,leave-one-site-family-out spatial validation,,
+Smith Cove,Smith_Cove_02,Smith Cove,M0_static_stationary,0.012884105741155527,0,leave-one-site-family-out spatial validation,,
+Smith Cove,Smith_Cove_01,Smith Cove,M1_nonstationary_groundwater_only,0.011986379414283427,0,leave-one-site-family-out spatial validation,,
+Smith Cove,Smith_Cove_02,Smith Cove,M1_nonstationary_groundwater_only,0.011841473344882747,0,leave-one-site-family-out spatial validation,,
+Smith Cove,Smith_Cove_01,Smith Cove,M2_nonstationary_groundwater_gradation,0.08758805664166765,0,leave-one-site-family-out spatial validation,,
+Smith Cove,Smith_Cove_02,Smith Cove,M2_nonstationary_groundwater_gradation,0.0009844962006839535,0,leave-one-site-family-out spatial validation,,
+Smith Cove,Smith_Cove_01,Smith Cove,M3_full_nonstationary_random_field,0.03185536088275755,0,leave-one-site-family-out spatial validation,,
+Smith Cove,Smith_Cove_02,Smith Cove,M3_full_nonstationary_random_field,0.0009174310303579321,0,leave-one-site-family-out spatial validation,,
+UW,UW_01,UW,M0_static_stationary,0.01634012964599068,0,leave-one-site-family-out spatial validation,,
+UW,UW_02,UW,M0_static_stationary,0.01634012964599068,0,leave-one-site-family-out spatial validation,,
+UW,UW_03,UW,M0_static_stationary,0.013788874830583083,0,leave-one-site-family-out spatial validation,,
+UW,UW_04,UW,M0_static_stationary,0.012664783029647126,0,leave-one-site-family-out spatial validation,,
+UW,UW_01,UW,M1_nonstationary_groundwater_only,0.023615985644992652,0,leave-one-site-family-out spatial validation,,
+UW,UW_02,UW,M1_nonstationary_groundwater_only,0.023615985644992652,0,leave-one-site-family-out spatial validation,,
+UW,UW_03,UW,M1_nonstationary_groundwater_only,0.015446662063529152,0,leave-one-site-family-out spatial validation,,
+UW,UW_04,UW,M1_nonstationary_groundwater_only,0.014213127577696116,0,leave-one-site-family-out spatial validation,,
+UW,UW_01,UW,M2_nonstationary_groundwater_gradation,0.0025870101021910554,0,leave-one-site-family-out spatial validation,,
+UW,UW_02,UW,M2_nonstationary_groundwater_gradation,0.00869663911744471,0,leave-one-site-family-out spatial validation,,
+UW,UW_03,UW,M2_nonstationary_groundwater_gradation,0.0017422416022844312,0,leave-one-site-family-out spatial validation,,
+UW,UW_04,UW,M2_nonstationary_groundwater_gradation,9.270325102827382e-05,0,leave-one-site-family-out spatial validation,,
+UW,UW_01,UW,M3_full_nonstationary_random_field,0.014238378741060093,0,leave-one-site-family-out spatial validation,,
+UW,UW_02,UW,M3_full_nonstationary_random_field,0.025356975762828003,0,leave-one-site-family-out spatial validation,,
+UW,UW_03,UW,M3_full_nonstationary_random_field,0.005158306194642245,0,leave-one-site-family-out spatial validation,,
+UW,UW_04,UW,M3_full_nonstationary_random_field,0.0002714852280507916,0,leave-one-site-family-out spatial validation,,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.8864546822811945,1,exhaustive paired-family spatial holdout,Boeing Field+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M0_static_stationary,0.001415504333433713,0,exhaustive paired-family spatial holdout,Boeing Field+Blair Waterway,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.889237365538198,1,exhaustive paired-family spatial holdout,Boeing Field+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M1_nonstationary_groundwater_only,0.0014264221330346208,0,exhaustive paired-family spatial holdout,Boeing Field+Blair Waterway,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.8988922646399956,1,exhaustive paired-family spatial holdout,Boeing Field+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M2_nonstationary_groundwater_gradation,7.921509449436487e-05,0,exhaustive paired-family spatial holdout,Boeing Field+Blair Waterway,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9391084570892004,1,exhaustive paired-family spatial holdout,Boeing Field+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M3_full_nonstationary_random_field,5.0718256698780746e-05,0,exhaustive paired-family spatial holdout,Boeing Field+Blair Waterway,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.8847073804450779,1,exhaustive paired-family spatial holdout,Boeing Field+Bush School,
+,Bush_School_01,Bush School,M0_static_stationary,0.0056803537732167415,0,exhaustive paired-family spatial holdout,Boeing Field+Bush School,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.8875626097570355,1,exhaustive paired-family spatial holdout,Boeing Field+Bush School,
+,Bush_School_01,Bush School,M1_nonstationary_groundwater_only,0.005649030702969632,0,exhaustive paired-family spatial holdout,Boeing Field+Bush School,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.8981953867233287,1,exhaustive paired-family spatial holdout,Boeing Field+Bush School,
+,Bush_School_01,Bush School,M2_nonstationary_groundwater_gradation,0.004522993480597924,0,exhaustive paired-family spatial holdout,Boeing Field+Bush School,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9374688863014315,1,exhaustive paired-family spatial holdout,Boeing Field+Bush School,
+,Bush_School_01,Bush School,M3_full_nonstationary_random_field,0.004520219200445112,0,exhaustive paired-family spatial holdout,Boeing Field+Bush School,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.8893307816610087,1,exhaustive paired-family spatial holdout,Boeing Field+Discovery Park,
+,Discovery_Park_01,Discovery Park,M0_static_stationary,0.00020870629723151527,0,exhaustive paired-family spatial holdout,Boeing Field+Discovery Park,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.8919873904095196,1,exhaustive paired-family spatial holdout,Boeing Field+Discovery Park,
+,Discovery_Park_01,Discovery Park,M1_nonstationary_groundwater_only,0.00019645151658871074,0,exhaustive paired-family spatial holdout,Boeing Field+Discovery Park,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.8997736974374784,1,exhaustive paired-family spatial holdout,Boeing Field+Discovery Park,
+,Discovery_Park_01,Discovery Park,M2_nonstationary_groundwater_gradation,0.00020851496239476217,0,exhaustive paired-family spatial holdout,Boeing Field+Discovery Park,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9415893346474064,1,exhaustive paired-family spatial holdout,Boeing Field+Discovery Park,
+,Discovery_Park_01,Discovery Park,M3_full_nonstationary_random_field,0.00011697455096272402,0,exhaustive paired-family spatial holdout,Boeing Field+Discovery Park,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.9598155227315647,1,exhaustive paired-family spatial holdout,Boeing Field+Duwamish,
+,Duwamish_01,Duwamish,M0_static_stationary,0.9012470594514431,0,exhaustive paired-family spatial holdout,Boeing Field+Duwamish,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.9658312894154477,1,exhaustive paired-family spatial holdout,Boeing Field+Duwamish,
+,Duwamish_01,Duwamish,M1_nonstationary_groundwater_only,0.9121008237662439,0,exhaustive paired-family spatial holdout,Boeing Field+Duwamish,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.930299167047371,1,exhaustive paired-family spatial holdout,Boeing Field+Duwamish,
+,Duwamish_01,Duwamish,M2_nonstationary_groundwater_gradation,0.47789194648006744,0,exhaustive paired-family spatial holdout,Boeing Field+Duwamish,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9078484971787065,1,exhaustive paired-family spatial holdout,Boeing Field+Duwamish,
+,Duwamish_01,Duwamish,M3_full_nonstationary_random_field,0.7421957074221419,0,exhaustive paired-family spatial holdout,Boeing Field+Duwamish,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.8827218461380983,1,exhaustive paired-family spatial holdout,Boeing Field+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M0_static_stationary,0.04573179160232653,0,exhaustive paired-family spatial holdout,Boeing Field+Elliott Ave,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.886167753801822,1,exhaustive paired-family spatial holdout,Boeing Field+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M1_nonstationary_groundwater_only,0.05147693426699111,0,exhaustive paired-family spatial holdout,Boeing Field+Elliott Ave,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.9036833815218644,1,exhaustive paired-family spatial holdout,Boeing Field+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M2_nonstationary_groundwater_gradation,0.08982894979928263,0,exhaustive paired-family spatial holdout,Boeing Field+Elliott Ave,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9457591286676531,1,exhaustive paired-family spatial holdout,Boeing Field+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M3_full_nonstationary_random_field,0.1181556501667687,0,exhaustive paired-family spatial holdout,Boeing Field+Elliott Ave,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.8862085007669545,1,exhaustive paired-family spatial holdout,Boeing Field+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M0_static_stationary,0.17684609691000025,0,exhaustive paired-family spatial holdout,Boeing Field+Emerald Downs,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.8966135826824525,1,exhaustive paired-family spatial holdout,Boeing Field+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M1_nonstationary_groundwater_only,0.2624790168954767,0,exhaustive paired-family spatial holdout,Boeing Field+Emerald Downs,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.8959407704696444,1,exhaustive paired-family spatial holdout,Boeing Field+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M2_nonstationary_groundwater_gradation,0.030413553683093397,0,exhaustive paired-family spatial holdout,Boeing Field+Emerald Downs,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9374240217602734,1,exhaustive paired-family spatial holdout,Boeing Field+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M3_full_nonstationary_random_field,0.038667099439650215,0,exhaustive paired-family spatial holdout,Boeing Field+Emerald Downs,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.8867089938411487,1,exhaustive paired-family spatial holdout,Boeing Field+Factoria,
+,Factoria_01,Factoria,M0_static_stationary,0.001173279269121729,0,exhaustive paired-family spatial holdout,Boeing Field+Factoria,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.8894826266249196,1,exhaustive paired-family spatial holdout,Boeing Field+Factoria,
+,Factoria_01,Factoria,M1_nonstationary_groundwater_only,0.0013768934554962379,0,exhaustive paired-family spatial holdout,Boeing Field+Factoria,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.8978771413322862,1,exhaustive paired-family spatial holdout,Boeing Field+Factoria,
+,Factoria_01,Factoria,M2_nonstationary_groundwater_gradation,0.00045410854345763105,0,exhaustive paired-family spatial holdout,Boeing Field+Factoria,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9389559366463185,1,exhaustive paired-family spatial holdout,Boeing Field+Factoria,
+,Factoria_01,Factoria,M3_full_nonstationary_random_field,0.0002599548780820444,0,exhaustive paired-family spatial holdout,Boeing Field+Factoria,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.8942870796683455,1,exhaustive paired-family spatial holdout,Boeing Field+Green River,
+,Green_River_01,Green River,M0_static_stationary,0.31389007628461124,0,exhaustive paired-family spatial holdout,Boeing Field+Green River,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.8946581947809489,1,exhaustive paired-family spatial holdout,Boeing Field+Green River,
+,Green_River_01,Green River,M1_nonstationary_groundwater_only,0.6874065390132288,0,exhaustive paired-family spatial holdout,Boeing Field+Green River,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.8946995279125115,1,exhaustive paired-family spatial holdout,Boeing Field+Green River,
+,Green_River_01,Green River,M2_nonstationary_groundwater_gradation,0.11070185272081746,0,exhaustive paired-family spatial holdout,Boeing Field+Green River,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9436518737162263,1,exhaustive paired-family spatial holdout,Boeing Field+Green River,
+,Green_River_01,Green River,M3_full_nonstationary_random_field,0.28333871879141237,0,exhaustive paired-family spatial holdout,Boeing Field+Green River,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.8840672638449775,1,exhaustive paired-family spatial holdout,Boeing Field+Issaquah,
+,Issaquah_01,Issaquah,M0_static_stationary,0.009837239037702703,0,exhaustive paired-family spatial holdout,Boeing Field+Issaquah,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.8869753773095657,1,exhaustive paired-family spatial holdout,Boeing Field+Issaquah,
+,Issaquah_01,Issaquah,M1_nonstationary_groundwater_only,0.010361043561733566,0,exhaustive paired-family spatial holdout,Boeing Field+Issaquah,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.8972637320185975,1,exhaustive paired-family spatial holdout,Boeing Field+Issaquah,
+,Issaquah_01,Issaquah,M2_nonstationary_groundwater_gradation,0.014473185927867446,0,exhaustive paired-family spatial holdout,Boeing Field+Issaquah,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9398805730779953,1,exhaustive paired-family spatial holdout,Boeing Field+Issaquah,
+,Issaquah_01,Issaquah,M3_full_nonstationary_random_field,0.027003143909538268,0,exhaustive paired-family spatial holdout,Boeing Field+Issaquah,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.882029814148955,1,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Smith_Cove_01,Smith Cove,M0_static_stationary,0.012748047958567347,0,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Smith_Cove_02,Smith Cove,M0_static_stationary,0.013876524464047902,0,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.8849299202841111,1,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Smith_Cove_01,Smith Cove,M1_nonstationary_groundwater_only,0.012898690874106701,0,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Smith_Cove_02,Smith Cove,M1_nonstationary_groundwater_only,0.012873150237926066,0,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.9028903268133626,1,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Smith_Cove_01,Smith Cove,M2_nonstationary_groundwater_gradation,0.07521021305365116,0,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Smith_Cove_02,Smith Cove,M2_nonstationary_groundwater_gradation,0.0011990992595846703,0,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9340517769649154,1,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Smith_Cove_01,Smith Cove,M3_full_nonstationary_random_field,0.03363287333959697,0,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Smith_Cove_02,Smith Cove,M3_full_nonstationary_random_field,0.0010841681668924722,0,exhaustive paired-family spatial holdout,Boeing Field+Smith Cove,
+,Boeing_Field_01,Boeing Field,M0_static_stationary,0.878161047434165,1,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_01,UW,M0_static_stationary,0.01776597131700003,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_02,UW,M0_static_stationary,0.01776597131700003,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_03,UW,M0_static_stationary,0.015084784299356392,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_04,UW,M0_static_stationary,0.013897776846867833,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,0.8818181995763993,1,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_01,UW,M1_nonstationary_groundwater_only,0.024907020620780176,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_02,UW,M1_nonstationary_groundwater_only,0.024907020620780176,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_03,UW,M1_nonstationary_groundwater_only,0.016722367497003832,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_04,UW,M1_nonstationary_groundwater_only,0.015431981347225749,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,0.894683380973069,1,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_01,UW,M2_nonstationary_groundwater_gradation,0.0029241888630267138,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_02,UW,M2_nonstationary_groundwater_gradation,0.009210715067828112,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_03,UW,M2_nonstationary_groundwater_gradation,0.0020797065226702306,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_04,UW,M2_nonstationary_groundwater_gradation,0.0001365903089980114,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,0.9395238378544514,1,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_01,UW,M3_full_nonstationary_random_field,0.01245996124069782,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_02,UW,M3_full_nonstationary_random_field,0.02315297443452328,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_03,UW,M3_full_nonstationary_random_field,0.005111011113009843,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,UW_04,UW,M3_full_nonstationary_random_field,0.0003083484011540085,0,exhaustive paired-family spatial holdout,Boeing Field+UW,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9818219217538597,1,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9739765342744522,1,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M0_static_stationary,0.0011814232614492676,0,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.9843314533587305,1,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9757962544726405,1,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M1_nonstationary_groundwater_only,0.0011842939361228098,0,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9928344240779869,1,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9950037565819273,1,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M2_nonstationary_groundwater_gradation,4.9500262035653365e-05,0,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9919497974890042,1,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9979919904506095,1,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M3_full_nonstationary_random_field,3.1881424792234966e-05,0,exhaustive paired-family spatial holdout,Capitol Lake+Blair Waterway,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9810842689270748,1,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9730403258813788,1,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Bush_School_01,Bush School,M0_static_stationary,0.004980886078250808,0,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.983730738783282,1,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9749604536635076,1,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Bush_School_01,Bush School,M1_nonstationary_groundwater_only,0.004940206399738719,0,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9925422390539463,1,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9949483817355573,1,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Bush_School_01,Bush School,M2_nonstationary_groundwater_gradation,0.0034879443247149834,0,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9915999897443273,1,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9978696041000348,1,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Bush_School_01,Bush School,M3_full_nonstationary_random_field,0.003720588012612849,0,exhaustive paired-family spatial holdout,Capitol Lake+Bush School,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9829685324754744,1,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9754479568557113,1,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Discovery_Park_01,Discovery Park,M0_static_stationary,0.00016101196072194218,0,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.9852511352249105,1,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9771025216891744,1,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Discovery_Park_01,Discovery Park,M1_nonstationary_groundwater_only,0.00015183460737484004,0,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9932452993987766,1,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9949996285558519,1,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Discovery_Park_01,Discovery Park,M2_nonstationary_groundwater_gradation,0.00014870589959343775,0,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.992379396481828,1,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9981713804271268,1,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Discovery_Park_01,Discovery Park,M3_full_nonstationary_random_field,7.509848572369948e-05,0,exhaustive paired-family spatial holdout,Capitol Lake+Discovery Park,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9963711382621011,1,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9943170549445484,1,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Duwamish_01,Duwamish,M0_static_stationary,0.9127948220809275,0,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.9979486692645015,1,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9959819273063096,1,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Duwamish_01,Duwamish,M1_nonstationary_groundwater_only,0.9237421515470922,0,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9956371646682279,1,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9959253362839637,1,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Duwamish_01,Duwamish,M2_nonstationary_groundwater_gradation,0.5189748467750952,0,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9964076505523608,1,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9942061894276036,1,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Duwamish_01,Duwamish,M3_full_nonstationary_random_field,0.7104583449681607,0,exhaustive paired-family spatial holdout,Capitol Lake+Duwamish,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9797416507614047,1,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9714003460329658,1,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M0_static_stationary,0.04308703645428414,0,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.9831258637697352,1,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9738310874758781,1,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M1_nonstationary_groundwater_only,0.04790306099523763,0,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9931946794100383,1,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9950622394266683,1,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M2_nonstationary_groundwater_gradation,0.09227519530362949,0,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9935316342875348,1,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9979358371199417,1,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M3_full_nonstationary_random_field,0.1214842356200328,0,exhaustive paired-family spatial holdout,Capitol Lake+Elliott Ave,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9793054405282444,1,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9710728158283329,1,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M0_static_stationary,0.17496524435345825,0,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.9872176445369854,1,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.977409658175262,1,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M1_nonstationary_groundwater_only,0.25963298821094566,0,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9924171434231949,1,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9946938474412109,1,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M2_nonstationary_groundwater_gradation,0.026429932464300452,0,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9917810264604765,1,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9978619927022166,1,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M3_full_nonstationary_random_field,0.03660357614193941,0,exhaustive paired-family spatial holdout,Capitol Lake+Emerald Downs,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9819248964790395,1,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9741080838628623,1,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Factoria_01,Factoria,M0_static_stationary,0.0009723619051644299,0,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.9844297690658861,1,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9759203153411757,1,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Factoria_01,Factoria,M1_nonstationary_groundwater_only,0.0011156109312453737,0,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9926880160681341,1,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9948823549824893,1,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Factoria_01,Factoria,M2_nonstationary_groundwater_gradation,0.0003239055236069101,0,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9917799041555913,1,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9980022713087254,1,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Factoria_01,Factoria,M3_full_nonstationary_random_field,0.0001736295754656386,0,exhaustive paired-family spatial holdout,Capitol Lake+Factoria,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9808720651042829,1,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9732666346726871,1,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Green_River_01,Green River,M0_static_stationary,0.31589037406897214,0,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.9479748369312171,1,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9588423012592839,1,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Green_River_01,Green River,M1_nonstationary_groundwater_only,0.7552887666053231,0,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9810099976814879,1,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9930340318860112,1,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Green_River_01,Green River,M2_nonstationary_groundwater_gradation,0.14384879818208565,0,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9610595418208868,1,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9972638015330397,1,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Green_River_01,Green River,M3_full_nonstationary_random_field,0.4374240224312764,0,exhaustive paired-family spatial holdout,Capitol Lake+Green River,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9807799869936019,1,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9726591097641655,1,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Issaquah_01,Issaquah,M0_static_stationary,0.008788332167606008,0,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.9835241823695189,1,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9746430013764238,1,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Issaquah_01,Issaquah,M1_nonstationary_groundwater_only,0.009176514613212568,0,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9929583895303972,1,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9941655786764824,1,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Issaquah_01,Issaquah,M2_nonstationary_groundwater_gradation,0.013730538753553522,0,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9926597775047397,1,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9975620406671044,1,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Issaquah_01,Issaquah,M3_full_nonstationary_random_field,0.027354501312655474,0,exhaustive paired-family spatial holdout,Capitol Lake+Issaquah,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9797075030479178,1,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9713244338690213,1,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Smith_Cove_01,Smith Cove,M0_static_stationary,0.011531109670672115,0,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Smith_Cove_02,Smith Cove,M0_static_stationary,0.012585908666920505,0,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.9825129960330867,1,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9733700152126372,1,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Smith_Cove_01,Smith Cove,M1_nonstationary_groundwater_only,0.01161512323465353,0,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Smith_Cove_02,Smith Cove,M1_nonstationary_groundwater_only,0.011744040857851419,0,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9954402355384734,1,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9906907592594758,1,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Smith_Cove_01,Smith Cove,M2_nonstationary_groundwater_gradation,0.09181002474639267,0,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Smith_Cove_02,Smith Cove,M2_nonstationary_groundwater_gradation,0.0008424095334635227,0,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9936356896198952,1,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9966433713777584,1,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Smith_Cove_01,Smith Cove,M3_full_nonstationary_random_field,0.02952614731582129,0,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Smith_Cove_02,Smith Cove,M3_full_nonstationary_random_field,0.0008038770980069483,0,exhaustive paired-family spatial holdout,Capitol Lake+Smith Cove,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,0.9774516400274458,1,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,0.9685498278789129,1,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_01,UW,M0_static_stationary,0.016395665494517812,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_02,UW,M0_static_stationary,0.016395665494517812,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_03,UW,M0_static_stationary,0.013855068365171867,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_04,UW,M0_static_stationary,0.012734489711058353,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,0.98174253203854,1,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,0.9714786283663199,1,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_01,UW,M1_nonstationary_groundwater_only,0.02209752131688284,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_02,UW,M1_nonstationary_groundwater_only,0.02209752131688284,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_03,UW,M1_nonstationary_groundwater_only,0.015105560522846945,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_04,UW,M1_nonstationary_groundwater_only,0.013901454785692496,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9936002772090252,1,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,0.9930505201916966,1,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_01,UW,M2_nonstationary_groundwater_gradation,0.0021273858985307228,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_02,UW,M2_nonstationary_groundwater_gradation,0.006838933378309703,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_03,UW,M2_nonstationary_groundwater_gradation,0.0014571387497800768,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_04,UW,M2_nonstationary_groundwater_gradation,7.320050061042355e-05,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,0.9913827079000801,1,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,0.9978403095826524,1,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_01,UW,M3_full_nonstationary_random_field,0.012841387529470444,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_02,UW,M3_full_nonstationary_random_field,0.02265800836093156,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_03,UW,M3_full_nonstationary_random_field,0.0047315712639367956,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,UW_04,UW,M3_full_nonstationary_random_field,0.00024185022957578836,0,exhaustive paired-family spatial holdout,Capitol Lake+UW,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.38818165534260324,1,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.481079916029342,1,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M0_static_stationary,0.000470790359969708,0,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.2679999862928356,1,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.44955699053187087,1,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M1_nonstationary_groundwater_only,0.00036247404311828146,0,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9992427148123113,1,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.999799713401326,1,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M2_nonstationary_groundwater_gradation,4.675041421972199e-05,0,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.9975603485177182,1,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.9979549542041627,1,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M3_full_nonstationary_random_field,3.776736884028708e-05,0,exhaustive paired-family spatial holdout,Harbor Island+Blair Waterway,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.39136499995777924,1,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.483272211317271,1,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Bush_School_01,Bush School,M0_static_stationary,0.00211862242989757,0,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.271130730059414,1,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.4516510975126008,1,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Bush_School_01,Bush School,M1_nonstationary_groundwater_only,0.00157127291078519,0,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9995213286936497,1,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.9998654732984426,1,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Bush_School_01,Bush School,M2_nonstationary_groundwater_gradation,0.011976711816498162,0,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.998241724837011,1,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.9985651897047982,1,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Bush_School_01,Bush School,M3_full_nonstationary_random_field,0.007705518968028059,0,exhaustive paired-family spatial holdout,Harbor Island+Bush School,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.382984260461018,1,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.47761745192911825,1,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Discovery_Park_01,Discovery Park,M0_static_stationary,5.700273060796444e-05,0,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.261540165957532,1,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.44562433783789884,1,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Discovery_Park_01,Discovery Park,M1_nonstationary_groundwater_only,2.8646944332421704e-05,0,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9991474925163992,1,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.9997738788935827,1,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Discovery_Park_01,Discovery Park,M2_nonstationary_groundwater_gradation,0.0002109037306810534,0,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.9972574679733176,1,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.9975665736524472,1,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Discovery_Park_01,Discovery Park,M3_full_nonstationary_random_field,0.00011545577300920526,0,exhaustive paired-family spatial holdout,Harbor Island+Discovery Park,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.5690975427602424,1,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.6639587302059843,1,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Duwamish_01,Duwamish,M0_static_stationary,0.8155700866777343,0,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.47839292629030067,1,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.6566761918611901,1,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Duwamish_01,Duwamish,M1_nonstationary_groundwater_only,0.8179590928723062,0,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9888200732838572,1,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.9965561279016613,1,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Duwamish_01,Duwamish,M2_nonstationary_groundwater_gradation,0.48028167850065157,0,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.9898314570534006,1,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.9985628706024624,1,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Duwamish_01,Duwamish,M3_full_nonstationary_random_field,0.7019950067297615,0,exhaustive paired-family spatial holdout,Harbor Island+Duwamish,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.3996783505884032,1,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.48995622293673574,1,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M0_static_stationary,0.020040759409502725,0,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.2794960124164272,1,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.4599240731346009,1,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M1_nonstationary_groundwater_only,0.02650005401872803,0,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9993967534267609,1,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.9998540328743343,1,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M2_nonstationary_groundwater_gradation,0.11685908140836457,0,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.9982986807539823,1,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.9986919140078933,1,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M3_full_nonstationary_random_field,0.1402720757543143,0,exhaustive paired-family spatial holdout,Harbor Island+Elliott Ave,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.42000000066160653,1,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.5081635877518427,1,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M0_static_stationary,0.09299165235827406,0,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.2688359805734265,1,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.4849814961761586,1,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M1_nonstationary_groundwater_only,0.22659401201077106,0,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9988860571309117,1,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.9997074640927495,1,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M2_nonstationary_groundwater_gradation,0.024527931381152963,0,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.9963664297805747,1,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.9970142946330318,1,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M3_full_nonstationary_random_field,0.035992816716792504,0,exhaustive paired-family spatial holdout,Harbor Island+Emerald Downs,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.38773522816028455,1,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.48078144913044174,1,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Factoria_01,Factoria,M0_static_stationary,0.00038361878527848353,0,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.26758379891260387,1,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.44936072108102554,1,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Factoria_01,Factoria,M1_nonstationary_groundwater_only,0.0006450189763650689,0,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9991501547555137,1,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.9997736471365772,1,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Factoria_01,Factoria,M2_nonstationary_groundwater_gradation,0.00035664285146558446,0,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.9973342350131102,1,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.9977123451870453,1,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Factoria_01,Factoria,M3_full_nonstationary_random_field,0.00022679310341800168,0,exhaustive paired-family spatial holdout,Harbor Island+Factoria,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.44196270492565304,1,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.5288360634080398,1,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Green_River_01,Green River,M0_static_stationary,0.1894550966469518,0,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.3418195950388711,1,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.48887505830595757,1,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Green_River_01,Green River,M1_nonstationary_groundwater_only,0.07861261747654907,0,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9993957344722006,1,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.99977705299013,1,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Green_River_01,Green River,M2_nonstationary_groundwater_gradation,0.11372418418270958,0,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.9982658329005478,1,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.996892631355342,1,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Green_River_01,Green River,M3_full_nonstationary_random_field,0.29085132262421864,0,exhaustive paired-family spatial holdout,Harbor Island+Green River,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.39277155916263345,1,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.48430878149660117,1,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Issaquah_01,Issaquah,M0_static_stationary,0.003822831618736418,0,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.27300071487721556,1,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.45300612550803254,1,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Issaquah_01,Issaquah,M1_nonstationary_groundwater_only,0.003813538665350483,0,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9990907502702118,1,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.9997656537308194,1,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Issaquah_01,Issaquah,M2_nonstationary_groundwater_gradation,0.01339872722193623,0,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.997124701522437,1,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.9975995465139597,1,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Issaquah_01,Issaquah,M3_full_nonstationary_random_field,0.02779255141826279,0,exhaustive paired-family spatial holdout,Harbor Island+Issaquah,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.3974396687675209,1,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.4877991433684654,1,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Smith_Cove_01,Smith Cove,M0_static_stationary,0.005050084328375494,0,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Smith_Cove_02,Smith Cove,M0_static_stationary,0.005533122024782767,0,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.277042685015982,1,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.4556761333429768,1,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Smith_Cove_01,Smith Cove,M1_nonstationary_groundwater_only,0.004218087943005776,0,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Smith_Cove_02,Smith Cove,M1_nonstationary_groundwater_only,0.002943802876908388,0,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9990625336908099,1,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.9997937909497615,1,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Smith_Cove_01,Smith Cove,M2_nonstationary_groundwater_gradation,0.08441251334467367,0,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Smith_Cove_02,Smith Cove,M2_nonstationary_groundwater_gradation,0.000971280961650604,0,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.9975471160560936,1,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.9984920819842982,1,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Smith_Cove_01,Smith Cove,M3_full_nonstationary_random_field,0.035535653742318214,0,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Smith_Cove_02,Smith Cove,M3_full_nonstationary_random_field,0.00094707169217525,0,exhaustive paired-family spatial holdout,Harbor Island+Smith Cove,
+,Harbor_Island_01,Harbor Island,M0_static_stationary,0.40633540878700714,1,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,Harbor_Island_02,Harbor Island,M0_static_stationary,0.4944753598249291,1,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_01,UW,M0_static_stationary,0.007165076319073444,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_02,UW,M0_static_stationary,0.007165076319073444,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_03,UW,M0_static_stationary,0.0060006799049657005,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_04,UW,M0_static_stationary,0.005491087346364698,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,0.2824007299883055,1,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,0.4659096837890064,1,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_01,UW,M1_nonstationary_groundwater_only,0.01853135575396789,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_02,UW,M1_nonstationary_groundwater_only,0.01853135575396789,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_03,UW,M1_nonstationary_groundwater_only,0.00649430952662892,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_04,UW,M1_nonstationary_groundwater_only,0.005963190703696173,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,0.9989269905688528,1,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,0.9997296171277541,1,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_01,UW,M2_nonstationary_groundwater_gradation,0.0024656884265101347,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_02,UW,M2_nonstationary_groundwater_gradation,0.012931957311267249,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_03,UW,M2_nonstationary_groundwater_gradation,0.0021440480023977738,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_04,UW,M2_nonstationary_groundwater_gradation,9.379488421756918e-05,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,0.9968162443878227,1,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,0.996948136275027,1,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_01,UW,M3_full_nonstationary_random_field,0.013476090362697778,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_02,UW,M3_full_nonstationary_random_field,0.03085248684755829,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_03,UW,M3_full_nonstationary_random_field,0.005751259417627013,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,UW_04,UW,M3_full_nonstationary_random_field,0.0002842847492380932,0,exhaustive paired-family spatial holdout,Harbor Island+UW,
+,SODO_01,SODO,M0_static_stationary,0.9878134652257531,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_02,SODO,M0_static_stationary,0.8171233044320049,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_03,SODO,M0_static_stationary,0.8044232394091421,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_04,SODO,M0_static_stationary,0.791066718996752,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M0_static_stationary,0.0017100476140902061,0,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9878729391922134,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.8167863195733316,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.8046382341636336,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.7895369918454888,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M1_nonstationary_groundwater_only,0.0017077111645591447,0,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.8726461092709022,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9888323844293033,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.4618816386967214,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9241602138580222,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M2_nonstationary_groundwater_gradation,6.396141367118793e-05,0,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.8724270699439385,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.940653351254607,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.48693570652471946,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.9389681503249095,1,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,Blair_Waterway_01,Blair Waterway,M3_full_nonstationary_random_field,4.1901889453468605e-05,0,exhaustive paired-family spatial holdout,SODO+Blair Waterway,
+,SODO_01,SODO,M0_static_stationary,0.9871994427107278,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_02,SODO,M0_static_stationary,0.8146828642241699,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_03,SODO,M0_static_stationary,0.8020065901429935,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_04,SODO,M0_static_stationary,0.7886881261093053,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,Bush_School_01,Bush School,M0_static_stationary,0.006261538457203337,0,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9872399785329936,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.8144609395477935,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.8021502146029225,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.7876798285438515,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,Bush_School_01,Bush School,M1_nonstationary_groundwater_only,0.006259551560899533,0,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.8666466803324252,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9890168000958623,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.4579023236548394,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9241832870969954,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,Bush_School_01,Bush School,M2_nonstationary_groundwater_gradation,0.002971588854930716,0,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.8657542301934363,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.9422523724733332,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.4799242148119402,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.9381132320411123,1,exhaustive paired-family spatial holdout,SODO+Bush School,
+,Bush_School_01,Bush School,M3_full_nonstationary_random_field,0.002916221749058639,0,exhaustive paired-family spatial holdout,SODO+Bush School,
+,SODO_01,SODO,M0_static_stationary,0.9887521434948643,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_02,SODO,M0_static_stationary,0.8214354312599874,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_03,SODO,M0_static_stationary,0.8087352011356408,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_04,SODO,M0_static_stationary,0.7953567155561894,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,Discovery_Park_01,Discovery Park,M0_static_stationary,0.0002837055884531461,0,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9888497980655909,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.8208473917583724,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.8090992761433397,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.7926948086993639,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,Discovery_Park_01,Discovery Park,M1_nonstationary_groundwater_only,0.00028512667738079026,0,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.8831702166290893,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9884915425939711,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.47040012405072035,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9243016476397696,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,Discovery_Park_01,Discovery Park,M2_nonstationary_groundwater_gradation,0.00015255545543601555,0,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.8845883767721012,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.9394781541824228,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.5012776768695425,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.9403294336286869,1,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,Discovery_Park_01,Discovery Park,M3_full_nonstationary_random_field,0.00011370494060831803,0,exhaustive paired-family spatial holdout,SODO+Discovery Park,
+,SODO_01,SODO,M0_static_stationary,0.9985774776266505,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_02,SODO,M0_static_stationary,0.9436198517919182,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_03,SODO,M0_static_stationary,0.9376641432215247,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_04,SODO,M0_static_stationary,0.9311252244642345,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,Duwamish_01,Duwamish,M0_static_stationary,0.8879875304004693,0,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9986556808873106,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.9526839644470936,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.9415755452018167,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.9526343610032111,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,Duwamish_01,Duwamish,M1_nonstationary_groundwater_only,0.9018347273078744,0,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.9521902054620659,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.986612374981424,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.6565196650900677,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.930849261477518,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,Duwamish_01,Duwamish,M2_nonstationary_groundwater_gradation,0.2788999827762134,0,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.9493433713874819,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.9844976949182634,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.6487451857587333,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.9319655517518254,1,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,Duwamish_01,Duwamish,M3_full_nonstationary_random_field,0.24944218718690744,0,exhaustive paired-family spatial holdout,SODO+Duwamish,
+,SODO_01,SODO,M0_static_stationary,0.9861565939158335,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_02,SODO,M0_static_stationary,0.8127967144228863,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_03,SODO,M0_static_stationary,0.8003288681774084,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_04,SODO,M0_static_stationary,0.787248006949213,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M0_static_stationary,0.04360491226104985,0,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9859185274897581,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.8139230068260564,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.7995680771101702,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.7923822877928152,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M1_nonstationary_groundwater_only,0.04460274791290363,0,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.8443938442804906,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9894716511534873,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.45968003784641864,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9337595260219596,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M2_nonstationary_groundwater_gradation,0.07761160301708589,0,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.8499564876041348,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.9410251036027374,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.48802938365013215,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.947008963001443,1,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,Elliott_Ave_01,Elliott Ave,M3_full_nonstationary_random_field,0.09201538125748096,0,exhaustive paired-family spatial holdout,SODO+Elliott Ave,
+,SODO_01,SODO,M0_static_stationary,0.9859969069188609,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_02,SODO,M0_static_stationary,0.8195236033759419,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_03,SODO,M0_static_stationary,0.8076483766852889,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_04,SODO,M0_static_stationary,0.7951870487025238,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M0_static_stationary,0.15471914229407693,0,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9843004930550991,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.8302904511246906,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.80455752408034,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.8338477093044782,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M1_nonstationary_groundwater_only,0.1993480312331831,0,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.854316190575977,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9879688040861796,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.45695122025182633,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9285869909382632,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M2_nonstationary_groundwater_gradation,0.029029856451340767,0,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.8625486835139098,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.9425819500047619,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.48949917475846644,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.9409176592119828,1,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,Emerald_Downs_01,Emerald Downs,M3_full_nonstationary_random_field,0.027297027781025007,0,exhaustive paired-family spatial holdout,SODO+Emerald Downs,
+,SODO_01,SODO,M0_static_stationary,0.9878986060012432,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_02,SODO,M0_static_stationary,0.8174942941076586,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_03,SODO,M0_static_stationary,0.8047931355381002,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_04,SODO,M0_static_stationary,0.7914335746523131,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,Factoria_01,Factoria,M0_static_stationary,0.0014346024684872118,0,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9879513971201556,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.8171995894595724,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.804984349511102,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.7900884951418456,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,Factoria_01,Factoria,M1_nonstationary_groundwater_only,0.001421066492229355,0,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.8736602807282221,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9884493261290203,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.464020280026738,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9230300072748623,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,Factoria_01,Factoria,M2_nonstationary_groundwater_gradation,0.000616733945910562,0,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.8742635746336822,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.9394358325286291,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.4906833550002581,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.9385336546888495,1,exhaustive paired-family spatial holdout,SODO+Factoria,
+,Factoria_01,Factoria,M3_full_nonstationary_random_field,0.0003116092038635727,0,exhaustive paired-family spatial holdout,SODO+Factoria,
+,SODO_01,SODO,M0_static_stationary,0.9872214503505107,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_02,SODO,M0_static_stationary,0.8319782188356443,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_03,SODO,M0_static_stationary,0.8207173411036268,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_04,SODO,M0_static_stationary,0.8088751295335254,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,Green_River_01,Green River,M0_static_stationary,0.2707726380421988,0,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9946867937655002,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.825473856919343,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.8794340681260584,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.6035098191395436,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,Green_River_01,Green River,M1_nonstationary_groundwater_only,0.8016445783304933,0,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.879514725284253,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9880008699988303,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.4808997139509742,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9145964722759968,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,Green_River_01,Green River,M2_nonstationary_groundwater_gradation,0.013728452832269238,0,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.9032007789527372,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.9305929880176118,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.5495445526832198,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.924637349715714,1,exhaustive paired-family spatial holdout,SODO+Green River,
+,Green_River_01,Green River,M3_full_nonstationary_random_field,0.044647827737241665,0,exhaustive paired-family spatial holdout,SODO+Green River,
+,SODO_01,SODO,M0_static_stationary,0.9869480315494328,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_02,SODO,M0_static_stationary,0.8138731491164002,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_03,SODO,M0_static_stationary,0.8012203172397927,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_04,SODO,M0_static_stationary,0.7879314734595876,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,Issaquah_01,Issaquah,M0_static_stationary,0.01044659714492703,0,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9869524405198324,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.8138500609934788,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.8012357101933784,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.7878258079602004,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,Issaquah_01,Issaquah,M1_nonstationary_groundwater_only,0.010443787530035054,0,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.8678906862483095,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9880129927035111,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.4588652143676922,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9231413991633429,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,Issaquah_01,Issaquah,M2_nonstationary_groundwater_gradation,0.012223193529901751,0,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.8649063899735084,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.926639016554832,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.4803202225892103,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.9393349094562505,1,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,Issaquah_01,Issaquah,M3_full_nonstationary_random_field,0.027712715737549895,0,exhaustive paired-family spatial holdout,SODO+Issaquah,
+,SODO_01,SODO,M0_static_stationary,0.9858700443472257,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_02,SODO,M0_static_stationary,0.8105307778774371,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_03,SODO,M0_static_stationary,0.7979769659820394,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_04,SODO,M0_static_stationary,0.7848121975935164,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,Smith_Cove_01,Smith Cove,M0_static_stationary,0.01352502571227283,0,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,Smith_Cove_02,Smith Cove,M0_static_stationary,0.014631606985832307,0,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.9859150039295008,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.8102935238615799,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.798130749318137,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.7837399079497903,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,Smith_Cove_01,Smith Cove,M1_nonstationary_groundwater_only,0.013511054448397031,0,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,Smith_Cove_02,Smith Cove,M1_nonstationary_groundwater_only,0.014671602644282501,0,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.87337520455584,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9870885233892271,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.4593454307914153,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9247643697294219,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,Smith_Cove_01,Smith Cove,M2_nonstationary_groundwater_gradation,0.05373739084454744,0,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,Smith_Cove_02,Smith Cove,M2_nonstationary_groundwater_gradation,0.0006727562740632885,0,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.8688030659112044,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.9420664710714334,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.4742440296909376,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.935629723867123,1,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,Smith_Cove_01,Smith Cove,M3_full_nonstationary_random_field,0.025070466926101504,0,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,Smith_Cove_02,Smith Cove,M3_full_nonstationary_random_field,0.0006303511375938302,0,exhaustive paired-family spatial holdout,SODO+Smith Cove,
+,SODO_01,SODO,M0_static_stationary,0.9834282236116205,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_02,SODO,M0_static_stationary,0.8038266367179655,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_03,SODO,M0_static_stationary,0.7915039204096742,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_04,SODO,M0_static_stationary,0.7786203281027854,1,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_01,UW,M0_static_stationary,0.019160974672740173,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_02,UW,M0_static_stationary,0.019160974672740173,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_03,UW,M0_static_stationary,0.016491629267920332,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_04,UW,M0_static_stationary,0.015297600685324812,0,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.982530458683272,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.8064044336419737,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.7889820476294658,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.7917997660519235,1,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_01,UW,M1_nonstationary_groundwater_only,0.021815014458287995,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_02,UW,M1_nonstationary_groundwater_only,0.021815014458287995,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_03,UW,M1_nonstationary_groundwater_only,0.017236731511236808,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_04,UW,M1_nonstationary_groundwater_only,0.015999393225744386,0,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.8430768413663634,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.9867919738814702,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.4378251290983583,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.9262608356237757,1,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_01,UW,M2_nonstationary_groundwater_gradation,0.004527720660284666,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_02,UW,M2_nonstationary_groundwater_gradation,0.01444108332899338,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_03,UW,M2_nonstationary_groundwater_gradation,0.0017898606310580178,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_04,UW,M2_nonstationary_groundwater_gradation,0.0001161080262245269,0,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.816858745992844,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.91924577713662,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.45737788062310736,1,exhaustive paired-family spatial holdout,SODO+UW,
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.9446826157837859,1,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_01,UW,M3_full_nonstationary_random_field,0.01821161976563498,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_02,UW,M3_full_nonstationary_random_field,0.030166880308279336,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_03,UW,M3_full_nonstationary_random_field,0.004522402127048506,0,exhaustive paired-family spatial holdout,SODO+UW,
+,UW_04,UW,M3_full_nonstationary_random_field,0.00023624608368015207,0,exhaustive paired-family spatial holdout,SODO+UW,
+,Capitol_Lake_01,Capitol Lake,M0_static_stationary,,1,,,train_development
+,SODO_01,SODO,M0_static_stationary,0.8674114002334676,1,,,heldout_SODO_UW
+,Capitol_Lake_02,Capitol Lake,M0_static_stationary,,1,,,train_development
+,Harbor_Island_01,Harbor Island,M0_static_stationary,,1,,,train_development
+,Harbor_Island_02,Harbor Island,M0_static_stationary,,1,,,train_development
+,SODO_02,SODO,M0_static_stationary,0.6341289023767129,1,,,heldout_SODO_UW
+,SODO_03,SODO,M0_static_stationary,0.6252798892518805,1,,,heldout_SODO_UW
+,SODO_04,SODO,M0_static_stationary,0.6163463387379681,1,,,heldout_SODO_UW
+,Boeing_Field_01,Boeing Field,M0_static_stationary,,1,,,train_development
+,Duwamish_01,Duwamish,M0_static_stationary,,0,,,train_development
+,Discovery_Park_01,Discovery Park,M0_static_stationary,,0,,,train_development
+,Elliott_Ave_01,Elliott Ave,M0_static_stationary,,0,,,train_development
+,Smith_Cove_01,Smith Cove,M0_static_stationary,,0,,,train_development
+,Smith_Cove_02,Smith Cove,M0_static_stationary,,0,,,train_development
+,Emerald_Downs_01,Emerald Downs,M0_static_stationary,,0,,,train_development
+,Bush_School_01,Bush School,M0_static_stationary,,0,,,train_development
+,Factoria_01,Factoria,M0_static_stationary,,0,,,train_development
+,UW_01,UW,M0_static_stationary,0.10845592195146073,0,,,heldout_SODO_UW
+,UW_02,UW,M0_static_stationary,0.10845592195146073,0,,,heldout_SODO_UW
+,UW_03,UW,M0_static_stationary,0.1013318202378062,0,,,heldout_SODO_UW
+,UW_04,UW,M0_static_stationary,0.097927758307666,0,,,heldout_SODO_UW
+,Issaquah_01,Issaquah,M0_static_stationary,,0,,,train_development
+,Blair_Waterway_01,Blair Waterway,M0_static_stationary,,0,,,train_development
+,Green_River_01,Green River,M0_static_stationary,,0,,,train_development
+,Capitol_Lake_01,Capitol Lake,M1_nonstationary_groundwater_only,,1,,,train_development
+,SODO_01,SODO,M1_nonstationary_groundwater_only,0.8446442697264743,1,,,heldout_SODO_UW
+,Capitol_Lake_02,Capitol Lake,M1_nonstationary_groundwater_only,,1,,,train_development
+,Harbor_Island_01,Harbor Island,M1_nonstationary_groundwater_only,,1,,,train_development
+,Harbor_Island_02,Harbor Island,M1_nonstationary_groundwater_only,,1,,,train_development
+,SODO_02,SODO,M1_nonstationary_groundwater_only,0.6403073116720435,1,,,heldout_SODO_UW
+,SODO_03,SODO,M1_nonstationary_groundwater_only,0.6050618227282916,1,,,heldout_SODO_UW
+,SODO_04,SODO,M1_nonstationary_groundwater_only,0.6716582828626463,1,,,heldout_SODO_UW
+,Boeing_Field_01,Boeing Field,M1_nonstationary_groundwater_only,,1,,,train_development
+,Duwamish_01,Duwamish,M1_nonstationary_groundwater_only,,0,,,train_development
+,Discovery_Park_01,Discovery Park,M1_nonstationary_groundwater_only,,0,,,train_development
+,Elliott_Ave_01,Elliott Ave,M1_nonstationary_groundwater_only,,0,,,train_development
+,Smith_Cove_01,Smith Cove,M1_nonstationary_groundwater_only,,0,,,train_development
+,Smith_Cove_02,Smith Cove,M1_nonstationary_groundwater_only,,0,,,train_development
+,Emerald_Downs_01,Emerald Downs,M1_nonstationary_groundwater_only,,0,,,train_development
+,Bush_School_01,Bush School,M1_nonstationary_groundwater_only,,0,,,train_development
+,Factoria_01,Factoria,M1_nonstationary_groundwater_only,,0,,,train_development
+,UW_01,UW,M1_nonstationary_groundwater_only,0.14914712506151762,0,,,heldout_SODO_UW
+,UW_02,UW,M1_nonstationary_groundwater_only,0.14914712506151762,0,,,heldout_SODO_UW
+,UW_03,UW,M1_nonstationary_groundwater_only,0.10654731887307983,0,,,heldout_SODO_UW
+,UW_04,UW,M1_nonstationary_groundwater_only,0.1030984654325745,0,,,heldout_SODO_UW
+,Issaquah_01,Issaquah,M1_nonstationary_groundwater_only,,0,,,train_development
+,Blair_Waterway_01,Blair Waterway,M1_nonstationary_groundwater_only,,0,,,train_development
+,Green_River_01,Green River,M1_nonstationary_groundwater_only,,0,,,train_development
+,Capitol_Lake_01,Capitol Lake,M2_nonstationary_groundwater_gradation,,1,,,train_development
+,SODO_01,SODO,M2_nonstationary_groundwater_gradation,0.5821745217086376,1,,,heldout_SODO_UW
+,Capitol_Lake_02,Capitol Lake,M2_nonstationary_groundwater_gradation,,1,,,train_development
+,Harbor_Island_01,Harbor Island,M2_nonstationary_groundwater_gradation,,1,,,train_development
+,Harbor_Island_02,Harbor Island,M2_nonstationary_groundwater_gradation,,1,,,train_development
+,SODO_02,SODO,M2_nonstationary_groundwater_gradation,0.8702046978705364,1,,,heldout_SODO_UW
+,SODO_03,SODO,M2_nonstationary_groundwater_gradation,0.3863713825093943,1,,,heldout_SODO_UW
+,SODO_04,SODO,M2_nonstationary_groundwater_gradation,0.7429001147447986,1,,,heldout_SODO_UW
+,Boeing_Field_01,Boeing Field,M2_nonstationary_groundwater_gradation,,1,,,train_development
+,Duwamish_01,Duwamish,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,Discovery_Park_01,Discovery Park,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,Elliott_Ave_01,Elliott Ave,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,Smith_Cove_01,Smith Cove,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,Smith_Cove_02,Smith Cove,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,Emerald_Downs_01,Emerald Downs,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,Bush_School_01,Bush School,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,Factoria_01,Factoria,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,UW_01,UW,M2_nonstationary_groundwater_gradation,0.06561709103045565,0,,,heldout_SODO_UW
+,UW_02,UW,M2_nonstationary_groundwater_gradation,0.11540123851533798,0,,,heldout_SODO_UW
+,UW_03,UW,M2_nonstationary_groundwater_gradation,0.03782113327605755,0,,,heldout_SODO_UW
+,UW_04,UW,M2_nonstationary_groundwater_gradation,0.010334368649342224,0,,,heldout_SODO_UW
+,Issaquah_01,Issaquah,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,Blair_Waterway_01,Blair Waterway,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,Green_River_01,Green River,M2_nonstationary_groundwater_gradation,,0,,,train_development
+,Capitol_Lake_01,Capitol Lake,M3_full_nonstationary_random_field,,1,,,train_development
+,SODO_01,SODO,M3_full_nonstationary_random_field,0.5494440524239113,1,,,heldout_SODO_UW
+,Capitol_Lake_02,Capitol Lake,M3_full_nonstationary_random_field,,1,,,train_development
+,Harbor_Island_01,Harbor Island,M3_full_nonstationary_random_field,,1,,,train_development
+,Harbor_Island_02,Harbor Island,M3_full_nonstationary_random_field,,1,,,train_development
+,SODO_02,SODO,M3_full_nonstationary_random_field,0.7831626659613734,1,,,heldout_SODO_UW
+,SODO_03,SODO,M3_full_nonstationary_random_field,0.38408720179976125,1,,,heldout_SODO_UW
+,SODO_04,SODO,M3_full_nonstationary_random_field,0.776286556582786,1,,,heldout_SODO_UW
+,Boeing_Field_01,Boeing Field,M3_full_nonstationary_random_field,,1,,,train_development
+,Duwamish_01,Duwamish,M3_full_nonstationary_random_field,,0,,,train_development
+,Discovery_Park_01,Discovery Park,M3_full_nonstationary_random_field,,0,,,train_development
+,Elliott_Ave_01,Elliott Ave,M3_full_nonstationary_random_field,,0,,,train_development
+,Smith_Cove_01,Smith Cove,M3_full_nonstationary_random_field,,0,,,train_development
+,Smith_Cove_02,Smith Cove,M3_full_nonstationary_random_field,,0,,,train_development
+,Emerald_Downs_01,Emerald Downs,M3_full_nonstationary_random_field,,0,,,train_development
+,Bush_School_01,Bush School,M3_full_nonstationary_random_field,,0,,,train_development
+,Factoria_01,Factoria,M3_full_nonstationary_random_field,,0,,,train_development
+,UW_01,UW,M3_full_nonstationary_random_field,0.10536771000486546,0,,,heldout_SODO_UW
+,UW_02,UW,M3_full_nonstationary_random_field,0.14916244468986092,0,,,heldout_SODO_UW
+,UW_03,UW,M3_full_nonstationary_random_field,0.050345045308266924,0,,,heldout_SODO_UW
+,UW_04,UW,M3_full_nonstationary_random_field,0.011556844078548111,0,,,heldout_SODO_UW
+,Issaquah_01,Issaquah,M3_full_nonstationary_random_field,,0,,,train_development
+,Blair_Waterway_01,Blair Waterway,M3_full_nonstationary_random_field,,0,,,train_development
+,Green_River_01,Green River,M3_full_nonstationary_random_field,,0,,,train_development

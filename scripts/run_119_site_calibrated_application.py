@@ -8,6 +8,7 @@ PRJ-3758 XLSX files saved under the Google Drive validation-data folder.
 from __future__ import annotations
 
 import math
+import itertools
 from pathlib import Path
 
 import numpy as np
@@ -20,7 +21,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from src.groundwater_calibration import fit_groundwater_model, predict_groundwater
+from src.gradation_calibration import build_gradation_parameter_table
 from src.random_fields import empirical_variogram, fit_exponential_variogram
+from src.stress_profile import compute_effective_vertical_stress, compute_pore_pressure, compute_total_vertical_stress
+from src.triggering_models import beta_equivalent_from_pf, csr_seed_1971, model_registry, rd_benchmark_depth_only
 from src.validation_metrics import binary_metrics, fit_logistic, predict_logistic
 
 DATA = ROOT / "data"
@@ -196,22 +200,142 @@ def _site_features(summary: pd.DataFrame, cpt_all: pd.DataFrame, gw_params: dict
     return pd.DataFrame(rows)
 
 
-def _crossfit_models(features: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+def _evaluate_leave_one_family_out(features: pd.DataFrame, models: dict) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    df = features.copy().reset_index(drop=True)
+    df["site_family"] = df["site_name"].str.replace(r"-\d+$", "", regex=True)
+    fold_rows = []
+    pred_rows = []
+    for holdout_family in sorted(df.site_family.unique()):
+        train = df.site_family.ne(holdout_family)
+        test = df.site_family.eq(holdout_family)
+        if df.loc[train, "observed_liquefaction"].nunique() < 2:
+            continue
+        for name, cols in models.items():
+            params = fit_logistic(df.loc[train, cols].to_numpy(), df.loc[train, "observed_liquefaction"].to_numpy(), l2=0.1)
+            prob = predict_logistic(params, df.loc[test, cols].to_numpy())
+            y = df.loc[test, "observed_liquefaction"].to_numpy()
+            m = binary_metrics(prob, y) if len(np.unique(y)) > 1 else {
+                "auc": np.nan,
+                "brier_score": float(np.mean((prob - y) ** 2)),
+                "log_loss": float(-np.mean(y * np.log(np.clip(prob, 1e-6, 1 - 1e-6)) + (1 - y) * np.log(np.clip(1 - prob, 1e-6, 1)))),
+                "calibration_intercept": np.nan,
+                "calibration_slope": np.nan,
+                "sensitivity": float(np.mean(prob >= 0.5)) if int(y[0]) == 1 else np.nan,
+                "specificity": float(np.mean(prob < 0.5)) if int(y[0]) == 0 else np.nan,
+                "tp": int(((prob >= 0.5) & (y == 1)).sum()),
+                "fp": int(((prob >= 0.5) & (y == 0)).sum()),
+                "tn": int(((prob < 0.5) & (y == 0)).sum()),
+                "fn": int(((prob < 0.5) & (y == 1)).sum()),
+            }
+            m.update(
+                {
+                    "holdout_family": holdout_family,
+                    "model_name": name,
+                    "n_train": int(train.sum()),
+                    "n_test": int(test.sum()),
+                    "n_test_liquefied": int(y.sum()),
+                    "n_test_non_liquefied": int((1 - y).sum()),
+                    "validation_protocol": "leave-one-site-family-out spatial validation",
+                }
+            )
+            fold_rows.append(m)
+            for site_id, site_family, p, yy in zip(df.loc[test, "site_id"], df.loc[test, "site_family"], prob, y):
+                pred_rows.append(
+                    {
+                        "holdout_family": holdout_family,
+                        "site_id": site_id,
+                        "site_family": site_family,
+                        "model_name": name,
+                        "predicted_pf": float(p),
+                        "observed_liquefaction": int(yy),
+                        "validation_protocol": "leave-one-site-family-out spatial validation",
+                    }
+                )
+    fold_metrics = pd.DataFrame(fold_rows)
+    pred = pd.DataFrame(pred_rows)
+    pooled_rows = []
+    for name, group in pred.groupby("model_name"):
+        m = binary_metrics(group["predicted_pf"].to_numpy(), group["observed_liquefaction"].to_numpy())
+        m.update(
+            {
+                "model_name": name,
+                "n_train": np.nan,
+                "n_test": int(group.shape[0]),
+                "validation_protocol": "pooled predictions from leave-one-site-family-out spatial validation",
+                "mean_fold_brier": float(fold_metrics[fold_metrics.model_name.eq(name)]["brier_score"].mean()),
+                "median_fold_brier": float(fold_metrics[fold_metrics.model_name.eq(name)]["brier_score"].median()),
+            }
+        )
+        pooled_rows.append(m)
+    return pred, fold_metrics, pd.DataFrame(pooled_rows)
+
+
+def _evaluate_family_pair_holdouts(features: pd.DataFrame, models: dict) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    df = features.copy().reset_index(drop=True)
+    df["site_family"] = df["site_name"].str.replace(r"-\d+$", "", regex=True)
+    family = df.groupby("site_family").observed_liquefaction.agg(["sum", "count"])
+    positive_families = family[family["sum"].gt(0)].index.to_list()
+    negative_families = family[family["sum"].eq(0)].index.to_list()
+    fold_rows = []
+    pred_rows = []
+    for pos_family, neg_family in itertools.product(positive_families, negative_families):
+        holdout = [pos_family, neg_family]
+        train = ~df.site_family.isin(holdout)
+        test = df.site_family.isin(holdout)
+        if df.loc[train, "observed_liquefaction"].nunique() < 2:
+            continue
+        for name, cols in models.items():
+            params = fit_logistic(df.loc[train, cols].to_numpy(), df.loc[train, "observed_liquefaction"].to_numpy(), l2=0.1)
+            prob = predict_logistic(params, df.loc[test, cols].to_numpy())
+            y = df.loc[test, "observed_liquefaction"].to_numpy()
+            m = binary_metrics(prob, y)
+            m.update(
+                {
+                    "holdout_family_pair": f"{pos_family}+{neg_family}",
+                    "model_name": name,
+                    "n_train": int(train.sum()),
+                    "n_test": int(test.sum()),
+                    "n_test_liquefied": int(y.sum()),
+                    "n_test_non_liquefied": int((1 - y).sum()),
+                    "validation_protocol": "exhaustive paired-family spatial holdout",
+                }
+            )
+            fold_rows.append(m)
+            for site_id, site_family, p, yy in zip(df.loc[test, "site_id"], df.loc[test, "site_family"], prob, y):
+                pred_rows.append(
+                    {
+                        "holdout_family_pair": f"{pos_family}+{neg_family}",
+                        "site_id": site_id,
+                        "site_family": site_family,
+                        "model_name": name,
+                        "predicted_pf": float(p),
+                        "observed_liquefaction": int(yy),
+                        "validation_protocol": "exhaustive paired-family spatial holdout",
+                    }
+                )
+    fold_metrics = pd.DataFrame(fold_rows)
+    pred = pd.DataFrame(pred_rows)
+    pooled_rows = []
+    for name, group in pred.groupby("model_name"):
+        m = binary_metrics(group["predicted_pf"].to_numpy(), group["observed_liquefaction"].to_numpy())
+        m.update(
+            {
+                "model_name": name,
+                "n_train": np.nan,
+                "n_test": int(group.shape[0]),
+                "validation_protocol": "pooled predictions from exhaustive paired-family spatial holdouts",
+                "mean_fold_brier": float(fold_metrics[fold_metrics.model_name.eq(name)]["brier_score"].mean()),
+                "median_fold_brier": float(fold_metrics[fold_metrics.model_name.eq(name)]["brier_score"].median()),
+            }
+        )
+        pooled_rows.append(m)
+    return pred, fold_metrics, pd.DataFrame(pooled_rows)
+
+
+def _evaluate_sodo_uw_sensitivity(features: pd.DataFrame, models: dict) -> tuple[pd.DataFrame, pd.DataFrame]:
     df = features.copy().reset_index(drop=True)
     df["site_family"] = df["site_name"].str.replace(r"-\d+$", "", regex=True)
     df["validation_split"] = np.where(df["site_family"].isin(["SODO", "UW"]), "heldout_SODO_UW", "train_development")
-    models = {
-        "M0_static_stationary": ["pga_g"],
-        "M1_nonstationary_groundwater_only": ["pga_g", "wtd_event_site_adjusted_m"],
-        "M2_nonstationary_groundwater_gradation": ["pga_g", "qc10_mpa", "wtd_event_site_adjusted_m", "ic_median"],
-        "M3_full_nonstationary_random_field": [
-            "pga_g",
-            "qc10_mpa",
-            "wtd_event_site_adjusted_m",
-            "ic_median",
-            "theta_z_m",
-        ],
-    }
     pred_rows = []
     metric_rows = []
     y = df["observed_liquefaction"].to_numpy()
@@ -227,7 +351,7 @@ def _crossfit_models(features: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame
                 "model_name": name,
                 "n_train": int(train.sum()),
                 "n_test": int(test.sum()),
-                "validation_protocol": "out-of-sample family holdout: train on 16 non-SODO/UW cases, test on SODO+UW siblings",
+                "validation_protocol": "strict sensitivity holdout: train on 16 non-SODO/UW cases, test on SODO+UW siblings",
             }
         )
         metric_rows.append(m)
@@ -243,6 +367,26 @@ def _crossfit_models(features: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame
                 }
             )
     return pd.DataFrame(pred_rows), pd.DataFrame(metric_rows)
+
+
+def _crossfit_models(features: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    models = {
+        "M0_static_stationary": ["pga_g"],
+        "M1_nonstationary_groundwater_only": ["pga_g", "wtd_event_site_adjusted_m"],
+        "M2_nonstationary_groundwater_gradation": ["pga_g", "qc10_mpa", "wtd_event_site_adjusted_m", "ic_median"],
+        "M3_full_nonstationary_random_field": [
+            "pga_g",
+            "qc10_mpa",
+            "wtd_event_site_adjusted_m",
+            "ic_median",
+            "theta_z_m",
+        ],
+    }
+    pred, fold_metrics, pooled_metrics = _evaluate_leave_one_family_out(features, models)
+    pair_pred, pair_fold_metrics, pair_pooled_metrics = _evaluate_family_pair_holdouts(features, models)
+    sodo_pred, sodo_metrics = _evaluate_sodo_uw_sensitivity(features, models)
+    pred = pd.concat([pred, pair_pred, sodo_pred], ignore_index=True)
+    return pred, fold_metrics, pooled_metrics, sodo_metrics, pair_fold_metrics, pair_pooled_metrics
 
 
 def _plot_groundwater(obs: pd.DataFrame, curve: pd.DataFrame, path: Path) -> None:
@@ -300,11 +444,44 @@ def _plot_validation(metrics: pd.DataFrame, path: Path) -> None:
     img.save(path)
 
 
+def _plot_variogram(emp: pd.DataFrame, params: dict, path: Path) -> None:
+    img = Image.new("RGB", (1000, 620), "white")
+    d = ImageDraw.Draw(img)
+    font = ImageFont.truetype("arial.ttf", 22)
+    small = ImageFont.truetype("arial.ttf", 18)
+    left, right, top, bottom = 90, 930, 80, 520
+    d.text((50, 30), "Vertical variogram diagnostic, Nisqually CPT log(qc)", font=font, fill=(0, 0, 0))
+    if emp.empty:
+        d.text((left, top), "Insufficient pairs for empirical variogram", font=small, fill=(0, 0, 0))
+        img.save(path)
+        return
+    xmax = max(float(emp.h_m.max()), 1.0)
+    ymax = max(float(emp.gamma.max()), float(params["sill"])) * 1.15
+
+    def xmap(x):
+        return left + float(x) / xmax * (right - left)
+
+    def ymap(y):
+        return bottom - float(y) / max(ymax, 1e-6) * (bottom - top)
+
+    d.rectangle((left, top, right, bottom), outline=(40, 40, 40), width=2)
+    for r in emp.itertuples():
+        x, y = xmap(r.h_m), ymap(r.gamma)
+        d.ellipse((x - 5, y - 5, x + 5, y + 5), fill=(30, 30, 30))
+    curve = []
+    for h in np.linspace(0.0, xmax, 120):
+        gamma = params["sill"] * (1.0 - np.exp(-h / max(params["theta_z_m"], 1e-6)))
+        curve.append((xmap(h), ymap(gamma)))
+    d.line(curve, fill=(33, 90, 150), width=4)
+    d.text((left, bottom + 28), f"Exponential fit: theta_z={params['theta_z_m']:.2f} m, sill={params['sill']:.3f}", font=small, fill=(0, 0, 0))
+    img.save(path)
+
+
 def main() -> None:
     summary, cpt_all, profile, gw, grad, events = build_site_tables()
     gw_params, gw_fit = fit_groundwater_model(gw, EVENT_DATE)
     features = _site_features(summary, cpt_all, gw_params)
-    pred, metrics = _crossfit_models(features)
+    pred, fold_metrics, metrics, sodo_metrics, pair_fold_metrics, pair_metrics = _crossfit_models(features)
     # Required CSV outputs.
     profile.to_csv(DATA / "site_profile_calibrated.csv", index=False)
     gw.to_csv(DATA / "site_groundwater_timeseries.csv", index=False)
@@ -313,23 +490,51 @@ def main() -> None:
     pd.DataFrame([{**{"site_id": "Nisqually_PRJ3758", "calibration_period": "CPT report dates 1987-2003", "validation_period": "2001-02-28 event via spatial CV"}, **gw_params}]).to_csv(
         DATA / "site_groundwater_model_parameters.csv", index=False
     )
-    grad_params = profile[["site_id", "layer_id", "ic"]].copy()
-    grad_params["fc0_mean"] = np.nan
-    grad_params["fc0_sd"] = np.nan
-    grad_params["fc_trend_pct_per_year"] = np.nan
-    grad_params["trend_sd"] = np.nan
-    grad_params["d50_mean"] = np.nan
-    grad_params["d50_sd"] = np.nan
-    grad_params["model_status"] = "baseline_uncertainty_only"
+    grad_params = build_gradation_parameter_table(profile)
     grad_params.to_csv(DATA / "site_gradation_model_parameters.csv", index=False)
+    model_registry().to_csv(DATA / "triggering_model_uncertainty_treatment.csv", index=False)
     features.to_csv(OUTPUTS / "site_calibrated_results.csv", index=False)
     pred.to_csv(OUTPUTS / "site_prediction_probabilities.csv", index=False)
+    fold_metrics.to_csv(OUTPUTS / "site_validation_leave_one_family_metrics.csv", index=False)
     metrics.to_csv(OUTPUTS / "site_validation_metrics.csv", index=False)
+    sodo_metrics.to_csv(OUTPUTS / "site_validation_sodo_uw_sensitivity.csv", index=False)
+    pair_fold_metrics.to_csv(OUTPUTS / "site_validation_paired_family_fold_metrics.csv", index=False)
+    pair_metrics.to_csv(OUTPUTS / "site_validation_paired_family_metrics.csv", index=False)
     model_comp = pred.merge(features[["site_id", "wtd_event_site_adjusted_m", "qc10_mpa", "ic_median", "theta_z_m"]], on="site_id", how="left")
     model_comp.rename(columns={"predicted_pf": "pf"}, inplace=True)
     model_comp["year"] = 2001
+    model_comp["layer_id"] = "site_screening_profile"
+    model_comp["csr"] = np.nan
+    model_comp["crr"] = np.nan
+    model_comp["fs"] = np.nan
+    model_comp["beta_equivalent"] = model_comp["pf"].apply(lambda x: beta_equivalent_from_pf(x) if pd.notna(x) else np.nan)
+    model_comp["critical_layer_rank"] = np.nan
     model_comp["notes"] = "spatial cross-fitted site-calibrated probability"
     model_comp.to_csv(OUTPUTS / "site_model_form_comparison.csv", index=False)
+    stress_rows = []
+    event_wtd = float(predict_groundwater(pd.Series([EVENT_DATE]), gw_params).iloc[0].gw_depth_mean_m)
+    for site_id, layers in profile.groupby("site_id"):
+        pga = float(summary.loc[summary.site_id.eq(site_id), "pga_g"].iloc[0])
+        for _, lyr in layers.iterrows():
+            z = float(lyr.z_mid_m)
+            sigma_v = compute_total_vertical_stress(layers, z)
+            pore = compute_pore_pressure(z, event_wtd)
+            sigma_eff = compute_effective_vertical_stress(layers, z, event_wtd)
+            rd = rd_benchmark_depth_only(z)
+            stress_rows.append(
+                {
+                    "site_id": site_id,
+                    "layer_id": lyr.layer_id,
+                    "z_mid_m": z,
+                    "gw_depth_event_m": event_wtd,
+                    "sigma_v_kpa": sigma_v,
+                    "pore_pressure_kpa": pore,
+                    "sigma_v_eff_kpa": sigma_eff,
+                    "rd_benchmark_depth_only": rd,
+                    "csr_seed_1971": csr_seed_1971(pga, sigma_v, sigma_eff, rd),
+                }
+            )
+    pd.DataFrame(stress_rows).to_csv(OUTPUTS / "site_triggering_stress_profile.csv", index=False)
     variogram_rows = []
     for site_id, g in cpt_all.groupby("site_id"):
         sub = g.iloc[:: max(len(g) // 200, 1)]
@@ -338,8 +543,9 @@ def main() -> None:
         variogram_rows.append(pars)
     pd.DataFrame(variogram_rows).to_csv(DATA / "site_vertical_variogram_parameters.csv", index=False)
     rf = features[["site_id", "theta_z_m"]].copy()
+    strict_pred = pred[pred.validation_protocol.str.startswith("strict sensitivity")]
     for name in ["M0_static_stationary", "M1_nonstationary_groundwater_only", "M2_nonstationary_groundwater_gradation", "M3_full_nonstationary_random_field"]:
-        tmp = pred[pred.model_name.eq(name)].set_index("site_id")["predicted_pf"]
+        tmp = strict_pred[strict_pred.model_name.eq(name)].set_index("site_id")["predicted_pf"]
         rf[f"pf_{name}"] = rf.site_id.map(tmp)
     rf["year"] = 2001
     rf["psys_any"] = rf["pf_M3_full_nonstationary_random_field"]
@@ -353,8 +559,12 @@ def main() -> None:
     _plot_validation(metrics, FIGURES / "fig07_model_form_comparison_site.png")
     emp = empirical_variogram(cpt_all.depth_m.iloc[::100].to_numpy(), np.log(np.clip(cpt_all.qc_mpa.iloc[::100].to_numpy(), 1e-3, None)))
     emp.to_csv(DATA / "site_vertical_variogram_empirical.csv", index=False)
+    global_variogram = fit_exponential_variogram(cpt_all.depth_m.iloc[::100].to_numpy(), np.log(np.clip(cpt_all.qc_mpa.iloc[::100].to_numpy(), 1e-3, None)))
+    _plot_variogram(emp, global_variogram, FIGURES / "fig08_vertical_variogram_fit.png")
     _plot_validation(metrics[metrics.model_name.str.contains("M")], FIGURES / "fig11_site_validation_brier.png")
-    print(metrics[["model_name", "auc", "brier_score", "log_loss", "calibration_intercept", "calibration_slope", "sensitivity", "specificity"]].to_string(index=False))
+    print(metrics[["model_name", "auc", "brier_score", "log_loss", "calibration_intercept", "calibration_slope", "sensitivity", "specificity", "mean_fold_brier"]].to_string(index=False))
+    print("\nStrict SODO+UW sensitivity")
+    print(sodo_metrics[["model_name", "auc", "brier_score", "log_loss", "calibration_intercept", "calibration_slope", "sensitivity", "specificity"]].to_string(index=False))
 
 
 if __name__ == "__main__":

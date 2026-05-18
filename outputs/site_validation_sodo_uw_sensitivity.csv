@@ -1,0 +1,5 @@
+auc,brier_score,log_loss,calibration_intercept,calibration_slope,sensitivity,specificity,tp,fp,tn,fn,model_name,n_train,n_test,validation_protocol
+1.0,0.06030375596443973,0.24884374498579026,0.04312465412873692,1.4615248033048178,1.0,1.0,4,0,4,0,M0_static_stationary,16,8,"strict sensitivity holdout: train on 16 non-SODO/UW cases, test on SODO+UW siblings"
+1.0,0.060471254325830476,0.2574475227157669,0.02956124103517547,1.4593987217648705,1.0,1.0,4,0,4,0,M1_nonstationary_groundwater_only,16,8,"strict sensitivity holdout: train on 16 non-SODO/UW cases, test on SODO+UW siblings"
+1.0,0.08165320846872415,0.27094935806226195,-0.005909243962729054,1.3880570912165708,0.75,1.0,3,0,4,1,M2_nonstationary_groundwater_gradation,16,8,"strict sensitivity holdout: train on 16 non-SODO/UW cases, test on SODO+UW siblings"
+1.0,0.08942941806640924,0.2986924574410856,-0.03351251501627018,1.3641653432873906,0.75,1.0,3,0,4,1,M3_full_nonstationary_random_field,16,8,"strict sensitivity holdout: train on 16 non-SODO/UW cases, test on SODO+UW siblings"

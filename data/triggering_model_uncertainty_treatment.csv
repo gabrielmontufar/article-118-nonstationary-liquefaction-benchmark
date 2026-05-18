@@ -1,0 +1,7 @@
+model_name,input_type,output_type,uncertainty_source,model_error_distribution,calibration_source,used_in_final_site_application,activation_status
+Benchmark_smooth,"synthetic SPT-like N1,60cs",deterministic FS converted to Pf by external error term,benchmark epsm only,lognormal multiplier in synthetic benchmark,internal reproducibility benchmark,False,retained for synthetic benchmark only
+BI14_SPT,"SPT N1,60cs",deterministic FS,procedure-specific corrections plus documented model uncertainty,not applied here because SPT is unavailable,Boulanger and Idriss SPT procedure,False,not activated: Nisqually dataset is CPT based
+BI14_CPT,CPT qc-derived resistance,deterministic FS / probability proxy,procedure-specific CPT corrections,reported through cross-fitted site proxy in this extension,Boulanger and Idriss CPT family,True,activated as CPT-compatible site proxy and cross-fitted validation model
+Cetin_SPT_probabilistic,"SPT N1,60 and fines content",direct probability,built-in probabilistic triggering model,not externally inflated,Cetin SPT probabilistic model,False,not activated: SPT and FC inputs are unavailable
+Moss_CPT_probabilistic,"CPT qc, fs and stress state",direct probability,built-in probabilistic CPT triggering model,not externally inflated,Moss CPT probabilistic model,False,registered for future exact implementation
+Kayen_Vs_probabilistic,Vs1 and stress state,direct probability,built-in probabilistic Vs triggering model,not externally inflated,Kayen Vs probabilistic model,False,not activated: profile Vs is unavailable

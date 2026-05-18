@@ -1,12 +1,12 @@
 site_id,theta_z_m,pf_M0_static_stationary,pf_M1_nonstationary_groundwater_only,pf_M2_nonstationary_groundwater_gradation,pf_M3_full_nonstationary_random_field,year,psys_any,psys_two_or_more,expected_failed_layers,median_critical_depth_m,random_field_model
 Capitol_Lake_01,0.9138655462184874,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
-SODO_01,0.9138655462184874,0.8674114002334676,0.8446442697264743,0.5821745217086376,0.5494440524239113,2001,0.5494440524239113,,,,site-specific exponential vertical variogram diagnostic
+SODO_01,0.9138655462184874,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Capitol_Lake_02,0.4159663865546218,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Harbor_Island_01,0.5819327731092436,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Harbor_Island_02,1.0798319327731092,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
-SODO_02,1.245798319327731,0.6341289023767129,0.6403073116720435,0.8702046978705364,0.7831626659613734,2001,0.7831626659613734,,,,site-specific exponential vertical variogram diagnostic
-SODO_03,0.7478991596638656,0.6252798892518805,0.6050618227282916,0.3863713825093943,0.38408720179976125,2001,0.38408720179976125,,,,site-specific exponential vertical variogram diagnostic
-SODO_04,0.5819327731092436,0.6163463387379681,0.6716582828626463,0.7429001147447986,0.776286556582786,2001,0.776286556582786,,,,site-specific exponential vertical variogram diagnostic
+SODO_02,1.245798319327731,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
+SODO_03,0.7478991596638656,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
+SODO_04,0.5819327731092436,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Boeing_Field_01,0.5819327731092436,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Duwamish_01,1.245798319327731,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Discovery_Park_01,0.7478991596638656,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
@@ -16,10 +16,10 @@ Smith_Cove_02,0.7478991596638656,,,,,2001,,,,,site-specific exponential vertical
 Emerald_Downs_01,0.7478991596638656,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Bush_School_01,0.5819327731092436,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Factoria_01,0.9138655462184874,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
-UW_01,0.25,0.10845592195146073,0.14914712506151762,0.06561709103045565,0.10536771000486546,2001,0.10536771000486546,,,,site-specific exponential vertical variogram diagnostic
-UW_02,0.4159663865546218,0.10845592195146073,0.14914712506151762,0.11540123851533798,0.14916244468986092,2001,0.14916244468986092,,,,site-specific exponential vertical variogram diagnostic
-UW_03,0.4159663865546218,0.1013318202378062,0.10654731887307983,0.03782113327605755,0.050345045308266924,2001,0.050345045308266924,,,,site-specific exponential vertical variogram diagnostic
-UW_04,0.5819327731092436,0.097927758307666,0.1030984654325745,0.010334368649342224,0.011556844078548111,2001,0.011556844078548111,,,,site-specific exponential vertical variogram diagnostic
+UW_01,0.25,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
+UW_02,0.4159663865546218,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
+UW_03,0.4159663865546218,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
+UW_04,0.5819327731092436,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Issaquah_01,0.4159663865546218,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Blair_Waterway_01,0.9138655462184874,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic
 Green_River_01,0.5819327731092436,,,,,2001,,,,,site-specific exponential vertical variogram diagnostic

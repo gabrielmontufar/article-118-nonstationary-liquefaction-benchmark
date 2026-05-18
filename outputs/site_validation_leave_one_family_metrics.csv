@@ -1,0 +1,61 @@
+auc,brier_score,log_loss,calibration_intercept,calibration_slope,sensitivity,specificity,tp,fp,tn,fn,holdout_family,model_name,n_train,n_test,n_test_liquefied,n_test_non_liquefied,validation_protocol
+,1.527185764508009e-06,0.001236557799380713,,,,1.0,0,0,1,0,Blair Waterway,M0_static_stationary,23,1,0,1,leave-one-site-family-out spatial validation
+,1.5611073921942834e-06,0.0012502240371810138,,,,1.0,0,0,1,0,Blair Waterway,M1_nonstationary_groundwater_only,23,1,0,1,leave-one-site-family-out spatial validation
+,3.5405117398083353e-09,5.950396977959411e-05,,,,1.0,0,0,1,0,Blair Waterway,M2_nonstationary_groundwater_gradation,23,1,0,1,leave-one-site-family-out spatial validation
+,1.519116451509498e-09,3.897660403973755e-05,,,,1.0,0,0,1,0,Blair Waterway,M3_full_nonstationary_random_field,23,1,0,1,leave-one-site-family-out spatial validation
+,0.013103231132770853,0.12156820442660415,,,1.0,,1,0,0,0,Boeing Field,M0_static_stationary,23,1,1,0,leave-one-site-family-out spatial validation
+,0.012461442728266128,0.11836789303131949,,,1.0,,1,0,0,0,Boeing Field,M1_nonstationary_groundwater_only,23,1,1,0,leave-one-site-family-out spatial validation
+,0.010415776658483946,0.10764948044118469,,,1.0,,1,0,0,0,Boeing Field,M2_nonstationary_groundwater_gradation,23,1,1,0,leave-one-site-family-out spatial validation
+,0.003845240399025109,0.0640159935840519,,,1.0,,1,0,0,0,Boeing Field,M3_full_nonstationary_random_field,23,1,1,0,leave-one-site-family-out spatial validation
+,2.672619041564e-05,0.005183147274903079,,,,1.0,0,0,1,0,Bush School,M0_static_stationary,23,1,0,1,leave-one-site-family-out spatial validation
+,2.6483941045045952e-05,0.005159542628160025,,,,1.0,0,0,1,0,Bush School,M1_nonstationary_groundwater_only,23,1,0,1,leave-one-site-family-out spatial validation
+,1.766535259071005e-05,0.004211874585730412,,,,1.0,0,0,1,0,Bush School,M2_nonstationary_groundwater_gradation,23,1,0,1,leave-one-site-family-out spatial validation
+,1.703200962312626e-05,0.004135525044922882,,,,1.0,0,0,1,0,Bush School,M3_full_nonstationary_random_field,23,1,0,1,leave-one-site-family-out spatial validation
+,0.0005204576034252968,0.02273019830358754,,,1.0,,2,0,0,0,Capitol Lake,M0_static_stationary,22,2,2,0,leave-one-site-family-out spatial validation
+,0.00042813898813150506,0.020452062085481428,,,1.0,,2,0,0,0,Capitol Lake,M1_nonstationary_groundwater_only,22,2,2,0,leave-one-site-family-out spatial validation
+,4.0102076896068875e-05,0.006251819081191133,,,1.0,,2,0,0,0,Capitol Lake,M2_nonstationary_groundwater_gradation,22,2,2,0,leave-one-site-family-out spatial validation
+,3.624869746571967e-05,0.005188234202567971,,,1.0,,2,0,0,0,Capitol Lake,M3_full_nonstationary_random_field,22,2,2,0,leave-one-site-family-out spatial validation
+,2.964956466344304e-08,0.0001722053159529358,,,,1.0,0,0,1,0,Discovery Park,M0_static_stationary,23,1,0,1,leave-one-site-family-out spatial validation
+,2.595910187383102e-08,0.00016113126629430522,,,,1.0,0,0,1,0,Discovery Park,M1_nonstationary_groundwater_only,23,1,0,1,leave-one-site-family-out spatial validation
+,3.18811995213969e-08,0.0001785690144996069,,,,1.0,0,0,1,0,Discovery Park,M2_nonstationary_groundwater_gradation,23,1,0,1,leave-one-site-family-out spatial validation
+,9.06701109591205e-09,9.522538810537501e-05,,,,1.0,0,0,1,0,Discovery Park,M3_full_nonstationary_random_field,23,1,0,1,leave-one-site-family-out spatial validation
+,0.8230533442311253,2.3775551633088123,,,,0.0,0,1,0,0,Duwamish,M0_static_stationary,23,1,0,1,leave-one-site-family-out spatial validation
+,0.8417858869880254,2.494822484670684,,,,0.0,0,1,0,0,Duwamish,M1_nonstationary_groundwater_only,23,1,0,1,leave-one-site-family-out spatial validation
+,0.2585549692327824,0.7102587678892752,,,,0.0,0,1,0,0,Duwamish,M2_nonstationary_groundwater_gradation,23,1,0,1,leave-one-site-family-out spatial validation
+,0.49716655888413186,1.221120283013285,,,,0.0,0,1,0,0,Duwamish,M3_full_nonstationary_random_field,23,1,0,1,leave-one-site-family-out spatial validation
+,0.0019751709064026934,0.04546075245367212,,,,1.0,0,0,1,0,Elliott Ave,M0_static_stationary,23,1,0,1,leave-one-site-family-out spatial validation
+,0.0025806325436353882,0.0521356771033503,,,,1.0,0,0,1,0,Elliott Ave,M1_nonstationary_groundwater_only,23,1,0,1,leave-one-site-family-out spatial validation
+,0.01021013125684246,0.10652251733186201,,,,1.0,0,0,1,0,Elliott Ave,M2_nonstationary_groundwater_gradation,23,1,0,1,leave-one-site-family-out spatial validation
+,0.01687383468410096,0.13914635585275587,,,,1.0,0,0,1,0,Elliott Ave,M3_full_nonstationary_random_field,23,1,0,1,leave-one-site-family-out spatial validation
+,0.032333622934098964,0.19822599418488396,,,,1.0,0,0,1,0,Emerald Downs,M0_static_stationary,23,1,0,1,leave-one-site-family-out spatial validation
+,0.075936524260416,0.3223643779944795,,,,1.0,0,0,1,0,Emerald Downs,M1_nonstationary_groundwater_only,23,1,0,1,leave-one-site-family-out spatial validation
+,0.000915711441311904,0.030728031657614868,,,,1.0,0,0,1,0,Emerald Downs,M2_nonstationary_groundwater_gradation,23,1,0,1,leave-one-site-family-out spatial validation
+,0.0016050640020867943,0.04088788212727871,,,,1.0,0,0,1,0,Emerald Downs,M3_full_nonstationary_random_field,23,1,0,1,leave-one-site-family-out spatial validation
+,1.0375806757313119e-06,0.0010191361836686852,,,,1.0,0,0,1,0,Factoria,M0_static_stationary,23,1,0,1,leave-one-site-family-out spatial validation
+,1.5015056194247852e-06,0.0012261107504514378,,,,1.0,0,0,1,0,Factoria,M1_nonstationary_groundwater_only,23,1,0,1,leave-one-site-family-out spatial validation
+,1.5935856270449677e-07,0.0003992770986613936,,,,1.0,0,0,1,0,Factoria,M2_nonstationary_groundwater_gradation,23,1,0,1,leave-one-site-family-out spatial validation
+,4.754562668112359e-08,0.00021807337310747338,,,,1.0,0,0,1,0,Factoria,M3_full_nonstationary_random_field,23,1,0,1,leave-one-site-family-out spatial validation
+,0.10455624403198739,0.39060346090904646,,,,1.0,0,0,1,0,Green River,M0_static_stationary,23,1,0,1,leave-one-site-family-out spatial validation
+,0.4966921995945446,1.2199800115382646,,,,0.0,0,1,0,0,Green River,M1_nonstationary_groundwater_only,23,1,0,1,leave-one-site-family-out spatial validation
+,0.012959225280130033,0.12085617014383924,,,,1.0,0,0,1,0,Green River,M2_nonstationary_groundwater_gradation,23,1,0,1,leave-one-site-family-out spatial validation
+,0.10298673014405588,0.387009647216732,,,,1.0,0,0,1,0,Green River,M3_full_nonstationary_random_field,23,1,0,1,leave-one-site-family-out spatial validation
+,0.32047485746248716,0.8362606069618568,,,0.0,,0,0,0,2,Harbor Island,M0_static_stationary,22,2,2,0,leave-one-site-family-out spatial validation
+,0.4183440084289045,1.0556304201256206,,,0.0,,0,0,0,2,Harbor Island,M1_nonstationary_groundwater_only,22,2,2,0,leave-one-site-family-out spatial validation
+,3.3211501943509194e-07,0.0004982009885174177,,,1.0,,2,0,0,0,Harbor Island,M2_nonstationary_groundwater_gradation,22,2,2,0,leave-one-site-family-out spatial validation
+,5.21134682694132e-06,0.002275413212986,,,1.0,,2,0,0,0,Harbor Island,M3_full_nonstationary_random_field,22,2,2,0,leave-one-site-family-out spatial validation
+,8.2872293486826e-05,0.00914511142573616,,,,1.0,0,0,1,0,Issaquah,M0_static_stationary,23,1,0,1,leave-one-site-family-out spatial validation
+,9.355046725278267e-05,0.00971922810035116,,,,1.0,0,0,1,0,Issaquah,M1_nonstationary_groundwater_only,23,1,0,1,leave-one-site-family-out spatial validation
+,0.00022328422890384033,0.015055465065745658,,,,1.0,0,0,1,0,Issaquah,M2_nonstationary_groundwater_gradation,23,1,0,1,leave-one-site-family-out spatial validation
+,0.0009046705778249164,0.030539357328411024,,,,1.0,0,0,1,0,Issaquah,M3_full_nonstationary_random_field,23,1,0,1,leave-one-site-family-out spatial validation
+,0.029071622895325,0.16721158706024872,,,1.0,,4,0,0,0,SODO,M0_static_stationary,20,4,4,0,leave-one-site-family-out spatial validation
+,0.02922034315351306,0.16765293771842832,,,1.0,,4,0,0,0,SODO,M1_nonstationary_groundwater_only,20,4,4,0,leave-one-site-family-out spatial validation
+,0.07879732457812744,0.25183371807568494,,,0.75,,3,0,0,1,SODO,M2_nonstationary_groundwater_gradation,20,4,4,0,leave-one-site-family-out spatial validation
+,0.0728112607374968,0.2478198654760262,,,0.75,,3,0,0,1,SODO,M3_full_nonstationary_random_field,20,4,4,0,leave-one-site-family-out spatial validation
+,0.00015265574957130113,0.012420527974058172,,,,1.0,0,0,2,0,Smith Cove,M0_static_stationary,22,2,0,2,leave-one-site-family-out spatial validation
+,0.00014194689122036305,0.011985468668306479,,,,1.0,0,0,2,0,Smith Cove,M1_nonstationary_groundwater_only,22,2,0,2,leave-one-site-family-out spatial validation
+,0.0038363184495165707,0.0463243398732768,,,,1.0,0,0,2,0,Smith Cove,M2_nonstationary_groundwater_gradation,22,2,0,2,leave-one-site-family-out spatial validation
+,0.0005078028483330917,0.016645817209907942,,,,1.0,0,0,2,0,Smith Cove,M3_full_nonstationary_random_field,22,2,0,2,leave-one-site-family-out spatial validation
+,0.0002211323679942731,0.014895173304858268,,,,1.0,0,0,4,0,UW,M0_static_stationary,20,4,0,4,leave-one-site-family-out spatial validation
+,0.0003890104801034337,0.019420232849526164,,,,1.0,0,0,4,0,UW,M1_nonstationary_groundwater_only,20,4,0,4,leave-one-site-family-out spatial validation
+,2.1342038225347475e-05,0.0032903765960139494,,,,1.0,0,0,4,0,UW,M2_nonstationary_groundwater_gradation,20,4,0,4,leave-one-site-family-out spatial validation
+,0.00021809736900931328,0.011366974830750737,,,,1.0,0,0,4,0,UW,M3_full_nonstationary_random_field,20,4,0,4,leave-one-site-family-out spatial validation

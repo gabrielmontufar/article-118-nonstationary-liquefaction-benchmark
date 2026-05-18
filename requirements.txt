@@ -3,3 +3,4 @@ pandas>=2.0
 Pillow>=10.0
 openpyxl>=3.1
 liquepy>=0.6.28
+scipy>=1.11
