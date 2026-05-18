@@ -6,7 +6,7 @@ This folder contains the reproducible benchmark for the manuscript:
 
 Public repository: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark>
 
-Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.6-final-manuscript-figures>
+Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.7-geosciences-journal-retarget>
 
 ## Purpose
 
@@ -22,8 +22,8 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `scripts/run_119_site_calibrated_application.py`: site-calibrated Nisqually extension using DesignSafe PRJ-3758 CPT case histories.
 - `scripts/run_120_canterbury_temporal_site_application.py`: Canterbury PRJ-2937 temporal site application for 100 Osbourne St CPT01.
 - `src/`: modular support code for groundwater calibration, gradation-status handling, stress calculations, triggering-model registry, vertical random-field diagnostics and validation metrics.
-- `manuscript/A reproducible reliability benchmark.docx`: final manuscript file used as the source for the repository PNG figures.
-- `manuscript/Supplementary diagnostic tables article 118 - Discover Geoscience.docx`: supplementary Word file containing Tables S1-S4 and expanded explanations.
+- `manuscript/A reproducible reliability benchmark - Geosciences Journal.docx`: final manuscript file used as the source for the repository PNG figures.
+- `manuscript/Supplementary diagnostic tables article 118 - Geosciences Journal.docx`: supplementary Word file containing Tables S1-S4 and expanded explanations.
 - `data/synthetic_layer_profile.csv`: synthetic layered profile.
 - `data/liquefaction_benchmark_results.csv`: layer-time-scenario Monte Carlo results.
 - `data/liquefaction_benchmark_summary.csv`: scenario-level summary.
