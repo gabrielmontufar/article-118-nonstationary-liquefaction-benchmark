@@ -6,7 +6,7 @@ This folder contains the reproducible benchmark for the manuscript:
 
 Public repository: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark>
 
-Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.5-site-validation-loo>
+Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.6-final-manuscript-figures>
 
 ## Purpose
 
@@ -22,6 +22,8 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `scripts/run_119_site_calibrated_application.py`: site-calibrated Nisqually extension using DesignSafe PRJ-3758 CPT case histories.
 - `scripts/run_120_canterbury_temporal_site_application.py`: Canterbury PRJ-2937 temporal site application for 100 Osbourne St CPT01.
 - `src/`: modular support code for groundwater calibration, gradation-status handling, stress calculations, triggering-model registry, vertical random-field diagnostics and validation metrics.
+- `manuscript/A reproducible reliability benchmark.docx`: final manuscript file used as the source for the repository PNG figures.
+- `manuscript/Supplementary diagnostic tables article 118 - Discover Geoscience.docx`: supplementary Word file containing Tables S1-S4 and expanded explanations.
 - `data/synthetic_layer_profile.csv`: synthetic layered profile.
 - `data/liquefaction_benchmark_results.csv`: layer-time-scenario Monte Carlo results.
 - `data/liquefaction_benchmark_summary.csv`: scenario-level summary.
@@ -65,17 +67,17 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `outputs/site_triggering_stress_profile.csv`: layer-wise total stress, pore pressure, effective stress, depth-only rd and CSR seed terms for the site application.
 - `outputs/canterbury_temporal_prediction_probabilities.csv`: M0-M3 probability predictions for the Canterbury event sequence.
 - `outputs/canterbury_temporal_validation_metrics.csv`: Brier, log-loss, AUC, calibration, sensitivity and specificity for the Canterbury temporal transfer.
-- `figures/fig01_pf_time_extreme_accumulation.png`: layer probability histories.
-- `figures/fig02_profile_mean_pf_by_scenario.png`: profile-average probability by groundwater scenario.
-- `figures/fig03_depth_time_pf_heatmap.png`: depth-time probability map.
-- `figures/fig04_global_sensitivity_rank.png`: global rank-correlation sensitivity chart.
-- `figures/fig05_external_case_history_sanity_auc.png`: AUC chart for the external case-history sanity check.
-- `figures/fig06_site_groundwater_calibration.png`: observed Nisqually WTD points, calibrated mean trajectory, 95% interval and event date.
-- `figures/fig07_model_form_comparison_site.png`: M0-M3 out-of-sample Brier comparison for the site application.
-- `figures/fig08_vertical_variogram_fit.png`: empirical and fitted vertical variogram for the CPT log(qc) diagnostic.
-- `figures/fig09_canterbury_temporal_pf.png`: Canterbury 100 Osbourne Pf(t) over the three documented events.
+- `figures/fig01_pf_time_extreme_accumulation.png`: final manuscript Fig. 1, layer probability histories.
+- `figures/fig02_profile_mean_pf_by_scenario.png`: final manuscript Fig. 2, profile-average probability by groundwater scenario.
+- `figures/fig03_depth_time_pf_heatmap.png`: final manuscript Fig. 3, depth-time probability map.
+- `figures/fig04_global_sensitivity_rank.png`: final manuscript Fig. 4, global rank-correlation sensitivity chart.
+- `figures/fig05_external_case_history_sanity_auc.png`: final manuscript Fig. 5, AUC chart for the external case-history sanity check.
+- `figures/fig06_site_groundwater_calibration.png`: final manuscript Fig. 6, observed Nisqually WTD points, calibrated mean trajectory, 95% interval and event date.
+- `figures/fig07_model_form_comparison_site.png`: final manuscript Fig. 7, M0-M3 out-of-sample Brier comparison for the site application.
+- `figures/fig08_vertical_variogram_fit.png`: final manuscript Fig. 8, empirical and fitted vertical variogram for the CPT log(qc) diagnostic.
+- `figures/fig09_canterbury_temporal_pf.png`: final manuscript Fig. 9, Canterbury 100 Osbourne Pf(t) over the three documented events.
 
-SVG versions of the figures are also included for editable vector use.
+The PNG figures in `figures/` were extracted from the final manuscript DOCX so that the repository figure set matches the submitted document.
 
 ## Reproducibility
 

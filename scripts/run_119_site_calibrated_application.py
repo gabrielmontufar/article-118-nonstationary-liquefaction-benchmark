@@ -561,7 +561,6 @@ def main() -> None:
     emp.to_csv(DATA / "site_vertical_variogram_empirical.csv", index=False)
     global_variogram = fit_exponential_variogram(cpt_all.depth_m.iloc[::100].to_numpy(), np.log(np.clip(cpt_all.qc_mpa.iloc[::100].to_numpy(), 1e-3, None)))
     _plot_variogram(emp, global_variogram, FIGURES / "fig08_vertical_variogram_fit.png")
-    _plot_validation(metrics[metrics.model_name.str.contains("M")], FIGURES / "fig11_site_validation_brier.png")
     print(metrics[["model_name", "auc", "brier_score", "log_loss", "calibration_intercept", "calibration_slope", "sensitivity", "specificity", "mean_fold_brier"]].to_string(index=False))
     print("\nStrict SODO+UW sensitivity")
     print(sodo_metrics[["model_name", "auc", "brier_score", "log_loss", "calibration_intercept", "calibration_slope", "sensitivity", "specificity"]].to_string(index=False))
