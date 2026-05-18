@@ -4,6 +4,10 @@ This folder contains the reproducible benchmark for the manuscript:
 
 **A reproducible reliability benchmark for non-stationary liquefaction probability under groundwater and gradation-change scenarios**
 
+Public repository: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark>
+
+Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.0>
+
 ## Purpose
 
 The benchmark evaluates how time-dependent groundwater depth and gradation changes alter the probability of liquefaction in a layered soil profile. It compares:
