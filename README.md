@@ -22,8 +22,8 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `scripts/run_119_site_calibrated_application.py`: site-calibrated Nisqually extension using DesignSafe PRJ-3758 CPT case histories.
 - `scripts/run_120_canterbury_temporal_site_application.py`: Canterbury PRJ-2937 temporal site application for 100 Osbourne St CPT01.
 - `src/`: modular support code for groundwater calibration, gradation-status handling, stress calculations, triggering-model registry, vertical random-field diagnostics and validation metrics.
-- `manuscript/Article 118 manuscript - Geomechanics Geoengineering.docx`: final manuscript file used as the source for the repository PNG figures.
-- `manuscript/Supplementary tables - Geomechanics Geoengineering.docx`: supplementary Word file containing Tables S1-S4 and expanded explanations.
+- `manuscript/A reproducible reliability benchmark for non.docx`: final manuscript file used as the source for the repository PNG figures.
+- `manuscript/Supplementary Diagnostic Tables.docx`: supplementary Word file containing Tables S1-S4 and expanded explanations.
 - `data/synthetic_layer_profile.csv`: synthetic layered profile.
 - `data/liquefaction_benchmark_results.csv`: layer-time-scenario Monte Carlo results.
 - `data/liquefaction_benchmark_summary.csv`: scenario-level summary.
