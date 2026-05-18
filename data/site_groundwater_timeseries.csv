@@ -1,0 +1,25 @@
+site_id,date,gw_depth_m,data_source,measurement_type,screen_depth_m,datum,uncertainty_sd_m
+Capitol_Lake_01,1995-12-18,0.6096,"Milbor-Pita, Inc. (1996)",CPT report water-table depth,,ground surface,0.35
+SODO_01,1995-01-17,3.048,Dames and Moore (1997),CPT report water-table depth,,ground surface,0.35
+Capitol_Lake_02,1995-12-18,1.524,"Milbor-Pita, Inc. (1996)",CPT report water-table depth,,ground surface,0.35
+Harbor_Island_01,1999-03-09,3.2918400000000005,"PacRim Geotechnical, Inc. (1999)",CPT report water-table depth,,ground surface,0.35
+Harbor_Island_02,1997-07-19,2.4384,"Shannon & Wilson, Inc. (1997)",CPT report water-table depth,,ground surface,0.35
+SODO_02,1992-02-24,2.1336,Earth Consultants Inc. (1992),CPT report water-table depth,,ground surface,0.35
+SODO_03,1987-07-27,2.7432000000000003,Rittenhouse-Zeman & Associates (1987),CPT report water-table depth,,ground surface,0.35
+SODO_04,2003-03-24,0.9906,"GeoEngineers, Inc. (2003)",CPT report water-table depth,,ground surface,0.35
+Boeing_Field_01,2000-03-31,2.1336,"Terra Associates, Inc. (2000)",CPT report water-table depth,,ground surface,0.35
+Duwamish_01,1990-05-06,2.286,"GeoEngineers, Inc. (1990)",CPT report water-table depth,,ground surface,0.35
+Discovery_Park_01,1989-01-10,3.9624,CH2M Hill Engineering Inc. (1989),CPT report water-table depth,,ground surface,0.35
+Elliott_Ave_01,1997-08-13,1.8288000000000002,"Shannon & Wilson, Inc. (1997)",CPT report water-table depth,,ground surface,0.35
+Smith_Cove_01,1997-11-14,2.7432000000000003,"Shannon & Wilson, Inc. (1998)",CPT report water-table depth,,ground surface,0.35
+Smith_Cove_02,2000-02-11,3.6576000000000004,"Terra Associates, Inc. (2000)",CPT report water-table depth,,ground surface,0.35
+Emerald_Downs_01,1992-09-14,1.0,"GeoEngineers, Inc. (1993)",CPT report water-table depth,,ground surface,0.35
+Bush_School_01,2002-06-11,3.048,"Zipper Zeman Associates, Inc. (2002)",CPT report water-table depth,,ground surface,0.35
+Factoria_01,1979-02-08,1.524,Hart-Crowser & Associates Inc. (1985),CPT report water-table depth,,ground surface,0.35
+UW_01,1996-02-28,0.762,"AGRA Earth & Environmental, Inc. (1996)",CPT report water-table depth,,ground surface,0.35
+UW_02,1996-02-29,0.762,"AGRA Earth & Environmental, Inc. (1996)",CPT report water-table depth,,ground surface,0.35
+UW_03,1996-02-09,2.4384,"AGRA Earth & Environmental, Inc. (1996)",CPT report water-table depth,,ground surface,0.35
+UW_04,1996-02-12,2.4384,"AGRA Earth & Environmental, Inc. (1996)",CPT report water-table depth,,ground surface,0.35
+Issaquah_01,1992-10-13,2.4384,"RZA AGRA, Inc. (1993)",CPT report water-table depth,,ground surface,0.35
+Blair_Waterway_01,1981-02-09,3.048,"Hart-Crowser & Associates, Inc. (1981)",CPT report water-table depth,,ground surface,0.35
+Green_River_01,1978-11-01,5.1816,"Hart-Crowser & Associates, Inc. (1978)",CPT report water-table depth,,ground surface,0.35

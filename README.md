@@ -19,6 +19,8 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 ## Files
 
 - `scripts/run_118_nonstationary_liquefaction_benchmark.py`: self-contained Python script.
+- `scripts/run_119_site_calibrated_application.py`: site-calibrated Nisqually extension using DesignSafe PRJ-3758 CPT case histories.
+- `src/`: modular support code for groundwater calibration, stress calculations, vertical random-field diagnostics and validation metrics.
 - `data/synthetic_layer_profile.csv`: synthetic layered profile.
 - `data/liquefaction_benchmark_results.csv`: layer-time-scenario Monte Carlo results.
 - `data/liquefaction_benchmark_summary.csv`: scenario-level summary.
@@ -40,11 +42,23 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `data/field_validation_cases.csv`: field case-history validation table from Hu et al. (2021), including the Wenchuan subset, groundwater depth, PGA/CSR, N120/Vs, fines/gravel content, and observed liquefied/non-liquefied labels.
 - `data/field_validation_metrics.csv`: Hu full-set and Wenchuan-subset AUC, five-fold Brier score, confusion matrix, sensitivity, specificity, and threshold diagnostics.
 - `data/field_validation_thresholds.csv`: prespecified and apparent Youden thresholds for the field validation scores.
+- `data/site_profile_calibrated.csv`: measured Nisqually CPT profile summaries by site/layer.
+- `data/site_groundwater_timeseries.csv`: reported Nisqually water-table depths with dates.
+- `data/site_gradation_timeseries.csv`: gradation-status table; FC/D50 are not reported in PRJ-3758 and are therefore not treated as calibrated time-varying quantities.
+- `data/site_event_observations.csv`: Nisqually event, PGA and manifestation observations.
+- `data/site_groundwater_model_parameters.csv`: calibrated groundwater trajectory coefficients.
+- `data/site_gradation_model_parameters.csv`: gradation model status by layer.
+- `data/site_vertical_variogram_parameters.csv`: CPT-derived vertical variogram diagnostics.
+- `outputs/site_validation_metrics.csv`: out-of-sample M0-M3 validation metrics using a held-out SODO+UW family split.
+- `outputs/site_model_form_comparison.csv`: site-calibrated model-form probability comparison.
+- `outputs/site_random_field_system_probability.csv`: random-field system-probability diagnostic for the site extension.
 - `figures/fig01_pf_time_extreme_accumulation.png`: layer probability histories.
 - `figures/fig02_profile_mean_pf_by_scenario.png`: profile-average probability by groundwater scenario.
 - `figures/fig03_depth_time_pf_heatmap.png`: depth-time probability map.
 - `figures/fig04_global_sensitivity_rank.png`: global rank-correlation sensitivity chart.
 - `figures/fig05_external_case_history_sanity_auc.png`: AUC chart for the external case-history sanity check.
+- `figures/fig06_site_groundwater_calibration.png`: observed Nisqually WTD points, calibrated mean trajectory, 95% interval and event date.
+- `figures/fig07_model_form_comparison_site.png`: M0-M3 out-of-sample Brier comparison for the site application.
 
 SVG versions of the figures are also included for editable vector use.
 
@@ -57,6 +71,7 @@ py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 python .\scripts\run_118_nonstationary_liquefaction_benchmark.py
+python .\scripts\run_119_site_calibrated_application.py
 ```
 
 Python dependencies:
@@ -97,7 +112,13 @@ The benchmark includes a secondary external check using the open case-history da
 
 The external check also reports five-fold calibrated Brier scores, confusion matrices and a static limit-state proxy for the subset of Hu et al. cases with CSR, resistance and fines-content data. These diagnostics are compatibility checks only. They do not validate the non-stationary benchmark or replace calibration against a site-specific field dataset.
 
-The field-validation tables promote the Hu et al. case-history data from a directional sanity check to a minimum field validation exercise. They report the full Hu case-history set and the Wenchuan documented-earthquake subset separately, using recorded groundwater depth, PGA/CSR demand, N120 and Vs resistance proxies, and observed liquefied/non-liquefied outcomes. Thresholds marked as `best_youden` are apparent thresholds selected on the same validation split and should be interpreted as diagnostic operating points rather than independent design thresholds.
+The Hu et al. and Wenchuan tables are external case-history compatibility checks. They evaluate whether demand, resistance and groundwater indicators rank observed liquefied cases above non-liquefied cases. They do not constitute a calibrated non-stationary field application.
+
+## Site-calibrated extension
+
+The Nisqually extension uses the DesignSafe PRJ-3758 CPT case-history dataset. It separates the reproducible synthetic benchmark from a documented-site application. The available data include CPT depth profiles, coordinates, CPT dates, reported water-table depth, conditional PGA and liquefaction manifestation. FC, D50 and laboratory gradation histories are not reported in the downloaded PRJ-3758 XLSX files; gradation is therefore treated as baseline uncertainty/proxy information through CPT-derived Ic, and the synthetic fines-accumulation/fines-washout paths remain scenario sensitivities rather than validated site predictions.
+
+The validation protocol is intentionally out-of-sample: M0-M3 are trained on 16 non-SODO/UW case histories and evaluated on the held-out SODO+UW site families. In the current strict split, M2 and M3 improve model richness but do not improve Brier score relative to the simple M0 baseline. This negative/mixed result is retained because it is a scientifically useful stress test: the site extension demonstrates data insertion, groundwater calibration and random-field diagnostics, but it does not claim that non-stationarity improves predictive calibration for this small Nisqually holdout.
 
 ## Methodological note
 

@@ -1,0 +1,25 @@
+site_id,borehole_id,pga_g,observed_liquefaction,manifestation_type,data_source,event_name,event_date,mw,csr_7p5,evidence_quality,notes
+Capitol_Lake_01,Capitol_Lake_01,0.221,1,Yes,"Walsh, TJ (2001)",2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+SODO_01,SODO_01,0.234,1,Yes,Bray et al. (2001),2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Capitol_Lake_02,Capitol_Lake_02,0.217,1,Yes,Bray et al. (2001),2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Harbor_Island_01,Harbor_Island_01,0.18,1,Yes,Bray et al. (2001),2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Harbor_Island_02,Harbor_Island_02,0.184,1,Yes,Seattle Office of Emergency Management (2019),2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+SODO_02,SODO_02,0.199,1,Yes,Hausler and Koelling (2004),2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+SODO_03,SODO_03,0.198,1,Yes,"Bray et al. (2001), Seattle Office of Emergency Management (2019)",2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+SODO_04,SODO_04,0.197,1,Yes,"GeoEngineers Inc. (2003), Bray et al. (2001)",2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Boeing_Field_01,Boeing_Field_01,0.201,1,Yes,Bray et al. (2001),2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Duwamish_01,Duwamish_01,0.192,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Discovery_Park_01,Discovery_Park_01,0.084,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Elliott_Ave_01,Elliott_Ave_01,0.142,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Smith_Cove_01,Smith_Cove_01,0.127,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Smith_Cove_02,Smith_Cove_02,0.128,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Emerald_Downs_01,Emerald_Downs_01,0.158,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Bush_School_01,Bush_School_01,0.119,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Factoria_01,Factoria_01,0.102,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+UW_01,UW_01,0.129,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+UW_02,UW_02,0.129,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+UW_03,UW_03,0.127,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+UW_04,UW_04,0.126,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Issaquah_01,Issaquah_01,0.125,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Blair_Waterway_01,Blair_Waterway_01,0.104,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
+Green_River_01,Green_River_01,0.166,0,No,-,2001 Nisqually earthquake,2001-02-28,6.8,,published case-history manifestation,Nisqually CPT case-history observation
