@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="100%" height="100%" fill="white"/>
+<line x1="90" y1="490" x2="870" y2="490" stroke="#333"/>
+<line x1="90" y1="70" x2="90" y2="490" stroke="#333"/>
+<text x="450.0" y="540" text-anchor="middle" font-family="Arial" font-size="14">Time horizon (years)</text>
+<text x="24" y="280.0" transform="rotate(-90 24,280.0)" text-anchor="middle" font-family="Arial" font-size="14">Mean profile Pf</text>
+<line x1="90.0" y1="490" x2="90.0" y2="496" stroke="#333"/>
+<text x="90.0" y="514" text-anchor="middle" font-family="Arial" font-size="12">0</text>
+<line x1="246.0" y1="490" x2="246.0" y2="496" stroke="#333"/>
+<text x="246.0" y="514" text-anchor="middle" font-family="Arial" font-size="12">10</text>
+<line x1="402.0" y1="490" x2="402.0" y2="496" stroke="#333"/>
+<text x="402.0" y="514" text-anchor="middle" font-family="Arial" font-size="12">20</text>
+<line x1="558.0" y1="490" x2="558.0" y2="496" stroke="#333"/>
+<text x="558.0" y="514" text-anchor="middle" font-family="Arial" font-size="12">30</text>
+<line x1="714.0" y1="490" x2="714.0" y2="496" stroke="#333"/>
+<text x="714.0" y="514" text-anchor="middle" font-family="Arial" font-size="12">40</text>
+<line x1="870.0" y1="490" x2="870.0" y2="496" stroke="#333"/>
+<text x="870.0" y="514" text-anchor="middle" font-family="Arial" font-size="12">50</text>
+<line x1="84" y1="490.0" x2="90" y2="490.0" stroke="#333"/>
+<line x1="90" y1="490.0" x2="870" y2="490.0" stroke="#e6e6e6"/>
+<text x="78" y="494.0" text-anchor="end" font-family="Arial" font-size="12">0.00</text>
+<line x1="84" y1="406.0" x2="90" y2="406.0" stroke="#333"/>
+<line x1="90" y1="406.0" x2="870" y2="406.0" stroke="#e6e6e6"/>
+<text x="78" y="410.0" text-anchor="end" font-family="Arial" font-size="12">0.13</text>
+<line x1="84" y1="322.0" x2="90" y2="322.0" stroke="#333"/>
+<line x1="90" y1="322.0" x2="870" y2="322.0" stroke="#e6e6e6"/>
+<text x="78" y="326.0" text-anchor="end" font-family="Arial" font-size="12">0.25</text>
+<line x1="84" y1="238.0" x2="90" y2="238.0" stroke="#333"/>
+<line x1="90" y1="238.0" x2="870" y2="238.0" stroke="#e6e6e6"/>
+<text x="78" y="242.0" text-anchor="end" font-family="Arial" font-size="12">0.38</text>
+<line x1="84" y1="154.0" x2="90" y2="154.0" stroke="#333"/>
+<line x1="90" y1="154.0" x2="870" y2="154.0" stroke="#e6e6e6"/>
+<text x="78" y="158.0" text-anchor="end" font-family="Arial" font-size="12">0.51</text>
+<line x1="84" y1="70.0" x2="90" y2="70.0" stroke="#333"/>
+<line x1="90" y1="70.0" x2="870" y2="70.0" stroke="#e6e6e6"/>
+<text x="78" y="74.0" text-anchor="end" font-family="Arial" font-size="12">0.63</text>
+<polyline points="90.0,242.2 121.2,246.8 152.4,247.6 183.6,248.8 214.8,250.7 246.0,251.3 277.2,254.0 308.4,256.1 339.6,258.9 370.8,262.0 402.0,261.6 433.2,264.7 464.4,267.3 495.6,269.9 526.8,270.0 558.0,271.9 589.2,273.7 620.4,277.7 651.6,280.5 682.8,280.4 714.0,281.7 745.2,284.5 776.4,286.2 807.6,288.5 838.8,289.7 870.0,291.8" fill="none" stroke="#1f77b4" stroke-width="3"/>
+<rect x="640" y="70" width="16" height="3" fill="#1f77b4"/>
+<text x="662" y="76" font-family="Arial" font-size="12">stationary</text>
+<polyline points="90.0,242.3 121.2,240.8 152.4,238.9 183.6,240.1 214.8,239.8 246.0,238.3 277.2,238.8 308.4,238.6 339.6,234.6 370.8,232.5 402.0,233.5 433.2,229.7 464.4,228.2 495.6,228.1 526.8,226.5 558.0,222.4 589.2,219.4 620.4,217.1 651.6,216.5 682.8,210.8 714.0,208.7 745.2,201.6 776.4,201.4 807.6,194.3 838.8,190.0 870.0,187.6" fill="none" stroke="#d62728" stroke-width="3"/>
+<rect x="640" y="94" width="16" height="3" fill="#d62728"/>
+<text x="662" y="100" font-family="Arial" font-size="12">rising</text>
+<polyline points="90.0,240.5 121.2,260.7 152.4,256.6 183.6,233.0 214.8,227.4 246.0,250.9 277.2,263.9 308.4,260.9 339.6,241.5 370.8,234.0 402.0,253.5 433.2,271.8 464.4,265.3 495.6,244.9 526.8,240.4 558.0,259.0 589.2,279.3 620.4,272.7 651.6,251.5 682.8,246.4 714.0,265.1 745.2,286.1 776.4,280.8 807.6,258.9 838.8,250.2 870.0,272.3" fill="none" stroke="#2ca02c" stroke-width="3"/>
+<rect x="640" y="118" width="16" height="3" fill="#2ca02c"/>
+<text x="662" y="124" font-family="Arial" font-size="12">seasonal</text>
+<polyline points="90.0,243.6 121.2,253.1 152.4,247.6 183.6,235.9 214.8,228.8 246.0,242.3 277.2,253.8 308.4,252.4 339.6,234.7 370.8,229.4 402.0,241.4 433.2,253.0 464.4,249.1 495.6,231.6 526.8,223.9 558.0,150.1 589.2,172.7 620.4,161.3 651.6,127.2 682.8,118.8 714.0,137.7 745.2,159.8 776.4,147.1 807.6,116.8 838.8,115.0 870.0,126.0" fill="none" stroke="#9467bd" stroke-width="3"/>
+<rect x="640" y="142" width="16" height="3" fill="#9467bd"/>
+<text x="662" y="148" font-family="Arial" font-size="12">extreme</text>
+</svg>

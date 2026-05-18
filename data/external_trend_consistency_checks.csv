@@ -1,0 +1,4 @@
+claim,source,benchmark_check,status
+Groundwater depth is a controlling input in liquefaction probability.,Holzer et al. (2011); Cruz et al. (2024),Pf increases under rising and extreme groundwater scenarios relative to stationary assumptions.,directionally consistent; not calibration
+Fines content affects liquefaction triggering correlations.,Lee et al. (2020); Yang and Wei (2024),"Gradation scenarios change CRR, deterministic FS, and Pf rankings.",directionally consistent; not calibration
+Probabilistic regional liquefaction screening propagates uncertainty in subsurface conditions and groundwater.,Greenfield et al. (2024); USGS (2025),"Monte Carlo propagation reports Pf(t), confidence intervals, and profile-level comparisons.",directionally consistent; not calibration

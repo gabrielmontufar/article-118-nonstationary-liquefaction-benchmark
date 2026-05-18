@@ -1,0 +1,3 @@
+score,n_cases,auc,brier_score_5fold,raw_threshold,tp,tn,fp,fn,accuracy,sensitivity,specificity,ppv,npv,status
+minus_g_static_proxy,195,0.7597087378640777,0.1991218363962003,0.0,91,42,50,12,0.6820512820512821,0.883495145631068,0.45652173913043476,0.6453900709219859,0.7777777777777778,static limit-state compatibility check; not non-stationary validation
+pf_static_proxy,195,0.7597087378640777,0.19979802544589154,0.5,91,42,50,12,0.6820512820512821,0.883495145631068,0.45652173913043476,0.6453900709219859,0.7777777777777778,static limit-state compatibility check; not non-stationary validation

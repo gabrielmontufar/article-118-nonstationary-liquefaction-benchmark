@@ -1,0 +1,13 @@
+scenario,gradation,n_records,spearman_pf_current_vs_bi14,median_abs_delta_pf,max_abs_delta_pf,same_highest_layer_share,interpretation
+stationary,constant,104,0.9683267587956376,0.31556645581719145,0.4303850586561534,1.0,standard SPT resistance module ranking check; not site validation
+stationary,fines_accumulation,104,0.9962925226457913,0.32607010372524814,0.4613155445337202,1.0,standard SPT resistance module ranking check; not site validation
+stationary,fines_washout,104,0.9966360964040498,0.28520715541703173,0.47108552914452606,1.0,standard SPT resistance module ranking check; not site validation
+rising,constant,104,0.9662207429675874,0.22769502847547424,0.47486853779048377,0.6538461538461539,standard SPT resistance module ranking check; not site validation
+rising,fines_accumulation,104,0.9310146164515098,0.2866038082046281,0.4443754182071334,0.5769230769230769,standard SPT resistance module ranking check; not site validation
+rising,fines_washout,104,0.9766456844126749,0.21121925116743667,0.4816790714858657,0.46153846153846156,standard SPT resistance module ranking check; not site validation
+seasonal,constant,104,0.991430895492527,0.28139275356074545,0.46184543823714796,1.0,standard SPT resistance module ranking check; not site validation
+seasonal,fines_accumulation,104,0.984796756641417,0.3332520894732095,0.45961411594721524,0.9615384615384616,standard SPT resistance module ranking check; not site validation
+seasonal,fines_washout,104,0.9839221368071437,0.23815422611286918,0.4808933971992973,0.8846153846153846,standard SPT resistance module ranking check; not site validation
+extreme,constant,104,0.9953932333196407,0.21758320025868877,0.46764229649777384,0.9615384615384616,standard SPT resistance module ranking check; not site validation
+extreme,fines_accumulation,104,0.9902192206885236,0.24501291253198676,0.45322357743371333,0.9615384615384616,standard SPT resistance module ranking check; not site validation
+extreme,fines_washout,104,0.9937053238024113,0.20223097889164648,0.4771245336773704,0.8846153846153846,standard SPT resistance module ranking check; not site validation

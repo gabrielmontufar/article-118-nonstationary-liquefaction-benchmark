@@ -1,0 +1,4 @@
+score,n_cases,auc,brier_score_5fold,threshold,accuracy,sensitivity,specificity,tp,tn,fp,fn,status
+combined_instrument_score,234,0.8108493397358943,0.1719210607147748,0.5,0.7606837606837606,0.8455882352941176,0.6428571428571429,115,63,35,21,5-fold calibration sanity check; not field validation
+dpt_screening_score,234,0.7782863145258103,0.1888677370997247,0.5,0.7521367521367521,0.8529411764705882,0.6122448979591837,116,60,38,20,5-fold calibration sanity check; not field validation
+vs_screening_score,234,0.7956182472989196,0.18330452815176423,0.5,0.7606837606837606,0.8529411764705882,0.6326530612244898,116,62,36,20,5-fold calibration sanity check; not field validation
