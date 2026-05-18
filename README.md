@@ -6,7 +6,7 @@ This folder contains the reproducible benchmark for the manuscript:
 
 Public repository: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark>
 
-Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.1>
+Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.2>
 
 ## Purpose
 
