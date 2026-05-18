@@ -1,4 +1,4 @@
-# Supplementary benchmark for Article 118
+﻿# Supplementary benchmark for Article 118
 
 This folder contains the reproducible benchmark for the manuscript:
 
@@ -6,7 +6,7 @@ This folder contains the reproducible benchmark for the manuscript:
 
 Public repository: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark>
 
-Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.8-geomechanics-geoengineering-retarget>
+Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.8-geomechanics-geoengineering>
 
 ## Purpose
 
@@ -153,3 +153,4 @@ The Canterbury temporal extension adds a one-site event sequence using DesignSaf
 The profile is synthetic and transparent. It is intended to test the proposed non-stationary reliability workflow, not to claim calibration to a specific field site. Quantitative site calibration requires field or laboratory data and should be treated as future work unless a site dataset is added.
 
 The file `data/global_sensitivity_rank.csv` reports rank-correlation sensitivity screening using Pearson and Spearman correlations. It should not be interpreted as a Sobol or variance-decomposition sensitivity analysis.
+
