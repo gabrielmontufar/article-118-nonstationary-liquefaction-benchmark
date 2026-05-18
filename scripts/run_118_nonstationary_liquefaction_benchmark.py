@@ -17,6 +17,11 @@ import numpy as np
 import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
 
+try:
+    from liquepy.trigger import boulanger_and_idriss_2014 as LIQUEPY_BI14
+except Exception:  # pragma: no cover - optional dependency fallback for editorial review
+    LIQUEPY_BI14 = None
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -76,9 +81,12 @@ def fines_content(fc0: float, year: float, grad: dict) -> float:
 
 def clean_sand_equivalent(n160: np.ndarray, fc: np.ndarray) -> np.ndarray:
     """Clean-sand equivalent SPT resistance using a smooth fines correction."""
+    n160 = np.asarray(n160, dtype=float)
+    fc = np.asarray(fc, dtype=float)
     alpha = np.where(fc <= 5, 0.0, np.where(fc < 35, np.exp(1.76 - 190.0 / (fc**2 + 1e-6)), 5.0))
     beta = np.where(fc <= 5, 1.0, np.where(fc < 35, 0.99 + (fc**1.5) / 1000.0, 1.20))
-    return alpha + beta * n160
+    out = alpha + beta * n160
+    return np.where(np.isnan(n160) | np.isnan(fc), np.nan, out)
 
 
 def crr_from_n1_60cs(n1cs: np.ndarray) -> np.ndarray:
@@ -98,6 +106,15 @@ def crr_bi14_spt_style(n1cs: np.ndarray | float) -> np.ndarray | float:
     x = np.clip(np.asarray(n1cs, dtype=float), 1.0, 37.0)
     crr = np.exp((x / 14.1) + (x / 126.0) ** 2 - (x / 23.6) ** 3 + (x / 25.4) ** 4 - 2.8)
     return np.clip(crr, 0.03, 0.80)
+
+
+def crr_bi14_spt_liquepy(n1cs: np.ndarray | float, c_0: float = 2.8) -> np.ndarray | float:
+    """BI14 SPT CRR from liquepy when available, with local equation fallback."""
+    if LIQUEPY_BI14 is None:
+        return crr_bi14_spt_style(n1cs)
+    x = np.clip(np.asarray(n1cs, dtype=float), 1.0, 37.0)
+    crr = LIQUEPY_BI14.calc_crr_m7p5_from_n1_60cs(x, c_0=c_0)
+    return np.clip(np.asarray(crr, dtype=float), 0.03, 0.80)
 
 
 def csr(pga_g: np.ndarray, z: float, gw_depth: np.ndarray) -> np.ndarray:
@@ -210,13 +227,39 @@ def make_standard_model_comparison(results: pd.DataFrame) -> tuple[pd.DataFrame,
     comp["crr_benchmark_module"] = comp["crr"]
     comp["crr_bi14_spt_style"] = crr_bi14_spt_style(comp["n1_60cs"].to_numpy()) / MAGNITUDE_SCALING
     comp["fs_bi14_spt_style"] = comp["crr_bi14_spt_style"] / comp["csr"].clip(lower=1e-6)
+    comp["crr_bi14_liquepy_m7p5"] = crr_bi14_spt_liquepy(comp["n1_60cs"].to_numpy())
+    comp["crr_bi14_liquepy"] = comp["crr_bi14_liquepy_m7p5"] / MAGNITUDE_SCALING
+    comp["fs_bi14_liquepy"] = comp["crr_bi14_liquepy"] / comp["csr"].clip(lower=1e-6)
+    comp["crr_bi14_liquepy_median_m7p5"] = crr_bi14_spt_liquepy(comp["n1_60cs"].to_numpy(), c_0=2.6)
+    comp["crr_bi14_liquepy_median"] = comp["crr_bi14_liquepy_median_m7p5"] / MAGNITUDE_SCALING
+    comp["fs_bi14_liquepy_median"] = comp["crr_bi14_liquepy_median"] / comp["csr"].clip(lower=1e-6)
     comp["delta_fs_bi14_minus_benchmark"] = comp["fs_bi14_spt_style"] - comp["fs_deterministic_nonstationary"]
+    comp["delta_fs_liquepy_bi14_minus_benchmark"] = comp["fs_bi14_liquepy"] - comp["fs_deterministic_nonstationary"]
+    comp["delta_fs_liquepy_bi14_median_minus_benchmark"] = (
+        comp["fs_bi14_liquepy_median"] - comp["fs_deterministic_nonstationary"]
+    )
+    comp["fs_scale_ratio_liquepy_bi14_to_benchmark"] = (
+        comp["fs_bi14_liquepy"] / comp["fs_deterministic_nonstationary"].clip(lower=1e-6)
+    )
+    comp["fs_scale_ratio_liquepy_bi14_median_to_benchmark"] = (
+        comp["fs_bi14_liquepy_median"] / comp["fs_deterministic_nonstationary"].clip(lower=1e-6)
+    )
     sigma_ln_fs = math.sqrt(0.25**2 + 0.12**2)
     comp["pf_bi14_spt_style_diagnostic"] = comp["fs_bi14_spt_style"].clip(lower=1e-6).map(
         lambda fs: STD_NORMAL.cdf(-math.log(float(fs)) / sigma_ln_fs)
     )
+    comp["pf_bi14_liquepy_diagnostic"] = comp["fs_bi14_liquepy"].clip(lower=1e-6).map(
+        lambda fs: STD_NORMAL.cdf(-math.log(float(fs)) / sigma_ln_fs)
+    )
+    comp["pf_bi14_liquepy_median_diagnostic"] = comp["fs_bi14_liquepy_median"].clip(lower=1e-6).map(
+        lambda fs: STD_NORMAL.cdf(-math.log(float(fs)) / sigma_ln_fs)
+    )
     comp["delta_pf_bi14_minus_benchmark"] = comp["pf_bi14_spt_style_diagnostic"] - comp["pf_nonstationary"]
-    comp["method_status"] = "direct_spt_model_form_check_not_site_validation"
+    comp["delta_pf_liquepy_bi14_minus_benchmark"] = comp["pf_bi14_liquepy_diagnostic"] - comp["pf_nonstationary"]
+    comp["delta_pf_liquepy_bi14_median_minus_benchmark"] = (
+        comp["pf_bi14_liquepy_median_diagnostic"] - comp["pf_nonstationary"]
+    )
+    comp["method_status"] = "direct_spt_model_form_check_with_liquepy_bi14_when_available"
     keep = [
         "scenario",
         "gradation",
@@ -234,9 +277,23 @@ def make_standard_model_comparison(results: pd.DataFrame) -> tuple[pd.DataFrame,
         "crr_benchmark_module",
         "crr_bi14_spt_style",
         "fs_bi14_spt_style",
+        "crr_bi14_liquepy_m7p5",
+        "crr_bi14_liquepy",
+        "fs_bi14_liquepy",
+        "crr_bi14_liquepy_median_m7p5",
+        "crr_bi14_liquepy_median",
+        "fs_bi14_liquepy_median",
         "delta_fs_bi14_minus_benchmark",
+        "delta_fs_liquepy_bi14_minus_benchmark",
+        "delta_fs_liquepy_bi14_median_minus_benchmark",
+        "fs_scale_ratio_liquepy_bi14_to_benchmark",
+        "fs_scale_ratio_liquepy_bi14_median_to_benchmark",
         "pf_bi14_spt_style_diagnostic",
+        "pf_bi14_liquepy_diagnostic",
+        "pf_bi14_liquepy_median_diagnostic",
         "delta_pf_bi14_minus_benchmark",
+        "delta_pf_liquepy_bi14_minus_benchmark",
+        "delta_pf_liquepy_bi14_median_minus_benchmark",
         "method_status",
     ]
     comp = comp[keep]
@@ -247,22 +304,43 @@ def make_standard_model_comparison(results: pd.DataFrame) -> tuple[pd.DataFrame,
         for _, g in sub.groupby("year"):
             same_highest.append(
                 g.loc[g["pf_nonstationary"].idxmax(), "layer"]
-                == g.loc[g["pf_bi14_spt_style_diagnostic"].idxmax(), "layer"]
+                == g.loc[g["pf_bi14_liquepy_diagnostic"].idxmax(), "layer"]
             )
         summary_rows.append(
             {
                 "scenario": scenario,
                 "gradation": gradation,
                 "n_records": int(sub.shape[0]),
-                "spearman_pf_current_vs_bi14": float(
+                "spearman_pf_current_vs_bi14_style": float(
                     sub["pf_nonstationary"].rank(method="average").corr(
                         sub["pf_bi14_spt_style_diagnostic"].rank(method="average"), method="pearson"
                     )
                 ),
-                "median_abs_delta_pf": float(sub["delta_pf_bi14_minus_benchmark"].abs().median()),
-                "max_abs_delta_pf": float(sub["delta_pf_bi14_minus_benchmark"].abs().max()),
+                "spearman_pf_current_vs_bi14_liquepy": float(
+                    sub["pf_nonstationary"].rank(method="average").corr(
+                        sub["pf_bi14_liquepy_diagnostic"].rank(method="average"), method="pearson"
+                    )
+                ),
+                "median_abs_delta_pf_style": float(sub["delta_pf_bi14_minus_benchmark"].abs().median()),
+                "median_abs_delta_pf_liquepy": float(sub["delta_pf_liquepy_bi14_minus_benchmark"].abs().median()),
+                "median_abs_delta_pf_liquepy_median": float(
+                    sub["delta_pf_liquepy_bi14_median_minus_benchmark"].abs().median()
+                ),
+                "max_abs_delta_pf_style": float(sub["delta_pf_bi14_minus_benchmark"].abs().max()),
+                "max_abs_delta_pf_liquepy": float(sub["delta_pf_liquepy_bi14_minus_benchmark"].abs().max()),
+                "max_abs_delta_pf_liquepy_median": float(
+                    sub["delta_pf_liquepy_bi14_median_minus_benchmark"].abs().max()
+                ),
+                "median_fs_scale_ratio_liquepy_to_benchmark": float(
+                    sub["fs_scale_ratio_liquepy_bi14_to_benchmark"].median()
+                ),
+                "median_fs_scale_ratio_liquepy_median_to_benchmark": float(
+                    sub["fs_scale_ratio_liquepy_bi14_median_to_benchmark"].median()
+                ),
                 "same_highest_layer_share": float(np.mean(same_highest)),
-                "interpretation": "standard SPT resistance module ranking check; not site validation",
+                "liquepy_bi14_available": bool(LIQUEPY_BI14 is not None),
+                "bi16_exact_liquepy_available": False,
+                "interpretation": "standard BI14 SPT resistance module ranking and scale check; not site validation",
             }
         )
     return comp, pd.DataFrame(summary_rows)
@@ -299,6 +377,73 @@ def make_vertical_dependence_sensitivity(results: pd.DataFrame) -> pd.DataFrame:
                     "status": "vertical-dependence diagnostic; not calibrated random field",
                 }
             )
+    return pd.DataFrame(rows)
+
+
+def make_model_availability_diagnostics() -> pd.DataFrame:
+    """Document which established triggering comparisons are executed or constrained by inputs."""
+    rows = [
+        {
+            "model_or_family": "Boulanger and Idriss 2014 SPT",
+            "implementation_status": "executed",
+            "implementation_detail": "liquepy.trigger.boulanger_and_idriss_2014.calc_crr_m7p5_from_n1_60cs; local equation fallback retained",
+            "required_inputs": "N1,60cs, CSR/state demand, magnitude scaling",
+            "available_in_synthetic_benchmark": "yes",
+            "available_in_hu_field_cases": "proxy via N120, FC, CSR7.5",
+            "output_files": "standard_model_comparison.csv; standard_model_comparison_summary.csv; field_validation_metrics.csv",
+            "interpretation": "formal model-form and field transferability comparison",
+        },
+        {
+            "model_or_family": "Boulanger and Idriss CPT",
+            "implementation_status": "not executed in current package",
+            "implementation_detail": "liquepy callable exists, but the manuscript supplement and Hu dataset do not contain qc, fs, u2 CPT profiles",
+            "required_inputs": "qc, fs, u2, depth profile, groundwater, PGA, Mw",
+            "available_in_synthetic_benchmark": "no CPT profile",
+            "available_in_hu_field_cases": "no CPT profile",
+            "output_files": "none",
+            "interpretation": "candidate extension if DesignSafe CPT case-history files are added",
+        },
+        {
+            "model_or_family": "Boulanger and Idriss 2016 exact",
+            "implementation_status": "documented constraint",
+            "implementation_detail": "no distinct BI16 callable was present in liquepy 0.6.34; not substituted by a renamed BI14 curve",
+            "required_inputs": "published BI16 implementation plus SPT/CPT variables required by that implementation",
+            "available_in_synthetic_benchmark": "partial SPT state only",
+            "available_in_hu_field_cases": "partial SPT/Vs state only",
+            "output_files": "model_availability_diagnostics.csv; standard_model_comparison_summary.csv flag",
+            "interpretation": "excluded to avoid a false exact-model claim",
+        },
+        {
+            "model_or_family": "Cetin SPT probabilistic triggering",
+            "implementation_status": "documented constraint",
+            "implementation_detail": "not silently approximated because exact implementation/calibration coefficients are not bundled in the supplement",
+            "required_inputs": "SPT resistance, fines/plasticity terms, stress terms, magnitude/demand terms and calibrated coefficients",
+            "available_in_synthetic_benchmark": "partial",
+            "available_in_hu_field_cases": "partial",
+            "output_files": "model_availability_diagnostics.csv",
+            "interpretation": "do not substitute with an undocumented equation in a reproducibility benchmark",
+        },
+        {
+            "model_or_family": "Moss CPT triggering",
+            "implementation_status": "documented constraint",
+            "implementation_detail": "not executed because neither the synthetic benchmark nor Hu cases include qc/fs CPT records",
+            "required_inputs": "CPT qc, fs/friction ratio, vertical stress, groundwater, PGA, Mw",
+            "available_in_synthetic_benchmark": "no CPT profile",
+            "available_in_hu_field_cases": "no CPT profile",
+            "output_files": "model_availability_diagnostics.csv",
+            "interpretation": "requires external CPT dataset before defensible execution",
+        },
+        {
+            "model_or_family": "Kayen/Vs-style screening",
+            "implementation_status": "executed as field predictor",
+            "implementation_detail": "Hu et al. Vs1 values used as an independent resistance-screening score with AUC/Brier/confusion diagnostics",
+            "required_inputs": "Vs1, demand term, groundwater/capping descriptors, observed outcome",
+            "available_in_synthetic_benchmark": "no Vs profile",
+            "available_in_hu_field_cases": "yes",
+            "output_files": "field_validation_cases.csv; field_validation_metrics.csv",
+            "interpretation": "formal Vs-based field discrimination check, not a full Kayen equation calibration",
+        },
+    ]
     return pd.DataFrame(rows)
 
 
@@ -604,6 +749,27 @@ def _confusion_from_threshold(scores: pd.Series, labels: pd.Series, threshold: f
     }
 
 
+def _best_youden_threshold(scores: pd.Series, labels: pd.Series, greater_is_liq: bool = True) -> tuple[float, dict]:
+    """Select the threshold that maximises sensitivity + specificity - 1."""
+    valid = scores.notna() & labels.notna()
+    s = scores[valid].astype(float)
+    y = labels[valid].astype(int)
+    if s.empty:
+        return float("nan"), {}
+    best_threshold = float(s.median())
+    best_conf = _confusion_from_threshold(s, y, best_threshold, greater_is_liq)
+    best_j = best_conf["sensitivity"] + best_conf["specificity"] - 1.0
+    for threshold in np.unique(s.to_numpy()):
+        conf = _confusion_from_threshold(s, y, float(threshold), greater_is_liq)
+        j = conf["sensitivity"] + conf["specificity"] - 1.0
+        if j > best_j:
+            best_threshold = float(threshold)
+            best_conf = conf
+            best_j = j
+    best_conf["youden_j"] = float(best_j)
+    return best_threshold, best_conf
+
+
 def external_calibration_metrics(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     """In-sample external discrimination/calibration diagnostics for Hu et al. scores."""
     rows = []
@@ -680,6 +846,124 @@ def external_static_limit_state_proxy(df: pd.DataFrame) -> tuple[pd.DataFrame, p
             }
         )
     return valid, pd.DataFrame(metrics)
+
+
+def field_case_history_validation(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Build field-data validation tables from Hu et al. cases and the Wenchuan subset.
+
+    The full Hu table is a multi-earthquake case-history dataset. The Wenchuan
+    subset is treated as a focal documented earthquake subset with recorded
+    groundwater depth, shaking demand, resistance proxies, and observed outcome.
+    """
+    cases = df.copy()
+    cases["case_id"] = cases["case_no"].map(lambda x: f"HU-{int(x):03d}" if pd.notna(x) else "")
+    cases["source_dataset"] = "Hu et al. (2021) gravelly-soil case histories"
+    cases["validation_split"] = np.where(
+        cases["earthquake"].astype(str).str.contains("Wenchuan", case=False, na=False),
+        "Wenchuan focal field subset",
+        "Hu multi-earthquake external set",
+    )
+    cases["groundwater_table_m"] = cases["dw_m"]
+    cases["critical_layer_depth_m"] = cases["ds_m"]
+    cases["unsaturated_cap_or_cover_m"] = cases["dn_m"]
+    cases["observed_liquefaction"] = cases["liquefied"].astype(int)
+
+    cases["n1_60cs_proxy"] = clean_sand_equivalent(cases["n120"].to_numpy(), cases["fc_pct"].to_numpy())
+    cases["crr_static_benchmark"] = crr_from_n1_60cs(cases["n1_60cs_proxy"].to_numpy()) / MAGNITUDE_SCALING
+    cases["fs_static_proxy"] = cases["crr_static_benchmark"] / cases["csr75"].clip(lower=1e-6)
+    cases["g_static_proxy"] = cases["fs_static_proxy"] - 1.0
+    cases["minus_g_static_proxy"] = -cases["g_static_proxy"]
+    sigma_ln_fs = math.sqrt(0.25**2 + 0.12**2)
+    cases["pf_static_proxy"] = cases["fs_static_proxy"].clip(lower=1e-6).map(
+        lambda fs: STD_NORMAL.cdf(-math.log(float(fs)) / sigma_ln_fs)
+    )
+
+    metrics = []
+    thresholds = []
+    groups = [
+        ("Hu full field set", cases),
+        ("Wenchuan documented earthquake subset", cases[cases["validation_split"].eq("Wenchuan focal field subset")]),
+    ]
+    predictors = [
+        ("combined demand-resistance-groundwater score", "combined_instrument_score", 0.0, True),
+        ("DPT/N120 score", "dpt_screening_score", 0.0, True),
+        ("Vs score", "vs_screening_score", 0.0, True),
+        ("static limit-state proxy", "minus_g_static_proxy", 0.0, True),
+        ("static Pf proxy", "pf_static_proxy", 0.5, True),
+    ]
+    for group_name, group in groups:
+        for predictor_name, score, default_threshold, greater in predictors:
+            valid = group.dropna(subset=[score, "liquefied"]).copy()
+            if valid.empty:
+                continue
+            prob_cv = _cross_validated_probabilities(valid[score], valid["liquefied"]).loc[valid.index]
+            default_conf = _confusion_from_threshold(valid[score], valid["liquefied"], default_threshold, greater)
+            best_threshold, best_conf = _best_youden_threshold(valid[score], valid["liquefied"], greater)
+            base = {
+                "validation_group": group_name,
+                "predictor": predictor_name,
+                "score_column": score,
+                "n_cases": int(valid.shape[0]),
+                "n_liquefied": int(valid["liquefied"].sum()),
+                "n_non_liquefied": int(valid.shape[0] - valid["liquefied"].sum()),
+                "auc": float(_rank_auc(valid[score], valid["liquefied"])),
+                "brier_score_5fold": float(np.mean((prob_cv.to_numpy() - valid["liquefied"].astype(int).to_numpy()) ** 2)),
+            }
+            metrics.append(
+                {
+                    **base,
+                    "threshold_type": "prespecified",
+                    "threshold": float(default_threshold),
+                    **default_conf,
+                    "status": "field case-history validation of ranking and static transferability",
+                }
+            )
+            metrics.append(
+                {
+                    **base,
+                    "threshold_type": "best_youden",
+                    "threshold": float(best_threshold),
+                    **best_conf,
+                    "status": "field case-history validation of ranking and static transferability",
+                }
+            )
+            thresholds.append(
+                {
+                    "validation_group": group_name,
+                    "predictor": predictor_name,
+                    "prespecified_threshold": float(default_threshold),
+                    "best_youden_threshold": float(best_threshold),
+                    "youden_j": float(best_conf.get("youden_j", np.nan)),
+                }
+            )
+
+    keep = [
+        "case_id",
+        "source_dataset",
+        "validation_split",
+        "earthquake",
+        "site",
+        "mw",
+        "pga",
+        "csr75",
+        "groundwater_table_m",
+        "critical_layer_depth_m",
+        "unsaturated_cap_or_cover_m",
+        "n120",
+        "vs1_ms",
+        "fc_pct",
+        "gc_pct",
+        "observed_liquefaction",
+        "n1_60cs_proxy",
+        "crr_static_benchmark",
+        "fs_static_proxy",
+        "g_static_proxy",
+        "pf_static_proxy",
+        "combined_instrument_score",
+        "dpt_screening_score",
+        "vs_screening_score",
+    ]
+    return cases[keep], pd.DataFrame(metrics), pd.DataFrame(thresholds)
 
 
 def external_case_history_sanity_check() -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -773,6 +1057,7 @@ def main() -> None:
     standard_comp, standard_summary = make_standard_model_comparison(results)
     standard_comp.to_csv(DATA / "standard_model_comparison.csv", index=False)
     standard_summary.to_csv(DATA / "standard_model_comparison_summary.csv", index=False)
+    make_model_availability_diagnostics().to_csv(DATA / "model_availability_diagnostics.csv", index=False)
     vertical_dep = make_vertical_dependence_sensitivity(results)
     vertical_dep.to_csv(DATA / "vertical_dependence_sensitivity.csv", index=False)
 
@@ -859,6 +1144,10 @@ def main() -> None:
         static_cases, static_metrics = external_static_limit_state_proxy(ext_cases)
         static_cases.to_csv(DATA / "external_static_limit_state_proxy.csv", index=False)
         static_metrics.to_csv(DATA / "external_static_limit_state_metrics.csv", index=False)
+        field_cases, field_metrics, field_thresholds = field_case_history_validation(ext_cases)
+        field_cases.to_csv(DATA / "field_validation_cases.csv", index=False)
+        field_metrics.to_csv(DATA / "field_validation_metrics.csv", index=False)
+        field_thresholds.to_csv(DATA / "field_validation_thresholds.csv", index=False)
         ext_plot = ext_summary[ext_summary["check"].isin(["combined_instrument_score", "dpt_screening_score", "vs_screening_score", "demand_index", "shallow_groundwater_index"])]
         svg_bar(
             FIGURES / "fig05_external_case_history_sanity_auc.svg",

@@ -1,0 +1,11 @@
+validation_group,predictor,prespecified_threshold,best_youden_threshold,youden_j
+Hu full field set,combined demand-resistance-groundwater score,0.0,-0.09544539507786783,0.5202581032412965
+Hu full field set,DPT/N120 score,0.0,-0.20552253647103136,0.4957983193277311
+Hu full field set,Vs score,0.0,0.0017687277978637589,0.5165066026410563
+Hu full field set,static limit-state proxy,0.0,0.1957801478821002,0.4556775010552976
+Hu full field set,static Pf proxy,0.5,0.7839797595982794,0.4556775010552976
+Wenchuan documented earthquake subset,combined demand-resistance-groundwater score,0.0,-0.32872245208528295,0.7546933667083855
+Wenchuan documented earthquake subset,DPT/N120 score,0.0,-0.33341140666782676,0.7090112640801001
+Wenchuan documented earthquake subset,Vs score,0.0,-0.3698215615913742,0.653316645807259
+Wenchuan documented earthquake subset,static limit-state proxy,0.0,0.1433281406012894,0.5669642857142856
+Wenchuan documented earthquake subset,static Pf proxy,0.5,0.7115312530686123,0.5669642857142856

@@ -6,7 +6,7 @@ This folder contains the reproducible benchmark for the manuscript:
 
 Public repository: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark>
 
-Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.2>
+Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.3>
 
 ## Purpose
 
@@ -23,8 +23,9 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `data/liquefaction_benchmark_results.csv`: layer-time-scenario Monte Carlo results.
 - `data/liquefaction_benchmark_summary.csv`: scenario-level summary.
 - `data/profile_method_comparison.csv`: stationary versus non-stationary profile comparison.
-- `data/standard_model_comparison.csv`: layer-time comparison against a BI14/NCEER-style SPT resistance module using the same benchmark states.
-- `data/standard_model_comparison_summary.csv`: scenario-level rank-agreement summary for the standard SPT model-form check.
+- `data/standard_model_comparison.csv`: layer-time comparison against the benchmark resistance module, BI14/NCEER-style SPT, and BI14 SPT computed through `liquepy` when available.
+- `data/standard_model_comparison_summary.csv`: scenario-level rank-agreement, Pf-error, and FS-scale diagnostics for the standard SPT model-form check.
+- `data/model_availability_diagnostics.csv`: implementation-status table for BI14, BI16, Cetin, Moss/CPT, and Kayen/Vs alternatives using the variables available in this supplement.
 - `data/vertical_dependence_sensitivity.csv`: system-probability diagnostic under equicorrelated Gaussian-copula layer dependence.
 - `data/monte_carlo_convergence_check.csv`: repeated-sample convergence check for the most severe benchmark state.
 - `data/global_sensitivity_rank.csv`: rank-correlation sensitivity check for the non-stationary liquefaction probability.
@@ -36,6 +37,9 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `data/external_case_history_calibration_bins.csv`: five-bin probability calibration table for the external screening scores.
 - `data/external_static_limit_state_proxy.csv`: static proxy application of the benchmark limit-state variables to Hu et al. cases where CSR, resistance and fines data are available.
 - `data/external_static_limit_state_metrics.csv`: AUC, five-fold Brier score and classification metrics for the static proxy check.
+- `data/field_validation_cases.csv`: field case-history validation table from Hu et al. (2021), including the Wenchuan subset, groundwater depth, PGA/CSR, N120/Vs, fines/gravel content, and observed liquefied/non-liquefied labels.
+- `data/field_validation_metrics.csv`: Hu full-set and Wenchuan-subset AUC, five-fold Brier score, confusion matrix, sensitivity, specificity, and threshold diagnostics.
+- `data/field_validation_thresholds.csv`: prespecified and apparent Youden thresholds for the field validation scores.
 - `figures/fig01_pf_time_extreme_accumulation.png`: layer probability histories.
 - `figures/fig02_profile_mean_pf_by_scenario.png`: profile-average probability by groundwater scenario.
 - `figures/fig03_depth_time_pf_heatmap.png`: depth-time probability map.
@@ -61,6 +65,7 @@ Python dependencies:
 - pandas
 - Pillow
 - openpyxl
+- liquepy
 
 The random seed is fixed as `1182026`.
 
@@ -84,13 +89,15 @@ The profile comparison file also reports `max_layer_pf`, `psys_independent_layer
 
 The vertical-dependence sensitivity file extends this point using an equicorrelated Gaussian copula for layer events with rho values of 0.0, 0.3, 0.6, and 0.9. It is a diagnostic for dependence sensitivity, not a calibrated random-field model.
 
-The standard model comparison files are model-form checks. They replace the benchmark resistance module with a BI14/NCEER-style SPT clean-sand CRR curve while keeping the same synthetic layer states, groundwater depths, effective stresses and demand terms. These files support rank-consistency evaluation against an established SPT triggering formulation; they are not site validation.
+The standard model comparison files are model-form checks. They replace the benchmark resistance module with a BI14/NCEER-style SPT clean-sand CRR curve and, when `liquepy` is installed, the matching `liquepy.trigger.boulanger_and_idriss_2014.calc_crr_m7p5_from_n1_60cs` implementation. The comparison keeps the same synthetic layer states, groundwater depths, effective stresses and demand terms so the reported Spearman rank agreement, Pf error, and FS scale ratios isolate resistance-module effects. BI16, Cetin, Moss/CPT and Kayen/Vs are documented in `data/model_availability_diagnostics.csv`; they are not silently substituted when exact inputs or callables are absent.
 
 ## External sanity check
 
 The benchmark includes a secondary external check using the open case-history dataset of Hu et al. (2021), Data in Brief, DOI: `10.1016/j.dib.2021.107104`. This check does not calibrate the synthetic benchmark to a field site. It tests whether simple demand/resistance and groundwater screening indices rank historical liquefied cases above non-liquefied cases in the expected direction.
 
 The external check also reports five-fold calibrated Brier scores, confusion matrices and a static limit-state proxy for the subset of Hu et al. cases with CSR, resistance and fines-content data. These diagnostics are compatibility checks only. They do not validate the non-stationary benchmark or replace calibration against a site-specific field dataset.
+
+The field-validation tables promote the Hu et al. case-history data from a directional sanity check to a minimum field validation exercise. They report the full Hu case-history set and the Wenchuan documented-earthquake subset separately, using recorded groundwater depth, PGA/CSR demand, N120 and Vs resistance proxies, and observed liquefied/non-liquefied outcomes. Thresholds marked as `best_youden` are apparent thresholds selected on the same validation split and should be interpreted as diagnostic operating points rather than independent design thresholds.
 
 ## Methodological note
 
