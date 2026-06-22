@@ -1,0 +1,21 @@
+{
+  "service": "https://gis1.ecan.govt.nz/arcgis/rest/services/Public/Canterbury_Liquefaction_Susceptibility/MapServer",
+  "occurrence_layers": {
+    "Yr2010": {
+      "layer_id": 0,
+      "n_features": 5384,
+      "n_polygon_rings": 5401
+    },
+    "Yr2011": {
+      "layer_id": 1,
+      "n_features": 6144,
+      "n_polygon_rings": 10300
+    }
+  },
+  "vulnerability_layer": 3,
+  "vulnerability": {
+    "n_features": 6,
+    "n_polygon_rings": 112,
+    "field": "Liquefaction"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "PASS_OFFICIAL_SPATIAL_CONSEQUENCE_VALIDATION",
+  "metadata": {
+    "service": "https://gis1.ecan.govt.nz/arcgis/rest/services/Public/Canterbury_Liquefaction_Susceptibility/MapServer",
+    "occurrence_layers": {
+      "Yr2010": {
+        "layer_id": 0,
+        "n_features": 5384,
+        "n_polygon_rings": 5401
+      },
+      "Yr2011": {
+        "layer_id": 1,
+        "n_features": 6144,
+        "n_polygon_rings": 10300
+      }
+    },
+    "vulnerability_layer": 3,
+    "vulnerability": {
+      "n_features": 6,
+      "n_polygon_rings": 112,
+      "field": "Liquefaction"
+    }
+  },
+  "occurrence_validation": {
+    "target": "official Canterbury Maps observed liquefaction occurrence polygons for 2010 and 2011",
+    "n_joined_predictions": 44400,
+    "n_event_states": 11100,
+    "positive_event_states": 4545,
+    "best_auc": [
+      {
+        "event_key": "Yr2011",
+        "model_name": "M2_nonstationary_groundwater_gradation",
+        "n": 5612,
+        "n_positive": 2974,
+        "positive_rate": 0.529935851746258,
+        "auc": 0.5731660746433712,
+        "mean_pf_positive": 0.8394788067092733,
+        "mean_pf_negative": 0.748150917256531
+      }
+    ]
+  },
+  "design_category_validation": {
+    "target": "official Eastern Canterbury liquefaction vulnerability category indicating whether liquefaction assessment is needed for development/building permits",
+    "n_sites_with_category": 5665,
+    "n_assessment_needed_sites": 0,
+    "informative_for_design_discrimination": false,
+    "best_auc": [
+      {
+        "model_name": "M0_static_stationary",
+        "n_sites": 5665,
+        "n_assessment_needed": 0,
+        "assessment_needed_rate": 0.0,
+        "auc_max_event_pf": NaN,
+        "median_max_pf_assessment_needed": null,
+        "median_max_pf_unlikely": 0.877987794499146
+      }
+    ]
+  },
+  "claim_enabled": "Held-out Article 118 Canterbury probabilities can be joined reproducibly to official observed liquefaction occurrence polygons; this is direct spatial occurrence validation against an independent public GIS layer.",
+  "claim_blocked": "Do not describe this as repair-cost, insurance-claim, building-level damage-cost, fully blind validation, or design-category discrimination. The queried ECan vulnerability layer is not informative for design discrimination in the joined CPT subset because it provides no positive assessment-needed sites."
+}

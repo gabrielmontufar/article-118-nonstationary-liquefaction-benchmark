@@ -6,6 +6,12 @@ This folder contains the reproducible georisk reliability-updating benchmark for
 
 Public repository: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark>
 
+Current physics-forward manuscript title:
+
+**Critical Water-Table Crossing as a Physical Switch for False-Negative-Aware Liquefaction Screening**
+
+The main physical result is now isolated by `scripts/run_131_critical_water_table_crossing_mechanism.py`: when a non-stationary water table crosses a shallow liquefiable layer, effective stress drops, CSR rises, FS falls and Pf can jump rather than drift. In the extreme benchmark scenario, the L1 crossing from 2.21 m to 1.25 m raises CSR by 25.3%, lowers deterministic FS by 19.7% and increases Pf by 0.149. This is a bounded physical mechanism claim, not a new constitutive law or universal field classifier.
+
 Versioned MRNB-100 Georisk tag: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v2.0-mrnb100-georisk>
 
 Frozen commit: `2981604`
@@ -21,6 +27,9 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 ## Files
 
 - `scripts/run_118_nonstationary_liquefaction_benchmark.py`: self-contained Python script.
+- `scripts/run_131_critical_water_table_crossing_mechanism.py`: extracts the critical water-table crossing mechanism and writes Fig. 15 plus crossing/jump summaries.
+- `scripts/run_130_hydraulic_leverage_breakthrough_gate.py`: field-regime guardrail; the simple hydraulic-leverage+CPT-fabric gate is not sufficient by itself to explain Canterbury false negatives.
+- `scripts/run_129_official_spatial_consequence_validation.py`: reproducible spatial join to public official Canterbury liquefaction occurrence/vulnerability layers; occurrence validation is direct spatial evidence, while the queried ECan vulnerability layer is not informative for design discrimination in this CPT subset.
 - `scripts/run_119_site_calibrated_application.py`: site-calibrated Nisqually extension using DesignSafe PRJ-3758 CPT case histories.
 - `scripts/run_120_canterbury_temporal_site_application.py`: Canterbury PRJ-2937 temporal site application for 100 Osbourne St CPT01.
 - `scripts/run_121_canterbury_multi_site_temporal_validation.py`: Canterbury PRJ-2937 external transfer validation across all usable CPT event states in `CANTERBURYDATASET.mat`.

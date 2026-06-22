@@ -1,0 +1,4 @@
+target,n,n_positive,auc_hydraulic_leverage
+observed_liquefaction,15890,6189,0.377137478635103
+severe_manifestation,15890,1548,0.39987787265460906
+m0_false_negative_0p5,15890,1792,0.33966837922172344

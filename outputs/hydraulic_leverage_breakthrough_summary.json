@@ -1,0 +1,87 @@
+{
+  "status": "FAIL_FIELD_HYDRAULIC_LEVERAGE_NOT_VALIDATED",
+  "physical_mechanism": "CSR scales with sigma_v/sigma'_v; transient groundwater shallowing lowers sigma'_v and creates a hydraulic leverage factor. The effect is physically consequential when paired with loose low-qc and fine-sensitive high-Ic CPT fabric.",
+  "hydraulic_leverage_definition": "max_z sigma'_v(z, site-median water table) / sigma'_v(z, event water table), z in 2,3,4,6 m",
+  "fabric_gate_definition": "top quartile hydraulic leverage AND bottom quartile qc10_mpa AND top quartile Ic_median",
+  "gate_summary": [
+    {
+      "regime": "inside_hydraulic_fabric_gate",
+      "n_event_states": 492,
+      "observed_liquefaction_rate": 0.0508130081300813,
+      "severe_manifestation_rate": 0.0,
+      "m0_false_negative_rate_0p5": 0.036585365853658534,
+      "median_hydraulic_leverage": 1.0902344537982338,
+      "median_qc10_mpa": 0.502632,
+      "median_ic": 1.4337584854933683
+    },
+    {
+      "regime": "outside_hydraulic_fabric_gate",
+      "n_event_states": 15398,
+      "observed_liquefaction_rate": 0.4003117287959475,
+      "severe_manifestation_rate": 0.10053253669307702,
+      "m0_false_negative_rate_0p5": 0.11520976750227302,
+      "median_hydraulic_leverage": 1.0,
+      "median_qc10_mpa": 1.8254,
+      "median_ic": 1.2317358291625284
+    }
+  ],
+  "physical_auc": [
+    {
+      "target": "observed_liquefaction",
+      "n": 15890,
+      "n_positive": 6189,
+      "auc_hydraulic_leverage": 0.377137478635103
+    },
+    {
+      "target": "severe_manifestation",
+      "n": 15890,
+      "n_positive": 1548,
+      "auc_hydraulic_leverage": 0.39987787265460906
+    },
+    {
+      "target": "m0_false_negative_0p5",
+      "n": 15890,
+      "n_positive": 1792,
+      "auc_hydraulic_leverage": 0.33966837922172344
+    }
+  ],
+  "model_contrast": [
+    {
+      "hydraulic_fabric_gate": "outside",
+      "n": 15398,
+      "median_m2_minus_m0_pf": 0.0006609033336379966,
+      "mean_m2_minus_m0_pf": 0.0007325946740496924,
+      "m0_false_negative_rate_0p5": 0.11520976750227302,
+      "observed_liquefaction_rate": 0.4003117287959475
+    },
+    {
+      "hydraulic_fabric_gate": "inside",
+      "n": 492,
+      "median_m2_minus_m0_pf": 0.0297530237721026,
+      "mean_m2_minus_m0_pf": 0.027477699928430802,
+      "m0_false_negative_rate_0p5": 0.036585365853658534,
+      "observed_liquefaction_rate": 0.0508130081300813
+    }
+  ],
+  "best_inside_gate_model": [
+    {
+      "model_name": "M0_static_stationary",
+      "regime": "inside_hydraulic_fabric_gate",
+      "n": 492,
+      "n_liquefied": 25,
+      "auc": 0.9224839400428265,
+      "brier_score": 0.049639019723775595,
+      "log_loss": 0.22766887663544977,
+      "calibration_intercept": -3.7908076432979234,
+      "calibration_slope": 1.908299997322796,
+      "sensitivity": 0.28,
+      "specificity": 1.0,
+      "tp": 7,
+      "fp": 0,
+      "tn": 467,
+      "fn": 18
+    }
+  ],
+  "claim_enabled": "The field test can be reported as a falsification/guardrail: a simple hydraulic-leverage plus CPT-fabric gate is not sufficient, by itself, to explain Canterbury false negatives.",
+  "claim_blocked": "Do not call this a new constitutive law, universal liquefaction triggering equation, or repair-cost validation. It is a field-tested physical regime/gate derived from effective stress and CPT fabric proxies."
+}
