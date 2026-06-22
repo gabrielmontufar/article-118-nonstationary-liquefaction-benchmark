@@ -28,6 +28,7 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 
 - `scripts/run_118_nonstationary_liquefaction_benchmark.py`: self-contained Python script.
 - `scripts/run_131_critical_water_table_crossing_mechanism.py`: extracts the critical water-table crossing mechanism and writes Fig. 15 plus crossing/jump summaries.
+- `scripts/run_132_aggregate_eqc_cost_ratio_validation.py`: checks the decision-cost ratios against public Canterbury/EQC residential repair-cost evidence. Published regional loss ratios of 0.013, 0.066 and 0.171 for MMI 6, 7 and 8 imply empirical multipliers of about 5.1x (MMI7/MMI6) and 13.2x (MMI8/MMI6), supporting FN:FP ratios of 5-10 as economically plausible.
 - `scripts/run_130_hydraulic_leverage_breakthrough_gate.py`: field-regime guardrail; the simple hydraulic-leverage+CPT-fabric gate is not sufficient by itself to explain Canterbury false negatives.
 - `scripts/run_129_official_spatial_consequence_validation.py`: reproducible spatial join to public official Canterbury liquefaction occurrence/vulnerability layers; occurrence validation is direct spatial evidence, while the queried ECan vulnerability layer is not informative for design discrimination in this CPT subset.
 - `scripts/run_119_site_calibrated_application.py`: site-calibrated Nisqually extension using DesignSafe PRJ-3758 CPT case histories.

@@ -1,0 +1,4 @@
+ratio,numerator_rlr,denominator_rlr,loss_ratio_multiplier,interpretation
+MMI7_vs_MMI6,0.066,0.013,5.0769230769230775,aggregate empirical Canterbury building-loss-ratio multiplier
+MMI8_vs_MMI7,0.171,0.066,2.590909090909091,aggregate empirical Canterbury building-loss-ratio multiplier
+MMI8_vs_MMI6,0.171,0.013,13.153846153846155,aggregate empirical Canterbury building-loss-ratio multiplier

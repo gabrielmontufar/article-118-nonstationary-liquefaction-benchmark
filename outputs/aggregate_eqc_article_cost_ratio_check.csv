@@ -1,0 +1,8 @@
+article_false_negative_cost_ratio,within_empirical_mmi6_to_mmi8_multiplier,empirical_max_multiplier,interpretation
+1,True,13.153846153846155,inside aggregate Canterbury MMI6-to-MMI8 building-loss-ratio multiplier
+2,True,13.153846153846155,inside aggregate Canterbury MMI6-to-MMI8 building-loss-ratio multiplier
+5,True,13.153846153846155,inside aggregate Canterbury MMI6-to-MMI8 building-loss-ratio multiplier
+10,True,13.153846153846155,inside aggregate Canterbury MMI6-to-MMI8 building-loss-ratio multiplier
+20,False,13.153846153846155,above aggregate Canterbury MMI6-to-MMI8 multiplier; use only as conservative stress test
+50,False,13.153846153846155,above aggregate Canterbury MMI6-to-MMI8 multiplier; use only as conservative stress test
+100,False,13.153846153846155,above aggregate Canterbury MMI6-to-MMI8 multiplier; use only as conservative stress test

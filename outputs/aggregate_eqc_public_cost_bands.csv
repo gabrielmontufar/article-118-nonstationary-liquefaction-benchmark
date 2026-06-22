@@ -1,0 +1,4 @@
+source_id,source_url,metric,value_nzd,basis
+Treasury_T2010_2196_EQC_cost_estimate,https://www.treasury.govt.nz/sites/default/files/2021-08/eqc-t2010-2196-4121692.pdf,medium_claim_average_assumption,30000,"claims between NZD 10,000 and NZD 100,000 handled through Fletcher/PMO"
+Treasury_T2010_2196_EQC_cost_estimate,https://www.treasury.govt.nz/sites/default/files/2021-08/eqc-t2010-2196-4121692.pdf,medium_claim_sensitivity_high,40000,sensitivity test for average medium claim cost
+Treasury_T2010_2196_EQC_cost_estimate,https://www.treasury.govt.nz/sites/default/files/2021-08/eqc-t2010-2196-4121692.pdf,over_cap_eqc_building_payment,100000,"EQC cap for over-cap house damage at the time, before GST/excess details"

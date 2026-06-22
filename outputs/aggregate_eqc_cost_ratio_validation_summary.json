@@ -1,0 +1,122 @@
+{
+  "status": "PASS_AGGREGATE_EQC_COST_RATIO_VALIDATION",
+  "validation_level": "aggregate real-cost validation, not property-level cost validation",
+  "regional_loss_ratios": [
+    {
+      "source_id": "Khakurel_Yeow_Saha_Dhakal_2021_NZSEE_UC",
+      "source_url": "https://ir.canterbury.ac.nz/items/7a5bceac-f63f-4894-bc1a-831e2506734c",
+      "metric": "regional_loss_ratio",
+      "intensity": "MMI6",
+      "value": 0.013,
+      "unit": "building repair cost / replacement cost, aggregate Christchurch"
+    },
+    {
+      "source_id": "Khakurel_Yeow_Saha_Dhakal_2021_NZSEE_UC",
+      "source_url": "https://ir.canterbury.ac.nz/items/7a5bceac-f63f-4894-bc1a-831e2506734c",
+      "metric": "regional_loss_ratio",
+      "intensity": "MMI7",
+      "value": 0.066,
+      "unit": "building repair cost / replacement cost, aggregate Christchurch"
+    },
+    {
+      "source_id": "Khakurel_Yeow_Saha_Dhakal_2021_NZSEE_UC",
+      "source_url": "https://ir.canterbury.ac.nz/items/7a5bceac-f63f-4894-bc1a-831e2506734c",
+      "metric": "regional_loss_ratio",
+      "intensity": "MMI8",
+      "value": 0.171,
+      "unit": "building repair cost / replacement cost, aggregate Christchurch"
+    }
+  ],
+  "empirical_cost_multipliers": [
+    {
+      "ratio": "MMI7_vs_MMI6",
+      "numerator_rlr": 0.066,
+      "denominator_rlr": 0.013,
+      "loss_ratio_multiplier": 5.0769230769230775,
+      "interpretation": "aggregate empirical Canterbury building-loss-ratio multiplier"
+    },
+    {
+      "ratio": "MMI8_vs_MMI7",
+      "numerator_rlr": 0.171,
+      "denominator_rlr": 0.066,
+      "loss_ratio_multiplier": 2.590909090909091,
+      "interpretation": "aggregate empirical Canterbury building-loss-ratio multiplier"
+    },
+    {
+      "ratio": "MMI8_vs_MMI6",
+      "numerator_rlr": 0.171,
+      "denominator_rlr": 0.013,
+      "loss_ratio_multiplier": 13.153846153846155,
+      "interpretation": "aggregate empirical Canterbury building-loss-ratio multiplier"
+    }
+  ],
+  "public_cost_bands": [
+    {
+      "source_id": "Treasury_T2010_2196_EQC_cost_estimate",
+      "source_url": "https://www.treasury.govt.nz/sites/default/files/2021-08/eqc-t2010-2196-4121692.pdf",
+      "metric": "medium_claim_average_assumption",
+      "value_nzd": 30000,
+      "basis": "claims between NZD 10,000 and NZD 100,000 handled through Fletcher/PMO"
+    },
+    {
+      "source_id": "Treasury_T2010_2196_EQC_cost_estimate",
+      "source_url": "https://www.treasury.govt.nz/sites/default/files/2021-08/eqc-t2010-2196-4121692.pdf",
+      "metric": "medium_claim_sensitivity_high",
+      "value_nzd": 40000,
+      "basis": "sensitivity test for average medium claim cost"
+    },
+    {
+      "source_id": "Treasury_T2010_2196_EQC_cost_estimate",
+      "source_url": "https://www.treasury.govt.nz/sites/default/files/2021-08/eqc-t2010-2196-4121692.pdf",
+      "metric": "over_cap_eqc_building_payment",
+      "value_nzd": 100000,
+      "basis": "EQC cap for over-cap house damage at the time, before GST/excess details"
+    }
+  ],
+  "article_cost_ratios_checked": [
+    {
+      "article_false_negative_cost_ratio": 1,
+      "within_empirical_mmi6_to_mmi8_multiplier": true,
+      "empirical_max_multiplier": 13.153846153846155,
+      "interpretation": "inside aggregate Canterbury MMI6-to-MMI8 building-loss-ratio multiplier"
+    },
+    {
+      "article_false_negative_cost_ratio": 2,
+      "within_empirical_mmi6_to_mmi8_multiplier": true,
+      "empirical_max_multiplier": 13.153846153846155,
+      "interpretation": "inside aggregate Canterbury MMI6-to-MMI8 building-loss-ratio multiplier"
+    },
+    {
+      "article_false_negative_cost_ratio": 5,
+      "within_empirical_mmi6_to_mmi8_multiplier": true,
+      "empirical_max_multiplier": 13.153846153846155,
+      "interpretation": "inside aggregate Canterbury MMI6-to-MMI8 building-loss-ratio multiplier"
+    },
+    {
+      "article_false_negative_cost_ratio": 10,
+      "within_empirical_mmi6_to_mmi8_multiplier": true,
+      "empirical_max_multiplier": 13.153846153846155,
+      "interpretation": "inside aggregate Canterbury MMI6-to-MMI8 building-loss-ratio multiplier"
+    },
+    {
+      "article_false_negative_cost_ratio": 20,
+      "within_empirical_mmi6_to_mmi8_multiplier": false,
+      "empirical_max_multiplier": 13.153846153846155,
+      "interpretation": "above aggregate Canterbury MMI6-to-MMI8 multiplier; use only as conservative stress test"
+    },
+    {
+      "article_false_negative_cost_ratio": 50,
+      "within_empirical_mmi6_to_mmi8_multiplier": false,
+      "empirical_max_multiplier": 13.153846153846155,
+      "interpretation": "above aggregate Canterbury MMI6-to-MMI8 multiplier; use only as conservative stress test"
+    },
+    {
+      "article_false_negative_cost_ratio": 100,
+      "within_empirical_mmi6_to_mmi8_multiplier": false,
+      "empirical_max_multiplier": 13.153846153846155,
+      "interpretation": "above aggregate Canterbury MMI6-to-MMI8 multiplier; use only as conservative stress test"
+    }
+  ],
+  "claim_enabled": "Public Canterbury/EQC residential cost evidence supports Article 118's use of false-negative cost ratios in the 5-10 range: published regional loss ratios rise by about 5.1x from MMI6 to MMI7 and 13.2x from MMI6 to MMI8.",
+  "claim_blocked": "Do not describe this as property-level repair-cost validation, insurance-claim prediction, or spatial cost validation. The property-level EQC/NHC claims database with numeric payouts remains restricted."
+}
