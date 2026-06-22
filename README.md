@@ -30,6 +30,7 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `scripts/run_125_canterbury_leave_one_event_temporal_validation.py`: formal Canterbury leave-one-earthquake-out temporal validation; each event is held out as a complete validation event.
 - `scripts/run_126_reader_oriented_figures.py`: reader-oriented figure generator for the compact Feynman-style main manuscript.
 - `scripts/run_127_canterbury_severity_triage_validation.py`: action-style Canterbury severity-triage validation using observed manifestation-code severity.
+- `scripts/run_128_repair_cost_ratio_plausibility_gate.py`: DesignSafe PRJ-3126 repair-cost/time ratio plausibility gate for the false-negative cost frontier.
 - `scripts/select_adversarial_guardrail_model.py`: prespecified adversarial model-selection and conservative max(M0..M3) screening guardrail for the site-validation protocols.
 - `src/`: modular support code for groundwater calibration, gradation-status handling, stress calculations, triggering-model registry, vertical random-field diagnostics and validation metrics.
 - `manuscript/A_reproducible_reliability_benchmark.docx`: final corrected manuscript file used as the source for the repository PNG figures.
@@ -112,6 +113,9 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `outputs/canterbury_severity_triage_validation.csv`: top-10% and top-20% severe-manifestation capture metrics by held-out event and model.
 - `outputs/canterbury_severity_triage_best_by_event.csv`: best action-style triage model by event and action fraction.
 - `outputs/canterbury_severity_triage_summary.json`: machine-readable summary of the severity-triage claim boundary.
+- `outputs/repair_cost_ratio_plausibility_components.csv`: component-level DS3/DS4 versus DS1 repair-cost/time ratios from DesignSafe PRJ-3126.
+- `outputs/repair_cost_ratio_plausibility_summary.csv`: aggregate repair-cost/time ratio statistics.
+- `outputs/repair_cost_ratio_plausibility_summary.json`: machine-readable claim-boundary summary for cost-ratio plausibility.
 - `figures/fig01_pf_time_extreme_accumulation.png`: final manuscript Fig. 1, layer probability histories.
 - `figures/fig02_profile_mean_pf_by_scenario.png`: final manuscript Fig. 2, profile-average probability by groundwater scenario.
 - `figures/fig03_depth_time_pf_heatmap.png`: final manuscript Fig. 3, depth-time probability map.
@@ -145,6 +149,7 @@ python .\scripts\run_124_locked_threshold_external_decision_validation.py
 python .\scripts\run_125_canterbury_leave_one_event_temporal_validation.py
 python .\scripts\run_126_reader_oriented_figures.py
 python .\scripts\run_127_canterbury_severity_triage_validation.py
+python .\scripts\run_128_repair_cost_ratio_plausibility_gate.py
 python .\scripts\explore_nisqually_out_of_sample_protocols.py
 python .\scripts\analyze_sodo_uw_adverse_holdout.py
 python .\scripts\select_adversarial_guardrail_model.py
@@ -211,6 +216,8 @@ The Canterbury leave-one-event validation adds a formal temporal holdout within 
 The compact main manuscript uses a Feynman-style reading path: simple causal language, fewer main-text tables, and three reader-facing figures. Detailed input tables, convergence checks, sensitivity coefficients, secondary site-extension figures and extended claim matrices are kept in the supplementary material and repository outputs so the main manuscript remains under 30 Word-computed pages without losing auditability.
 
 The severity-triage validation adds an action-style proxy. Observed moderate-to-severe Canterbury manifestation is defined as manifestation_code >= 3, and models are evaluated by how many severe held-out event states they capture in the top 10% and top 20% highest predicted-probability inspection set. In the two events with severe manifestations, M2 captures more severe states than M0 in the top-20% set; 2016 has no severe manifestations and is reported as a blocked severity case.
+
+The repair-cost ratio plausibility gate uses DesignSafe PRJ-3126 New Zealand earthquake-damaged component repair costs/times. The PRJ-3126 master table has no shared CPT/event/geospatial key with Canterbury, so it is not direct consequence validation. It does support the plausibility of false-negative cost ratios greater than one: DS3/DS1 median repair-cost ratio is 3.56 and DS4/DS1 median repair-cost ratio is 10.34 among components with available values.
 
 ## Site-calibrated extension
 

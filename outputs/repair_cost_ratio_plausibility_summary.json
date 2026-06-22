@@ -1,0 +1,50 @@
+{
+  "status": "PASS_REPAIR_COST_RATIO_PLAUSIBILITY_GATE",
+  "source": "raw_designsafe/repair_costs_designsafe_PRJ-3126/NZ_repair_time_&_cost_master_20210119.csv",
+  "source_note": "DesignSafe PRJ-3126 New Zealand earthquake-damaged building component repair costs/times; downloaded public data file has .csv extension but Excel workbook content.",
+  "linkage_to_canterbury_cpt": "blocked: no shared CPT/event/geospatial key in the repair-cost master table",
+  "ratio_summary": [
+    {
+      "ratio": "ds3_vs_ds1_cost_ratio",
+      "n_components": 19,
+      "median": 3.5642023346303504,
+      "p75": 6.252053634537543,
+      "p90": 9.859075214839107,
+      "max": 14.343307086614173,
+      "share_ge_5": 0.2631578947368421,
+      "share_ge_10": 0.10526315789473684
+    },
+    {
+      "ratio": "ds4_vs_ds1_cost_ratio",
+      "n_components": 3,
+      "median": 10.34455640206439,
+      "p75": 31.05416796481172,
+      "p90": 43.47993490246012,
+      "max": 51.76377952755905,
+      "share_ge_5": 0.6666666666666666,
+      "share_ge_10": 0.6666666666666666
+    },
+    {
+      "ratio": "ds3_vs_ds1_time_ratio",
+      "n_components": 19,
+      "median": 3.113003196268141,
+      "p75": 4.11273954058925,
+      "p90": 7.972220416560734,
+      "max": 12.998622047244092,
+      "share_ge_5": 0.21052631578947367,
+      "share_ge_10": 0.05263157894736842
+    },
+    {
+      "ratio": "ds4_vs_ds1_time_ratio",
+      "n_components": 3,
+      "median": 9.209178260374395,
+      "p75": 32.10409700420294,
+      "p90": 45.84104825050008,
+      "max": 54.999015748031496,
+      "share_ge_5": 0.6666666666666666,
+      "share_ge_10": 0.3333333333333333
+    }
+  ],
+  "claim_enabled": "external New Zealand repair-cost/time data support the plausibility of using false-negative cost ratios greater than one in screening frontiers",
+  "claim_blocked": "do not treat PRJ-3126 as direct Canterbury CPT consequence validation, repair-cost prediction, or design-level validation"
+}
