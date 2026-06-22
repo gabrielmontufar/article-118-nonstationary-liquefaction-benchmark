@@ -1,0 +1,145 @@
+domain,model_name,false_negative_cost_ratio,locked_threshold,expected_loss_per_case,tp,fp,tn,fn,n_cases,threshold_policy
+Nisqually primary leave-one-family,M0_static_stationary,1.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,1.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,1.0,0.325,0.4319697923222152,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,1.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,1.0,0.075,0.4747640025173065,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,1.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,1.0,0.125,0.4845185651353052,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,1.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,1.0,0.325,0.46073001887979864,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,1.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,1.0,0.725,0.375,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,1.0,0.725,0.4448080553807426,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,2.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,2.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,2.0,0.325,0.4382001258653241,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,2.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,2.0,0.075,0.4753303964757709,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,2.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,2.0,0.125,0.4858401510383889,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,2.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,2.0,0.325,0.46400251730648207,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,2.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,2.0,0.725,0.75,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,2.0,0.725,0.45298930144745125,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,3.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,3.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,3.0,0.325,0.44443045940843295,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,3.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,3.0,0.075,0.4758967904342354,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,3.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,3.0,0.125,0.48716173694147263,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,3.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,3.0,0.325,0.4672750157331655,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,3.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,3.0,0.725,1.125,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,3.0,0.725,0.46117054751415987,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,5.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,5.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,5.0,0.325,0.45689112649465075,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,5.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,5.0,0.075,0.4770295783511643,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,5.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,5.0,0.125,0.48980490874764004,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,5.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,5.0,0.325,0.4738200125865324,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,5.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,5.0,0.725,1.875,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,5.0,0.725,0.4775330396475771,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,7.5,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,7.5,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,7.5,0.325,0.4724669603524229,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,7.5,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,7.5,0.075,0.47844556324732535,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,7.5,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,7.5,0.125,0.49310887350534927,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,7.5,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,7.5,0.325,0.482001258653241,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,7.5,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,7.5,0.725,2.8125,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,7.5,0.725,0.49798615481434866,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,10.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,10.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,10.0,0.325,0.4880427942101951,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,10.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,10.0,0.075,0.47986154814348647,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,10.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,10.0,0.125,0.49641283826305854,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,10.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,10.0,0.325,0.4901825047199497,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,10.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,10.0,0.725,3.75,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,10.0,0.725,0.5184392699811202,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,15.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,15.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,15.0,0.325,0.5191944619257395,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,15.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,15.0,0.075,0.48269351793580867,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,15.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,15.0,0.125,0.503020767778477,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,15.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,15.0,0.325,0.5065449968533668,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,15.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,15.0,0.725,5.625,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,15.0,0.725,0.5593455003146633,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,20.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,20.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,20.0,0.325,0.5503461296412838,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,20.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,20.0,0.075,0.4855254877281309,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,20.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,20.0,0.125,0.5096286972938955,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,20.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,20.0,0.325,0.5229074889867842,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,20.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,20.0,0.725,7.5,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,20.0,0.725,0.6002517306482065,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,30.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,30.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,30.0,0.325,0.6126494650723726,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,30.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,30.0,0.075,0.4911894273127753,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,30.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,30.0,0.125,0.5228445563247326,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,30.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,30.0,0.325,0.5556324732536186,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,30.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,30.0,0.725,11.25,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,30.0,0.725,0.6820641913152926,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,50.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,50.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,50.0,0.325,0.7372561359345501,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,50.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,50.0,0.075,0.5025173064820642,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,50.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,50.0,0.125,0.5492762743864066,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,50.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,50.0,0.325,0.6210824417872876,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,50.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,50.0,0.725,18.75,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,50.0,0.725,0.8456891126494651,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,75.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,75.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,75.0,0.325,0.8930144745122719,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,75.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,75.0,0.075,0.5166771554436753,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,75.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,75.0,0.125,0.582315921963499,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,75.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,75.0,0.325,0.7028949024543738,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,75.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,75.0,0.725,28.125,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,75.0,0.725,1.0502202643171805,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M0_static_stationary,100.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,100.0,0.325,0.0,4,0,4,0,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M0_static_stationary,100.0,0.325,1.0487728130899938,6090,6765,2936,99,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,100.0,0.075,0.125,9,3,12,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,100.0,0.075,0.5308370044052864,6180,7535,2166,9,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,100.0,0.125,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,100.0,0.125,0.6153555695405916,6168,7678,2023,21,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,100.0,0.325,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,100.0,0.325,0.78470736312146,6137,7269,2432,52,15890,locked_on_nisqually_leave_one_family_then_external_transfer
+Nisqually primary leave-one-family,conservative_max_M0_M3,100.0,0.725,0.041666666666666664,9,1,14,0,24,locked_on_nisqually_leave_one_family_then_external_transfer
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,100.0,0.725,37.5,1,0,4,3,8,locked_on_nisqually_leave_one_family_then_external_transfer
+Canterbury multi-site external transfer,conservative_max_M0_M3,100.0,0.725,1.2547514159848963,6059,6938,2763,130,15890,locked_on_nisqually_leave_one_family_then_external_transfer

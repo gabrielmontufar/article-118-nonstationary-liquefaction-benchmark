@@ -26,6 +26,7 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `scripts/run_121_canterbury_multi_site_temporal_validation.py`: Canterbury PRJ-2937 external transfer validation across all usable CPT event states in `CANTERBURYDATASET.mat`.
 - `scripts/run_122_cost_sensitive_decision_frontier.py`: cost-sensitive georisk decision frontier for false-negative-weighted screening decisions.
 - `scripts/run_123_hu_leave_one_earthquake_validation.py`: leave-one-earthquake-out external case-history validation on the Hu et al. dataset.
+- `scripts/run_124_locked_threshold_external_decision_validation.py`: locked-threshold external decision validation; thresholds are selected on Nisqually only and transferred unchanged to SODO/UW and Canterbury.
 - `scripts/select_adversarial_guardrail_model.py`: prespecified adversarial model-selection and conservative max(M0..M3) screening guardrail for the site-validation protocols.
 - `src/`: modular support code for groundwater calibration, gradation-status handling, stress calculations, triggering-model registry, vertical random-field diagnostics and validation metrics.
 - `manuscript/A_reproducible_reliability_benchmark.docx`: final corrected manuscript file used as the source for the repository PNG figures.
@@ -93,6 +94,10 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `outputs/hu_leave_one_earthquake_metrics.csv`: pooled leave-one-earthquake-out metrics by screening model.
 - `outputs/hu_leave_one_earthquake_fold_metrics.csv`: fold-level metrics for each held-out earthquake.
 - `outputs/hu_leave_one_earthquake_summary.json`: machine-readable summary of the event-level external validation claim boundary.
+- `outputs/locked_threshold_selection_rules.csv`: Nisqually-selected thresholds for the locked external decision-rule validation.
+- `outputs/locked_threshold_external_decision_validation.csv`: external-domain losses, false negatives and false positives after applying the locked thresholds.
+- `outputs/locked_threshold_external_case_weighted_summary.csv`: case-weighted external summary, including coverage flags for partial/full external-domain comparisons.
+- `outputs/locked_threshold_external_decision_summary.json`: machine-readable summary of the locked decision-rule validation and claim boundary.
 - `figures/fig01_pf_time_extreme_accumulation.png`: final manuscript Fig. 1, layer probability histories.
 - `figures/fig02_profile_mean_pf_by_scenario.png`: final manuscript Fig. 2, profile-average probability by groundwater scenario.
 - `figures/fig03_depth_time_pf_heatmap.png`: final manuscript Fig. 3, depth-time probability map.
@@ -122,6 +127,7 @@ python .\scripts\run_120_canterbury_temporal_site_application.py
 python .\scripts\run_121_canterbury_multi_site_temporal_validation.py
 python .\scripts\run_122_cost_sensitive_decision_frontier.py
 python .\scripts\run_123_hu_leave_one_earthquake_validation.py
+python .\scripts\run_124_locked_threshold_external_decision_validation.py
 python .\scripts\explore_nisqually_out_of_sample_protocols.py
 python .\scripts\analyze_sodo_uw_adverse_holdout.py
 python .\scripts\select_adversarial_guardrail_model.py
@@ -180,6 +186,8 @@ The external check also reports five-fold calibrated Brier scores, confusion mat
 The Hu et al. and Wenchuan tables are external case-history compatibility checks. They evaluate whether demand, resistance and groundwater indicators rank observed liquefied cases above non-liquefied cases. They do not constitute a calibrated non-stationary field application.
 
 The leave-one-earthquake-out Hu validation adds a stricter external screen: each earthquake is held out in turn, simple screening scores are calibrated on the other earthquakes, and the held-out event is predicted. The best pooled model is the combined screening score, with Brier 0.194 and AUC 0.753 across 232 predictions from 15 held-out earthquakes. This supports event-level external screening transfer, but it remains separate from validation of the non-stationary time-update operator.
+
+The locked-threshold decision validation is stricter than the diagnostic frontier because it selects operating thresholds only on the Nisqually leave-one-family domain and then applies them unchanged to SODO/UW and Canterbury. At FN:FP = 10, the M1 groundwater-only rule selected at threshold 0.075 reduces Canterbury false negatives from 99 under M0 to 9, with additional false positives. The full-domain comparison remains restricted to models available in both external domains and continues to favour M0, so this result supports domain-conditional false-negative management rather than universal non-stationary superiority.
 
 ## Site-calibrated extension
 

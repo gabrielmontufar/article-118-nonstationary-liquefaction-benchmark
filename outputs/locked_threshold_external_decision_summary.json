@@ -1,0 +1,280 @@
+{
+  "status": "PASS_LOCKED_THRESHOLD_EXTERNAL_DECISION_VALIDATION",
+  "selection_domain": "Nisqually primary leave-one-family",
+  "external_domains": [
+    "SODO/UW adverse industrial-waterway holdout",
+    "Canterbury multi-site external transfer"
+  ],
+  "threshold_policy": "select threshold on Nisqually leave-one-family only; apply unchanged to external domains",
+  "fn_fp_10_best_canterbury_locked_rule": {
+    "model_name": "M1_nonstationary_groundwater_only",
+    "locked_threshold": 0.075,
+    "expected_loss_per_case": 0.47986154814348647,
+    "fn": 9,
+    "fp": 7535,
+    "n_cases": 15890
+  },
+  "fn_fp_10_case_weighted_external_best_rule": {
+    "model_name": "M1_nonstationary_groundwater_only",
+    "locked_threshold": 0.075,
+    "case_weighted_external_loss": 0.47986154814348647,
+    "external_fn": 9,
+    "external_fp": 7535,
+    "external_n_cases": 15890,
+    "external_domains_covered": 1,
+    "full_external_domain_coverage": false
+  },
+  "fn_fp_10_full_domain_external_best_rule": {
+    "model_name": "M0_static_stationary",
+    "locked_threshold": 0.325,
+    "case_weighted_external_loss": 0.4877972071958737,
+    "external_fn": 99,
+    "external_fp": 6765,
+    "external_n_cases": 15898,
+    "external_domains_covered": 2
+  },
+  "canterbury_fn_fp_10_m1_vs_m0": {
+    "m0_threshold": 0.325,
+    "m0_loss": 0.4880427942101951,
+    "m0_fn": 99,
+    "m0_fp": 6765,
+    "m1_threshold": 0.075,
+    "m1_loss": 0.47986154814348647,
+    "m1_fn": 9,
+    "m1_fp": 7535
+  },
+  "best_case_weighted_external_rules": [
+    {
+      "false_negative_cost_ratio": 1.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.43175242168826267,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2,
+      "full_external_domain_coverage": true
+    },
+    {
+      "false_negative_cost_ratio": 2.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.43797962007799723,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2,
+      "full_external_domain_coverage": true
+    },
+    {
+      "false_negative_cost_ratio": 3.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.4442068184677318,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2,
+      "full_external_domain_coverage": true
+    },
+    {
+      "false_negative_cost_ratio": 5.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.4566612152472009,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2,
+      "full_external_domain_coverage": true
+    },
+    {
+      "false_negative_cost_ratio": 7.5,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.4722292112215373,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2,
+      "full_external_domain_coverage": true
+    },
+    {
+      "false_negative_cost_ratio": 10.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "locked_threshold": 0.075,
+      "case_weighted_external_loss": 0.47986154814348647,
+      "external_fn": 9,
+      "external_fp": 7535,
+      "external_domains_covered": 1,
+      "full_external_domain_coverage": false
+    },
+    {
+      "false_negative_cost_ratio": 15.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "locked_threshold": 0.075,
+      "case_weighted_external_loss": 0.48269351793580867,
+      "external_fn": 9,
+      "external_fp": 7535,
+      "external_domains_covered": 1,
+      "full_external_domain_coverage": false
+    },
+    {
+      "false_negative_cost_ratio": 20.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "locked_threshold": 0.075,
+      "case_weighted_external_loss": 0.4855254877281309,
+      "external_fn": 9,
+      "external_fp": 7535,
+      "external_domains_covered": 1,
+      "full_external_domain_coverage": false
+    },
+    {
+      "false_negative_cost_ratio": 30.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "locked_threshold": 0.075,
+      "case_weighted_external_loss": 0.4911894273127753,
+      "external_fn": 9,
+      "external_fp": 7535,
+      "external_domains_covered": 1,
+      "full_external_domain_coverage": false
+    },
+    {
+      "false_negative_cost_ratio": 50.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "locked_threshold": 0.075,
+      "case_weighted_external_loss": 0.5025173064820642,
+      "external_fn": 9,
+      "external_fp": 7535,
+      "external_domains_covered": 1,
+      "full_external_domain_coverage": false
+    },
+    {
+      "false_negative_cost_ratio": 75.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "locked_threshold": 0.075,
+      "case_weighted_external_loss": 0.5166771554436753,
+      "external_fn": 9,
+      "external_fp": 7535,
+      "external_domains_covered": 1,
+      "full_external_domain_coverage": false
+    },
+    {
+      "false_negative_cost_ratio": 100.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "locked_threshold": 0.075,
+      "case_weighted_external_loss": 0.5308370044052864,
+      "external_fn": 9,
+      "external_fp": 7535,
+      "external_domains_covered": 1,
+      "full_external_domain_coverage": false
+    }
+  ],
+  "best_full_domain_external_rules": [
+    {
+      "false_negative_cost_ratio": 1.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.43175242168826267,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 2.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.43797962007799723,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 3.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.4442068184677318,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 5.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.4566612152472009,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 7.5,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.4722292112215373,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 10.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.4877972071958737,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 15.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.5189331991445465,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 20.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.5500691910932193,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 30.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.6123411749905648,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 50.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.736885142785256,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 75.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 0.89256510252862,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    },
+    {
+      "false_negative_cost_ratio": 100.0,
+      "best_model": "M0_static_stationary",
+      "locked_threshold": 0.325,
+      "case_weighted_external_loss": 1.0482450622719839,
+      "external_fn": 99,
+      "external_fp": 6765,
+      "external_domains_covered": 2
+    }
+  ],
+  "claim_enabled": "a locked decision-rule validation: thresholds are selected without Canterbury or SODO/UW retuning, then transferred externally. At FN:FP=10, M1 strongly reduces Canterbury false negatives relative to M0 and has the best available-case external loss, while the full-domain comparison remains restricted to models available in both SODO/UW and Canterbury.",
+  "claim_blocked": "do not state that non-stationary models are universally superior; the locked-rule evidence supports domain-conditional false-negative management, not global calibration dominance."
+}
