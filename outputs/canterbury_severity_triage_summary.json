@@ -1,0 +1,43 @@
+{
+  "status": "PASS_CANTERBURY_SEVERITY_TRIAGE_VALIDATION",
+  "source": "outputs/canterbury_leave_one_event_temporal_predictions.csv",
+  "severity_definition": "manifestation_code >= 3",
+  "action_rule": "inspect or prioritise top 10% and top 20% by held-out predicted probability",
+  "events_with_severe_manifestations": [
+    "Yr2010",
+    "Yr2011"
+  ],
+  "events_without_severe_manifestations": [
+    "Yr2016"
+  ],
+  "top20_nonstationary_vs_m0_by_event": [
+    {
+      "heldout_event_key": "Yr2010",
+      "heldout_event_name": "2010 Darfield earthquake",
+      "best_nonstationary_model": "M2_nonstationary_groundwater_gradation",
+      "top_fraction": 0.2,
+      "m0_severe_capture_rate": 0.10970464135021098,
+      "m0_action_precision": 0.023679417122040074,
+      "m0_lift": 0.5483233804462275,
+      "nonstationary_severe_capture_rate": 0.1940928270042194,
+      "nonstationary_action_precision": 0.04189435336976321,
+      "nonstationary_lift": 0.9701105961740949,
+      "n_severe_event_states": 237
+    },
+    {
+      "heldout_event_key": "Yr2011",
+      "heldout_event_name": "2011 Christchurch earthquake",
+      "best_nonstationary_model": "M2_nonstationary_groundwater_gradation",
+      "top_fraction": 0.2,
+      "m0_severe_capture_rate": 0.1853546910755149,
+      "m0_action_precision": 0.21657754010695188,
+      "m0_lift": 0.9271038558964255,
+      "nonstationary_severe_capture_rate": 0.2044241037376049,
+      "nonstationary_action_precision": 0.23885918003565063,
+      "nonstationary_lift": 1.0224849110298027,
+      "n_severe_event_states": 1311
+    }
+  ],
+  "claim_enabled": "action-style triage evidence: in Canterbury events with observed severe manifestations, groundwater/gradation-aware models can improve capture of severe manifestation states in the top-20% inspection set.",
+  "claim_blocked": "do not describe this as repair-cost validation, design consequence validation, or a universal severity model; 2016 contains no severe manifestations."
+}

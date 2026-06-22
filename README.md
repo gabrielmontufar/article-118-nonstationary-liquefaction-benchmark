@@ -29,6 +29,7 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `scripts/run_124_locked_threshold_external_decision_validation.py`: locked-threshold external decision validation; thresholds are selected on Nisqually only and transferred unchanged to SODO/UW and Canterbury.
 - `scripts/run_125_canterbury_leave_one_event_temporal_validation.py`: formal Canterbury leave-one-earthquake-out temporal validation; each event is held out as a complete validation event.
 - `scripts/run_126_reader_oriented_figures.py`: reader-oriented figure generator for the compact Feynman-style main manuscript.
+- `scripts/run_127_canterbury_severity_triage_validation.py`: action-style Canterbury severity-triage validation using observed manifestation-code severity.
 - `scripts/select_adversarial_guardrail_model.py`: prespecified adversarial model-selection and conservative max(M0..M3) screening guardrail for the site-validation protocols.
 - `src/`: modular support code for groundwater calibration, gradation-status handling, stress calculations, triggering-model registry, vertical random-field diagnostics and validation metrics.
 - `manuscript/A_reproducible_reliability_benchmark.docx`: final corrected manuscript file used as the source for the repository PNG figures.
@@ -108,6 +109,9 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `figures/fig12_canterbury_leave_one_event_temporal_validation.png`: reader-facing temporal holdout summary.
 - `figures/fig13_locked_threshold_fn_fp_tradeoff.png`: reader-facing false-negative/false-positive trade-off graphic.
 - `figures/fig14_evidence_claim_boundary.png`: reader-facing evidence and claim-boundary map.
+- `outputs/canterbury_severity_triage_validation.csv`: top-10% and top-20% severe-manifestation capture metrics by held-out event and model.
+- `outputs/canterbury_severity_triage_best_by_event.csv`: best action-style triage model by event and action fraction.
+- `outputs/canterbury_severity_triage_summary.json`: machine-readable summary of the severity-triage claim boundary.
 - `figures/fig01_pf_time_extreme_accumulation.png`: final manuscript Fig. 1, layer probability histories.
 - `figures/fig02_profile_mean_pf_by_scenario.png`: final manuscript Fig. 2, profile-average probability by groundwater scenario.
 - `figures/fig03_depth_time_pf_heatmap.png`: final manuscript Fig. 3, depth-time probability map.
@@ -140,6 +144,7 @@ python .\scripts\run_123_hu_leave_one_earthquake_validation.py
 python .\scripts\run_124_locked_threshold_external_decision_validation.py
 python .\scripts\run_125_canterbury_leave_one_event_temporal_validation.py
 python .\scripts\run_126_reader_oriented_figures.py
+python .\scripts\run_127_canterbury_severity_triage_validation.py
 python .\scripts\explore_nisqually_out_of_sample_protocols.py
 python .\scripts\analyze_sodo_uw_adverse_holdout.py
 python .\scripts\select_adversarial_guardrail_model.py
@@ -204,6 +209,8 @@ The locked-threshold decision validation is stricter than the diagnostic frontie
 The Canterbury leave-one-event validation adds a formal temporal holdout within the largest external dataset. Each earthquake is removed in turn, models are fitted on the other two earthquakes, and the held-out event is predicted. Across 15,890 unique event states and 63,560 model predictions, M2 is the best pooled model by both Brier score (0.138) and AUC (0.834). Event-wise results remain mixed, especially for the low-prevalence 2016 event, so the manuscript reports this as evidence for temporal transfer and rank discrimination, not universal model dominance.
 
 The compact main manuscript uses a Feynman-style reading path: simple causal language, fewer main-text tables, and three reader-facing figures. Detailed input tables, convergence checks, sensitivity coefficients, secondary site-extension figures and extended claim matrices are kept in the supplementary material and repository outputs so the main manuscript remains under 30 Word-computed pages without losing auditability.
+
+The severity-triage validation adds an action-style proxy. Observed moderate-to-severe Canterbury manifestation is defined as manifestation_code >= 3, and models are evaluated by how many severe held-out event states they capture in the top 10% and top 20% highest predicted-probability inspection set. In the two events with severe manifestations, M2 captures more severe states than M0 in the top-20% set; 2016 has no severe manifestations and is reported as a blocked severity case.
 
 ## Site-calibrated extension
 
