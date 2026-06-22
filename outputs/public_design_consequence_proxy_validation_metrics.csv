@@ -1,0 +1,21 @@
+target,target_col,high_threshold,model_name,n_sites,n_high,auc_for_top_quartile_target,spearman_ordinal,median_pf_high,median_pf_not_high
+CCC max moderate-to-severe damage percentage,ccc_hazard_max_mod_to_severe_pct,97.0,M0_static_stationary,5451,1930,0.5497372537535704,0.04839688111212264,0.90452567725132,0.8761343024505095
+CCC max moderate-to-severe damage percentage,ccc_hazard_max_mod_to_severe_pct,97.0,M1_nonstationary_groundwater_only,5451,1930,0.5517877192801739,0.05360222692198095,0.9007519700906843,0.8714506583543032
+CCC max moderate-to-severe damage percentage,ccc_hazard_max_mod_to_severe_pct,97.0,M2_nonstationary_groundwater_gradation,5451,1930,0.542020857828602,0.046080612341016125,0.9086756578330444,0.8888608082476992
+CCC max moderate-to-severe damage percentage,ccc_hazard_max_mod_to_severe_pct,97.0,M3_full_nonstationary_random_field,5451,1930,0.5404190695942774,0.04163309059721425,0.9057993842644413,0.884991652577336
+CCC max scenario damage class,ccc_hazard_max_damage_class,6.0,M0_static_stationary,5451,5376,0.4112413194444444,-0.03583514861364829,0.8886131055037636,0.9654947849779072
+CCC max scenario damage class,ccc_hazard_max_damage_class,6.0,M1_nonstationary_groundwater_only,5451,5376,0.4342633928571429,-0.026493416994716117,0.8854172137581038,0.943051173802556
+CCC max scenario damage class,ccc_hazard_max_damage_class,6.0,M2_nonstationary_groundwater_gradation,5451,5376,0.4291121031746032,-0.02854265198062286,0.8964420235817913,0.9551507606700672
+CCC max scenario damage class,ccc_hazard_max_damage_class,6.0,M3_full_nonstationary_random_field,5451,5376,0.42131944444444447,-0.03167717828392264,0.8941282018689685,0.9552263199049678
+CCC liquefaction vulnerability category,ccc_vulnerability_score,3.0,M0_static_stationary,5451,3364,0.47793949236739297,-0.021538951950570782,0.877987794499146,0.910300844560401
+CCC liquefaction vulnerability category,ccc_vulnerability_score,3.0,M1_nonstationary_groundwater_only,5451,3364,0.4894487248221964,-0.0021232703101805436,0.8743951732054753,0.9006388012398729
+CCC liquefaction vulnerability category,ccc_vulnerability_score,3.0,M2_nonstationary_groundwater_gradation,5451,3364,0.4976922423906101,0.012700724407395485,0.8909584557404073,0.9073152053103372
+CCC liquefaction vulnerability category,ccc_vulnerability_score,3.0,M3_full_nonstationary_random_field,5451,3364,0.49320833857974766,0.005361026258697765,0.8868101469227561,0.9059526854479908
+CCC quake foundation technical category,quake_foundation_tc_score,3.0,M0_static_stationary,5450,3564,0.5039510070660654,0.012601648201566323,0.8869002306673918,0.895239332184395
+CCC quake foundation technical category,quake_foundation_tc_score,3.0,M1_nonstationary_groundwater_only,5450,3564,0.5057482447903091,0.013891726139128084,0.8851359213399541,0.888882056816787
+CCC quake foundation technical category,quake_foundation_tc_score,3.0,M2_nonstationary_groundwater_gradation,5450,3564,0.5032964855340253,0.006232171969201271,0.895024269264406,0.9025064217752198
+CCC quake foundation technical category,quake_foundation_tc_score,3.0,M3_full_nonstationary_random_field,5450,3564,0.49545829450389367,-0.006791680433573643,0.8900463359311009,0.9037692558085288
+MBIE technical category/red zone,mbie_tc_score,3.0,M0_static_stationary,5662,4118,0.496003109059934,-0.03881678013858967,0.8704283199930228,0.8984201749564384
+MBIE technical category/red zone,mbie_tc_score,3.0,M1_nonstationary_groundwater_only,5662,4118,0.500798969266735,-0.03090993925654819,0.8694141300762315,0.8929430633570683
+MBIE technical category/red zone,mbie_tc_score,3.0,M2_nonstationary_groundwater_gradation,5662,4118,0.5064436556807344,-0.017665380790441422,0.8828276742549938,0.9034811018219728
+MBIE technical category/red zone,mbie_tc_score,3.0,M3_full_nonstationary_random_field,5662,4118,0.4998279385083055,-0.024634621022785096,0.8801025288725937,0.9042823373265716
