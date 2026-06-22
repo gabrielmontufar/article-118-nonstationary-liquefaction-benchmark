@@ -6,6 +6,10 @@ This folder contains the reproducible georisk reliability-updating benchmark for
 
 Public repository: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark>
 
+Versioned MRNB-100 Georisk tag: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v2.0-mrnb100-georisk>
+
+Frozen commit: `2981604`
+
 ## Purpose
 
 The benchmark evaluates how time-dependent groundwater depth and gradation changes alter the probability of liquefaction in a layered soil profile. It compares:
