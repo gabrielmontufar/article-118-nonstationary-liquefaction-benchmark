@@ -1,0 +1,123 @@
+{
+  "status": "PASS_PARTIAL_CANTERBURY_CRITICAL_LAYER_FIELD_CHECK",
+  "n_event_states": 15875,
+  "critical_layer_definition": "median depth and qc of weakest 20% qc values between 0.5 and 6 m in each CPT",
+  "metrics": [
+    {
+      "target": "observed_liquefaction",
+      "features": "pga_g",
+      "n_predictions": 15875,
+      "n_positive": 6185,
+      "auc": 0.8157003152705579,
+      "brier_score": 0.13791539766611977,
+      "log_loss": 0.46980238435709065,
+      "model_name": "pga_only"
+    },
+    {
+      "target": "observed_liquefaction",
+      "features": "pga_g+wtd_event_site_adjusted_m",
+      "n_predictions": 15875,
+      "n_positive": 6185,
+      "auc": 0.8247434411793906,
+      "brier_score": 0.13963045411611544,
+      "log_loss": 0.4734876389593821,
+      "model_name": "pga_plus_wtd"
+    },
+    {
+      "target": "observed_liquefaction",
+      "features": "pga_g+critical_layer_saturated",
+      "n_predictions": 15875,
+      "n_positive": 6185,
+      "auc": 0.8167506192367598,
+      "brier_score": 0.13809130982284354,
+      "log_loss": 0.4712461389250919,
+      "model_name": "pga_plus_critical_saturated"
+    },
+    {
+      "target": "observed_liquefaction",
+      "features": "pga_g+critical_crossing_margin_m",
+      "n_predictions": 15875,
+      "n_positive": 6185,
+      "auc": 0.813282392819273,
+      "brier_score": 0.1383661867092558,
+      "log_loss": 0.47189151005212876,
+      "model_name": "pga_plus_crossing_margin"
+    },
+    {
+      "target": "observed_liquefaction",
+      "features": "pga_g+wtd_event_site_adjusted_m+critical_layer_depth_m+critical_layer_qc_mpa+critical_layer_saturated+critical_crossing_margin_m",
+      "n_predictions": 15875,
+      "n_positive": 6185,
+      "auc": 0.8283787718380549,
+      "brier_score": 0.13928540894000865,
+      "log_loss": 0.4715093228542279,
+      "model_name": "critical_layer_bundle"
+    },
+    {
+      "target": "severe_manifestation",
+      "features": "pga_g",
+      "n_predictions": 11090,
+      "n_positive": 1547,
+      "auc": 0.6727269438958327,
+      "brier_score": 0.12144653610938806,
+      "log_loss": 0.4034538380277944,
+      "model_name": "pga_only"
+    },
+    {
+      "target": "severe_manifestation",
+      "features": "pga_g+wtd_event_site_adjusted_m",
+      "n_predictions": 11090,
+      "n_positive": 1547,
+      "auc": 0.6610785150275137,
+      "brier_score": 0.12300706480112379,
+      "log_loss": 0.40721024262743877,
+      "model_name": "pga_plus_wtd"
+    },
+    {
+      "target": "severe_manifestation",
+      "features": "pga_g+critical_layer_saturated",
+      "n_predictions": 11090,
+      "n_positive": 1547,
+      "auc": 0.6713656032867528,
+      "brier_score": 0.12149039575466401,
+      "log_loss": 0.403943328286779,
+      "model_name": "pga_plus_critical_saturated"
+    },
+    {
+      "target": "severe_manifestation",
+      "features": "pga_g+critical_crossing_margin_m",
+      "n_predictions": 11090,
+      "n_positive": 1547,
+      "auc": 0.6698523967418322,
+      "brier_score": 0.12103828345295571,
+      "log_loss": 0.4026263275790416,
+      "model_name": "pga_plus_crossing_margin"
+    },
+    {
+      "target": "severe_manifestation",
+      "features": "pga_g+wtd_event_site_adjusted_m+critical_layer_depth_m+critical_layer_qc_mpa+critical_layer_saturated+critical_crossing_margin_m",
+      "n_predictions": 11090,
+      "n_positive": 1547,
+      "auc": 0.6778972948693901,
+      "brier_score": 0.12074660643540824,
+      "log_loss": 0.4053762255082806,
+      "model_name": "critical_layer_bundle"
+    }
+  ],
+  "contrasts": [
+    {
+      "target": "observed_liquefaction",
+      "auc_delta_vs_pga": 0.012678456567496998,
+      "brier_delta_vs_pga": 0.001370011273888888,
+      "interpretation": "positive_auc_delta_negative_brier_delta_is_strong; current evidence is partial if only one metric improves"
+    },
+    {
+      "target": "severe_manifestation",
+      "auc_delta_vs_pga": 0.005170350973557447,
+      "brier_delta_vs_pga": -0.0006999296739798183,
+      "interpretation": "positive_auc_delta_negative_brier_delta_is_strong; current evidence is partial if only one metric improves"
+    }
+  ],
+  "claim_enabled": "A CPT-derived critical-layer bundle adds small leave-one-event discrimination beyond PGA alone, especially as a field-facing check of the water-table crossing mechanism.",
+  "claim_blocked": "Do not describe this as decisive field validation of the critical water-table switch. The improvement is small and mixed across metrics, and Canterbury outcomes remain strongly controlled by shaking intensity and site history."
+}
