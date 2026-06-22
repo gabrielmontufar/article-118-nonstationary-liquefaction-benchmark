@@ -10,6 +10,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import math
+from statistics import NormalDist
 
 import numpy as np
 import pandas as pd
@@ -109,4 +110,4 @@ def crr_benchmark_smooth(n1cs: float) -> float:
 
 def beta_equivalent_from_pf(pf: float) -> float:
     p = min(max(float(pf), 1e-6), 1.0 - 1e-6)
-    return -math.log(p / (1.0 - p))
+    return -NormalDist().inv_cdf(p)

@@ -1,0 +1,41 @@
+validation_protocol,auc,brier_score,sensitivity,specificity,tp,fp,tn,fn,n_test,source_file,policy_name,protocol,heldout_group
+exhaustive paired-family spatial holdout,0.9925925925925926,0.06006714002246905,1.0,0.8666666666666667,9,2,13,0,24,outputs/site_prediction_probabilities.csv,conservative_max_M0_M3,,
+leave-one-site-family-out spatial validation,0.9925925925925926,0.062003103408881384,1.0,0.8666666666666667,9,2,13,0,24,outputs/site_prediction_probabilities.csv,conservative_max_M0_M3,,
+,1.0,0.036420668495145456,1.0,1.0,4,0,4,0,8,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,fixed_family_holdout_SODO_UW,SODO_UW
+,,0.0008949474049926577,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Blair Waterway
+,,0.06803181550902569,1.0,,1,0,0,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Boeing Field
+,,0.003941112341055992,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Bush School
+,,0.00681340169266959,1.0,,2,0,0,0,2,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Capitol Lake
+,,0.00010478364614815059,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Discovery Park
+,,0.5473219478652639,,0.0,0,1,0,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Duwamish
+,,0.061410181549938964,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Elliott Ave
+,,0.1526753386134347,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Emerald Downs
+,,0.0009309893646298411,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Factoria
+,,0.2874222362256222,,0.0,0,1,0,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Green River
+,,0.00364848052869191,1.0,,2,0,0,0,2,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Harbor Island
+,,0.01685988575728861,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Issaquah
+,,0.05786715804137949,1.0,,4,0,0,0,4,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,SODO
+,,0.03236137682963329,,1.0,0,0,2,0,2,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,Smith Cove
+,,0.024907080585494953,,1.0,0,0,4,0,4,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_family_out,UW
+,,0.007706318390635664,,1.0,0,0,3,0,3,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_region_out,eastside
+,1.0,0.14427668574133878,0.7142857142857143,1.0,5,0,1,2,8,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_region_out,industrial_waterway
+,,0.05724492122490635,,1.0,0,0,8,0,8,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_region_out,north_seattle
+,1.0,0.08525581933012642,1.0,0.6666666666666666,2,1,2,0,5,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,leave_one_region_out,south_sound_or_green_river
+,,4.7355079082496834e-05,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Blair Waterway
+,,0.08022147075091914,1.0,,1,0,0,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Boeing Field
+,,0.0024134200625537936,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Bush School
+,,0.0075950295293071395,1.0,,2,0,0,0,2,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Capitol Lake
+,,9.876839185848521e-05,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Discovery Park
+,,0.1857638798565483,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Duwamish
+,,0.057117984120060056,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Elliott Ave
+,,0.030202867211342323,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Emerald Downs
+,,0.00041737578691144296,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Factoria
+,,0.04019619341259735,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Green River
+,,0.003722046290373602,1.0,,2,0,0,0,2,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Harbor Island
+,,0.012755112496633657,,1.0,0,0,1,0,1,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Issaquah
+,,0.1486464481568288,0.75,,3,0,0,1,4,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,SODO
+,,0.02741274559679022,,1.0,0,0,2,0,2,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,Smith Cove
+,,0.0052461366807341194,,1.0,0,0,4,0,4,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,nested_family_cv_select_by_inner_brier,UW
+,1.0,0.021451100571475017,1.0,1.0,1,0,1,0,2,outputs/nisqually_protocol_exploration_predictions.csv,conservative_max_M0_M3,temporal_pre_train_post_test,post_event
+Nisqually-trained temporal transfer to Canterbury 100 Osbourne CPT01,1.0,0.3268951631977575,1.0,0.5,1,1,1,0,3,outputs/canterbury_temporal_prediction_probabilities.csv,conservative_max_M0_M3,,
+Nisqually-trained external transfer to all usable Canterbury CPT event states,0.8257353922515897,0.4289605572798849,0.9930521893682339,0.2497680651479229,6146,7278,2423,43,15890,outputs/canterbury_multi_site_temporal_prediction_probabilities.csv,conservative_max_M0_M3,,

@@ -1,0 +1,16 @@
+{
+  "status": "ADVERSE_HOLDOUT_GUARDRAIL_REQUIRED",
+  "validation_protocol": "strict sensitivity holdout: train on 16 non-SODO/UW cases, test on SODO+UW siblings",
+  "best_model_by_brier": "M0_static_stationary",
+  "best_brier": 0.0603037559644397,
+  "m2_brier": 0.0816532084687241,
+  "m3_brier": 0.0894294180664092,
+  "m2_false_negative_count": 1,
+  "m3_false_negative_count": 1,
+  "false_negative_sites": [
+    "SODO-03"
+  ],
+  "interpretation": "The non-stationary gradation/random-field terms improve pooled and several out-of-sample protocols, but they are not universally conservative under the SODO/UW industrial-waterway holdout. For this cluster, M0/M1 should be reported as the conservative guardrail and M2/M3 as bounded alternatives.",
+  "claim_enabled": "cluster-aware non-stationary reliability updating with explicit adverse-holdout guardrail",
+  "claim_blocked": "universal superiority or universal site-validation claim for M2/M3"
+}

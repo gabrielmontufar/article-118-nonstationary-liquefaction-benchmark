@@ -1,0 +1,37 @@
+domain,false_negative_cost_ratio,model_name,threshold,expected_loss_per_case,tp,fp,tn,fn,n_cases,threshold_policy
+Canterbury multi-site external transfer,1.0,M0_static_stationary,0.95,0.2580239144115796,4994,2905,6796,1195,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,2.0,M0_static_stationary,0.95,0.3332284455632473,4994,2905,6796,1195,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,3.0,M0_static_stationary,0.95,0.408432976714915,4994,2905,6796,1195,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,5.0,M1_nonstationary_groundwater_only,0.275,0.44172435494021395,6165,6899,2802,24,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,7.5,M1_nonstationary_groundwater_only,0.25,0.44436752674638136,6173,6941,2760,16,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,10.0,M0_static_stationary,0.225,0.44669603524229073,6175,6958,2743,14,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,15.0,M0_static_stationary,0.225,0.4511013215859031,6175,6958,2743,14,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,20.0,M0_static_stationary,0.2,0.4551290119572058,6178,7012,2689,11,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,30.0,M0_static_stationary,0.2,0.4620516047828823,6178,7012,2689,11,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,50.0,M0_static_stationary,0.2,0.4758967904342354,6178,7012,2689,11,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,75.0,M0_static_stationary,0.2,0.49320327249842666,6178,7012,2689,11,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,100.0,M0_static_stationary,0.2,0.510509754562618,6178,7012,2689,11,15890,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,1.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,2.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,3.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,5.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,7.5,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,10.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,15.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,20.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,30.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,50.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,75.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,100.0,M0_static_stationary,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,1.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,2.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,3.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,5.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,7.5,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,10.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,15.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,20.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,30.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,50.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,75.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,100.0,M0_static_stationary,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold

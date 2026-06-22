@@ -1,0 +1,49 @@
+{
+  "status": "PASS_UNCERTAINTY_BOUNDED_MODEL_SELECTION_GATE_NOT_UNIVERSAL_VALIDATION",
+  "bootstrap_reps": 5000,
+  "rng_seed": 11820260603,
+  "domains": {
+    "pooled_nisqually_leave_one_family": {
+      "n_cases": 24,
+      "m2_delta_vs_m0": -0.04659481828503928,
+      "m2_ci95": [
+        -0.11463761889555005,
+        0.009155927844622299
+      ],
+      "m2_interpretation": "paired_brier_difference_uncertain"
+    },
+    "sodo_uw_strict_adverse_holdout": {
+      "n_cases": 8,
+      "m2_delta_vs_m0": 0.02134945250428441,
+      "m2_ci95": [
+        -0.04792125276308632,
+        0.10151444963411832
+      ],
+      "m2_interpretation": "paired_brier_difference_uncertain"
+    },
+    "canterbury_three_event_temporal_transfer": {
+      "n_cases": 3,
+      "m3_delta_vs_m0": -0.17962593050717823,
+      "m3_ci95": [
+        -0.5356505736256554,
+        1.1030331916762043e-24
+      ],
+      "m3_interpretation": "descriptive_only_small_n"
+    },
+    "canterbury_multi_site_temporal_transfer": {
+      "n_cases": 15890,
+      "m3_delta_vs_m0": 0.08854453405162593,
+      "m3_ci95": [
+        0.08463955260374972,
+        0.09270872714188082
+      ],
+      "m3_interpretation": "paired_brier_degradation_supported",
+      "conservative_max_delta_vs_m0": 0.11078568551116987,
+      "conservative_max_interpretation": "paired_brier_degradation_supported"
+    }
+  },
+  "claim_enabled": "uncertainty-bounded, domain-specific model-selection evidence: M2 improves the pooled Nisqually point-estimate Brier score but its paired bootstrap interval reaches zero; SODO/UW remains an adverse holdout; Canterbury is expanded from a three-event descriptive check to a large external transfer domain where M0 remains the best Brier model and conservative/non-stationary screening mainly reduces false negatives at a false-positive/calibration cost",
+  "claim_blocked": "universal M2/M3 superiority, universal calibration, or treating the Canterbury transfer as evidence that non-stationary probability models beat M0 on Brier in every external domain",
+  "metrics_table": "outputs/paired_uncertainty_model_selection_metrics.csv",
+  "case_table": "outputs/paired_uncertainty_model_selection_cases.csv"
+}

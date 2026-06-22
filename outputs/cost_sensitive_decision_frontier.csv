@@ -1,0 +1,145 @@
+domain,model_name,false_negative_cost_ratio,threshold,expected_loss_per_case,tp,fp,tn,fn,n_cases,threshold_policy
+Nisqually primary leave-one-family,M0_static_stationary,1.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,2.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,3.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,5.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,7.5,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,10.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,15.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,20.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,30.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,50.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,75.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M0_static_stationary,100.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,1.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,2.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,3.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,5.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,7.5,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,10.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,15.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,20.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,30.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,50.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,75.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,100.0,0.075,0.125,9,3,12,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,1.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,2.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,3.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,5.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,7.5,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,10.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,15.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,20.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,30.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,50.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,75.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,100.0,0.125,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,1.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,2.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,3.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,5.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,7.5,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,10.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,15.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,20.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,30.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,50.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,75.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,100.0,0.325,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,1.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,2.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,3.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,5.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,7.5,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,10.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,15.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,20.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,30.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,50.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,75.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+Nisqually primary leave-one-family,conservative_max_M0_M3,100.0,0.725,0.041666666666666664,9,1,14,0,24,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,1.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,2.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,3.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,5.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,7.5,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,10.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,15.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,20.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,30.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,50.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,75.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,100.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,1.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,2.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,3.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,5.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,7.5,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,10.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,15.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,20.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,30.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,50.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,75.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,100.0,0.125,0.0,4,0,4,0,8,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,1.0,0.95,0.2580239144115796,4994,2905,6796,1195,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,2.0,0.95,0.3332284455632473,4994,2905,6796,1195,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,3.0,0.95,0.408432976714915,4994,2905,6796,1195,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,5.0,0.225,0.4422907488986784,6175,6958,2743,14,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,7.5,0.225,0.4444933920704846,6175,6958,2743,14,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,10.0,0.225,0.44669603524229073,6175,6958,2743,14,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,15.0,0.225,0.4511013215859031,6175,6958,2743,14,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,20.0,0.2,0.4551290119572058,6178,7012,2689,11,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,30.0,0.2,0.4620516047828823,6178,7012,2689,11,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,50.0,0.2,0.4758967904342354,6178,7012,2689,11,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,75.0,0.2,0.49320327249842666,6178,7012,2689,11,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M0_static_stationary,100.0,0.2,0.510509754562618,6178,7012,2689,11,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,1.0,0.95,0.25997482693517937,5006,2948,6753,1183,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,2.0,0.95,0.3344241661422278,5006,2948,6753,1183,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,3.0,0.95,0.4088735053492763,5006,2948,6753,1183,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,5.0,0.275,0.44172435494021395,6165,6899,2802,24,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,7.5,0.25,0.44436752674638136,6173,6941,2760,16,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,10.0,0.25,0.4468848332284456,6173,6941,2760,16,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,15.0,0.25,0.45191944619257396,6173,6941,2760,16,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,20.0,0.25,0.45695405915670234,6173,6941,2760,16,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,30.0,0.225,0.4659534298300818,6175,6984,2717,14,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,50.0,0.2,0.47986154814348647,6178,7075,2626,11,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,75.0,0.175,0.49691629955947136,6179,7146,2555,10,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,100.0,0.175,0.5126494650723725,6179,7146,2555,10,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,1.0,0.95,0.37306482064191315,5397,5136,4565,792,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,2.0,0.95,0.42290748898678415,5397,5136,4565,792,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,3.0,0.725,0.46293266205160477,5905,6504,3197,284,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,5.0,0.25,0.48376337319068596,6134,7412,2289,55,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,7.5,0.15,0.49162995594713654,6163,7617,2084,26,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,10.0,0.15,0.4957205789804909,6163,7617,2084,26,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,15.0,0.125,0.503020767778477,6168,7678,2023,21,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,20.0,0.1,0.5089993706733795,6173,7768,1933,16,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,30.0,0.1,0.5190685966016363,6173,7768,1933,16,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,50.0,0.1,0.5392070484581498,6173,7768,1933,16,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,75.0,0.05,0.5629326620516047,6177,8045,1656,12,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,100.0,0.05,0.5818124606670863,6177,8045,1656,12,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,1.0,0.95,0.3736941472624292,5464,5213,4488,725,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,2.0,0.95,0.4193203272498427,5464,5213,4488,725,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,3.0,0.75,0.4563247325361863,5914,6426,3275,275,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,5.0,0.3,0.4736941472624292,6143,7297,2404,46,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,7.5,0.225,0.4803020767778477,6161,7422,2279,28,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,10.0,0.2,0.484078036500944,6167,7472,2229,22,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,15.0,0.2,0.49100062932662053,6167,7472,2229,22,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,20.0,0.175,0.4977344241661422,6170,7529,2172,19,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,30.0,0.175,0.5096916299559472,6170,7529,2172,19,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,50.0,0.1,0.5276274386406545,6176,7734,1967,13,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,75.0,0.1,0.548080553807426,6176,7734,1967,13,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,100.0,0.1,0.5685336689741977,6176,7734,1967,13,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,1.0,0.95,0.40213971050975456,5587,5788,3913,602,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,2.0,0.95,0.44002517306482064,5587,5788,3913,602,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,3.0,0.7,0.4604153555695406,6078,6983,2718,111,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,5.0,0.6,0.468156073001888,6129,7139,2562,60,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,7.5,0.55,0.47687224669603523,6140,7210,2491,49,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,10.0,0.275,0.4808055380742605,6179,7540,2161,10,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,15.0,0.275,0.4839521711768408,6179,7540,2161,10,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,20.0,0.25,0.4866582756450598,6181,7573,2128,8,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,30.0,0.25,0.4916928886091882,6181,7573,2128,8,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,50.0,0.225,0.5011957205789805,6182,7614,2087,7,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,75.0,0.225,0.5122089364380114,6182,7614,2087,7,15890,diagnostic_oracle_domain_retuned_threshold
+Canterbury multi-site external transfer,conservative_max_M0_M3,100.0,0.225,0.5232221522970422,6182,7614,2087,7,15890,diagnostic_oracle_domain_retuned_threshold

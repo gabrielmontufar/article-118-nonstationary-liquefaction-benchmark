@@ -1,0 +1,145 @@
+domain,model_name,false_negative_cost_ratio,threshold,expected_loss_per_case,tp,fp,tn,fn,n_cases,threshold_policy
+Nisqually primary leave-one-family,M0_static_stationary,1.0,0.5,0.125,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,2.0,0.5,0.20833333333333334,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,3.0,0.5,0.2916666666666667,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,5.0,0.5,0.4583333333333333,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,7.5,0.5,0.6666666666666666,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,10.0,0.5,0.875,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,15.0,0.5,1.2916666666666667,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,20.0,0.5,1.7083333333333333,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,30.0,0.5,2.5416666666666665,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,50.0,0.5,4.208333333333333,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,75.0,0.5,6.291666666666667,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M0_static_stationary,100.0,0.5,8.375,7,1,14,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,1.0,0.5,0.16666666666666666,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,2.0,0.5,0.25,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,3.0,0.5,0.3333333333333333,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,5.0,0.5,0.5,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,7.5,0.5,0.7083333333333334,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,10.0,0.5,0.9166666666666666,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,15.0,0.5,1.3333333333333333,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,20.0,0.5,1.75,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,30.0,0.5,2.5833333333333335,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,50.0,0.5,4.25,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,75.0,0.5,6.333333333333333,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M1_nonstationary_groundwater_only,100.0,0.5,8.416666666666666,7,2,13,2,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,1.0,0.5,0.08333333333333333,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,2.0,0.5,0.125,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,3.0,0.5,0.16666666666666666,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,5.0,0.5,0.25,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,7.5,0.5,0.3541666666666667,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,10.0,0.5,0.4583333333333333,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,15.0,0.5,0.6666666666666666,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,20.0,0.5,0.875,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,30.0,0.5,1.2916666666666667,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,50.0,0.5,2.125,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,75.0,0.5,3.1666666666666665,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M2_nonstationary_groundwater_gradation,100.0,0.5,4.208333333333333,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,1.0,0.5,0.08333333333333333,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,2.0,0.5,0.125,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,3.0,0.5,0.16666666666666666,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,5.0,0.5,0.25,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,7.5,0.5,0.3541666666666667,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,10.0,0.5,0.4583333333333333,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,15.0,0.5,0.6666666666666666,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,20.0,0.5,0.875,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,30.0,0.5,1.2916666666666667,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,50.0,0.5,2.125,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,75.0,0.5,3.1666666666666665,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,M3_full_nonstationary_random_field,100.0,0.5,4.208333333333333,8,1,14,1,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,1.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,2.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,3.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,5.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,7.5,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,10.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,15.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,20.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,30.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,50.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,75.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+Nisqually primary leave-one-family,conservative_max_M0_M3,100.0,0.5,0.08333333333333333,9,2,13,0,24,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,1.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,2.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,3.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,5.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,7.5,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,10.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,15.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,20.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,30.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,50.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,75.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,M0_static_stationary,100.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,1.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,2.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,3.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,5.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,7.5,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,10.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,15.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,20.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,30.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,50.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,75.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+SODO/UW adverse industrial-waterway holdout,conservative_max_M0_M3,100.0,0.5,0.0,4,0,4,0,8,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,1.0,0.5,0.39383259911894275,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,2.0,0.5,0.4079295154185022,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,3.0,0.5,0.4220264317180617,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,5.0,0.5,0.4502202643171806,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,7.5,0.5,0.48546255506607927,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,10.0,0.5,0.520704845814978,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,15.0,0.5,0.5911894273127754,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,20.0,0.5,0.6616740088105727,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,30.0,0.5,0.8026431718061674,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,50.0,0.5,1.084581497797357,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,75.0,0.5,1.4370044052863435,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M0_static_stationary,100.0,0.5,1.7894273127753304,5965,6034,3667,224,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,1.0,0.5,0.3934550031466331,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,2.0,0.5,0.4062303335431089,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,3.0,0.5,0.41900566393958466,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,5.0,0.5,0.4445563247325362,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,7.5,0.5,0.4764946507237256,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,10.0,0.5,0.508432976714915,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,15.0,0.5,0.5723096286972938,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,20.0,0.5,0.6361862806796728,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,30.0,0.5,0.7639395846444305,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,50.0,0.5,1.019446192573946,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,75.0,0.5,1.3388294524858402,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M1_nonstationary_groundwater_only,100.0,0.5,1.6582127123977344,5986,6049,3652,203,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,1.0,0.5,0.4495909376966646,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,2.0,0.5,0.4589679043423537,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,3.0,0.5,0.4683448709880428,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,5.0,0.5,0.48709880427942104,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,7.5,0.5,0.5105412208936438,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,10.0,0.5,0.5339836375078666,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,15.0,0.5,0.5808684707363121,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,20.0,0.5,0.6277533039647577,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,30.0,0.5,0.7215229704216488,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,50.0,0.5,0.9090623033354311,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,75.0,0.5,1.143486469477659,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M2_nonstationary_groundwater_gradation,100.0,0.5,1.3779106356198867,6040,6995,2706,149,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,1.0,0.5,0.4457520453115167,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,2.0,0.5,0.4527375707992448,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,3.0,0.5,0.45972309628697294,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,5.0,0.5,0.4736941472624292,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,7.5,0.5,0.4911579609817495,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,10.0,0.5,0.5086217747010698,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,15.0,0.5,0.5435494021397105,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,20.0,0.5,0.5784770295783511,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,30.0,0.5,0.6483322844556325,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,50.0,0.5,0.7880427942101951,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,75.0,0.5,0.9626809314033984,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,M3_full_nonstationary_random_field,100.0,0.5,1.1373190685966017,6078,6972,2729,111,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,1.0,0.5,0.46073001887979864,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,2.0,0.5,0.46343612334801765,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,3.0,0.5,0.46614222781623665,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,5.0,0.5,0.4715544367526746,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,7.5,0.5,0.47831969792322215,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,10.0,0.5,0.48508495909376964,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,15.0,0.5,0.49861548143486467,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,20.0,0.5,0.5121460037759598,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,30.0,0.5,0.5392070484581498,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,50.0,0.5,0.5933291378225299,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,75.0,0.5,0.660981749528005,6146,7278,2423,43,15890,fixed_threshold_0p50
+Canterbury multi-site external transfer,conservative_max_M0_M3,100.0,0.5,0.7286343612334801,6146,7278,2423,43,15890,fixed_threshold_0p50

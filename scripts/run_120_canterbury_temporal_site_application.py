@@ -27,6 +27,9 @@ DATA = ROOT / "data"
 OUTPUTS = ROOT / "outputs"
 FIGURES = ROOT / "figures"
 SOURCE = Path(r"G:\Mi unidad\Articulo 118 liquefaction validation datasets\canterbury_designsafe_PRJ-2937\CANTERBURYDATASET.mat")
+LOCAL_SOURCE = ROOT / "raw_designsafe" / "canterbury_designsafe_PRJ-2937" / "CANTERBURYDATASET.mat"
+if not SOURCE.exists() and LOCAL_SOURCE.exists():
+    SOURCE = LOCAL_SOURCE
 
 
 def _ic_proxy(qc_mpa: np.ndarray, fs_mpa: np.ndarray) -> np.ndarray:

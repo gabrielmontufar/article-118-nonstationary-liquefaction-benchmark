@@ -1,12 +1,10 @@
 ﻿# Supplementary benchmark for Article 118
 
-This folder contains the reproducible benchmark for the manuscript:
+This folder contains the reproducible georisk reliability-updating benchmark for the manuscript:
 
 **A reproducible reliability benchmark for non-stationary liquefaction probability under groundwater and gradation-change scenarios**
 
 Public repository: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark>
-
-Versioned release: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v1.8-geomechanics-geoengineering>
 
 ## Purpose
 
@@ -21,6 +19,9 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `scripts/run_118_nonstationary_liquefaction_benchmark.py`: self-contained Python script.
 - `scripts/run_119_site_calibrated_application.py`: site-calibrated Nisqually extension using DesignSafe PRJ-3758 CPT case histories.
 - `scripts/run_120_canterbury_temporal_site_application.py`: Canterbury PRJ-2937 temporal site application for 100 Osbourne St CPT01.
+- `scripts/run_121_canterbury_multi_site_temporal_validation.py`: Canterbury PRJ-2937 external transfer validation across all usable CPT event states in `CANTERBURYDATASET.mat`.
+- `scripts/run_122_cost_sensitive_decision_frontier.py`: cost-sensitive georisk decision frontier for false-negative-weighted screening decisions.
+- `scripts/select_adversarial_guardrail_model.py`: prespecified adversarial model-selection and conservative max(M0..M3) screening guardrail for the site-validation protocols.
 - `src/`: modular support code for groundwater calibration, gradation-status handling, stress calculations, triggering-model registry, vertical random-field diagnostics and validation metrics.
 - `manuscript/A_reproducible_reliability_benchmark.docx`: final corrected manuscript file used as the source for the repository PNG figures.
 - `manuscript/Supplementary_Material.docx`: supplementary material Word file containing Tables S1-S4 and expanded explanations.
@@ -57,16 +58,32 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `data/canterbury_100_osbourne_site_profile_calibrated.csv`: layer summaries for the Canterbury CPT profile.
 - `data/canterbury_100_osbourne_groundwater_timeseries.csv`: event-specific groundwater depths for 2010, 2011 and 2016.
 - `data/canterbury_100_osbourne_event_observations.csv`: event-specific Mw, PGA, groundwater and manifestation observations.
+- `data/canterbury_multi_site_cpt_summary.csv`: CPT-level summary for all usable Canterbury PRJ-2937 records.
+- `data/canterbury_multi_site_event_features.csv`: scored Canterbury event-state feature table; manifestation code 10 is excluded as indeterminate.
 - `outputs/site_validation_metrics.csv`: pooled out-of-sample M0-M3 validation metrics from leave-one-site-family-out spatial validation.
 - `outputs/site_validation_leave_one_family_metrics.csv`: fold-level leave-one-family-out metrics.
 - `outputs/site_validation_paired_family_metrics.csv`: pooled sensitivity metrics from exhaustive paired-family spatial holdouts.
 - `outputs/site_validation_paired_family_fold_metrics.csv`: fold-level paired-family holdout metrics.
 - `outputs/site_validation_sodo_uw_sensitivity.csv`: strict SODO+UW holdout sensitivity check.
+- `outputs/adversarial_model_selection_guardrail_policy.csv`: domain-specific model-selection policy that keeps M0 as the conservative SODO/UW guardrail while allowing M2/M3 only where they win the declared Brier protocol.
+- `outputs/adversarial_model_selection_guardrail_summary.json`: machine-readable summary of the bounded claim enabled by the adversarial guardrail and the universal claim it blocks.
+- `outputs/conservative_max_guardrail_metrics.csv`: metrics for the separate conservative max(M0..M3) screening rule across existing validation protocols.
+- `outputs/conservative_max_guardrail_site_predictions.csv`, `outputs/conservative_max_guardrail_protocol_predictions.csv`, and `outputs/conservative_max_guardrail_canterbury_predictions.csv`: site/event-level conservative screening predictions used to compute the guardrail metrics.
+- `outputs/paired_uncertainty_model_selection_metrics.csv`: paired Brier-delta and bootstrap uncertainty audit for M0-M3 and conservative max(M0..M3) across pooled Nisqually, SODO/UW and Canterbury domains.
+- `outputs/paired_uncertainty_model_selection_summary.json`: machine-readable uncertainty-bounded claim boundary for model-selection evidence.
 - `outputs/site_model_form_comparison.csv`: site-calibrated model-form probability comparison.
 - `outputs/site_random_field_system_probability.csv`: random-field system-probability diagnostic for the site extension.
 - `outputs/site_triggering_stress_profile.csv`: layer-wise total stress, pore pressure, effective stress, depth-only rd and CSR seed terms for the site application.
 - `outputs/canterbury_temporal_prediction_probabilities.csv`: M0-M3 probability predictions for the Canterbury event sequence.
 - `outputs/canterbury_temporal_validation_metrics.csv`: Brier, log-loss, AUC, calibration, sensitivity and specificity for the Canterbury temporal transfer.
+- `outputs/canterbury_multi_site_temporal_prediction_probabilities.csv`: M0-M3 probability predictions for the expanded Canterbury transfer domain.
+- `outputs/canterbury_multi_site_temporal_validation_metrics.csv`: Brier, log-loss, AUC, sensitivity, specificity and confusion counts for the expanded Canterbury transfer.
+- `outputs/canterbury_multi_site_temporal_validation_summary.json`: machine-readable gate showing that the n=3 limitation is removed but universal M2/M3 Brier superiority remains blocked.
+- `outputs/conservative_max_guardrail_canterbury_multi_site_predictions.csv`: conservative max(M0..M3) screening predictions for the expanded Canterbury transfer.
+- `outputs/cost_sensitive_decision_frontier.csv`: optimized-threshold expected screening loss for M0-M3 and conservative max(M0..M3) across false-negative/false-positive cost ratios.
+- `outputs/cost_sensitive_decision_frontier_fixed_threshold.csv`: fixed-threshold 0.50 expected screening loss across the same cost ratios.
+- `outputs/cost_sensitive_decision_frontier_case_weighted_fixed_threshold.csv`: case-weighted fixed-threshold 0.50 decision frontier, reported separately from the domain-balanced view.
+- `outputs/cost_sensitive_decision_frontier_summary.json`: machine-readable summary of the operating-policy split.
 - `figures/fig01_pf_time_extreme_accumulation.png`: final manuscript Fig. 1, layer probability histories.
 - `figures/fig02_profile_mean_pf_by_scenario.png`: final manuscript Fig. 2, profile-average probability by groundwater scenario.
 - `figures/fig03_depth_time_pf_heatmap.png`: final manuscript Fig. 3, depth-time probability map.
@@ -76,6 +93,8 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `figures/fig07_model_form_comparison_site.png`: final manuscript Fig. 7, M0-M3 out-of-sample Brier comparison for the site application.
 - `figures/fig08_vertical_variogram_fit.png`: final manuscript Fig. 8, empirical and fitted vertical variogram for the CPT log(qc) diagnostic.
 - `figures/fig09_canterbury_temporal_pf.png`: final manuscript Fig. 9, Canterbury 100 Osbourne Pf(t) over the three documented events.
+- `figures/fig10_canterbury_multi_site_validation.png`: expanded Canterbury external-transfer Brier and false-negative summary.
+- `figures/fig11_cost_sensitive_guardrail_frontier.png`: cost-sensitive georisk decision frontier.
 
 The PNG figures in `figures/` were extracted from the final manuscript DOCX so that the repository figure set matches the submitted document.
 
@@ -87,18 +106,28 @@ Run from this folder:
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
+python .\scripts\download_designsafe_raw_118.py
 python .\scripts\run_118_nonstationary_liquefaction_benchmark.py
 python .\scripts\run_119_site_calibrated_application.py
 python .\scripts\run_120_canterbury_temporal_site_application.py
+python .\scripts\run_121_canterbury_multi_site_temporal_validation.py
+python .\scripts\run_122_cost_sensitive_decision_frontier.py
+python .\scripts\explore_nisqually_out_of_sample_protocols.py
+python .\scripts\analyze_sodo_uw_adverse_holdout.py
+python .\scripts\select_adversarial_guardrail_model.py
+python .\scripts\adversarial_threshold_operating_gate.py
+python .\scripts\paired_uncertainty_model_selection_gate.py
 ```
 
 The synthetic benchmark is fully self-contained. The two site-extension scripts
-use public DesignSafe source files that were downloaded separately because the
-raw datasets are large: Nisqually PRJ-3758 (`10.17603/ds2-nsf8-7944`) and
-Canterbury PRJ-2937. The normalized CSV inputs and all generated outputs used
-in the manuscript are included in this supplement; rerunning the raw extraction
-requires placing the public DesignSafe files in the paths stated at the top of
-the site scripts or editing those paths to the local download location.
+use public DesignSafe source files: Nisqually PRJ-3758
+(`10.17603/ds2-nsf8-7944`) and Canterbury PRJ-2937
+(`10.17603/ds2-tygh-ht91`). The Q1 working supplement includes
+`scripts/download_designsafe_raw_118.py`, which downloads the required public
+raw files into `raw_designsafe/` and writes `raw_designsafe/download_manifest.json`
+with file sizes and SHA256 hashes. The scripts still honor the original
+Google Drive paths when mounted, but fall back to the local `raw_designsafe/`
+folder when those paths are unavailable.
 
 Python dependencies:
 
@@ -146,7 +175,15 @@ The Nisqually extension uses the DesignSafe PRJ-3758 CPT case-history dataset. I
 
 The validation protocol is intentionally out-of-sample. The primary protocol uses leave-one-site-family-out spatial validation, pools the held-out predictions, and reports calibration diagnostics on those predictions. Under this protocol, M2 (`nonstationary_groundwater_gradation`) improves Brier score relative to M0 (`static_stationary`), from 0.072 to 0.026 in pooled predictions and from 0.088 to 0.025 as mean fold Brier. Calibration remains imperfect because the dataset is small and strongly separable; calibration slopes are reported explicitly rather than hidden. Exhaustive paired-family and strict SODO+UW holdouts are also retained as sensitivity checks; the paired-family protocol also favours M2, while the single SODO+UW split does not.
 
-The Canterbury temporal extension adds a one-site event sequence using DesignSafe PRJ-2937, `100 Osbourne St - CPT01 TabulatedData`. The same CPT profile is evaluated for the 2010, 2011 and 2016 earthquake states using documented Mw, PGA, groundwater depth and manifestation codes. A transfer model trained on the Nisqually case histories is then applied to the Canterbury sequence. This is intentionally described as a minimal temporal site application because only three event states are available for that CPT, but it directly demonstrates that event time and observed groundwater/PGA states modify `Pf(t)` using documented field data. In that temporal transfer, M2 lowers Brier score relative to M0 from 0.326 to 0.306, and M3 lowers it to 0.146.
+The adversarial guardrail is prespecified and does not erase that adverse result. It selects M2 for the pooled Nisqually spatial protocol and M3 for the minimal Canterbury temporal transfer, but selects M0 for the strict SODO/UW industrial-waterway holdout because M2 and M3 each introduce one false negative. A separate conservative max(M0..M3) screening rule is reported only as a screening guardrail: it eliminates the SODO/UW false negative and yields Brier 0.036, but it is not used to claim superior probabilistic calibration where it worsens Brier. The enabled claim is therefore cluster-aware non-stationary reliability updating with an explicit conservative adverse-holdout guardrail, not universal superiority of M2/M3.
+
+The paired uncertainty gate keeps this interpretation conservative. In the 24-case pooled Nisqually leave-one-family protocol, M2 improves the point-estimate Brier score against M0 by -0.0466, but the paired bootstrap 95% interval reaches zero (-0.1146, 0.0092). In the 8-case SODO/UW strict holdout, M2 has an adverse point-estimate delta of +0.0213 with an interval spanning zero. The original Canterbury three-event transfer is retained as a minimal temporal stress test.
+
+The expanded Canterbury transfer removes the small-n limitation by applying the Nisqually-trained models to 15,890 scored event states across 5,665 usable CPT records in DesignSafe PRJ-2937 after excluding 1,114 manifestation-code-10 states as indeterminate. This larger external domain does not support a universal non-stationary Brier-superiority claim: M0 is the best Brier model (0.318), while M3 worsens Brier by +0.0885 with a paired bootstrap 95% interval of +0.0846 to +0.0927. The non-stationary and conservative screening forms instead reduce false negatives: M3 reduces false negatives from 224 to 111, and conservative max(M0..M3) reduces them to 43, but at the cost of many additional false positives and worse calibration. These results support a Georisk-style risk-screening/guardrail claim, not a claim of universally better calibrated probabilities.
+
+The Canterbury temporal extension still includes the one-site sequence using DesignSafe PRJ-2937, `100 Osbourne St - CPT01 TabulatedData`. The same CPT profile is evaluated for the 2010, 2011 and 2016 earthquake states using documented Mw, PGA, groundwater depth and manifestation codes. A transfer model trained on the Nisqually case histories is then applied to the Canterbury sequence. This remains a transparent three-event stress test; the expanded multi-site transfer is the stronger external validation gate.
+
+The cost-sensitive decision frontier converts that bounded evidence into an explicit georisk operating-policy diagnostic. The domain-retuned frontier is labelled as an oracle diagnostic because it chooses thresholds from the validation labels; under that diagnostic, M0 remains the lowest-loss baseline across the tested false-negative/false-positive cost ratios. When the standard 0.50 threshold is retained, conservative max(M0..M3) becomes the lowest-loss fixed-threshold screen once a false negative is at least twice as costly as a false positive. At a 10:1 cost ratio, its domain-balanced mean expected loss is 0.189 compared with 0.465 for M0; the case-weighted global mean is 0.484 compared with 0.521 for M0. This is the manuscript's stronger novelty claim: a transparent decision frontier for choosing between calibration-favoured and missed-event-averse screening policies under explicit risk-management preferences, not probability recalibration.
 
 ## Methodological note
 

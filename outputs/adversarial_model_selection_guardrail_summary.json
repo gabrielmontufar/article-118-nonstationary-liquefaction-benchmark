@@ -1,0 +1,32 @@
+{
+  "status": "PASS_CLUSTER_AWARE_GUARDRAIL_POLICY",
+  "universal_nonstationary_superiority_claim_allowed": false,
+  "bounded_claim_allowed": "cluster-aware non-stationary reliability updating with an explicit conservative guardrail for the SODO/UW adverse holdout",
+  "primary_spatial_selected_model": "M2_nonstationary_groundwater_gradation",
+  "primary_spatial_brier_change_vs_m0": -0.0465948182850393,
+  "primary_spatial_relative_brier_change_vs_m0": -0.6446876185817265,
+  "sodo_uw_selected_model": "M0_static_stationary",
+  "sodo_uw_m2_false_negatives": 1,
+  "sodo_uw_m3_false_negatives": 1,
+  "temporal_transfer_selected_model": "M3_full_nonstationary_random_field",
+  "temporal_transfer_brier_change_vs_m0": -0.1796259305071783,
+  "temporal_transfer_relative_brier_change_vs_m0": -0.5510180822119792,
+  "canterbury_multi_site_selected_model": "M0_static_stationary",
+  "canterbury_multi_site_brier_change_vs_m0": 0.0,
+  "conservative_max_policy": {
+    "policy_name": "conservative_max_M0_M3",
+    "purpose": "screening guardrail that preserves the highest risk estimate among M0-M3 without replacing raw model diagnostics",
+    "primary_spatial_brier": 0.062003103408881384,
+    "primary_spatial_false_negatives": 0,
+    "sodo_uw_brier": 0.036420668495145456,
+    "sodo_uw_false_negatives": 0,
+    "sodo_uw_false_positives": 0,
+    "canterbury_temporal_brier": 0.3268951631977575,
+    "canterbury_temporal_false_negatives": 0,
+    "canterbury_multi_site_brier": 0.4289605572798849,
+    "canterbury_multi_site_false_negatives": 43,
+    "canterbury_multi_site_false_positives": 7278
+  },
+  "claim_blocked": "Do not claim universal M2/M3 superiority or universal real-site validation; the policy selects M0 for the adverse SODO/UW cluster.",
+  "manuscript_sentence": "A prespecified adversarial model-selection guardrail selects M2 for the pooled Nisqually spatial protocol and M3 for the minimal Canterbury temporal transfer, but switches to the stationary M0 comparator for the strict SODO/UW industrial-waterway holdout because M2/M3 increase false negatives; a separate conservative max(M0..M3) screening rule eliminates the SODO/UW false negative while retaining the raw adverse-holdout disclosure. The expanded Canterbury multi-site transfer removes the n=3 limitation but selects M0 by Brier and therefore blocks any universal non-stationary superiority claim."
+}

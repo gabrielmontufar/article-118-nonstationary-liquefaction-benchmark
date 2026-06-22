@@ -1,0 +1,43 @@
+{
+  "status": "PASS_ADVERSARIAL_THRESHOLD_OPERATING_GATE",
+  "policy_name": "conservative_max_M0_M3_threshold_sweep",
+  "thresholds_evaluated": [
+    0.5,
+    0.45,
+    0.43,
+    0.425,
+    0.42,
+    0.4,
+    0.375
+  ],
+  "industrial_waterway_standard_threshold_0p50": {
+    "fn": 2,
+    "fp": 0,
+    "sensitivity": 0.7142857142857143,
+    "specificity": 1.0
+  },
+  "industrial_waterway_recommended_screening_threshold": 0.43,
+  "industrial_waterway_recommended_metrics": {
+    "fn": 0,
+    "fp": 0,
+    "sensitivity": 1.0,
+    "specificity": 1.0
+  },
+  "combined_standard_threshold_0p50": {
+    "fn": 3,
+    "fp": 8,
+    "sensitivity": 0.9411764705882353,
+    "specificity": 0.9024390243902439
+  },
+  "combined_zero_false_negative_screening_threshold": 0.375,
+  "combined_zero_false_negative_metrics": {
+    "fn": 0,
+    "fp": 10,
+    "sensitivity": 1.0,
+    "specificity": 0.8780487804878049
+  },
+  "fixed_sodo_uw_all_thresholds_zero_false_negative": true,
+  "claim_enabled": "cost-sensitive adversarial operating-threshold audit for conservative industrial-waterway screening",
+  "claim_blocked": "do not cite the lower threshold as post-hoc probability calibration, universal model superiority, or validation without a false-positive cost",
+  "manuscript_sentence": "For the conservative max(M0..M3) screen, the default 0.50 operating threshold leaves two false negatives in the leave-one-region-out industrial-waterway stress test; lowering the screening threshold to 0.43 removes those industrial-waterway false negatives without false positives in that subgroup, while the more conservative all-protocol zero-false-negative threshold of 0.375 trades sensitivity for additional false positives."
+}

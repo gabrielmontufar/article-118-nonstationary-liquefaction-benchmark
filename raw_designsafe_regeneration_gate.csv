@@ -1,0 +1,6 @@
+gate_item,required_file_or_script,current_status,required_for_closure,claim_enabled_if_closed
+Nisqually raw metadata,G:/Mi unidad/Articulo 118 liquefaction validation datasets/nisqually_designsafe/Summary Table S1.xlsx,missing locally,restore or download raw spreadsheet and rerun site-calibrated script,raw regenerated Nisqually spatial diagnostics
+Canterbury raw MATLAB dataset,G:/Mi unidad/Articulo 118 liquefaction validation datasets/canterbury_designsafe_PRJ-2937/CANTERBURYDATASET.mat,missing locally,restore or download raw MATLAB dataset and rerun Canterbury script,raw regenerated Canterbury temporal transfer stress test
+Nisqually regeneration script,scripts/run_119_site_calibrated_application.py,failed because raw spreadsheet missing,rerun successfully from raw files,raw-source traceable site-calibrated application
+Canterbury regeneration script,scripts/run_120_canterbury_temporal_site_application.py,failed because raw MATLAB dataset missing,rerun successfully from raw files,raw-source traceable temporal transfer application
+Protocol exploration script,scripts/explore_nisqually_out_of_sample_protocols.py,failed because raw spreadsheet missing,rerun successfully from raw files,raw-source traceable SODO/UW and leave-family diagnostics

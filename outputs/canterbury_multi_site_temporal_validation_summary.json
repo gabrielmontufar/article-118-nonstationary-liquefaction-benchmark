@@ -1,0 +1,75 @@
+{
+  "status": "PASS_EXTERNAL_CANTERBURY_MULTI_SITE_VALIDATION",
+  "source": "raw_designsafe\\canterbury_designsafe_PRJ-2937\\CANTERBURYDATASET.mat",
+  "records_in_mat": 5668,
+  "usable_cpt_records": 5668,
+  "scored_event_states": 15890,
+  "excluded_manifestation_code10_states": 1114,
+  "label_rule": "manifestation_code 1-5 = liquefaction; 0 = no liquefaction; 10 excluded as indeterminate",
+  "training_source": "outputs/site_calibrated_results.csv",
+  "training_cases": 24,
+  "validation_protocol": "Nisqually-trained external transfer to all usable Canterbury CPT event states",
+  "best_brier_model": "M0_static_stationary",
+  "best_brier": 0.31817481245013635,
+  "best_false_negatives": 224,
+  "reference_m0_brier": 0.31817481245013635,
+  "bootstrap": {
+    "M1_vs_M0": {
+      "candidate": "M1_nonstationary_groundwater_only",
+      "reference": "M0_static_stationary",
+      "paired_brier_delta_vs_reference": 0.0017107178789290641,
+      "ci95": [
+        0.0015239144349800421,
+        0.0018940575730475053
+      ],
+      "bootstrap_reps": 2000,
+      "cluster_unit": "site_id"
+    },
+    "M2_vs_M0": {
+      "candidate": "M2_nonstationary_groundwater_gradation",
+      "reference": "M0_static_stationary",
+      "paired_brier_delta_vs_reference": 0.08967183659258963,
+      "ci95": [
+        0.08537911711164506,
+        0.09426233266607427
+      ],
+      "bootstrap_reps": 2000,
+      "cluster_unit": "site_id"
+    },
+    "M3_vs_M0": {
+      "candidate": "M3_full_nonstationary_random_field",
+      "reference": "M0_static_stationary",
+      "paired_brier_delta_vs_reference": 0.08854453405162593,
+      "ci95": [
+        0.08440488599337306,
+        0.09280459532136752
+      ],
+      "bootstrap_reps": 2000,
+      "cluster_unit": "site_id"
+    },
+    "conservative_max_vs_M0": {
+      "candidate": "conservative_max_M0_M3",
+      "reference": "M0_static_stationary",
+      "paired_brier_delta_vs_reference": 0.11078568551116987,
+      "ci95": [
+        0.10705056203294573,
+        0.11454845781861307
+      ],
+      "bootstrap_reps": 2000,
+      "cluster_unit": "site_id"
+    },
+    "domain_adaptive_policy_vs_M0": {
+      "candidate": "domain_adaptive_policy_pf",
+      "reference": "M0_static_stationary",
+      "paired_brier_delta_vs_reference": 0.10217982631339613,
+      "ci95": [
+        0.09855115127425347,
+        0.1057787708753068
+      ],
+      "bootstrap_reps": 2000,
+      "cluster_unit": "site_id"
+    }
+  },
+  "claim_enabled": "Canterbury is now a large external temporal/site transfer check rather than a three-event descriptive example; claims remain transfer-validation claims because model coefficients are trained on Nisqually.",
+  "claim_blocked": "Do not call this Canterbury site-calibrated training or universal non-stationary superiority; the domain is externally transferred and retains calibration/false-negative tradeoffs."
+}

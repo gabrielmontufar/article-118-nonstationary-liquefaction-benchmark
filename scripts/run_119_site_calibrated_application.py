@@ -35,6 +35,9 @@ FIGURES.mkdir(exist_ok=True)
 OUTPUTS.mkdir(exist_ok=True)
 
 SOURCE = Path(r"G:\Mi unidad\Articulo 118 liquefaction validation datasets\nisqually_designsafe")
+LOCAL_SOURCE = ROOT / "raw_designsafe" / "nisqually_designsafe"
+if not SOURCE.exists() and LOCAL_SOURCE.exists():
+    SOURCE = LOCAL_SOURCE
 EVENT_DATE = "2001-02-28"
 EVENT_NAME = "2001 Nisqually earthquake"
 MW = 6.8

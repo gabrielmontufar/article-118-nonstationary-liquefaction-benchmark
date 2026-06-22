@@ -1,0 +1,281 @@
+{
+  "status": "PASS_COST_SENSITIVE_DECISION_FRONTIER",
+  "false_negative_cost_ratios": [
+    1,
+    2,
+    3,
+    5,
+    7.5,
+    10,
+    15,
+    20,
+    30,
+    50,
+    75,
+    100
+  ],
+  "threshold_grid": [
+    0.05,
+    0.95,
+    0.024999999999999994
+  ],
+  "domains": [
+    "Canterbury multi-site external transfer",
+    "Nisqually primary leave-one-family",
+    "SODO/UW adverse industrial-waterway holdout"
+  ],
+  "best_model_by_domain_at_fn_fp_10": {
+    "Canterbury multi-site external transfer": {
+      "best_model_at_fn_fp_10": "M0_static_stationary",
+      "threshold": 0.225,
+      "expected_loss_per_case": 0.44669603524229073,
+      "fn": 14,
+      "fp": 6958
+    },
+    "Nisqually primary leave-one-family": {
+      "best_model_at_fn_fp_10": "M0_static_stationary",
+      "threshold": 0.325,
+      "expected_loss_per_case": 0.041666666666666664,
+      "fn": 0,
+      "fp": 1
+    },
+    "SODO/UW adverse industrial-waterway holdout": {
+      "best_model_at_fn_fp_10": "M0_static_stationary",
+      "threshold": 0.125,
+      "expected_loss_per_case": 0.0,
+      "fn": 0,
+      "fp": 0
+    }
+  },
+  "balanced_best_models": [
+    {
+      "false_negative_cost_ratio": 1.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.09989686035941543
+    },
+    {
+      "false_negative_cost_ratio": 2.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.12496503740997134
+    },
+    {
+      "false_negative_cost_ratio": 3.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.15003321446052723
+    },
+    {
+      "false_negative_cost_ratio": 5.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.1613191385217817
+    },
+    {
+      "false_negative_cost_ratio": 7.5,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.16205335291238376
+    },
+    {
+      "false_negative_cost_ratio": 10.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.1627875673029858
+    },
+    {
+      "false_negative_cost_ratio": 15.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.16425599608418992
+    },
+    {
+      "false_negative_cost_ratio": 20.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.16559855954129082
+    },
+    {
+      "false_negative_cost_ratio": 30.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.16790609048318297
+    },
+    {
+      "false_negative_cost_ratio": 50.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.17252115236696733
+    },
+    {
+      "false_negative_cost_ratio": 75.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.17828997972169777
+    },
+    {
+      "false_negative_cost_ratio": 100.0,
+      "best_model": "M0_static_stationary",
+      "balanced_expected_loss": 0.18405880707642822
+    }
+  ],
+  "case_weighted_fixed_threshold_0p50_best_models": [
+    {
+      "false_negative_cost_ratio": 1.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "case_weighted_expected_loss": 0.39311298227975366,
+      "fn": 205,
+      "fp": 6051,
+      "n_cases": 15914
+    },
+    {
+      "false_negative_cost_ratio": 2.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "case_weighted_expected_loss": 0.40599472162875455,
+      "fn": 205,
+      "fp": 6051,
+      "n_cases": 15914
+    },
+    {
+      "false_negative_cost_ratio": 3.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "case_weighted_expected_loss": 0.41887646097775544,
+      "fn": 205,
+      "fp": 6051,
+      "n_cases": 15914
+    },
+    {
+      "false_negative_cost_ratio": 5.0,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "case_weighted_expected_loss": 0.4446399396757572,
+      "fn": 205,
+      "fp": 6051,
+      "n_cases": 15914
+    },
+    {
+      "false_negative_cost_ratio": 7.5,
+      "best_model": "M1_nonstationary_groundwater_only",
+      "case_weighted_expected_loss": 0.4768442880482594,
+      "fn": 205,
+      "fp": 6051,
+      "n_cases": 15914
+    },
+    {
+      "false_negative_cost_ratio": 10.0,
+      "best_model": "conservative_max_M0_M3",
+      "case_weighted_expected_loss": 0.4842356487878407,
+      "fn": 43,
+      "fp": 7280,
+      "n_cases": 15922
+    },
+    {
+      "false_negative_cost_ratio": 15.0,
+      "best_model": "conservative_max_M0_M3",
+      "case_weighted_expected_loss": 0.49773897751538754,
+      "fn": 43,
+      "fp": 7280,
+      "n_cases": 15922
+    },
+    {
+      "false_negative_cost_ratio": 20.0,
+      "best_model": "conservative_max_M0_M3",
+      "case_weighted_expected_loss": 0.5112423062429343,
+      "fn": 43,
+      "fp": 7280,
+      "n_cases": 15922
+    },
+    {
+      "false_negative_cost_ratio": 30.0,
+      "best_model": "conservative_max_M0_M3",
+      "case_weighted_expected_loss": 0.5382489636980279,
+      "fn": 43,
+      "fp": 7280,
+      "n_cases": 15922
+    },
+    {
+      "false_negative_cost_ratio": 50.0,
+      "best_model": "conservative_max_M0_M3",
+      "case_weighted_expected_loss": 0.592262278608215,
+      "fn": 43,
+      "fp": 7280,
+      "n_cases": 15922
+    },
+    {
+      "false_negative_cost_ratio": 75.0,
+      "best_model": "conservative_max_M0_M3",
+      "case_weighted_expected_loss": 0.659778922245949,
+      "fn": 43,
+      "fp": 7280,
+      "n_cases": 15922
+    },
+    {
+      "false_negative_cost_ratio": 100.0,
+      "best_model": "conservative_max_M0_M3",
+      "case_weighted_expected_loss": 0.7272955658836829,
+      "fn": 43,
+      "fp": 7280,
+      "n_cases": 15922
+    }
+  ],
+  "fixed_threshold_0p50_fn_fp_10_loss": {
+    "domain_balanced_M0_static_stationary_mean": 0.46523494860499265,
+    "domain_balanced_conservative_max_M0_M3_mean": 0.18947276414236766,
+    "case_weighted_M0_static_stationary_mean": 0.5209772641627937,
+    "case_weighted_conservative_max_M0_M3_mean": 0.4842356487878407
+  },
+  "fixed_threshold_0p50_best_models": [
+    {
+      "false_negative_cost_ratio": 1.0,
+      "best_model": "M0_static_stationary",
+      "mean_expected_loss": 0.17294419970631425
+    },
+    {
+      "false_negative_cost_ratio": 2.0,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.18225648556045035
+    },
+    {
+      "false_negative_cost_ratio": 3.0,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.18315852038319
+    },
+    {
+      "false_negative_cost_ratio": 5.0,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.18496259002866933
+    },
+    {
+      "false_negative_cost_ratio": 7.5,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.1872176770855185
+    },
+    {
+      "false_negative_cost_ratio": 10.0,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.18947276414236766
+    },
+    {
+      "false_negative_cost_ratio": 15.0,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.19398293825606602
+    },
+    {
+      "false_negative_cost_ratio": 20.0,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.19849311236976439
+    },
+    {
+      "false_negative_cost_ratio": 30.0,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.20751346059716105
+    },
+    {
+      "false_negative_cost_ratio": 50.0,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.22555415705195445
+    },
+    {
+      "false_negative_cost_ratio": 75.0,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.24810502762044614
+    },
+    {
+      "false_negative_cost_ratio": 100.0,
+      "best_model": "conservative_max_M0_M3",
+      "mean_expected_loss": 0.2706558981889378
+    }
+  ],
+  "claim_enabled": "cost-sensitive georisk screening with an explicit diagnostic/operational split: a domain-retuned diagnostic frontier favours M0, while the standard fixed-threshold 0.50 frontier favours conservative max(M0..M3) once false negatives are moderately more costly than false positives",
+  "claim_blocked": "do not present the decision frontier as probability recalibration or universal predictive superiority",
+  "manuscript_sentence": "The cost-sensitive frontier converts the adverse Canterbury and SODO/UW findings into an explicit georisk decision diagnostic: M0 remains the loss-minimising baseline in the domain-retuned oracle frontier, whereas the conservative max(M0..M3) screen becomes the lowest-loss fixed-threshold 0.50 rule when missed liquefaction manifestations are assigned materially higher cost than false alarms."
+}
