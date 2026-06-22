@@ -1,0 +1,87 @@
+{
+  "status": "PASS_CANTERBURY_LEAVE_ONE_EVENT_TEMPORAL_VALIDATION",
+  "source": "data/canterbury_multi_site_event_features.csv",
+  "protocol": "train on two Canterbury earthquakes; predict the held-out earthquake; repeat for all three events",
+  "candidate_models": [
+    "M0_static_stationary",
+    "M1_nonstationary_groundwater_only",
+    "M2_nonstationary_groundwater_gradation",
+    "M3_full_nonstationary_random_field"
+  ],
+  "n_predictions": 63560,
+  "n_event_states": 15890,
+  "n_heldout_events": 3,
+  "best_pooled_brier_model": "M2_nonstationary_groundwater_gradation",
+  "best_pooled_brier": 0.13767282318361074,
+  "best_pooled_auc_model": "M2_nonstationary_groundwater_gradation",
+  "best_pooled_auc": 0.8335188195888876,
+  "fn_fp_10_best_locked_model_by_heldout_event": [
+    {
+      "heldout_event_key": "Yr2010",
+      "heldout_event_name": "2010 Darfield earthquake",
+      "model_name": "M0_static_stationary",
+      "locked_threshold_selected_on_training_events": 0.125,
+      "test_expected_loss_per_case": 1.043002915451895,
+      "test_fn": 230,
+      "test_fp": 3424,
+      "n_test": 5488
+    },
+    {
+      "heldout_event_key": "Yr2011",
+      "heldout_event_name": "2011 Christchurch earthquake",
+      "model_name": "M0_static_stationary",
+      "locked_threshold_selected_on_training_events": 0.1,
+      "test_expected_loss_per_case": 0.15769779044903778,
+      "test_fn": 0,
+      "test_fp": 885,
+      "n_test": 5612
+    },
+    {
+      "heldout_event_key": "Yr2016",
+      "heldout_event_name": "2016 Valentine earthquake",
+      "model_name": "M1_nonstationary_groundwater_only",
+      "locked_threshold_selected_on_training_events": 0.15,
+      "test_expected_loss_per_case": 0.7204592901878915,
+      "test_fn": 0,
+      "test_fp": 3451,
+      "n_test": 4790
+    }
+  ],
+  "fn_fp_10_best_nonstationary_vs_m0_by_event": [
+    {
+      "heldout_event_key": "Yr2010",
+      "heldout_event_name": "2010 Darfield earthquake",
+      "best_nonstationary_model": "M2_nonstationary_groundwater_gradation",
+      "m0_loss": 1.043002915451895,
+      "m0_fn": 230,
+      "m0_fp": 3424,
+      "nonstationary_loss": 1.5537536443148687,
+      "nonstationary_fn": 707,
+      "nonstationary_fp": 1457
+    },
+    {
+      "heldout_event_key": "Yr2011",
+      "heldout_event_name": "2011 Christchurch earthquake",
+      "best_nonstationary_model": "M1_nonstationary_groundwater_only",
+      "m0_loss": 0.15769779044903778,
+      "m0_fn": 0,
+      "m0_fp": 885,
+      "nonstationary_loss": 0.16625089094796863,
+      "nonstationary_fn": 6,
+      "nonstationary_fp": 873
+    },
+    {
+      "heldout_event_key": "Yr2016",
+      "heldout_event_name": "2016 Valentine earthquake",
+      "best_nonstationary_model": "M1_nonstationary_groundwater_only",
+      "m0_loss": 0.9678496868475992,
+      "m0_fn": 0,
+      "m0_fp": 4636,
+      "nonstationary_loss": 0.7204592901878915,
+      "nonstationary_fn": 0,
+      "nonstationary_fp": 3451
+    }
+  ],
+  "claim_enabled": "formal leave-one-earthquake-out temporal validation within Canterbury: model fitting excludes the held-out event, and groundwater/gradation-aware predictors improve rank discrimination and false-negative operating choices in selected held-out events.",
+  "claim_blocked": "do not present this as universal non-stationary superiority; M0 remains competitive on Brier score, especially for the low-prevalence 2016 event."
+}

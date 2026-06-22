@@ -27,6 +27,8 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `scripts/run_122_cost_sensitive_decision_frontier.py`: cost-sensitive georisk decision frontier for false-negative-weighted screening decisions.
 - `scripts/run_123_hu_leave_one_earthquake_validation.py`: leave-one-earthquake-out external case-history validation on the Hu et al. dataset.
 - `scripts/run_124_locked_threshold_external_decision_validation.py`: locked-threshold external decision validation; thresholds are selected on Nisqually only and transferred unchanged to SODO/UW and Canterbury.
+- `scripts/run_125_canterbury_leave_one_event_temporal_validation.py`: formal Canterbury leave-one-earthquake-out temporal validation; each event is held out as a complete validation event.
+- `scripts/run_126_reader_oriented_figures.py`: reader-oriented figure generator for the compact Feynman-style main manuscript.
 - `scripts/select_adversarial_guardrail_model.py`: prespecified adversarial model-selection and conservative max(M0..M3) screening guardrail for the site-validation protocols.
 - `src/`: modular support code for groundwater calibration, gradation-status handling, stress calculations, triggering-model registry, vertical random-field diagnostics and validation metrics.
 - `manuscript/A_reproducible_reliability_benchmark.docx`: final corrected manuscript file used as the source for the repository PNG figures.
@@ -98,6 +100,14 @@ The benchmark evaluates how time-dependent groundwater depth and gradation chang
 - `outputs/locked_threshold_external_decision_validation.csv`: external-domain losses, false negatives and false positives after applying the locked thresholds.
 - `outputs/locked_threshold_external_case_weighted_summary.csv`: case-weighted external summary, including coverage flags for partial/full external-domain comparisons.
 - `outputs/locked_threshold_external_decision_summary.json`: machine-readable summary of the locked decision-rule validation and claim boundary.
+- `outputs/canterbury_leave_one_event_temporal_predictions.csv`: Canterbury predictions from models trained on two earthquakes and evaluated on the held-out earthquake.
+- `outputs/canterbury_leave_one_event_temporal_fold_metrics.csv`: event-wise leave-one-earthquake-out metrics.
+- `outputs/canterbury_leave_one_event_temporal_pooled_metrics.csv`: pooled temporal holdout metrics across the three held-out Canterbury events.
+- `outputs/canterbury_leave_one_event_temporal_locked_thresholds.csv`: training-event-selected thresholds applied to each held-out Canterbury event.
+- `outputs/canterbury_leave_one_event_temporal_summary.json`: machine-readable summary of the formal temporal holdout and claim boundary.
+- `figures/fig12_canterbury_leave_one_event_temporal_validation.png`: reader-facing temporal holdout summary.
+- `figures/fig13_locked_threshold_fn_fp_tradeoff.png`: reader-facing false-negative/false-positive trade-off graphic.
+- `figures/fig14_evidence_claim_boundary.png`: reader-facing evidence and claim-boundary map.
 - `figures/fig01_pf_time_extreme_accumulation.png`: final manuscript Fig. 1, layer probability histories.
 - `figures/fig02_profile_mean_pf_by_scenario.png`: final manuscript Fig. 2, profile-average probability by groundwater scenario.
 - `figures/fig03_depth_time_pf_heatmap.png`: final manuscript Fig. 3, depth-time probability map.
@@ -128,6 +138,8 @@ python .\scripts\run_121_canterbury_multi_site_temporal_validation.py
 python .\scripts\run_122_cost_sensitive_decision_frontier.py
 python .\scripts\run_123_hu_leave_one_earthquake_validation.py
 python .\scripts\run_124_locked_threshold_external_decision_validation.py
+python .\scripts\run_125_canterbury_leave_one_event_temporal_validation.py
+python .\scripts\run_126_reader_oriented_figures.py
 python .\scripts\explore_nisqually_out_of_sample_protocols.py
 python .\scripts\analyze_sodo_uw_adverse_holdout.py
 python .\scripts\select_adversarial_guardrail_model.py
@@ -188,6 +200,10 @@ The Hu et al. and Wenchuan tables are external case-history compatibility checks
 The leave-one-earthquake-out Hu validation adds a stricter external screen: each earthquake is held out in turn, simple screening scores are calibrated on the other earthquakes, and the held-out event is predicted. The best pooled model is the combined screening score, with Brier 0.194 and AUC 0.753 across 232 predictions from 15 held-out earthquakes. This supports event-level external screening transfer, but it remains separate from validation of the non-stationary time-update operator.
 
 The locked-threshold decision validation is stricter than the diagnostic frontier because it selects operating thresholds only on the Nisqually leave-one-family domain and then applies them unchanged to SODO/UW and Canterbury. At FN:FP = 10, the M1 groundwater-only rule selected at threshold 0.075 reduces Canterbury false negatives from 99 under M0 to 9, with additional false positives. The full-domain comparison remains restricted to models available in both external domains and continues to favour M0, so this result supports domain-conditional false-negative management rather than universal non-stationary superiority.
+
+The Canterbury leave-one-event validation adds a formal temporal holdout within the largest external dataset. Each earthquake is removed in turn, models are fitted on the other two earthquakes, and the held-out event is predicted. Across 15,890 unique event states and 63,560 model predictions, M2 is the best pooled model by both Brier score (0.138) and AUC (0.834). Event-wise results remain mixed, especially for the low-prevalence 2016 event, so the manuscript reports this as evidence for temporal transfer and rank discrimination, not universal model dominance.
+
+The compact main manuscript uses a Feynman-style reading path: simple causal language, fewer main-text tables, and three reader-facing figures. Detailed input tables, convergence checks, sensitivity coefficients, secondary site-extension figures and extended claim matrices are kept in the supplementary material and repository outputs so the main manuscript remains under 30 Word-computed pages without losing auditability.
 
 ## Site-calibrated extension
 
