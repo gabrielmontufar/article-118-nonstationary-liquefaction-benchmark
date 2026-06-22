@@ -12,6 +12,8 @@ Current physics-forward manuscript title:
 
 The main physical result is now isolated by `scripts/run_131_critical_water_table_crossing_mechanism.py`: when a non-stationary water table crosses a shallow liquefiable layer, effective stress drops, CSR rises, FS falls and Pf can jump rather than drift. In the extreme benchmark scenario, the L1 crossing from 2.21 m to 1.25 m raises CSR by 25.3%, lowers deterministic FS by 19.7% and increases Pf by 0.149. This is a bounded physical mechanism claim, not a new constitutive law or universal field classifier.
 
+The package also contains a CIVIL-NOVELTY-Q1-100 manuscript audit. The current evidence-bound CIVIL novelty score is 81/100 after adding a condensed close-literature frontier, explicit evidence-class separation, a falsifiability paragraph, and a control sentence stating what the community learns after this manuscript. The score is capped below 85 until the physical switch is directly confirmed by monitored temporal field evolution or property/site-linked consequence validation.
+
 Versioned MRNB-100 Georisk tag: <https://github.com/gabrielmontufar/article-118-nonstationary-liquefaction-benchmark/releases/tag/v2.0-mrnb100-georisk>
 
 Frozen commit: `2981604`
