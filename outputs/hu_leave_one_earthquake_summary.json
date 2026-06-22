@@ -1,0 +1,19 @@
+{
+  "status": "PASS_HU_LEAVE_ONE_EARTHQUAKE_VALIDATION",
+  "source": "data/external_case_history_compatibility_cases.csv",
+  "protocol": "leave one earthquake out; calibrate on all other earthquakes; predict held-out earthquake",
+  "candidate_models": [
+    "combined_instrument_score",
+    "dpt_screening_score",
+    "vs_screening_score",
+    "static_limit_state_pf_proxy"
+  ],
+  "best_brier_model": "combined_instrument_score",
+  "best_brier": 0.1940092428888552,
+  "best_auc": 0.7533505939689309,
+  "best_raw_score_auc": 0.8094730429485227,
+  "n_predictions_best_model": 232,
+  "n_earthquakes_best_model": 15,
+  "claim_enabled": "event-level external validation support for bounded screening scores across held-out earthquakes",
+  "claim_blocked": "do not describe this as site-specific design validation or validation of the non-stationary time-update operator"
+}

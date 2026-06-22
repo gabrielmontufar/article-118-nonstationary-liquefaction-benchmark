@@ -1,0 +1,890 @@
+case_id,earthquake,site,mw,pga,groundwater_table_m,critical_layer_depth_m,observed_liquefaction,combined_instrument_score,model,predicted_probability,heldout_earthquake,dpt_screening_score,vs_screening_score,pf_static_proxy
+HU-184,Alaska earthquake,"Matanuska river, MP 147.4, B.H.17",9.2,0.21,0.0,6.68,1,0.5716361497702894,combined_instrument_score,0.8614557377468695,Alaska earthquake,,,
+HU-185,Alaska earthquake,"Matanuska river, MP 147.5, B.H.18",9.2,0.21,0.0,13.2,1,1.0179532237675843,combined_instrument_score,0.9489075118998231,Alaska earthquake,,,
+HU-186,Alaska earthquake,"Twenty-Mile river, MP 64.7, B.H.20",9.2,0.31,0.0,3.05,1,0.621913920648245,combined_instrument_score,0.8755229858750663,Alaska earthquake,,,
+HU-187,Alaska earthquake,"Twenty-Mile river, MP 64.7, B.H.24",9.2,0.31,4.42,5.7,1,0.234248373260303,combined_instrument_score,0.7311090720611112,Alaska earthquake,,,
+HU-188,Alaska earthquake,"Portage Creek, MP 63.0, B.H.25",9.2,0.31,2.74,19.82,0,0.9392726076285068,combined_instrument_score,0.9387032052010827,Alaska earthquake,,,
+HU-189,Alaska earthquake,"Portage Creek, MP 63.5, B.H.28",9.2,0.31,3.05,4.57,1,0.5080903422983094,combined_instrument_score,0.8417940772096023,Alaska earthquake,,,
+HU-206,Alaska earthquake,Valdez Site 1,9.2,0.44,1.0,6.7,1,1.4555942783035591,combined_instrument_score,0.9819189227008855,Alaska earthquake,,,
+HU-207,Alaska earthquake,Valdez Site 2,9.2,0.44,0.8,4.6,1,1.861991290742998,combined_instrument_score,0.9932471200566386,Alaska earthquake,,,
+HU-208,Alaska earthquake,Valdez Site 3,9.2,0.44,1.0,5.5,1,1.1734854001495665,combined_instrument_score,0.9645313676950354,Alaska earthquake,,,
+HU-209,Alaska earthquake,Valdez Site 4,9.2,0.44,1.0,6.8,1,1.792871198558616,combined_instrument_score,0.9920100441772876,Alaska earthquake,,,
+HU-068,"Borah Peak, Idaho earthquake","Andersen Bar, SA-1",6.9,0.29,0.8,1.9,1,0.3565719776761468,combined_instrument_score,0.7200963096810857,"Borah Peak, Idaho earthquake",,,
+HU-069,"Borah Peak, Idaho earthquake","Andersen Bar, X1-X2",6.9,0.29,0.8,2.0,1,0.3619956926582863,combined_instrument_score,0.7224449885852355,"Borah Peak, Idaho earthquake",,,
+HU-070,"Borah Peak, Idaho earthquake","Goddard Ranch, SA-2",6.9,0.3,1.2,2.4,1,0.2489870212421008,combined_instrument_score,0.6711079178609362,"Borah Peak, Idaho earthquake",,,
+HU-071,"Borah Peak, Idaho earthquake","Goddard Ranch, SA-4",6.9,0.3,1.2,2.4,1,0.393195376321299,combined_instrument_score,0.7357172975027374,"Borah Peak, Idaho earthquake",,,
+HU-072,"Borah Peak, Idaho earthquake","Mackay Dam, downstream toe,",6.9,0.23,2.3,2.8,0,-1.450054386867976,combined_instrument_score,0.04989970331886601,"Borah Peak, Idaho earthquake",,,
+HU-073,"Borah Peak, Idaho earthquake","North Gravel Bar, Bar Site",6.9,0.46,1.0,2.4,0,-0.4550783430328197,combined_instrument_score,0.30930642888366794,"Borah Peak, Idaho earthquake",,,
+HU-074,"Borah Peak, Idaho earthquake","North Gravel Bar, Tarrace",6.9,0.46,3.0,3.65,0,-1.0553415688876766,combined_instrument_score,0.10945335521089276,"Borah Peak, Idaho earthquake",,,
+HU-075,"Borah Peak, Idaho earthquake","Pence Ranch, SA1",6.9,0.36,1.7,2.8,1,0.3918883310993959,combined_instrument_score,0.7351695175589904,"Borah Peak, Idaho earthquake",,,
+HU-076,"Borah Peak, Idaho earthquake","Pence Ranch, SA2",6.9,0.36,1.5,3.1,1,0.4883667027740501,combined_instrument_score,0.7736131336064541,"Borah Peak, Idaho earthquake",,,
+HU-077,"Borah Peak, Idaho earthquake","Pence Ranch, SA3",6.9,0.36,1.4,2.4,1,0.3725549536386409,combined_instrument_score,0.7269825736829463,"Borah Peak, Idaho earthquake",,,
+HU-078,"Borah Peak, Idaho earthquake","Pence Ranch, SA4",6.9,0.36,1.8,3.1,1,0.4015310747145366,combined_instrument_score,0.7391936488192178,"Borah Peak, Idaho earthquake",,,
+HU-079,"Borah Peak, Idaho earthquake","Pence Ranch, SA5",6.9,0.36,1.5,3.0,1,0.3436446694189891,combined_instrument_score,0.7144495836342474,"Borah Peak, Idaho earthquake",,,
+HU-080,"Borah Peak, Idaho earthquake","Pence Ranch, SA-A",6.9,0.36,2.0,2.8,1,0.1795605795655946,combined_instrument_score,0.6372978148346676,"Borah Peak, Idaho earthquake",,,
+HU-081,"Borah Peak, Idaho earthquake","Pence Ranch, SA-B",6.9,0.36,1.5,2.1,1,0.1273685416600578,combined_instrument_score,0.6109323062375517,"Borah Peak, Idaho earthquake",,,
+HU-082,"Borah Peak, Idaho earthquake","Pence Ranch, SA-C",6.9,0.36,1.5,2.1,1,0.2388083404312205,combined_instrument_score,0.6662505618462103,"Borah Peak, Idaho earthquake",,,
+HU-083,"Borah Peak, Idaho earthquake","Pence Ranch, SA-D",6.9,0.36,1.5,2.1,1,0.1150635106321952,combined_instrument_score,0.6046139793770092,"Borah Peak, Idaho earthquake",,,
+HU-084,"Borah Peak, Idaho earthquake","Pence Ranch, SA-E",6.9,0.36,1.7,2.3,1,0.1688432966519589,combined_instrument_score,0.631944972723702,"Borah Peak, Idaho earthquake",,,
+HU-085,"Borah Peak, Idaho earthquake","Pence Ranch, XDXE",6.9,0.36,1.5,3.4,1,0.2078123010194627,combined_instrument_score,0.6512434685709937,"Borah Peak, Idaho earthquake",,,
+HU-086,"Borah Peak, Idaho earthquake","Pence Ranch, HY1-C",6.9,0.35,1.65,2.7,1,0.3561803440329044,combined_instrument_score,0.719926247554887,"Borah Peak, Idaho earthquake",,,
+HU-087,"Borah Peak, Idaho earthquake","Pence Ranch, HY2-C",6.9,0.35,1.45,2.5,1,0.3889323222144807,combined_instrument_score,0.7339279844405122,"Borah Peak, Idaho earthquake",,,
+HU-088,"Borah Peak, Idaho earthquake","Pence Ranch, HY3-C",6.9,0.35,1.35,1.95,1,0.2736186480414169,combined_instrument_score,0.6827106640218095,"Borah Peak, Idaho earthquake",,,
+HU-089,"Borah Peak, Idaho earthquake","Pence Ranch, PH1-C",6.9,0.35,1.1,1.75,1,0.337045244374221,combined_instrument_score,0.7115406964209947,"Borah Peak, Idaho earthquake",,,
+HU-090,"Borah Peak, Idaho earthquake","Pence Ranch, HY1-D",6.9,0.35,1.65,4.3,0,-0.4589518968632798,combined_instrument_score,0.3075267617687762,"Borah Peak, Idaho earthquake",,,
+HU-091,"Borah Peak, Idaho earthquake","Pence Ranch, HY2-D",6.9,0.35,1.45,4.55,0,-0.3482470810209477,combined_instrument_score,0.36048766726513887,"Borah Peak, Idaho earthquake",,,
+HU-092,"Borah Peak, Idaho earthquake","Pence Ranch, HY3-D",6.9,0.35,1.35,4.15,0,-0.512917460561586,combined_instrument_score,0.2833408282702494,"Borah Peak, Idaho earthquake",,,
+HU-093,"Borah Peak, Idaho earthquake","Pence Ranch, BR1-D",6.9,0.35,1.85,6.15,0,-0.2834964656801566,combined_instrument_score,0.3932253377273466,"Borah Peak, Idaho earthquake",,,
+HU-094,"Borah Peak, Idaho earthquake","Pence Ranch, PH1-D",6.9,0.35,1.1,3.9,0,-0.5711096328893779,combined_instrument_score,0.2585926036408717,"Borah Peak, Idaho earthquake",,,
+HU-095,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.1",6.9,0.6,1.0,1.13,1,-0.300245545380867,combined_instrument_score,0.38465118972773993,"Borah Peak, Idaho earthquake",,,
+HU-096,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.2",6.9,0.35,1.52,3.35,1,0.0966003785042924,combined_instrument_score,0.5950683224278396,"Borah Peak, Idaho earthquake",,,
+HU-097,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.3",6.9,0.6,7.0,8.08,1,0.0307103215447783,combined_instrument_score,0.56046021110539,"Borah Peak, Idaho earthquake",,,
+HU-098,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.4",6.9,0.6,9.36,11.43,1,-0.2472235125357701,combined_instrument_score,0.41201483841630554,"Borah Peak, Idaho earthquake",,,
+HU-099,"Borah Peak, Idaho earthquake","Whiskey Springs, WS1B-C1",6.9,0.5,0.8,2.9,1,0.1284156187164337,combined_instrument_score,0.6114682705345716,"Borah Peak, Idaho earthquake",,,
+HU-100,"Borah Peak, Idaho earthquake","Whiskey Springs, WS1B-D",6.9,0.5,0.8,6.050000000000001,0,0.2998774482730684,combined_instrument_score,0.6948343616163709,"Borah Peak, Idaho earthquake",,,
+HU-101,"Borah Peak, Idaho earthquake","Whiskey Springs, WS2B-C1",6.9,0.5,2.4,3.35,1,0.1503686861299225,combined_instrument_score,0.6226415268466717,"Borah Peak, Idaho earthquake",,,
+HU-102,"Borah Peak, Idaho earthquake","Whiskey Springs, WS3B-C1",6.9,0.5,6.7,7.25,1,-0.0777254249905368,combined_instrument_score,0.5023645540008663,"Borah Peak, Idaho earthquake",,,
+HU-103,"Borah Peak, Idaho earthquake",Whiskey Springs Site 1 Unit C1,6.9,0.5,0.8,2.4000000000000004,1,0.2981564151907559,combined_instrument_score,0.6940477375715718,"Borah Peak, Idaho earthquake",,,
+HU-104,"Borah Peak, Idaho earthquake",Whiskey Springs Site 2 Unit C1,6.9,0.5,2.4,3.35,1,0.0289014766510569,combined_instrument_score,0.5595001610794171,"Borah Peak, Idaho earthquake",,,
+HU-105,"Borah Peak, Idaho earthquake",Whiskey Springs Site 3 Unit C1,6.9,0.5,6.8,7.3,1,-0.231958823884227,combined_instrument_score,0.42000276283155835,"Borah Peak, Idaho earthquake",,,
+HU-106,"Borah Peak, Idaho earthquake","Larter Ranch, X3X4",6.9,0.5,0.8,2.85,1,0.1599968586967617,combined_instrument_score,0.6275018494184518,"Borah Peak, Idaho earthquake",,,
+HU-107,"Borah Peak, Idaho earthquake","Larter Ranch, SA1, 85",6.9,0.5,0.8,2.85,1,0.3297689991300405,combined_instrument_score,0.708313147863495,"Borah Peak, Idaho earthquake",,,
+HU-108,"Borah Peak, Idaho earthquake","Larter Ranch, SA1, 90",6.9,0.5,0.8,2.85,1,0.0767839729949297,combined_instrument_score,0.5847425871423647,"Borah Peak, Idaho earthquake",,,
+HU-213,"Borah Peak, Idaho earthquake",Whiskey Springs,6.9,0.6,7.5,12.0,1,-1.1075216037697784,combined_instrument_score,0.09896896925940502,"Borah Peak, Idaho earthquake",,,
+HU-214,"Borah Peak, Idaho earthquake",Larter Ranch    ,6.9,0.5,0.7,2.8,1,0.538498683227708,combined_instrument_score,0.7919650869452807,"Borah Peak, Idaho earthquake",,,
+HU-215,"Borah Peak, Idaho earthquake",Pence Ranch     ,6.9,0.39,1.4,2.6,1,0.0357275736100427,combined_instrument_score,0.5631207449294864,"Borah Peak, Idaho earthquake",,,
+HU-139,Chi-Chi earthquake,"NanTou, B-1",7.6,0.428,1.5,5.0,0,0.4312687319856905,combined_instrument_score,0.8619364529144129,Chi-Chi earthquake,,,
+HU-140,Chi-Chi earthquake,"NanTou, B-2",7.6,0.428,1.8,7.3,0,0.330919388938293,combined_instrument_score,0.8268227378239082,Chi-Chi earthquake,,,
+HU-141,Chi-Chi earthquake,"NanTou, BH-2",7.6,0.428,1.7,7.2,0,0.2255582537667103,combined_instrument_score,0.7827368528095215,Chi-Chi earthquake,,,
+HU-142,Chi-Chi earthquake,"NanTou, BH-3",7.6,0.428,4.0,17.2,0,-0.3196753045554744,combined_instrument_score,0.4562373643728634,Chi-Chi earthquake,,,
+HU-143,Chi-Chi earthquake,"NanTou, BH-4",7.6,0.428,5.0,7.2,0,-0.1560038519235267,combined_instrument_score,0.5651100350688745,Chi-Chi earthquake,,,
+HU-144,Chi-Chi earthquake,"NanTou, BH-5",7.6,0.428,2.8,17.8,0,-0.1690126259668446,combined_instrument_score,0.5565471160865177,Chi-Chi earthquake,,,
+HU-145,Chi-Chi earthquake,"NanTou, BH-6",7.6,0.428,1.2,3.3,1,0.7061068091174811,combined_instrument_score,0.928640920531113,Chi-Chi earthquake,,,
+HU-146,Chi-Chi earthquake,"NanTou, BH-7",7.6,0.428,0.65,16.2,0,0.1903204011911501,combined_instrument_score,0.7662955913961541,Chi-Chi earthquake,,,
+HU-147,Chi-Chi earthquake,"NanTou, BH-8",7.6,0.428,5.0,8.8,0,-0.0988701671788827,combined_instrument_score,0.6021957368476809,Chi-Chi earthquake,,,
+HU-148,Chi-Chi earthquake,"NanTou, BH-9",7.6,0.428,9.6,16.2,0,-0.8972741063617605,combined_instrument_score,0.15197609338079243,Chi-Chi earthquake,,,
+HU-149,Chi-Chi earthquake,"NanTou, BH-10",7.6,0.428,2.4,5.8,0,0.1669599353594578,combined_instrument_score,0.7549293963493361,Chi-Chi earthquake,,,
+HU-150,Chi-Chi earthquake,"NanTou, BH-14",7.6,0.428,1.5,18.8,0,0.6873660760990156,combined_instrument_score,0.9252497551182386,Chi-Chi earthquake,,,
+HU-151,Chi-Chi earthquake,"WuFeng, BH-2",7.6,0.789,5.1,5.1,0,-0.1809234151096564,combined_instrument_score,0.5486772316923848,Chi-Chi earthquake,,,
+HU-152,Chi-Chi earthquake,"WuFeng, BH-3",7.6,0.789,1.3,11.0,0,0.9871054258605332,combined_instrument_score,0.9650071661371019,Chi-Chi earthquake,,,
+HU-153,Chi-Chi earthquake,"WuFeng, BH-14",7.6,0.79,3.5,7.0,1,0.8294600065769212,combined_instrument_score,0.9476319905464248,Chi-Chi earthquake,,,
+HU-154,Chi-Chi earthquake,WuFeng -Fu Tin Bridge,7.6,0.79,4.5,5.5,1,0.5386846651127725,combined_instrument_score,0.8926927704581449,Chi-Chi earthquake,,,
+HU-155,Chi-Chi earthquake,"YuanLin, BH-02",7.6,0.19,7.0,16.2,0,-0.8486483268707157,combined_instrument_score,0.16949243753328164,Chi-Chi earthquake,,,
+HU-156,Chi-Chi earthquake,"YuanLin, BH-14",7.6,0.19,1.6,12.8,0,-0.3280668366949674,combined_instrument_score,0.450679218643764,Chi-Chi earthquake,,,
+HU-157,Chi-Chi earthquake,"YuanLin, BH-40",7.6,0.19,1.2,12.2,0,-0.2063434603006999,combined_instrument_score,0.53180454570722,Chi-Chi earthquake,,,
+HU-190,"Friuli, Italy earthquake",Avasinis village,6.4,0.2,2.7,7.0,1,-0.2856335191413733,combined_instrument_score,0.42748175660524335,"Friuli, Italy earthquake",,,
+HU-210,"Friuli, Italy earthquake",Avasinis Site 1,6.4,0.47,0.2,2.5,1,0.4566481015064793,combined_instrument_score,0.8131762941455677,"Friuli, Italy earthquake",,,
+HU-211,"Friuli, Italy earthquake",Avasinis Site 2,6.4,0.47,0.2,1.5,1,0.4495343789179529,combined_instrument_score,0.8105959951701305,"Friuli, Italy earthquake",,,
+HU-212,"Friuli, Italy earthquake",Avasinis Site 3,6.4,0.47,0.2,3.0,1,-0.0666989102618209,combined_instrument_score,0.5567138113543142,"Friuli, Italy earthquake",,,
+HU-136,Guatemala earthquake,Lake Amatitlan B-1,7.5,0.12,1.6,8.73,1,0.1548159042715435,combined_instrument_score,0.6850707373288797,Guatemala earthquake,,,
+HU-137,Guatemala earthquake,Lake Amatitlan B-2,7.5,0.12,2.51,9.0,1,-0.2333560855539313,combined_instrument_score,0.4640150390450025,Guatemala earthquake,,,
+HU-138,Guatemala earthquake,Lake Amatitlan B-4,7.5,0.12,3.35,10.8,0,-0.2424665813062044,combined_instrument_score,0.45864127487694495,Guatemala earthquake,,,
+HU-182,Hokkaido-Nansei-Oki earthquake,"Pension House, BH1",8.3,0.19,1.0,2.0,1,0.6035013183641554,combined_instrument_score,0.8622718432756894,Hokkaido-Nansei-Oki earthquake,,,
+HU-183,Hokkaido-Nansei-Oki earthquake,"Pension House, BH2",8.3,0.19,0.7,6.1,1,0.4833097827572091,combined_instrument_score,0.8250293225565543,Hokkaido-Nansei-Oki earthquake,,,
+HU-109,Hyogoken-Nambu earthquake,Hanshin Expressway 5.3,6.9,0.5,2.1,5.6,1,0.4631847202679381,combined_instrument_score,0.8468772199544461,Hyogoken-Nambu earthquake,,,
+HU-110,Hyogoken-Nambu earthquake,Hanshin Expressway 5.10,6.9,0.58,1.8,5.5,1,0.9608578372815316,combined_instrument_score,0.9504635716311803,Hyogoken-Nambu earthquake,,,
+HU-111,Hyogoken-Nambu earthquake,Hanshin Expressway 5.14,6.9,0.63,4.3,6.5,1,0.2516375964217224,combined_instrument_score,0.7652276488595325,Hyogoken-Nambu earthquake,,,
+HU-112,Hyogoken-Nambu earthquake,Hanshin Expressway 5.25,6.9,0.65,3.2,8.8,1,0.6123296697915743,combined_instrument_score,0.8892498047597158,Hyogoken-Nambu earthquake,,,
+HU-113,Hyogoken-Nambu earthquake,Hanshin Expressway 5.29,6.9,0.65,2.5,7.2,1,0.6891481968357803,combined_instrument_score,0.9067943782023346,Hyogoken-Nambu earthquake,,,
+HU-114,Hyogoken-Nambu earthquake,KNK Kainan Port Sub-station (KPS) 1,6.9,0.12,2.0,6.6,0,0.0636057030632183,combined_instrument_score,0.6707489472920495,Hyogoken-Nambu earthquake,,,
+HU-115,Hyogoken-Nambu earthquake,KNK Kainan Port Sub-station (KPS) 2,6.9,0.12,2.0,10.4,0,-0.0249850170980998,combined_instrument_score,0.6201401934888213,Hyogoken-Nambu earthquake,,,
+HU-116,Hyogoken-Nambu earthquake,Nishinomiya Expressway 3,6.9,0.63,3.7,7.0,0,0.382398035331769,combined_instrument_score,0.8188225766706851,Hyogoken-Nambu earthquake,,,
+HU-117,Hyogoken-Nambu earthquake,Nishinomiya Expressway 17,6.9,0.53,2.0,3.3,0,-0.1186819832077299,combined_instrument_score,0.5636402738349483,Hyogoken-Nambu earthquake,,,
+HU-118,Hyogoken-Nambu earthquake,Nishinomiya Expressway 23,6.9,0.63,2.9,4.0,0,0.5679521037838253,combined_instrument_score,0.8778450755008101,Hyogoken-Nambu earthquake,,,
+HU-119,Hyogoken-Nambu earthquake,Nishinomiya Expressway 28,6.9,0.65,2.2,6.0,0,0.7067318914965773,combined_instrument_score,0.9104431498889621,Hyogoken-Nambu earthquake,,,
+HU-120,Hyogoken-Nambu earthquake,"LPG Tank Yard, Kobe",6.9,0.5,1.5,4.0,1,0.796477064275592,combined_instrument_score,0.9271271406761962,Hyogoken-Nambu earthquake,,,
+HU-121,Hyogoken-Nambu earthquake,"Port Island 1C, Instrumented array",6.9,0.5,3.0,8.6,1,0.4106433551420365,combined_instrument_score,0.8290613381773145,Hyogoken-Nambu earthquake,,,
+HU-122,Hyogoken-Nambu earthquake,"Port Island Common Factory, 1",6.9,0.5,3.2,9.0,0,0.0060713188567834,combined_instrument_score,0.638248021990483,Hyogoken-Nambu earthquake,,,
+HU-123,Hyogoken-Nambu earthquake,"Port Island Common Factory, 2",6.9,0.5,3.2,9.2,0,0.1447004878304034,combined_instrument_score,0.7138730350157465,Hyogoken-Nambu earthquake,,,
+HU-124,Hyogoken-Nambu earthquake,Port Island Dhole Array 91,6.9,0.5,2.4,7.2,1,0.3140251759610346,combined_instrument_score,0.7920774931546566,Hyogoken-Nambu earthquake,,,
+HU-125,Hyogoken-Nambu earthquake,Port Island Dhole Array 95,6.9,0.5,2.4,7.8,1,0.5571661354285653,combined_instrument_score,0.8749245678287283,Hyogoken-Nambu earthquake,,,
+HU-126,Hyogoken-Nambu earthquake,SGK Technical Research Center (TRC) 1,6.9,0.45,7.0,8.5,0,-0.5716085479315403,combined_instrument_score,0.2939796912314831,Hyogoken-Nambu earthquake,,,
+HU-127,Hyogoken-Nambu earthquake,SGK Technical Research Center (TRC) 2,6.9,0.4,7.0,9.0,0,-0.4775699360094226,combined_instrument_score,0.34500123955246365,Hyogoken-Nambu earthquake,,,
+HU-193,Izmit-Kocaeli earthquake,"Hotel Sapanca, SH-4",7.4,0.3,0.5,1.6,1,-0.1785527328339562,combined_instrument_score,0.4832571187093755,Izmit-Kocaeli earthquake,,,
+HU-194,Izmit-Kocaeli earthquake,"Hotel Sapanca, SH-7",7.4,0.4,1.25,1.3,1,-0.2525325355215269,combined_instrument_score,0.4405353346122788,Izmit-Kocaeli earthquake,,,
+HU-195,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS4",7.4,0.4,0.75,2.77,1,0.2006913213582344,combined_instrument_score,0.6931090985865528,Izmit-Kocaeli earthquake,,,
+HU-196,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS5",7.4,0.4,0.75,2.25,1,-0.1713002656746575,combined_instrument_score,0.4874687352353698,Izmit-Kocaeli earthquake,,,
+HU-197,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS7",7.4,0.4,0.3,4.15,1,0.4192011681384519,combined_instrument_score,0.7896307738117481,Izmit-Kocaeli earthquake,,,
+HU-198,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS9",7.4,0.4,0.75,7.57,1,0.7073538398384143,combined_instrument_score,0.8800197976191875,Izmit-Kocaeli earthquake,,,
+HU-199,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS12",7.4,0.4,0.6,2.77,0,-0.4950103348617704,combined_instrument_score,0.3094443806945941,Izmit-Kocaeli earthquake,,,
+HU-200,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS13",7.4,0.4,0.0,5.7,1,0.5593787985504414,combined_instrument_score,0.8387011360592278,Izmit-Kocaeli earthquake,,,
+HU-201,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S1/8",7.4,0.5,0.5,1.15,1,0.0486089522043323,combined_instrument_score,0.6132807732917479,Izmit-Kocaeli earthquake,,,
+HU-202,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S2/3",7.4,0.4,0.4,9.2,1,0.654573287671076,combined_instrument_score,0.8664478558316127,Izmit-Kocaeli earthquake,,,
+HU-203,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S4/3",7.4,0.4,1.3,3.2,1,0.1384319224391269,combined_instrument_score,0.6614920373631069,Izmit-Kocaeli earthquake,,,
+HU-219,Kaikora earthquake,Wellington Site 1,7.8,0.24,2.6,5.5,1,0.4054588421075408,combined_instrument_score,0.796393747433111,Kaikora earthquake,,,
+HU-220,Kaikora earthquake,Wellington Site 2,7.8,0.24,2.8,3.8,1,0.284317263270114,combined_instrument_score,0.7461422490679984,Kaikora earthquake,,,
+HU-132,Loma Prieta earthquake,"Coyote creek, SR1",7.0,0.18,2.4,4.6,0,0.012264557418002,combined_instrument_score,0.621717217498386,Loma Prieta earthquake,,,
+HU-133,Loma Prieta earthquake,"Coyote creek, R1-R2",7.0,0.18,2.4,4.2,0,-0.1597365889940767,combined_instrument_score,0.5228242559588834,Loma Prieta earthquake,,,
+HU-134,Loma Prieta earthquake,"Coyote creek, R1-R3",7.0,0.18,2.4,4.2,0,-0.216629270847549,combined_instrument_score,0.489311450922669,Loma Prieta earthquake,,,
+HU-135,Loma Prieta earthquake,"Coyote creek, R2-R3",7.0,0.18,2.4,4.6,0,-0.2398667604472055,combined_instrument_score,0.4756338767069862,Loma Prieta earthquake,,,
+HU-216,Muisne earthquake,Manta DPT-1 & Vs-4,7.8,0.46,3.8,5.2,1,0.2123159004263283,combined_instrument_score,0.7104391539926324,Muisne earthquake,,,
+HU-217,Muisne earthquake,Manta DPT-2 & Vs-4,7.8,0.46,3.6,5.4,1,0.2131025103788065,combined_instrument_score,0.7108194298550202,Muisne earthquake,,,
+HU-218,Muisne earthquake,Manta DPT-3 & Vs-9,7.8,0.46,3.8,5.6,1,0.2986174724895729,combined_instrument_score,0.7503364967002818,Muisne earthquake,,,
+HU-204,Nihonkai-Chubu earthquake,"Noshiro-N2, B.H.78",7.7,0.25,2.9,3.0,0,-0.8292006745840466,combined_instrument_score,0.17983801853584058,Nihonkai-Chubu earthquake,,,
+HU-205,Nihonkai-Chubu earthquake,"Noshiro-N2, B.H.84",7.7,0.25,2.9,4.0,0,-0.6259092066344285,combined_instrument_score,0.2610523179872149,Nihonkai-Chubu earthquake,,,
+HU-128,"San Francisco, California earthquake","Coyote creek, SR1",7.9,0.36,2.4,4.6,1,0.4867597609180933,combined_instrument_score,0.8223237764734822,"San Francisco, California earthquake",,,
+HU-129,"San Francisco, California earthquake","Coyote creek, R1-R2",7.9,0.36,2.4,4.2,1,0.3033683143572659,combined_instrument_score,0.750880214423002,"San Francisco, California earthquake",,,
+HU-130,"San Francisco, California earthquake","Coyote creek, R1-R3",7.9,0.36,2.4,4.2,1,0.2473683447759407,combined_instrument_score,0.7255890373035833,"San Francisco, California earthquake",,,
+HU-131,"San Francisco, California earthquake","Coyote creek, R2-R3",7.9,0.36,2.4,4.6,1,0.2057962256160387,combined_instrument_score,0.7058143008568989,"San Francisco, California earthquake",,,
+HU-158,Tohoku earthquake,"Chiba-ken, CH350",9.0,0.143,0.32,19.75,0,-0.0390148913795099,combined_instrument_score,0.6420044018962813,Tohoku earthquake,,,
+HU-159,Tohoku earthquake,"Chiba-ken, CH344",9.0,0.196,1.75,12.6,0,-0.0222143895128052,combined_instrument_score,0.6521349945800716,Tohoku earthquake,,,
+HU-160,Tohoku earthquake,"Gunma-ken, GU001",9.0,0.177,11.7,12.25,0,-0.8919923809403565,combined_instrument_score,0.1586565091731433,Tohoku earthquake,,,
+HU-161,Tohoku earthquake,"Gunma-ken, GU002",9.0,0.177,8.5,9.25,0,-0.7898620558652353,combined_instrument_score,0.19804188268571193,Tohoku earthquake,,,
+HU-162,Tohoku earthquake,"Gunma-ken, GU003",9.0,0.201,9.0,16.25,0,-0.8388727562918087,combined_instrument_score,0.1782874889445504,Tohoku earthquake,,,
+HU-163,Tohoku earthquake,"Ibaraki-ken, IB014",9.0,0.201,1.15,12.25,0,0.1636439802073249,combined_instrument_score,0.7538414298998526,Tohoku earthquake,,,
+HU-164,Tohoku earthquake,"Ibaraki-ken, IB021",9.0,0.356,4.5,7.25,1,0.4091412130260668,combined_instrument_score,0.8541408604745312,Tohoku earthquake,,,
+HU-165,Tohoku earthquake,"Ibaraki-ken, IB022",9.0,0.38,3.61,11.25,1,0.5471819997792059,combined_instrument_score,0.8939708284626624,Tohoku earthquake,,,
+HU-166,Tohoku earthquake,"Ibaraki-ken, IB023",9.0,0.38,2.4,11.75,0,0.6743555478761408,combined_instrument_score,0.9218510816404796,Tohoku earthquake,,,
+HU-167,Tohoku earthquake,"Ibaraki-ken, IB025",9.0,0.84,7.1,8.75,1,1.1630694970375173,combined_instrument_score,0.9772069534641988,Tohoku earthquake,,,
+HU-168,Tohoku earthquake,"Ibaraki-ken, IB027",9.0,0.77,4.5,11.25,0,1.7407033441702664,combined_instrument_score,0.9949510647686995,Tohoku earthquake,,,
+HU-169,Tohoku earthquake,"Ibaraki-ken, IB028",9.0,0.77,4.8,6.75,1,1.305899073929475,combined_instrument_score,0.984255464373248,Tohoku earthquake,,,
+HU-170,Tohoku earthquake,"Kanagawa-ken, KA001",9.0,0.092,0.33,8.75,0,-0.0168286845518074,combined_instrument_score,0.6553541349659505,Tohoku earthquake,,,
+HU-171,Tohoku earthquake,"Kanagawa-ken, KA002",9.0,0.093,0.55,4.75,0,0.0348768146503897,combined_instrument_score,0.685505404870678,Tohoku earthquake,,,
+HU-172,Tohoku earthquake,"Kanagawa-ken, KA003",9.0,0.074,0.5,12.75,0,-0.330810347881555,combined_instrument_score,0.45352773638083566,Tohoku earthquake,,,
+HU-173,Tohoku earthquake,"Kanagawa-ken, KA005",9.0,0.182,1.0,1.9,0,0.2649589322561188,combined_instrument_score,0.8000702846154589,Tohoku earthquake,,,
+HU-174,Tohoku earthquake,"Kanagawa-ken, KA008",9.0,0.14,2.8,22.25,0,-0.4757880360410242,combined_instrument_score,0.3614102459526467,Tohoku earthquake,,,
+HU-175,Tohoku earthquake,"Kanagawa-ken, KA010",9.0,0.125,0.0,12.75,0,-0.047283841440667,combined_instrument_score,0.636970642644884,Tohoku earthquake,,,
+HU-176,Tohoku earthquake,"Kanagawa-ken, KA011",9.0,0.148,9.38,11.75,0,-1.033254704640212,combined_instrument_score,0.11493755461447931,Tohoku earthquake,,,
+HU-177,Tohoku earthquake,"Saitama-ken, SA001",9.0,0.259,3.4,7.75,0,0.1876012087338209,combined_instrument_score,0.7653909915805828,Tohoku earthquake,,,
+HU-178,Tohoku earthquake,"Saitama-ken, SA003",9.0,0.167,8.52,15.25,0,-0.9817138244410596,combined_instrument_score,0.12952413952077357,Tohoku earthquake,,,
+HU-179,Tohoku earthquake,"Tochiki-ken, TC002",9.0,0.367,5.96,7.25,0,-0.1322256677655067,combined_instrument_score,0.5836915933444392,Tohoku earthquake,,,
+HU-180,Tohoku earthquake,"Tokyo, TO001",9.0,0.118,2.15,24.75,0,-0.507773286377049,combined_instrument_score,0.3421545970165779,Tohoku earthquake,,,
+HU-181,Tohoku earthquake,"Tokyo, TO025",9.0,0.158,2.5,25.75,0,-0.4415923269958129,combined_instrument_score,0.3824994134485699,Tohoku earthquake,,,
+HU-001,Wenchuan earthquake,"Guoyuan village, Deyang, DY-28",7.9,0.21,1.5,1.9,1,-0.2391864262505285,combined_instrument_score,0.38319223381489936,Wenchuan earthquake,,,
+HU-002,Wenchuan earthquake,"Songbai village, Deyang, DY-45",7.9,0.24,0.8,4.6,1,0.1683416943091182,combined_instrument_score,0.6134718804591581,Wenchuan earthquake,,,
+HU-003,Wenchuan earthquake,"Qingliang Village, Deyang, DY-06",7.9,0.24,1.0,4.0,1,-0.1702508718859122,combined_instrument_score,0.42131894965183064,Wenchuan earthquake,,,
+HU-004,Wenchuan earthquake,"Nangui village, Deyang",7.9,0.24,4.7,11.9,0,-0.5010317222096777,combined_instrument_score,0.253757163028779,Wenchuan earthquake,,,
+HU-005,Wenchuan earthquake,"Jinqiao village, Deyang, DY-38",7.9,0.139,2.2,5.1,1,-0.0401562667394731,combined_instrument_score,0.49551492791873236,Wenchuan earthquake,,,
+HU-006,Wenchuan earthquake,"Shenghua Village, Deyang",7.9,0.18,2.0,5.0,0,-0.3775735932354889,combined_instrument_score,0.3111974601987437,Wenchuan earthquake,,,
+HU-007,Wenchuan earthquake,"Baijiang Village, Deyang, DY-24",7.9,0.23,2.2,4.1,1,0.00013857679183,combined_instrument_score,0.5186913440299654,Wenchuan earthquake,,,
+HU-008,Wenchuan earthquake,"Anping Village, Deyang, DY-35",7.9,0.139,1.8,3.3,1,-0.031657813811188,combined_instrument_score,0.5004047324730313,Wenchuan earthquake,,,
+HU-009,Wenchuan earthquake,"Shengli village, Deyang, DY-07",7.9,0.21,1.9,3.7,1,-0.1300124664380208,combined_instrument_score,0.4440477742648549,Wenchuan earthquake,,,
+HU-010,Wenchuan earthquake,"Changzheng village, Deyang",7.9,0.2,1.0,2.0,1,-0.207731305025617,combined_instrument_score,0.4004417590663699,Wenchuan earthquake,,,
+HU-011,Wenchuan earthquake,"Qifu Elementary School, Mianzhu, DY-26",7.9,0.3,3.5,5.3,1,-0.0814043801058432,combined_instrument_score,0.47181097832301616,Wenchuan earthquake,,,
+HU-012,Wenchuan earthquake,"Dacheng village, Deyang",7.9,0.32,4.5,6.8,0,-0.6712205605061349,combined_instrument_score,0.1868859052979387,Wenchuan earthquake,,,
+HU-013,Wenchuan earthquake,"Wulang village, Deyang",7.9,0.2,5.0,9.0,0,-0.6802862605705774,combined_instrument_score,0.18373592428836213,Wenchuan earthquake,,,
+HU-014,Wenchuan earthquake,"Yangjia railway station, Deyang",7.9,0.2,6.1,7.4,0,-0.8451181570974775,combined_instrument_score,0.1334712833702372,Wenchuan earthquake,,,
+HU-015,Wenchuan earthquake,"Heping village, Deyang",7.9,0.18,3.7,10.8,0,-0.874702715072449,combined_instrument_score,0.12579079550535116,Wenchuan earthquake,,,
+HU-016,Wenchuan earthquake,"Min'an village, Deyang",7.9,0.25,3.7,8.2,0,-0.5895407863223989,combined_instrument_score,0.21714498756928424,Wenchuan earthquake,,,
+HU-017,Wenchuan earthquake,"Xiaojia village, Chengdu, CD-08",7.9,0.17,1.4,1.8,1,-0.1808600036839816,combined_instrument_score,0.4153774331385182,Wenchuan earthquake,,,
+HU-018,Wenchuan earthquake,"Jingxing village, Pixian, CD-01",7.9,0.21,0.9,3.5,1,-0.0954453950778678,combined_instrument_score,0.46376562687181483,Wenchuan earthquake,,,
+HU-019,Wenchuan earthquake,"Qingbaijiang Bridge, Pengzhou",7.9,0.21,3.0,3.7,0,-1.1663241235851458,combined_instrument_score,0.06850502329391042,Wenchuan earthquake,,,
+HU-020,Wenchuan earthquake,"Lingfeng machinery company, Mianyang",7.9,0.2,4.1,6.1,0,-0.6177683871222295,combined_instrument_score,0.20630399267198254,Wenchuan earthquake,,,
+HU-021,Wenchuan earthquake,"Yongquan Village, Mianyang, MY-02",7.9,0.24,1.3,4.0,1,0.2606277936358309,combined_instrument_score,0.6624724439582587,Wenchuan earthquake,,,
+HU-022,Wenchuan earthquake,"Jushui valliage, Kaijiang bridge, Mianyang",7.9,0.295,0.8,4.1,0,-1.58673395628605,combined_instrument_score,0.027186226617875307,Wenchuan earthquake,,,
+HU-023,Wenchuan earthquake,"Xiangliu village, Mianzhu, DY-03",7.9,0.295,3.4,4.8,1,-0.5022361908861914,combined_instrument_score,0.2532325734358801,Wenchuan earthquake,,,
+HU-024,Wenchuan earthquake,"Anren Village, Mianzhu, DY-02",7.9,0.295,4.0,5.0,1,-0.8671725619561588,combined_instrument_score,0.1277090454160757,Wenchuan earthquake,,,
+HU-025,Wenchuan earthquake,"Chuanmu village, Mianzhu",7.9,0.41,8.0,9.2,0,-0.919562385053653,combined_instrument_score,0.11486864882644389,Wenchuan earthquake,,,
+HU-026,Wenchuan earthquake,"Yongfeng Village, Mianzhu, DY-04",7.9,0.34,2.8,6.0,1,-0.1172026870170981,combined_instrument_score,0.4513375913830775,Wenchuan earthquake,,,
+HU-027,Wenchuan earthquake,"Shuangquan Village, Mianzhu, DY-30",7.9,0.49,2.5,3.3,1,0.0164739856266319,combined_instrument_score,0.5280697447930175,Wenchuan earthquake,,,
+HU-028,Wenchuan earthquake,"Tonglin village, Mianzhu",7.9,0.48,2.0,10.2,0,0.3673877668627685,combined_instrument_score,0.7150515391671021,Wenchuan earthquake,,,
+HU-029,Wenchuan earthquake,"Wudu Village, Mianzhu, DY-31",7.9,0.48,1.6,6.3,1,0.942412551291572,combined_instrument_score,0.904088414066362,Wenchuan earthquake,,,
+HU-030,Wenchuan earthquake,"Linfa village, Mianzhu",7.9,0.47,4.3,6.3,0,-0.7422615465034347,combined_instrument_score,0.16329977438880697,Wenchuan earthquake,,,
+HU-031,Wenchuan earthquake,"Changning Tianqi Village, Mianzhu, DY-29",7.9,0.43,4.0,5.0,0,-1.2693534143969871,combined_instrument_score,0.05483598563310832,Wenchuan earthquake,,,
+HU-032,Wenchuan earthquake,"Linyan Village, Mianzhu, DY-10",7.9,0.594,6.0,7.0,1,-0.2531446233528284,combined_instrument_score,0.37562818521968294,Wenchuan earthquake,,,
+HU-033,Wenchuan earthquake,"Xinglong village, Mianzhu, DY-08",7.9,0.42,2.4,6.8,1,0.4413298526584066,combined_instrument_score,0.7484247376078604,Wenchuan earthquake,,,
+HU-034,Wenchuan earthquake,"Bayi village, Mianzhu",7.9,0.43,6.2,6.7,0,-0.5163477387032613,combined_instrument_score,0.24714005038708833,Wenchuan earthquake,,,
+HU-035,Wenchuan earthquake,"Pharmaceutical factory, Mianzhu",7.9,0.37,3.4,5.4,0,-0.4340237617359903,combined_instrument_score,0.28405195045644654,Wenchuan earthquake,,,
+HU-036,Wenchuan earthquake,"Xinshi School, Mianzhu, DY-27",7.9,0.34,1.0,3.0,1,0.5002424150111637,combined_instrument_score,0.7730860075418101,Wenchuan earthquake,,,
+HU-037,Wenchuan earthquake,"Shihu village, Mianzhu, DY-22",7.9,0.33,2.9,4.4,1,0.0744324026569527,combined_instrument_score,0.5611404830060202,Wenchuan earthquake,,,
+HU-038,Wenchuan earthquake,"Banqiao School, Mianzhu, DY-09",7.9,0.37,3.0,4.6,1,0.1318870687285686,combined_instrument_score,0.593397223420432,Wenchuan earthquake,,,
+HU-039,Wenchuan earthquake,"Baiyang Village, Mianzhu",7.9,0.35,1.5,3.8,1,0.4297316853467298,combined_instrument_score,0.7433654266883514,Wenchuan earthquake,,,
+HU-040,Wenchuan earthquake,"Guihua village, Mianzhu, DY-41",7.9,0.39,0.6,2.2,1,0.4644332203713514,combined_instrument_score,0.7583037461093087,Wenchuan earthquake,,,
+HU-041,Wenchuan earthquake,"Yongning village, Mianzhu",7.9,0.41,1.4,10.2,0,-0.4280227543966658,combined_instrument_score,0.2868691401771468,Wenchuan earthquake,,,
+HU-042,Wenchuan earthquake,"Sangyuan village, Mianzhu, DY-44",7.9,0.29,2.8,3.5,1,-0.3431252305330831,combined_instrument_score,0.3284415786861321,Wenchuan earthquake,,,
+HU-043,Wenchuan earthquake,"Wufang village, Mianzhu",7.9,0.27,2.0,4.6,0,-0.2166984266683787,combined_instrument_score,0.3954970665737699,Wenchuan earthquake,,,
+HU-044,Wenchuan earthquake,"Baihutou Village, Shifang, DY-39",7.9,0.594,1.2,2.2,1,0.4044060936470066,combined_instrument_score,0.7320887930407859,Wenchuan earthquake,,,
+HU-045,Wenchuan earthquake,"Siyuan Village, Shifang, DY-11",7.9,0.41,1.5,3.0,1,0.3097912738725036,combined_instrument_score,0.6872909512024653,Wenchuan earthquake,,,
+HU-046,Wenchuan earthquake,"Zhenjiang village, Shifang, DY-42",7.9,0.29,0.9,2.4,1,-0.0952193565012741,combined_instrument_score,0.4638950066069948,Wenchuan earthquake,,,
+HU-047,Wenchuan earthquake,"Quezhu village, Shifang",7.9,0.26,6.0,10.5,0,-0.9601951738230502,combined_instrument_score,0.10569724276366745,Wenchuan earthquake,,,
+HU-048,Wenchuan earthquake,"Jiangyou Train Station−1, MY-13",7.9,0.52,2.4,4.7,1,0.1901204632281527,combined_instrument_score,0.6252880798140538,Wenchuan earthquake,,,
+HU-049,Wenchuan earthquake,"Jiangyou rail station line−2, MY-12",7.9,0.52,3.0,6.5,0,0.1234226428257414,combined_instrument_score,0.5886883953890663,Wenchuan earthquake,,,
+HU-050,Wenchuan earthquake,"Yongshou Village, Dujiangyan, CD-17",7.9,0.25,2.1,2.9,1,-0.7737683196967494,combined_instrument_score,0.1536321502782797,Wenchuan earthquake,,,
+HU-051,Wenchuan earthquake,"Quanshui village, Dujiangyan, CD-03",7.9,0.24,0.9,1.7,1,-0.508674864470224,combined_instrument_score,0.25044047654637863,Wenchuan earthquake,,,
+HU-052,Wenchuan earthquake,"Fengle valliage, Dujiangyan, CD-04",7.9,0.25,1.4,2.1,1,-0.2086726747251738,combined_instrument_score,0.3999216919139052,Wenchuan earthquake,,,
+HU-053,Wenchuan earthquake,"Jingyu village, Pixian, CD-26",7.9,0.2,1.5,2.6,0,-0.3290792509479758,combined_instrument_score,0.3356111564663494,Wenchuan earthquake,,,
+HU-054,Wenchuan earthquake,"Business College, Dujiangyan",7.9,0.27,2.3,3.5,0,-0.5144527495047809,combined_instrument_score,0.24795244101363317,Wenchuan earthquake,,,
+HU-055,Wenchuan earthquake,"Ruikang garden, Dujiangyan",7.9,0.31,5.4,6.9,0,-1.80902072070097,combined_instrument_score,0.016478410232331864,Wenchuan earthquake,,,
+HU-056,Wenchuan earthquake,"Zipingpu village, Dujiangyan, B-1",7.9,0.37,3.0,4.2,0,-0.7211613491073421,combined_instrument_score,0.17004408427411563,Wenchuan earthquake,,,
+HU-057,Wenchuan earthquake,"Yutang village, Dujiangyan, A-1",7.9,0.32,1.5,2.0,0,-0.8657680341252921,combined_instrument_score,0.12806958942583296,Wenchuan earthquake,,,
+HU-058,Wenchuan earthquake,"Finance building, Dujiangyan",7.9,0.31,2.7,3.8,0,-0.9006973048532491,combined_instrument_score,0.11935759634023639,Wenchuan earthquake,,,
+HU-059,Wenchuan earthquake,"Pilu Elementary School, Guanghan, DY-17",7.9,0.22,1.4,5.2,1,0.2229758811435581,combined_instrument_score,0.6428311999016532,Wenchuan earthquake,,,
+HU-060,Wenchuan earthquake,"Xinyi kindergarten, Pengzhou, B-2",7.9,0.26,1.4,2.1,0,-1.0634645259127256,combined_instrument_score,0.08524348922425823,Wenchuan earthquake,,,
+HU-061,Wenchuan earthquake,"Lichun village, Pengzhou, CD-25",7.9,0.24,2.4,4.1,1,0.0959148141169477,combined_instrument_score,0.5732772604932621,Wenchuan earthquake,,,
+HU-062,Wenchuan earthquake,"Sandaoyan village, Pixian",7.9,0.18,2.1,4.2,0,-0.5316949505797101,combined_instrument_score,0.2406267272359558,Wenchuan earthquake,,,
+HU-063,Wenchuan earthquake,"Majiamiao village, Pixian",7.9,0.2,2.4,3.2,0,-0.9898982209938042,combined_instrument_score,0.09940717809034884,Wenchuan earthquake,,,
+HU-064,Wenchuan earthquake,"Shidimiao village, Pixian",7.9,0.18,4.0,7.0,0,-1.3156932093045637,combined_instrument_score,0.049563548715757876,Wenchuan earthquake,,,
+HU-065,Wenchuan earthquake,"Yongsheng village, Pixian",7.9,0.17,3.4,7.1,0,-1.2501140693749828,combined_instrument_score,0.05717675916628759,Wenchuan earthquake,,,
+HU-066,Wenchuan earthquake,"Xinlian village, Emei, LS-01",7.9,0.13,1.8,2.5,1,-0.5863488226113005,combined_instrument_score,0.21839643567284897,Wenchuan earthquake,,,
+HU-067,Wenchuan earthquake,"Wuli villiage, Suining, SN-01",7.9,0.09,1.0,5.0,1,0.114574629210149,combined_instrument_score,0.5837487636605762,Wenchuan earthquake,,,
+HU-221,Wenchuan earthquake,"Baijiang Village, Deyang",7.9,0.23,2.2,4.5,1,-0.1725161207331288,combined_instrument_score,0.42004834809396024,Wenchuan earthquake,,,
+HU-222,Wenchuan earthquake,"Anping Village, Deyang",7.9,0.139,1.8,3.9,1,0.0266102311016197,combined_instrument_score,0.5338795898647343,Wenchuan earthquake,,,
+HU-223,Wenchuan earthquake,"Shengli village, Deyang",7.9,0.21,1.9,5.4,1,-0.000616562078427,combined_instrument_score,0.5182574378767469,Wenchuan earthquake,,,
+HU-224,Wenchuan earthquake,"Changzheng village, Deyang",7.9,0.2,1.0,5.3,1,0.0268479260586706,combined_instrument_score,0.5340157267020043,Wenchuan earthquake,,,
+HU-225,Wenchuan earthquake,"Yongfeng Village, Mianzhu",7.9,0.34,2.8,6.6,1,0.0437632526882396,combined_instrument_score,0.543689557326003,Wenchuan earthquake,,,
+HU-226,Wenchuan earthquake,"Baihutou Village, Shifang",7.9,0.594,1.2,3.4,1,0.5219312483479221,combined_instrument_score,0.7817233143281375,Wenchuan earthquake,,,
+HU-227,Wenchuan earthquake,"Linyan Village, Mianzhu",7.9,0.594,3.7,8.3,1,0.6813680202893247,combined_instrument_score,0.8379007299153108,Wenchuan earthquake,,,
+HU-228,Wenchuan earthquake,"Siyuan Village, Shifang",7.9,0.41,3.2,5.8,1,0.0085387489476643,combined_instrument_score,0.523516070933695,Wenchuan earthquake,,,
+HU-229,Wenchuan earthquake,"Anren Village, Mianzhu",7.9,0.295,4.0,7.4,1,-0.3287224520852829,combined_instrument_score,0.3357942879863868,Wenchuan earthquake,,,
+HU-230,Wenchuan earthquake,"Wudu Village, Mianzhu",7.9,0.48,1.6,6.3,1,0.9520891858310118,combined_instrument_score,0.9060023167132871,Wenchuan earthquake,,,
+HU-231,Wenchuan earthquake,"Shuangquan Village, Mianzhu",7.9,0.49,2.5,7.9,1,0.3720308793650517,combined_instrument_score,0.7172239108682347,Wenchuan earthquake,,,
+HU-232,Wenchuan earthquake,"Shenghua Village, Deyang",7.9,0.18,2.0,4.8,0,-0.3331188379371925,combined_instrument_score,0.33354124575437133,Wenchuan earthquake,,,
+HU-233,Wenchuan earthquake,"Lingfeng machinery company, Mianyang",7.9,0.2,4.1,6.6,0,-0.5770564895320099,combined_instrument_score,0.222069140288355,Wenchuan earthquake,,,
+HU-234,Wenchuan earthquake,"Tianqi Village, Mianzhu",7.9,0.43,4.0,6.6,0,-0.1854847576939522,combined_instrument_score,0.4127949688922026,Wenchuan earthquake,,,
+HU-184,Alaska earthquake,"Matanuska river, MP 147.4, B.H.17",9.2,0.21,0.0,6.68,1,,dpt_screening_score,0.8806778389997729,Alaska earthquake,0.7992478655229575,,
+HU-185,Alaska earthquake,"Matanuska river, MP 147.5, B.H.18",9.2,0.21,0.0,13.2,1,,dpt_screening_score,0.9298398657283701,Alaska earthquake,1.0972311365065173,,
+HU-186,Alaska earthquake,"Twenty-Mile river, MP 64.7, B.H.20",9.2,0.31,0.0,3.05,1,,dpt_screening_score,0.9084990174280686,Alaska earthquake,0.9502225842884224,,
+HU-187,Alaska earthquake,"Twenty-Mile river, MP 64.7, B.H.24",9.2,0.31,4.42,5.7,1,,dpt_screening_score,0.7009169752663098,Alaska earthquake,0.2152634452998714,,
+HU-188,Alaska earthquake,"Portage Creek, MP 63.0, B.H.25",9.2,0.31,2.74,19.82,0,,dpt_screening_score,0.9334441649145326,Alaska earthquake,1.126047537489874,,
+HU-189,Alaska earthquake,"Portage Creek, MP 63.5, B.H.28",9.2,0.31,3.05,4.57,1,,dpt_screening_score,0.7960882097621433,Alaska earthquake,0.4750610633415337,,
+HU-206,Alaska earthquake,Valdez Site 1,9.2,0.44,1.0,6.7,1,,dpt_screening_score,0.974780855212491,Alaska earthquake,1.6421103531992378,,
+HU-207,Alaska earthquake,Valdez Site 2,9.2,0.44,0.8,4.6,1,,dpt_screening_score,0.9832674683555599,Alaska earthquake,1.8553615580483012,,
+HU-208,Alaska earthquake,Valdez Site 3,9.2,0.44,1.0,5.5,1,,dpt_screening_score,0.9626870672992627,Alaska earthquake,1.4363403211454897,,
+HU-209,Alaska earthquake,Valdez Site 4,9.2,0.44,1.0,6.8,1,,dpt_screening_score,0.9830608118011085,Alaska earthquake,1.849005956974455,,
+HU-068,"Borah Peak, Idaho earthquake","Andersen Bar, SA-1",6.9,0.29,0.8,1.9,1,,dpt_screening_score,0.6118986598809489,"Borah Peak, Idaho earthquake",0.1664494239627667,,
+HU-069,"Borah Peak, Idaho earthquake","Andersen Bar, X1-X2",6.9,0.29,0.8,2.0,1,,dpt_screening_score,0.6147304382285707,"Borah Peak, Idaho earthquake",0.1731044721583636,,
+HU-070,"Borah Peak, Idaho earthquake","Goddard Ranch, SA-2",6.9,0.3,1.2,2.4,1,,dpt_screening_score,0.5734678297019336,"Borah Peak, Idaho earthquake",0.0776705667336608,,
+HU-071,"Borah Peak, Idaho earthquake","Goddard Ranch, SA-4",6.9,0.3,1.2,2.4,1,,dpt_screening_score,0.6094174037520786,"Borah Peak, Idaho earthquake",0.160632746372546,,
+HU-072,"Borah Peak, Idaho earthquake","Mackay Dam, downstream toe,",6.9,0.23,2.3,2.8,0,,dpt_screening_score,0.06912558521957862,"Borah Peak, Idaho earthquake",-1.5365472326744531,,
+HU-073,"Borah Peak, Idaho earthquake","North Gravel Bar, Bar Site",6.9,0.46,1.0,2.4,0,,dpt_screening_score,0.4113394073945187,"Borah Peak, Idaho earthquake",-0.2870874159356661,,
+HU-074,"Borah Peak, Idaho earthquake","North Gravel Bar, Tarrace",6.9,0.46,3.0,3.65,0,,dpt_screening_score,0.16764030611619138,"Borah Peak, Idaho earthquake",-0.9804436957802172,,
+HU-075,"Borah Peak, Idaho earthquake","Pence Ranch, SA1",6.9,0.36,1.7,2.8,1,,dpt_screening_score,0.5849531289856915,"Borah Peak, Idaho earthquake",0.1039365797587136,,
+HU-076,"Borah Peak, Idaho earthquake","Pence Ranch, SA2",6.9,0.36,1.5,3.1,1,,dpt_screening_score,0.6142129345656269,"Borah Peak, Idaho earthquake",0.1718869219428584,,
+HU-077,"Borah Peak, Idaho earthquake","Pence Ranch, SA3",6.9,0.36,1.4,2.4,1,,dpt_screening_score,0.5871077166563068,"Borah Peak, Idaho earthquake",0.1088866107497916,,
+HU-078,"Borah Peak, Idaho earthquake","Pence Ranch, SA4",6.9,0.36,1.8,3.1,1,,dpt_screening_score,0.5868209113895838,"Borah Peak, Idaho earthquake",0.108227255572451,,
+HU-079,"Borah Peak, Idaho earthquake","Pence Ranch, SA5",6.9,0.36,1.5,3.0,1,,dpt_screening_score,0.6109038358934746,"Borah Peak, Idaho earthquake",0.1641156958006945,,
+HU-080,"Borah Peak, Idaho earthquake","Pence Ranch, SA-A",6.9,0.36,2.0,2.8,1,,dpt_screening_score,0.5502897837556,"Borah Peak, Idaho earthquake",0.0251831278542341,,
+HU-081,"Borah Peak, Idaho earthquake","Pence Ranch, SA-B",6.9,0.36,1.5,2.1,1,,dpt_screening_score,0.5356373583384303,"Borah Peak, Idaho earthquake",-0.0077286856946258,,
+HU-082,"Borah Peak, Idaho earthquake","Pence Ranch, SA-C",6.9,0.36,1.5,2.1,1,,dpt_screening_score,0.5357496347746693,"Borah Peak, Idaho earthquake",-0.0074770924134397,,
+HU-083,"Borah Peak, Idaho earthquake","Pence Ranch, SA-D",6.9,0.36,1.5,2.1,1,,dpt_screening_score,0.5346547110579877,"Borah Peak, Idaho earthquake",-0.0099302962908991,,
+HU-084,"Borah Peak, Idaho earthquake","Pence Ranch, SA-E",6.9,0.36,1.7,2.3,1,,dpt_screening_score,0.5266648125200099,"Borah Peak, Idaho earthquake",-0.0278107400359992,,
+HU-085,"Borah Peak, Idaho earthquake","Pence Ranch, XDXE",6.9,0.36,1.5,3.4,1,,dpt_screening_score,0.5899971664135221,"Borah Peak, Idaho earthquake",0.115537021355174,,
+HU-086,"Borah Peak, Idaho earthquake","Pence Ranch, HY1-C",6.9,0.35,1.65,2.7,1,,dpt_screening_score,0.5696319867792475,"Borah Peak, Idaho earthquake",0.0689400423402276,,
+HU-087,"Borah Peak, Idaho earthquake","Pence Ranch, HY2-C",6.9,0.35,1.45,2.5,1,,dpt_screening_score,0.5826707265289256,"Borah Peak, Idaho earthquake",0.0987010328224474,,
+HU-088,"Borah Peak, Idaho earthquake","Pence Ranch, HY3-C",6.9,0.35,1.35,1.95,1,,dpt_screening_score,0.5559962927627145,"Borah Peak, Idaho earthquake",0.038050832164965,,
+HU-089,"Borah Peak, Idaho earthquake","Pence Ranch, PH1-C",6.9,0.35,1.1,1.75,1,,dpt_screening_score,0.569763708670289,"Borah Peak, Idaho earthquake",0.0692395248205729,,
+HU-090,"Borah Peak, Idaho earthquake","Pence Ranch, HY1-D",6.9,0.35,1.65,4.3,0,,dpt_screening_score,0.37426547253913534,"Borah Peak, Idaho earthquake",-0.3737726294925588,,
+HU-091,"Borah Peak, Idaho earthquake","Pence Ranch, HY2-D",6.9,0.35,1.45,4.55,0,,dpt_screening_score,0.3945750421275953,"Borah Peak, Idaho earthquake",-0.3259295591457629,,
+HU-092,"Borah Peak, Idaho earthquake","Pence Ranch, HY3-D",6.9,0.35,1.35,4.15,0,,dpt_screening_score,0.3847961306860798,"Borah Peak, Idaho earthquake",-0.3488472910074472,,
+HU-093,"Borah Peak, Idaho earthquake","Pence Ranch, BR1-D",6.9,0.35,1.85,6.15,0,,dpt_screening_score,0.4240265014287353,"Borah Peak, Idaho earthquake",-0.2580127934336411,,
+HU-094,"Borah Peak, Idaho earthquake","Pence Ranch, PH1-D",6.9,0.35,1.1,3.9,0,,dpt_screening_score,0.3919304889748513,"Borah Peak, Idaho earthquake",-0.332106956410308,,
+HU-095,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.1",6.9,0.6,1.0,1.13,1,,dpt_screening_score,0.44284584430198426,"Borah Peak, Idaho earthquake",-0.2152940970895758,,
+HU-096,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.2",6.9,0.35,1.52,3.35,1,,dpt_screening_score,0.5515101092335041,"Borah Peak, Idaho earthquake",0.0279322347500122,,
+HU-097,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.3",6.9,0.6,7.0,8.08,1,,dpt_screening_score,0.48222044843665596,"Borah Peak, Idaho earthquake",-0.1269689885659229,,
+HU-098,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.4",6.9,0.6,9.36,11.43,1,,dpt_screening_score,0.3635527469184968,"Borah Peak, Idaho earthquake",-0.3994200302856159,,
+HU-099,"Borah Peak, Idaho earthquake","Whiskey Springs, WS1B-C1",6.9,0.5,0.8,2.9,1,,dpt_screening_score,0.6459913647008891,"Borah Peak, Idaho earthquake",0.2479149531632042,,
+HU-100,"Borah Peak, Idaho earthquake","Whiskey Springs, WS1B-D",6.9,0.5,0.8,6.050000000000001,0,,dpt_screening_score,0.7199581876589009,"Borah Peak, Idaho earthquake",0.4389701804664249,,
+HU-101,"Borah Peak, Idaho earthquake","Whiskey Springs, WS2B-C1",6.9,0.5,2.4,3.35,1,,dpt_screening_score,0.5702976374254052,"Borah Peak, Idaho earthquake",0.0704536940274585,,
+HU-102,"Borah Peak, Idaho earthquake","Whiskey Springs, WS3B-C1",6.9,0.5,6.7,7.25,1,,dpt_screening_score,0.41604922893097385,"Borah Peak, Idaho earthquake",-0.2762647047928174,,
+HU-103,"Borah Peak, Idaho earthquake",Whiskey Springs Site 1 Unit C1,6.9,0.5,0.8,2.4000000000000004,1,,dpt_screening_score,0.6721131675830464,"Borah Peak, Idaho earthquake",0.3127315958726516,,
+HU-104,"Borah Peak, Idaho earthquake",Whiskey Springs Site 2 Unit C1,6.9,0.5,2.4,3.35,1,,dpt_screening_score,0.5261744068103944,"Borah Peak, Idaho earthquake",-0.0289071206350514,,
+HU-105,"Borah Peak, Idaho earthquake",Whiskey Springs Site 3 Unit C1,6.9,0.5,6.8,7.3,1,,dpt_screening_score,0.36236479645150943,"Borah Peak, Idaho earthquake",-0.4022835840876751,,
+HU-106,"Borah Peak, Idaho earthquake","Larter Ranch, X3X4",6.9,0.5,0.8,2.85,1,,dpt_screening_score,0.6428589932520207,"Borah Peak, Idaho earthquake",0.2402958574645586,,
+HU-107,"Borah Peak, Idaho earthquake","Larter Ranch, SA1, 85",6.9,0.5,0.8,2.85,1,,dpt_screening_score,0.6808114007300895,"Borah Peak, Idaho earthquake",0.3348836361833185,,
+HU-108,"Borah Peak, Idaho earthquake","Larter Ranch, SA1, 90",6.9,0.5,0.8,2.85,1,,dpt_screening_score,0.6086535652120744,"Borah Peak, Idaho earthquake",0.1588448049198639,,
+HU-213,"Borah Peak, Idaho earthquake",Whiskey Springs,6.9,0.6,7.5,12.0,1,,dpt_screening_score,0.15958878876150573,"Borah Peak, Idaho earthquake",-1.013242255893808,,
+HU-214,"Borah Peak, Idaho earthquake",Larter Ranch    ,6.9,0.5,0.7,2.8,1,,dpt_screening_score,0.7613860876030039,"Borah Peak, Idaho earthquake",0.5593808029086699,,
+HU-215,"Borah Peak, Idaho earthquake",Pence Ranch     ,6.9,0.39,1.4,2.6,1,,dpt_screening_score,0.5353548628604181,"Borah Peak, Idaho earthquake",-0.0083616764906811,,
+HU-139,Chi-Chi earthquake,"NanTou, B-1",7.6,0.428,1.5,5.0,0,,dpt_screening_score,0.8418914364798183,Chi-Chi earthquake,0.4298818528006495,,
+HU-140,Chi-Chi earthquake,"NanTou, B-2",7.6,0.428,1.8,7.3,0,,dpt_screening_score,0.8428788688131464,Chi-Chi earthquake,0.4331416242200532,,
+HU-141,Chi-Chi earthquake,"NanTou, BH-2",7.6,0.428,1.7,7.2,0,,dpt_screening_score,0.8011615818430673,Chi-Chi earthquake,0.3076800262425429,,
+HU-142,Chi-Chi earthquake,"NanTou, BH-3",7.6,0.428,4.0,17.2,0,,dpt_screening_score,0.5928779965278402,Chi-Chi earthquake,-0.1383907886158297,,
+HU-143,Chi-Chi earthquake,"NanTou, BH-4",7.6,0.428,5.0,7.2,0,,dpt_screening_score,0.5380142492493752,Chi-Chi earthquake,-0.2363650555338941,,
+HU-144,Chi-Chi earthquake,"NanTou, BH-5",7.6,0.428,2.8,17.8,0,,dpt_screening_score,0.685019081774812,Chi-Chi earthquake,0.0373993814866917,,
+HU-145,Chi-Chi earthquake,"NanTou, BH-6",7.6,0.428,1.2,3.3,1,,dpt_screening_score,0.8971626231230223,Chi-Chi earthquake,0.6462863895311985,,
+HU-146,Chi-Chi earthquake,"NanTou, BH-7",7.6,0.428,0.65,16.2,0,,dpt_screening_score,0.8322521620781893,Chi-Chi earthquake,0.3988949148592741,,
+HU-147,Chi-Chi earthquake,"NanTou, BH-8",7.6,0.428,5.0,8.8,0,,dpt_screening_score,0.6022645262037135,Chi-Chi earthquake,-0.121281649565702,,
+HU-148,Chi-Chi earthquake,"NanTou, BH-9",7.6,0.428,9.6,16.2,0,,dpt_screening_score,0.23753770810112237,Chi-Chi earthquake,-0.8143175535670844,,
+HU-149,Chi-Chi earthquake,"NanTou, BH-10",7.6,0.428,2.4,5.8,0,,dpt_screening_score,0.7509297474075473,Chi-Chi earthquake,0.1805717079489671,,
+HU-150,Chi-Chi earthquake,"NanTou, BH-14",7.6,0.428,1.5,18.8,0,,dpt_screening_score,0.896297392419704,Chi-Chi earthquake,0.6421910983595106,,
+HU-151,Chi-Chi earthquake,"WuFeng, BH-2",7.6,0.789,5.1,5.1,0,,dpt_screening_score,0.6535451914759084,Chi-Chi earthquake,-0.024962047098653,,
+HU-152,Chi-Chi earthquake,"WuFeng, BH-3",7.6,0.789,1.3,11.0,0,,dpt_screening_score,0.9792171607641224,Chi-Chi earthquake,1.3855212625190303,,
+HU-153,Chi-Chi earthquake,"WuFeng, BH-14",7.6,0.79,3.5,7.0,1,,dpt_screening_score,0.9534467145957796,Chi-Chi earthquake,1.020343481504799,,
+HU-154,Chi-Chi earthquake,WuFeng -Fu Tin Bridge,7.6,0.79,4.5,5.5,1,,dpt_screening_score,0.8944465733595987,Chi-Chi earthquake,0.633531274611257,,
+HU-155,Chi-Chi earthquake,"YuanLin, BH-02",7.6,0.19,7.0,16.2,0,,dpt_screening_score,0.21209276482336184,Chi-Chi earthquake,-0.8783685122709933,,
+HU-156,Chi-Chi earthquake,"YuanLin, BH-14",7.6,0.19,1.6,12.8,0,,dpt_screening_score,0.5058548950018077,Chi-Chi earthquake,-0.2928771728961792,,
+HU-157,Chi-Chi earthquake,"YuanLin, BH-40",7.6,0.19,1.2,12.2,0,,dpt_screening_score,0.5276485702311953,Chi-Chi earthquake,-0.2546181551811949,,
+HU-190,"Friuli, Italy earthquake",Avasinis village,6.4,0.2,2.7,7.0,1,,dpt_screening_score,0.39764413562603457,"Friuli, Italy earthquake",-0.4263407139571115,,
+HU-210,"Friuli, Italy earthquake",Avasinis Site 1,6.4,0.47,0.2,2.5,1,,dpt_screening_score,0.7709596795365603,"Friuli, Italy earthquake",0.4344671517618459,,
+HU-211,"Friuli, Italy earthquake",Avasinis Site 2,6.4,0.47,0.2,1.5,1,,dpt_screening_score,0.7904403417403376,"Friuli, Italy earthquake",0.4946241899801316,,
+HU-212,"Friuli, Italy earthquake",Avasinis Site 3,6.4,0.47,0.2,3.0,1,,dpt_screening_score,0.6274770087478382,"Friuli, Italy earthquake",0.0686278042971046,,
+HU-136,Guatemala earthquake,Lake Amatitlan B-1,7.5,0.12,1.6,8.73,1,,dpt_screening_score,0.5910437976388423,Guatemala earthquake,-0.0225749180637722,,
+HU-137,Guatemala earthquake,Lake Amatitlan B-2,7.5,0.12,2.51,9.0,1,,dpt_screening_score,0.4477962664862149,Guatemala earthquake,-0.3266771732109863,,
+HU-138,Guatemala earthquake,Lake Amatitlan B-4,7.5,0.12,3.35,10.8,0,,dpt_screening_score,0.4344787861826222,Guatemala earthquake,-0.3551065314365293,,
+HU-182,Hokkaido-Nansei-Oki earthquake,"Pension House, BH1",8.3,0.19,1.0,2.0,1,,dpt_screening_score,0.7127128531367499,Hokkaido-Nansei-Oki earthquake,0.2657278454106164,,
+HU-183,Hokkaido-Nansei-Oki earthquake,"Pension House, BH2",8.3,0.19,0.7,6.1,1,,dpt_screening_score,0.7411039000576496,Hokkaido-Nansei-Oki earthquake,0.3418738824502151,,
+HU-109,Hyogoken-Nambu earthquake,Hanshin Expressway 5.3,6.9,0.5,2.1,5.6,1,,dpt_screening_score,0.7928691092269562,Hyogoken-Nambu earthquake,0.4298251206819833,,
+HU-110,Hyogoken-Nambu earthquake,Hanshin Expressway 5.10,6.9,0.58,1.8,5.5,1,,dpt_screening_score,0.8901611876639798,Hyogoken-Nambu earthquake,0.8203894571853444,,
+HU-111,Hyogoken-Nambu earthquake,Hanshin Expressway 5.14,6.9,0.63,4.3,6.5,1,,dpt_screening_score,0.7155187007736495,Hyogoken-Nambu earthquake,0.2111499932183693,,
+HU-112,Hyogoken-Nambu earthquake,Hanshin Expressway 5.25,6.9,0.65,3.2,8.8,1,,dpt_screening_score,0.8489551219538424,Hyogoken-Nambu earthquake,0.6298359402758694,,
+HU-113,Hyogoken-Nambu earthquake,Hanshin Expressway 5.29,6.9,0.65,2.5,7.2,1,,dpt_screening_score,0.8711565363215752,Hyogoken-Nambu earthquake,0.7260575047796759,,
+HU-114,Hyogoken-Nambu earthquake,KNK Kainan Port Sub-station (KPS) 1,6.9,0.12,2.0,6.6,0,,dpt_screening_score,0.5185518695760715,Hyogoken-Nambu earthquake,-0.230451545991248,,
+HU-115,Hyogoken-Nambu earthquake,KNK Kainan Port Sub-station (KPS) 2,6.9,0.12,2.0,10.4,0,,dpt_screening_score,0.5109986256884276,Hyogoken-Nambu earthquake,-0.2461973703807036,,
+HU-116,Hyogoken-Nambu earthquake,Nishinomiya Expressway 3,6.9,0.63,3.7,7.0,0,,dpt_screening_score,0.7714240296449356,Hyogoken-Nambu earthquake,0.3642498866538157,,
+HU-117,Hyogoken-Nambu earthquake,Nishinomiya Expressway 17,6.9,0.53,2.0,3.3,0,,dpt_screening_score,0.5838017842370954,Hyogoken-Nambu earthquake,-0.0929053733966111,,
+HU-118,Hyogoken-Nambu earthquake,Nishinomiya Expressway 23,6.9,0.63,2.9,4.0,0,,dpt_screening_score,0.7975951545091375,Hyogoken-Nambu earthquake,0.4449378167072576,,
+HU-119,Hyogoken-Nambu earthquake,Nishinomiya Expressway 28,6.9,0.65,2.2,6.0,0,,dpt_screening_score,0.8687592328069399,Hyogoken-Nambu earthquake,0.7150234354757101,,
+HU-120,Hyogoken-Nambu earthquake,"LPG Tank Yard, Kobe",6.9,0.5,1.5,4.0,1,,dpt_screening_score,0.8446161922218791,Hyogoken-Nambu earthquake,0.6124211347199165,,
+HU-121,Hyogoken-Nambu earthquake,"Port Island 1C, Instrumented array",6.9,0.5,3.0,8.6,1,,dpt_screening_score,0.756544259006872,Hyogoken-Nambu earthquake,0.321269718915818,,
+HU-122,Hyogoken-Nambu earthquake,"Port Island Common Factory, 1",6.9,0.5,3.2,9.0,0,,dpt_screening_score,0.629305453173167,Hyogoken-Nambu earthquake,0.0064634452197731,,
+HU-123,Hyogoken-Nambu earthquake,"Port Island Common Factory, 2",6.9,0.5,3.2,9.2,0,,dpt_screening_score,0.6685565997995221,Hyogoken-Nambu earthquake,0.0962447819908514,,
+HU-124,Hyogoken-Nambu earthquake,Port Island Dhole Array 91,6.9,0.5,2.4,7.2,1,,dpt_screening_score,0.751359637308543,Hyogoken-Nambu earthquake,0.3067167964571056,,
+HU-125,Hyogoken-Nambu earthquake,Port Island Dhole Array 95,6.9,0.5,2.4,7.8,1,,dpt_screening_score,0.8189245966533746,Hyogoken-Nambu earthquake,0.5166622307647212,,
+HU-126,Hyogoken-Nambu earthquake,SGK Technical Research Center (TRC) 1,6.9,0.45,7.0,8.5,0,,dpt_screening_score,0.30446109917150277,Hyogoken-Nambu earthquake,-0.6992784646786285,,
+HU-127,Hyogoken-Nambu earthquake,SGK Technical Research Center (TRC) 2,6.9,0.4,7.0,9.0,0,,dpt_screening_score,0.31827109683072596,Hyogoken-Nambu earthquake,-0.6657378007440976,,
+HU-193,Izmit-Kocaeli earthquake,"Hotel Sapanca, SH-4",7.4,0.3,0.5,1.6,1,,dpt_screening_score,0.5487965067618021,Izmit-Kocaeli earthquake,-0.0905870225754755,,
+HU-194,Izmit-Kocaeli earthquake,"Hotel Sapanca, SH-7",7.4,0.4,1.25,1.3,1,,dpt_screening_score,0.47199603135682977,Izmit-Kocaeli earthquake,-0.2595392392418445,,
+HU-195,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS4",7.4,0.4,0.75,2.77,1,,dpt_screening_score,0.703119410014874,Izmit-Kocaeli earthquake,0.275025525201662,,
+HU-196,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS5",7.4,0.4,0.75,2.25,1,,dpt_screening_score,0.5485184930754254,Izmit-Kocaeli earthquake,-0.0912029831459383,,
+HU-197,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS7",7.4,0.4,0.3,4.15,1,,dpt_screening_score,0.8078761241052518,Izmit-Kocaeli earthquake,0.5899891335258336,,
+HU-198,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS9",7.4,0.4,0.75,7.57,1,,dpt_screening_score,0.8555388976557288,Izmit-Kocaeli earthquake,0.777875433383449,,
+HU-199,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS12",7.4,0.4,0.6,2.77,0,,dpt_screening_score,0.4315339551326848,Izmit-Kocaeli earthquake,-0.3492225259272277,,
+HU-200,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS13",7.4,0.4,0.0,5.7,1,,dpt_screening_score,0.8576603979464071,Izmit-Kocaeli earthquake,0.7873512375828318,,
+HU-201,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S1/8",7.4,0.5,0.5,1.15,1,,dpt_screening_score,0.6389299344050301,Izmit-Kocaeli earthquake,0.1151087460677677,,
+HU-202,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S2/3",7.4,0.4,0.4,9.2,1,,dpt_screening_score,0.8578407603913323,Izmit-Kocaeli earthquake,0.788162252629976,,
+HU-203,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S4/3",7.4,0.4,1.3,3.2,1,,dpt_screening_score,0.6641393631242205,Izmit-Kocaeli earthquake,0.1760487570675504,,
+HU-219,Kaikora earthquake,Wellington Site 1,7.8,0.24,2.6,5.5,1,,dpt_screening_score,0.6523134185001881,Kaikora earthquake,0.1182431626017253,,
+HU-220,Kaikora earthquake,Wellington Site 2,7.8,0.24,2.8,3.8,1,,dpt_screening_score,0.5977371624275506,Kaikora earthquake,-0.0050802612839729,,
+HU-132,Loma Prieta earthquake,"Coyote creek, SR1",7.0,0.18,2.4,4.6,0,,dpt_screening_score,0.5171410947724683,Loma Prieta earthquake,-0.2105024414431362,,
+HU-133,Loma Prieta earthquake,"Coyote creek, R1-R2",7.0,0.18,2.4,4.2,0,,dpt_screening_score,0.46694370970321475,Loma Prieta earthquake,-0.3187691122879379,,
+HU-134,Loma Prieta earthquake,"Coyote creek, R1-R3",7.0,0.18,2.4,4.2,0,,dpt_screening_score,0.45004598797927875,Loma Prieta earthquake,-0.355430755369934,,
+HU-135,Loma Prieta earthquake,"Coyote creek, R2-R3",7.0,0.18,2.4,4.6,0,,dpt_screening_score,0.4457661418596681,Loma Prieta earthquake,-0.3647527548630413,,
+HU-216,Muisne earthquake,Manta DPT-1 & Vs-4,7.8,0.46,3.8,5.2,1,,dpt_screening_score,0.6665523803436604,Muisne earthquake,0.1562988894801614,,
+HU-217,Muisne earthquake,Manta DPT-2 & Vs-4,7.8,0.46,3.6,5.4,1,,dpt_screening_score,0.6677450369000966,Muisne earthquake,0.1591628357682225,,
+HU-218,Muisne earthquake,Manta DPT-3 & Vs-9,7.8,0.46,3.8,5.6,1,,dpt_screening_score,0.6848811890505299,Muisne earthquake,0.2009111127307375,,
+HU-204,Nihonkai-Chubu earthquake,"Noshiro-N2, B.H.78",7.7,0.25,2.9,3.0,0,,dpt_screening_score,0.22663638482560328,Nihonkai-Chubu earthquake,-0.8896605013526269,,
+HU-205,Nihonkai-Chubu earthquake,"Noshiro-N2, B.H.84",7.7,0.25,2.9,4.0,0,,dpt_screening_score,0.3116830117267466,Nihonkai-Chubu earthquake,-0.6562590172481495,,
+HU-128,"San Francisco, California earthquake","Coyote creek, SR1",7.9,0.36,2.4,4.6,1,,dpt_screening_score,0.7505721102016878,"San Francisco, California earthquake",0.3803081862559851,,
+HU-129,"San Francisco, California earthquake","Coyote creek, R1-R2",7.9,0.36,2.4,4.2,1,,dpt_screening_score,0.7030541029302226,"San Francisco, California earthquake",0.2514004734659108,,
+HU-130,"San Francisco, California earthquake","Coyote creek, R1-R3",7.9,0.36,2.4,4.2,1,,dpt_screening_score,0.6886229575494076,"San Francisco, California earthquake",0.2147388303839147,,
+HU-131,"San Francisco, California earthquake","Coyote creek, R2-R3",7.9,0.36,2.4,4.6,1,,dpt_screening_score,0.6842607225563806,"San Francisco, California earthquake",0.2038431382192592,,
+HU-158,Tohoku earthquake,"Chiba-ken, CH350",9.0,0.143,0.32,19.75,0,,dpt_screening_score,0.7191525513237392,Tohoku earthquake,0.10166052732793,,
+HU-159,Tohoku earthquake,"Chiba-ken, CH344",9.0,0.196,1.75,12.6,0,,dpt_screening_score,0.7294095965689327,Tohoku earthquake,0.1241621991469972,,
+HU-160,Tohoku earthquake,"Gunma-ken, GU001",9.0,0.177,11.7,12.25,0,,dpt_screening_score,0.1545957006646707,Tohoku earthquake,-1.054480203670794,,
+HU-161,Tohoku earthquake,"Gunma-ken, GU002",9.0,0.177,8.5,9.25,0,,dpt_screening_score,0.21864559708716105,Tohoku earthquake,-0.8681209708772984,,
+HU-162,Tohoku earthquake,"Gunma-ken, GU003",9.0,0.201,9.0,16.25,0,,dpt_screening_score,0.2617649548051762,Tohoku earthquake,-0.7644066192496407,,
+HU-163,Tohoku earthquake,"Ibaraki-ken, IB014",9.0,0.201,1.15,12.25,0,,dpt_screening_score,0.8025882436661449,Tohoku earthquake,0.304167885573275,,
+HU-164,Tohoku earthquake,"Ibaraki-ken, IB021",9.0,0.356,4.5,7.25,1,,dpt_screening_score,0.8458829180618527,Tohoku earthquake,0.4356359711044836,,
+HU-165,Tohoku earthquake,"Ibaraki-ken, IB022",9.0,0.38,3.61,11.25,1,,dpt_screening_score,0.9219479440000006,Tohoku earthquake,0.7713802372414701,,
+HU-166,Tohoku earthquake,"Ibaraki-ken, IB023",9.0,0.38,2.4,11.75,0,,dpt_screening_score,0.951675834655185,Tohoku earthquake,0.9953048077020236,,
+HU-167,Tohoku earthquake,"Ibaraki-ken, IB025",9.0,0.84,7.1,8.75,1,,dpt_screening_score,0.984483204575509,Tohoku earthquake,1.5077850189560045,,
+HU-168,Tohoku earthquake,"Ibaraki-ken, IB027",9.0,0.77,4.5,11.25,0,,dpt_screening_score,0.9975201178830723,Tohoku earthquake,2.3168132523313765,,
+HU-169,Tohoku earthquake,"Ibaraki-ken, IB028",9.0,0.77,4.8,6.75,1,,dpt_screening_score,0.9876605966402288,Tohoku earthquake,1.6095658931318435,,
+HU-170,Tohoku earthquake,"Kanagawa-ken, KA001",9.0,0.092,0.33,8.75,0,,dpt_screening_score,0.6359902804969236,Tohoku earthquake,-0.0657897411995523,,
+HU-171,Tohoku earthquake,"Kanagawa-ken, KA002",9.0,0.093,0.55,4.75,0,,dpt_screening_score,0.6235859617134746,Tohoku earthquake,-0.0890967661274467,,
+HU-172,Tohoku earthquake,"Kanagawa-ken, KA003",9.0,0.074,0.5,12.75,0,,dpt_screening_score,0.4956492505249422,Tohoku earthquake,-0.3178488784328797,,
+HU-173,Tohoku earthquake,"Kanagawa-ken, KA005",9.0,0.182,1.0,1.9,0,,dpt_screening_score,0.6965913237978564,Tohoku earthquake,0.0538496899442077,,
+HU-174,Tohoku earthquake,"Kanagawa-ken, KA008",9.0,0.14,2.8,22.25,0,,dpt_screening_score,0.4975145862695497,Tohoku earthquake,-0.3145802485194694,,
+HU-175,Tohoku earthquake,"Kanagawa-ken, KA010",9.0,0.125,0.0,12.75,0,,dpt_screening_score,0.6946562168465755,Tohoku earthquake,0.0498461065835991,,
+HU-176,Tohoku earthquake,"Kanagawa-ken, KA011",9.0,0.148,9.38,11.75,0,,dpt_screening_score,0.12680186479160122,Tohoku earthquake,-1.1554670923746797,,
+HU-177,Tohoku earthquake,"Saitama-ken, SA001",9.0,0.259,3.4,7.75,0,,dpt_screening_score,0.7648407868688208,Tohoku earthquake,0.2064181601024889,,
+HU-178,Tohoku earthquake,"Saitama-ken, SA003",9.0,0.167,8.52,15.25,0,,dpt_screening_score,0.18158447631480668,Tohoku earthquake,-0.9697813342565592,,
+HU-179,Tohoku earthquake,"Tochiki-ken, TC002",9.0,0.367,5.96,7.25,0,,dpt_screening_score,0.6172353214068206,Tohoku earthquake,-0.1009097583919815,,
+HU-180,Tohoku earthquake,"Tokyo, TO001",9.0,0.118,2.15,24.75,0,,dpt_screening_score,0.4732074105940388,Tohoku earthquake,-0.3572166749815554,,
+HU-181,Tohoku earthquake,"Tokyo, TO025",9.0,0.158,2.5,25.75,0,,dpt_screening_score,0.5531401011111822,Tohoku earthquake,-0.2167592482567766,,
+HU-001,Wenchuan earthquake,"Guoyuan village, Deyang, DY-28",7.9,0.21,1.5,1.9,1,,dpt_screening_score,0.4184711483809496,Wenchuan earthquake,-0.3334114066678267,,
+HU-002,Wenchuan earthquake,"Songbai village, Deyang, DY-45",7.9,0.24,0.8,4.6,1,,dpt_screening_score,0.647280129600818,Wenchuan earthquake,0.2646180792043341,,
+HU-003,Wenchuan earthquake,"Qingliang Village, Deyang, DY-06",7.9,0.24,1.0,4.0,1,,dpt_screening_score,0.48907983356055473,Wenchuan earthquake,-0.1511165729725387,,
+HU-004,Wenchuan earthquake,"Nangui village, Deyang",7.9,0.24,4.7,11.9,0,,dpt_screening_score,0.409387635916852,Wenchuan earthquake,-0.3573316193718882,,
+HU-005,Wenchuan earthquake,"Jinqiao village, Deyang, DY-38",7.9,0.139,2.2,5.1,1,,dpt_screening_score,0.46783076924373396,Wenchuan earthquake,-0.2055225364710313,,
+HU-006,Wenchuan earthquake,"Shenghua Village, Deyang",7.9,0.18,2.0,5.0,0,,dpt_screening_score,0.4117558790081702,Wenchuan earthquake,-0.3510801683909086,,
+HU-007,Wenchuan earthquake,"Baijiang Village, Deyang, DY-24",7.9,0.23,2.2,4.1,1,,dpt_screening_score,0.44236279123716266,Wenchuan earthquake,-0.2711435165557969,,
+HU-008,Wenchuan earthquake,"Anping Village, Deyang, DY-35",7.9,0.139,1.8,3.3,1,,dpt_screening_score,0.4561086891178916,Wenchuan earthquake,-0.2356511082422581,,
+HU-009,Wenchuan earthquake,"Shengli village, Deyang, DY-07",7.9,0.21,1.9,3.7,1,,dpt_screening_score,0.4860176322268372,Wenchuan earthquake,-0.1589461466280562,,
+HU-010,Wenchuan earthquake,"Changzheng village, Deyang",7.9,0.2,1.0,2.0,1,,dpt_screening_score,0.4240079186801855,Wenchuan earthquake,-0.31890341979777,,
+HU-011,Wenchuan earthquake,"Qifu Elementary School, Mianzhu, DY-26",7.9,0.3,3.5,5.3,1,,dpt_screening_score,0.4709860042427418,Wenchuan earthquake,-0.1974297968463028,,
+HU-012,Wenchuan earthquake,"Dacheng village, Deyang",7.9,0.32,4.5,6.8,0,,dpt_screening_score,0.30241619630333766,Wenchuan earthquake,-0.6571398985356548,,
+HU-013,Wenchuan earthquake,"Wulang village, Deyang",7.9,0.2,5.0,9.0,0,,dpt_screening_score,0.31954440140283513,Wenchuan earthquake,-0.6060654622389973,,
+HU-014,Wenchuan earthquake,"Yangjia railway station, Deyang",7.9,0.2,6.1,7.4,0,,dpt_screening_score,0.18450886419760357,Wenchuan earthquake,-1.0725436363799654,,
+HU-015,Wenchuan earthquake,"Heping village, Deyang",7.9,0.18,3.7,10.8,0,,dpt_screening_score,0.25604292325557537,Wenchuan earthquake,-0.80459053534541,,
+HU-016,Wenchuan earthquake,"Min'an village, Deyang",7.9,0.25,3.7,8.2,0,,dpt_screening_score,0.342895236936923,Wenchuan earthquake,-0.5387040300177341,,
+HU-017,Wenchuan earthquake,"Xiaojia village, Chengdu, CD-08",7.9,0.17,1.4,1.8,1,,dpt_screening_score,0.49950180963916924,Wenchuan earthquake,-0.1244813682453161,,
+HU-018,Wenchuan earthquake,"Jingxing village, Pixian, CD-01",7.9,0.21,0.9,3.5,1,,dpt_screening_score,0.5248144979413653,Wenchuan earthquake,-0.0597489547153812,,
+HU-019,Wenchuan earthquake,"Qingbaijiang Bridge, Pengzhou",7.9,0.21,3.0,3.7,0,,dpt_screening_score,0.14045328056721626,Wenchuan earthquake,-1.2804371026315218,,
+HU-020,Wenchuan earthquake,"Lingfeng machinery company, Mianyang",7.9,0.2,4.1,6.1,0,,dpt_screening_score,0.29819390788011835,Wenchuan earthquake,-0.6699766619206972,,
+HU-021,Wenchuan earthquake,"Yongquan Village, Mianyang, MY-02",7.9,0.24,1.3,4.0,1,,dpt_screening_score,0.6056442343993736,Wenchuan earthquake,0.1508674214668958,,
+HU-022,Wenchuan earthquake,"Jushui valliage, Kaijiang bridge, Mianyang",7.9,0.295,0.8,4.1,0,,dpt_screening_score,0.1328977493216569,Wenchuan earthquake,-1.3213508951298,,
+HU-023,Wenchuan earthquake,"Xiangliu village, Mianzhu, DY-03",7.9,0.295,3.4,4.8,1,,dpt_screening_score,0.3693156864346866,Wenchuan earthquake,-0.4650713683677052,,
+HU-024,Wenchuan earthquake,"Anren Village, Mianzhu, DY-02",7.9,0.295,4.0,5.0,1,,dpt_screening_score,0.24946226242765374,Wenchuan earthquake,-0.8268493549011117,,
+HU-025,Wenchuan earthquake,"Chuanmu village, Mianzhu",7.9,0.41,8.0,9.2,0,,dpt_screening_score,0.22026282675892536,Wenchuan earthquake,-0.9307542530110168,,
+HU-026,Wenchuan earthquake,"Yongfeng Village, Mianzhu, DY-04",7.9,0.34,2.8,6.0,1,,dpt_screening_score,0.5628974172316509,Wenchuan earthquake,0.0383662333937753,,
+HU-027,Wenchuan earthquake,"Shuangquan Village, Mianzhu, DY-30",7.9,0.49,2.5,3.3,1,,dpt_screening_score,0.5741558640403268,Wenchuan earthquake,0.0676864667441907,,
+HU-028,Wenchuan earthquake,"Tonglin village, Mianzhu",7.9,0.48,2.0,10.2,0,,dpt_screening_score,0.7179718194748792,Wenchuan earthquake,0.4737132195446843,,
+HU-029,Wenchuan earthquake,"Wudu Village, Mianzhu, DY-31",7.9,0.48,1.6,6.3,1,,dpt_screening_score,0.847582050221795,Wenchuan earthquake,0.9728418826400984,,
+HU-030,Wenchuan earthquake,"Linfa village, Mianzhu",7.9,0.47,4.3,6.3,0,,dpt_screening_score,0.41914309921934984,Wenchuan earthquake,-0.3316479010550627,,
+HU-031,Wenchuan earthquake,"Changning Tianqi Village, Mianzhu, DY-29",7.9,0.43,4.0,5.0,0,,dpt_screening_score,0.1720430591751459,Wenchuan earthquake,-1.1269214995966157,,
+HU-032,Wenchuan earthquake,"Linyan Village, Mianzhu, DY-10",7.9,0.594,6.0,7.0,1,,dpt_screening_score,0.4969806211448204,Wenchuan earthquake,-0.1309237316066623,,
+HU-033,Wenchuan earthquake,"Xinglong village, Mianzhu, DY-08",7.9,0.42,2.4,6.8,1,,dpt_screening_score,0.7362489620329565,Wenchuan earthquake,0.5325730369395287,,
+HU-034,Wenchuan earthquake,"Bayi village, Mianzhu",7.9,0.43,6.2,6.7,0,,dpt_screening_score,0.37644964881158155,Wenchuan earthquake,-0.4455821921549461,,
+HU-035,Wenchuan earthquake,"Pharmaceutical factory, Mianzhu",7.9,0.37,3.4,5.4,0,,dpt_screening_score,0.49164568056329694,Wenchuan earthquake,-0.1445577382066347,,
+HU-036,Wenchuan earthquake,"Xinshi School, Mianzhu, DY-27",7.9,0.34,1.0,3.0,1,,dpt_screening_score,0.7130248273691856,Wenchuan earthquake,0.4581882876715537,,
+HU-037,Wenchuan earthquake,"Shihu village, Mianzhu, DY-22",7.9,0.33,2.9,4.4,1,,dpt_screening_score,0.5140674873454538,Wenchuan earthquake,-0.0872529128008074,,
+HU-038,Wenchuan earthquake,"Banqiao School, Mianzhu, DY-09",7.9,0.37,3.0,4.6,1,,dpt_screening_score,0.5470752847434958,Wenchuan earthquake,-0.0025618570438235,,
+HU-039,Wenchuan earthquake,"Baiyang Village, Mianzhu",7.9,0.35,1.5,3.8,1,,dpt_screening_score,0.6979143299358429,Wenchuan earthquake,0.4117243471242274,,
+HU-040,Wenchuan earthquake,"Guihua village, Mianzhu, DY-41",7.9,0.39,0.6,2.2,1,,dpt_screening_score,0.732749148209104,Wenchuan earthquake,0.521108247538491,,
+HU-041,Wenchuan earthquake,"Yongning village, Mianzhu",7.9,0.41,1.4,10.2,0,,dpt_screening_score,0.49650678160349976,Wenchuan earthquake,-0.1321345621234174,,
+HU-042,Wenchuan earthquake,"Sangyuan village, Mianzhu, DY-44",7.9,0.29,2.8,3.5,1,,dpt_screening_score,0.4190502263893289,Wenchuan earthquake,-0.3318915947098632,,
+HU-043,Wenchuan earthquake,"Wufang village, Mianzhu",7.9,0.27,2.0,4.6,0,,dpt_screening_score,0.4065585932986606,Wenchuan earthquake,-0.3648140293107559,,
+HU-044,Wenchuan earthquake,"Baihutou Village, Shifang, DY-39",7.9,0.594,1.2,2.2,1,,dpt_screening_score,0.7379405970752955,Wenchuan earthquake,0.538149500861323,,
+HU-045,Wenchuan earthquake,"Siyuan Village, Shifang, DY-11",7.9,0.41,1.5,3.0,1,,dpt_screening_score,0.6662482468567772,Wenchuan earthquake,0.3183804931503758,,
+HU-046,Wenchuan earthquake,"Zhenjiang village, Shifang, DY-42",7.9,0.29,0.9,2.4,1,,dpt_screening_score,0.5875387467989653,Wenchuan earthquake,0.1028035576636727,,
+HU-047,Wenchuan earthquake,"Quezhu village, Shifang",7.9,0.26,6.0,10.5,0,,dpt_screening_score,0.22214793819716597,Wenchuan earthquake,-0.923763980522674,,
+HU-048,Wenchuan earthquake,"Jiangyou Train Station−1, MY-13",7.9,0.52,2.4,4.7,1,,dpt_screening_score,0.6703608803813781,Wenchuan earthquake,0.3302322811839718,,
+HU-049,Wenchuan earthquake,"Jiangyou rail station line−2, MY-12",7.9,0.52,3.0,6.5,0,,dpt_screening_score,0.6553726935414288,Wenchuan earthquake,0.2873825028943894,,
+HU-050,Wenchuan earthquake,"Yongshou Village, Dujiangyan, CD-17",7.9,0.25,2.1,2.9,1,,dpt_screening_score,0.34482884955894055,Wenchuan earthquake,-0.5332292768392219,,
+HU-051,Wenchuan earthquake,"Quanshui village, Dujiangyan, CD-03",7.9,0.24,0.9,1.7,1,,dpt_screening_score,0.4477344001914586,Wenchuan earthquake,-0.2572497483606943,,
+HU-052,Wenchuan earthquake,"Fengle valliage, Dujiangyan, CD-04",7.9,0.25,1.4,2.1,1,,dpt_screening_score,0.5383500719731932,Wenchuan earthquake,-0.0250214531234927,,
+HU-053,Wenchuan earthquake,"Jingyu village, Pixian, CD-26",7.9,0.2,1.5,2.6,0,,dpt_screening_score,0.4506923113077937,Wenchuan earthquake,-0.2496127269807052,,
+HU-054,Wenchuan earthquake,"Business College, Dujiangyan",7.9,0.27,2.3,3.5,0,,dpt_screening_score,0.3453438244322072,Wenchuan earthquake,-0.5317736572256307,,
+HU-055,Wenchuan earthquake,"Ruikang garden, Dujiangyan",7.9,0.31,5.4,6.9,0,,dpt_screening_score,0.07667809581262683,Wenchuan earthquake,-1.7128057831021033,,
+HU-056,Wenchuan earthquake,"Zipingpu village, Dujiangyan, B-1",7.9,0.37,3.0,4.2,0,,dpt_screening_score,0.3184635736918351,Wenchuan earthquake,-0.6092437243942859,,
+HU-057,Wenchuan earthquake,"Yutang village, Dujiangyan, A-1",7.9,0.32,1.5,2.0,0,,dpt_screening_score,0.22977406323031338,Wenchuan earthquake,-0.8959082911919541,,
+HU-058,Wenchuan earthquake,"Finance building, Dujiangyan",7.9,0.31,2.7,3.8,0,,dpt_screening_score,0.2556234517297725,Wenchuan earthquake,-0.8059980372646802,,
+HU-059,Wenchuan earthquake,"Pilu Elementary School, Guanghan, DY-17",7.9,0.22,1.4,5.2,1,,dpt_screening_score,0.5896069594317415,Wenchuan earthquake,0.1082595826667486,,
+HU-060,Wenchuan earthquake,"Xinyi kindergarten, Pengzhou, B-2",7.9,0.26,1.4,2.1,0,,dpt_screening_score,0.21665867868602703,Wenchuan earthquake,-0.9442395305383368,,
+HU-061,Wenchuan earthquake,"Lichun village, Pengzhou, CD-25",7.9,0.24,2.4,4.1,1,,dpt_screening_score,0.49167335470591034,Wenchuan earthquake,-0.1444870041376285,,
+HU-062,Wenchuan earthquake,"Sandaoyan village, Pixian",7.9,0.18,2.1,4.2,0,,dpt_screening_score,0.25632664032905517,Wenchuan earthquake,-0.803639403477712,,
+HU-063,Wenchuan earthquake,"Majiamiao village, Pixian",7.9,0.2,2.4,3.2,0,,dpt_screening_score,0.22805774723542732,Wenchuan earthquake,-0.9021197664586496,,
+HU-064,Wenchuan earthquake,"Shidimiao village, Pixian",7.9,0.18,4.0,7.0,0,,dpt_screening_score,0.15673438072988335,Wenchuan earthquake,-1.1981575003291407,,
+HU-065,Wenchuan earthquake,"Yongsheng village, Pixian",7.9,0.17,3.4,7.1,0,,dpt_screening_score,0.20105977012171247,Wenchuan earthquake,-1.004568117232815,,
+HU-066,Wenchuan earthquake,"Xinlian village, Emei, LS-01",7.9,0.13,1.8,2.5,1,,dpt_screening_score,0.2809679620649733,Wenchuan earthquake,-0.7234785731981676,,
+HU-067,Wenchuan earthquake,"Wuli villiage, Suining, SN-01",7.9,0.09,1.0,5.0,1,,dpt_screening_score,0.4956809690805648,Wenchuan earthquake,-0.1342448498604238,,
+HU-221,Wenchuan earthquake,"Baijiang Village, Deyang",7.9,0.23,2.2,4.5,1,,dpt_screening_score,0.45468741895245707,Wenchuan earthquake,-0.2393119436135008,,
+HU-222,Wenchuan earthquake,"Anping Village, Deyang",7.9,0.139,1.8,3.9,1,,dpt_screening_score,0.4735949999779948,Wenchuan earthquake,-0.1907426037862331,,
+HU-223,Wenchuan earthquake,"Shengli village, Deyang",7.9,0.21,1.9,5.4,1,,dpt_screening_score,0.5147053646342407,Wenchuan earthquake,-0.085621625347671,,
+HU-224,Wenchuan earthquake,"Changzheng village, Deyang",7.9,0.2,1.0,5.3,1,,dpt_screening_score,0.5430493065723806,Wenchuan earthquake,-0.0129335440089709,,
+HU-225,Wenchuan earthquake,"Yongfeng Village, Mianzhu",7.9,0.34,2.8,6.6,1,,dpt_screening_score,0.5775373308626468,Wenchuan earthquake,0.0765305096062348,,
+HU-226,Wenchuan earthquake,"Baihutou Village, Shifang",7.9,0.594,1.2,3.4,1,,dpt_screening_score,0.7964231025718547,Wenchuan earthquake,0.7481877341062984,,
+HU-227,Wenchuan earthquake,"Linyan Village, Mianzhu",7.9,0.594,3.7,8.3,1,,dpt_screening_score,0.8031970555584471,Wenchuan earthquake,0.7752161366725342,,
+HU-228,Wenchuan earthquake,"Siyuan Village, Shifang",7.9,0.41,3.2,5.8,1,,dpt_screening_score,0.5717700883989636,Wenchuan earthquake,0.0614575569648392,,
+HU-229,Wenchuan earthquake,"Anren Village, Mianzhu",7.9,0.295,4.0,7.4,1,,dpt_screening_score,0.4241566541625768,Wenchuan earthquake,-0.3185143946868189,,
+HU-230,Wenchuan earthquake,"Wudu Village, Mianzhu",7.9,0.48,1.6,6.3,1,,dpt_screening_score,0.8523685561351667,Wenchuan earthquake,0.9968221840743058,,
+HU-231,Wenchuan earthquake,"Shuangquan Village, Mianzhu",7.9,0.49,2.5,7.9,1,,dpt_screening_score,0.7404758724194873,Wenchuan earthquake,0.5465506891135411,,
+HU-232,Wenchuan earthquake,"Shenghua Village, Deyang",7.9,0.18,2.0,4.8,0,,dpt_screening_score,0.4069271059562126,Wenchuan earthquake,-0.3638384487481761,,
+HU-233,Wenchuan earthquake,"Lingfeng machinery company, Mianyang",7.9,0.2,4.1,6.6,0,,dpt_screening_score,0.3127189603585234,Wenchuan earthquake,-0.6262340972245738,,
+HU-234,Wenchuan earthquake,"Tianqi Village, Mianzhu",7.9,0.43,4.0,6.6,0,,dpt_screening_score,0.5114012298019153,Wenchuan earthquake,-0.0940703090029695,,
+HU-184,Alaska earthquake,"Matanuska river, MP 147.4, B.H.17",9.2,0.21,0.0,6.68,1,,vs_screening_score,0.8640209535741878,Alaska earthquake,,0.6478414909701824,
+HU-185,Alaska earthquake,"Matanuska river, MP 147.5, B.H.18",9.2,0.21,0.0,13.2,1,,vs_screening_score,0.9340732940820566,Alaska earthquake,,1.0213206238185688,
+HU-186,Alaska earthquake,"Twenty-Mile river, MP 64.7, B.H.20",9.2,0.31,0.0,3.05,1,,vs_screening_score,0.9402969880630393,Alaska earthquake,,1.0705962142103538,
+HU-187,Alaska earthquake,"Twenty-Mile river, MP 64.7, B.H.24",9.2,0.31,4.42,5.7,1,,vs_screening_score,0.7126244850348037,Alaska earthquake,,0.2096177401084483,
+HU-188,Alaska earthquake,"Portage Creek, MP 63.0, B.H.25",9.2,0.31,2.74,19.82,0,,vs_screening_score,0.9319274902916549,Alaska earthquake,,1.0053320939298764,
+HU-189,Alaska earthquake,"Portage Creek, MP 63.5, B.H.28",9.2,0.31,3.05,4.57,1,,vs_screening_score,0.8221875466614919,Alaska earthquake,,0.499804649909694,
+HU-206,Alaska earthquake,Valdez Site 1,9.2,0.44,1.0,6.7,1,,vs_screening_score,0.9823967048020248,Alaska earthquake,,1.6597943590475397,
+HU-207,Alaska earthquake,Valdez Site 2,9.2,0.44,0.8,4.6,1,,vs_screening_score,0.9926541040912638,Alaska earthquake,,2.0716575743044405,
+HU-208,Alaska earthquake,Valdez Site 3,9.2,0.44,1.0,5.5,1,,vs_screening_score,0.9716780121114134,Alaska earthquake,,1.4332040175165728,
+HU-209,Alaska earthquake,Valdez Site 4,9.2,0.44,1.0,6.8,1,,vs_screening_score,0.9914279868049574,Alaska earthquake,,1.999190854525697,
+HU-068,"Borah Peak, Idaho earthquake","Andersen Bar, SA-1",6.9,0.29,0.8,1.9,1,,vs_screening_score,0.6432453685940723,"Borah Peak, Idaho earthquake",,0.2082767351356574,
+HU-069,"Borah Peak, Idaho earthquake","Andersen Bar, X1-X2",6.9,0.29,0.8,2.0,1,,vs_screening_score,0.6453495764345896,"Borah Peak, Idaho earthquake",,0.2132112724457673,
+HU-070,"Borah Peak, Idaho earthquake","Goddard Ranch, SA-2",6.9,0.3,1.2,2.4,1,,vs_screening_score,0.5978117358224229,"Borah Peak, Idaho earthquake",,0.1044849591012432,
+HU-071,"Borah Peak, Idaho earthquake","Goddard Ranch, SA-4",6.9,0.3,1.2,2.4,1,,vs_screening_score,0.6556324940993359,"Borah Peak, Idaho earthquake",,0.2375204626678243,
+HU-072,"Borah Peak, Idaho earthquake","Mackay Dam, downstream toe,",6.9,0.23,2.3,2.8,0,,vs_screening_score,0.14531439357247922,"Borah Peak, Idaho earthquake",,-1.06078753243462,
+HU-073,"Borah Peak, Idaho earthquake","North Gravel Bar, Bar Site",6.9,0.46,1.0,2.4,0,,vs_screening_score,0.42113336660725975,"Borah Peak, Idaho earthquake",,-0.2795043785717227,
+HU-074,"Borah Peak, Idaho earthquake","North Gravel Bar, Tarrace",6.9,0.46,3.0,3.65,0,,vs_screening_score,0.22448681474545656,"Borah Peak, Idaho earthquake",,-0.774801548072248,
+HU-075,"Borah Peak, Idaho earthquake","Pence Ranch, SA1",6.9,0.36,1.7,2.8,1,,vs_screening_score,0.6895171299179307,"Borah Peak, Idaho earthquake",,0.3202711228380355,
+HU-076,"Borah Peak, Idaho earthquake","Pence Ranch, SA2",6.9,0.36,1.5,3.1,1,,vs_screening_score,0.7389030054810922,"Borah Peak, Idaho earthquake",,0.450553039643517,
+HU-077,"Borah Peak, Idaho earthquake","Pence Ranch, SA3",6.9,0.36,1.4,2.4,1,,vs_screening_score,0.6837120833789689,"Borah Peak, Idaho earthquake",,0.305771607597948,
+HU-078,"Borah Peak, Idaho earthquake","Pence Ranch, SA4",6.9,0.36,1.8,3.1,1,,vs_screening_score,0.6935467144710761,"Borah Peak, Idaho earthquake",,0.3304236156632935,
+HU-079,"Borah Peak, Idaho earthquake","Pence Ranch, SA5",6.9,0.36,1.5,3.0,1,,vs_screening_score,0.6535854725530286,"Borah Peak, Idaho earthquake",,0.2326545915939392,
+HU-080,"Borah Peak, Idaho earthquake","Pence Ranch, SA-A",6.9,0.36,2.0,2.8,1,,vs_screening_score,0.5806578212987066,"Borah Peak, Idaho earthquake",,0.0663905510277294,
+HU-081,"Borah Peak, Idaho earthquake","Pence Ranch, SA-B",6.9,0.36,1.5,2.1,1,,vs_screening_score,0.5612702307970203,"Borah Peak, Idaho earthquake",,0.0238491564750845,
+HU-082,"Borah Peak, Idaho earthquake","Pence Ranch, SA-C",6.9,0.36,1.5,2.1,1,,vs_screening_score,0.6368058883438736,"Borah Peak, Idaho earthquake",,0.1932549748199336,
+HU-083,"Borah Peak, Idaho earthquake","Pence Ranch, SA-D",6.9,0.36,1.5,2.1,1,,vs_screening_score,0.5511292547846595,"Borah Peak, Idaho earthquake",,0.0017687277978637,
+HU-084,"Borah Peak, Idaho earthquake","Pence Ranch, SA-E",6.9,0.36,1.7,2.3,1,,vs_screening_score,0.5842010947155258,"Borah Peak, Idaho earthquake",,0.0742205875048379,
+HU-085,"Borah Peak, Idaho earthquake","Pence Ranch, XDXE",6.9,0.36,1.5,3.4,1,,vs_screening_score,0.5947711869002578,"Borah Peak, Idaho earthquake",,0.0976967173260757,
+HU-086,"Borah Peak, Idaho earthquake","Pence Ranch, HY1-C",6.9,0.35,1.65,2.7,1,,vs_screening_score,0.6775662250911433,"Borah Peak, Idaho earthquake",,0.2905757842183567,
+HU-087,"Borah Peak, Idaho earthquake","Pence Ranch, HY2-C",6.9,0.35,1.45,2.5,1,,vs_screening_score,0.7001393556336778,"Borah Peak, Idaho earthquake",,0.3471962029654646,
+HU-088,"Borah Peak, Idaho earthquake","Pence Ranch, HY3-C",6.9,0.35,1.35,1.95,1,,vs_screening_score,0.6405041381556309,"Borah Peak, Idaho earthquake",,0.2018677075842682,
+HU-089,"Borah Peak, Idaho earthquake","Pence Ranch, PH1-C",6.9,0.35,1.1,1.75,1,,vs_screening_score,0.6844322503559856,"Borah Peak, Idaho earthquake",,0.3075625176050183,
+HU-090,"Borah Peak, Idaho earthquake","Pence Ranch, HY1-D",6.9,0.35,1.65,4.3,0,,vs_screening_score,0.3696264744553216,"Borah Peak, Idaho earthquake",,-0.3954286556424153,
+HU-091,"Borah Peak, Idaho earthquake","Pence Ranch, HY2-D",6.9,0.35,1.45,4.55,0,,vs_screening_score,0.44595620316303,"Borah Peak, Idaho earthquake",,-0.2251694054520454,
+HU-092,"Borah Peak, Idaho earthquake","Pence Ranch, HY3-D",6.9,0.35,1.35,4.15,0,,vs_screening_score,0.34609504430669785,"Borah Peak, Idaho earthquake",,-0.4504781318787887,
+HU-093,"Borah Peak, Idaho earthquake","Pence Ranch, BR1-D",6.9,0.35,1.85,6.15,0,,vs_screening_score,0.44422945284183496,"Borah Peak, Idaho earthquake",,-0.2289268215994754,
+HU-094,"Borah Peak, Idaho earthquake","Pence Ranch, PH1-D",6.9,0.35,1.1,3.9,0,,vs_screening_score,0.32168339704099047,"Borah Peak, Idaho earthquake",,-0.5094878624951894,
+HU-095,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.1",6.9,0.6,1.0,1.13,1,,vs_screening_score,0.4934251188934482,"Borah Peak, Idaho earthquake",,-0.1226677432017997,
+HU-096,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.2",6.9,0.35,1.52,3.35,1,,vs_screening_score,0.5710643481612111,"Borah Peak, Idaho earthquake",,0.045280214195482,
+HU-097,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.3",6.9,0.6,7.0,8.08,1,,vs_screening_score,0.5148998008554923,"Borah Peak, Idaho earthquake",,-0.0764920040500128,
+HU-098,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.4",6.9,0.6,9.36,11.43,1,,vs_screening_score,0.37986218647543135,"Borah Peak, Idaho earthquake",,-0.371949844883857,
+HU-099,"Borah Peak, Idaho earthquake","Whiskey Springs, WS1B-C1",6.9,0.5,0.8,2.9,1,,vs_screening_score,0.6462591264297765,"Borah Peak, Idaho earthquake",,0.2153483131541004,
+HU-100,"Borah Peak, Idaho earthquake","Whiskey Springs, WS1B-D",6.9,0.5,0.8,6.050000000000001,0,,vs_screening_score,0.6945902571200611,"Borah Peak, Idaho earthquake",,0.3330648942257947,
+HU-101,"Borah Peak, Idaho earthquake","Whiskey Springs, WS2B-C1",6.9,0.5,2.4,3.35,1,,vs_screening_score,0.6011595696729879,"Borah Peak, Idaho earthquake",,0.1119787094471582,
+HU-102,"Borah Peak, Idaho earthquake","Whiskey Springs, WS3B-C1",6.9,0.5,6.7,7.25,1,,vs_screening_score,0.45364113667412237,"Borah Peak, Idaho earthquake",,-0.2084800513888404,
+HU-103,"Borah Peak, Idaho earthquake",Whiskey Springs Site 1 Unit C1,6.9,0.5,0.8,2.4000000000000004,1,,vs_screening_score,0.7141730372763768,"Borah Peak, Idaho earthquake",,0.3836223656234074,
+HU-104,"Borah Peak, Idaho earthquake",Whiskey Springs Site 2 Unit C1,6.9,0.5,2.4,3.35,1,,vs_screening_score,0.5539146199822443,"Borah Peak, Idaho earthquake",,0.0078234229840179,
+HU-105,"Borah Peak, Idaho earthquake",Whiskey Springs Site 3 Unit C1,6.9,0.5,6.8,7.3,1,,vs_screening_score,0.38423316615247727,"Borah Peak, Idaho earthquake",,-0.3619994549013423,
+HU-106,"Borah Peak, Idaho earthquake","Larter Ranch, X3X4",6.9,0.5,0.8,2.85,1,,vs_screening_score,0.6639806014695815,"Borah Peak, Idaho earthquake",,0.2575095071384105,
+HU-107,"Borah Peak, Idaho earthquake","Larter Ranch, SA1, 85",6.9,0.5,0.8,2.85,1,,vs_screening_score,0.7062351780481109,"Borah Peak, Idaho earthquake",,0.3628933436450722,
+HU-108,"Borah Peak, Idaho earthquake","Larter Ranch, SA1, 90",6.9,0.5,0.8,2.85,1,,vs_screening_score,0.6314114441699211,"Borah Peak, Idaho earthquake",,0.1807590884885068,
+HU-213,"Borah Peak, Idaho earthquake",Whiskey Springs,6.9,0.6,7.5,12.0,1,,vs_screening_score,0.1627260796282299,"Borah Peak, Idaho earthquake",,-0.9889043144511852,
+HU-214,"Borah Peak, Idaho earthquake",Larter Ranch    ,6.9,0.5,0.7,2.8,1,,vs_screening_score,0.7657811004615233,"Borah Peak, Idaho earthquake",,0.5281408860206734,
+HU-215,"Borah Peak, Idaho earthquake",Pence Ranch     ,6.9,0.39,1.4,2.6,1,,vs_screening_score,0.5398205165042461,"Borah Peak, Idaho earthquake",,-0.0227462231518251,
+HU-139,Chi-Chi earthquake,"NanTou, B-1",7.6,0.428,1.5,5.0,0,,vs_screening_score,0.8507620823875836,Chi-Chi earthquake,,0.4286753598591871,
+HU-140,Chi-Chi earthquake,"NanTou, B-2",7.6,0.428,1.8,7.3,0,,vs_screening_score,0.8297375510973949,Chi-Chi earthquake,,0.3632920773271701,
+HU-141,Chi-Chi earthquake,"NanTou, BH-2",7.6,0.428,1.7,7.2,0,,vs_screening_score,0.787764945942044,Chi-Chi earthquake,,0.2497785856020138,
+HU-142,Chi-Chi earthquake,"NanTou, BH-3",7.6,0.428,4.0,17.2,0,,vs_screening_score,0.48858961015260277,Chi-Chi earthquake,,-0.3160543161694949,
+HU-143,Chi-Chi earthquake,"NanTou, BH-4",7.6,0.428,5.0,7.2,0,,vs_screening_score,0.5336428867548096,Chi-Chi earthquake,,-0.2408306109527661,
+HU-144,Chi-Chi earthquake,"NanTou, BH-5",7.6,0.428,2.8,17.8,0,,vs_screening_score,0.5856480844649049,Chi-Chi earthquake,,-0.1527641043857505,
+HU-145,Chi-Chi earthquake,"NanTou, BH-6",7.6,0.428,1.2,3.3,1,,vs_screening_score,0.9116912623550587,Chi-Chi earthquake,,0.6762757796765332,
+HU-146,Chi-Chi earthquake,"NanTou, BH-7",7.6,0.428,0.65,16.2,0,,vs_screening_score,0.7755572633494644,Chi-Chi earthquake,,0.2199499895763171,
+HU-147,Chi-Chi earthquake,"NanTou, BH-8",7.6,0.428,5.0,8.8,0,,vs_screening_score,0.5932304230519608,Chi-Chi earthquake,,-0.1397007343179814,
+HU-148,Chi-Chi earthquake,"NanTou, BH-9",7.6,0.428,9.6,16.2,0,,vs_screening_score,0.1690401058506642,Chi-Chi earthquake,,-0.9609535382707566,
+HU-149,Chi-Chi earthquake,"NanTou, BH-10",7.6,0.428,2.4,5.8,0,,vs_screening_score,0.7483906627394901,Chi-Chi earthquake,,0.1574470819359057,
+HU-150,Chi-Chi earthquake,"NanTou, BH-14",7.6,0.428,1.5,18.8,0,,vs_screening_score,0.9045533287951236,Chi-Chi earthquake,,0.640591615015233,
+HU-151,Chi-Chi earthquake,"WuFeng, BH-2",7.6,0.789,5.1,5.1,0,,vs_screening_score,0.6397281397543884,Chi-Chi earthquake,,-0.0576295645227405,
+HU-152,Chi-Chi earthquake,"WuFeng, BH-3",7.6,0.789,1.3,11.0,0,,vs_screening_score,0.976003449820364,Chi-Chi earthquake,,1.2479201535513136,
+HU-153,Chi-Chi earthquake,"WuFeng, BH-14",7.6,0.79,3.5,7.0,1,,vs_screening_score,0.9551969796780377,Chi-Chi earthquake,,0.9786219170226864,
+HU-154,Chi-Chi earthquake,WuFeng -Fu Tin Bridge,7.6,0.79,4.5,5.5,1,,vs_screening_score,0.8999323731512873,Chi-Chi earthquake,,0.6187446207389545,
+HU-155,Chi-Chi earthquake,"YuanLin, BH-02",7.6,0.19,7.0,16.2,0,,vs_screening_score,0.14816177433211758,Chi-Chi earthquake,,-1.0262634491333087,
+HU-156,Chi-Chi earthquake,"YuanLin, BH-14",7.6,0.19,1.6,12.8,0,,vs_screening_score,0.4147133758343997,Chi-Chi earthquake,,-0.4406586773120117,
+HU-157,Chi-Chi earthquake,"YuanLin, BH-40",7.6,0.19,1.2,12.2,0,,vs_screening_score,0.48862069501441996,Chi-Chi earthquake,,-0.3160024489042041,
+HU-190,"Friuli, Italy earthquake",Avasinis village,6.4,0.2,2.7,7.0,1,,vs_screening_score,0.36104601883287035,"Friuli, Italy earthquake",,-0.4733370090166932,
+HU-210,"Friuli, Italy earthquake",Avasinis Site 1,6.4,0.47,0.2,2.5,1,,vs_screening_score,0.816169526411318,"Friuli, Italy earthquake",,0.5161590965988563,
+HU-211,"Friuli, Italy earthquake",Avasinis Site 2,6.4,0.47,0.2,1.5,1,,vs_screening_score,0.776369499931174,"Friuli, Italy earthquake",,0.3980903926106886,
+HU-212,"Friuli, Italy earthquake",Avasinis Site 3,6.4,0.47,0.2,3.0,1,,vs_screening_score,0.5485911622789881,"Friuli, Italy earthquake",,-0.1057469364099904,
+HU-136,Guatemala earthquake,Lake Amatitlan B-1,7.5,0.12,1.6,8.73,1,,vs_screening_score,0.5805325224646338,Guatemala earthquake,,-0.0523795337767027,
+HU-137,Guatemala earthquake,Lake Amatitlan B-2,7.5,0.12,2.51,9.0,1,,vs_screening_score,0.38514427699694925,Guatemala earthquake,,-0.4323960867399457,
+HU-138,Guatemala earthquake,Lake Amatitlan B-4,7.5,0.12,3.35,10.8,0,,vs_screening_score,0.37091495373392075,Guatemala earthquake,,-0.4614099319113639,
+HU-182,Hokkaido-Nansei-Oki earthquake,"Pension House, BH1",8.3,0.19,1.0,2.0,1,,vs_screening_score,0.7969278162866373,Hokkaido-Nansei-Oki earthquake,,0.452318380767139,
+HU-183,Hokkaido-Nansei-Oki earthquake,"Pension House, BH2",8.3,0.19,0.7,6.1,1,,vs_screening_score,0.7600058879950531,Hokkaido-Nansei-Oki earthquake,,0.3480689524829901,
+HU-109,Hyogoken-Nambu earthquake,Hanshin Expressway 5.3,6.9,0.5,2.1,5.6,1,,vs_screening_score,0.8113189099132623,Hyogoken-Nambu earthquake,,0.4220456946728924,
+HU-110,Hyogoken-Nambu earthquake,Hanshin Expressway 5.10,6.9,0.58,1.8,5.5,1,,vs_screening_score,0.9296213135928797,Hyogoken-Nambu earthquake,,0.9474244363816412,
+HU-111,Hyogoken-Nambu earthquake,Hanshin Expressway 5.14,6.9,0.63,4.3,6.5,1,,vs_screening_score,0.7304592987458408,Hyogoken-Nambu earthquake,,0.2059323706464361,
+HU-112,Hyogoken-Nambu earthquake,Hanshin Expressway 5.25,6.9,0.65,3.2,8.8,1,,vs_screening_score,0.8638143966617362,Hyogoken-Nambu earthquake,,0.6040261872290564,
+HU-113,Hyogoken-Nambu earthquake,Hanshin Expressway 5.29,6.9,0.65,2.5,7.2,1,,vs_screening_score,0.886868962730901,Hyogoken-Nambu earthquake,,0.7031821318993577,
+HU-114,Hyogoken-Nambu earthquake,KNK Kainan Port Sub-station (KPS) 1,6.9,0.12,2.0,6.6,0,,vs_screening_score,0.546853496577906,Hyogoken-Nambu earthquake,,-0.1727823647747594,
+HU-115,Hyogoken-Nambu earthquake,KNK Kainan Port Sub-station (KPS) 2,6.9,0.12,2.0,10.4,0,,vs_screening_score,0.494260524396144,Hyogoken-Nambu earthquake,,-0.2715231385537312,
+HU-116,Hyogoken-Nambu earthquake,Nishinomiya Expressway 3,6.9,0.63,3.7,7.0,0,,vs_screening_score,0.7869257616633722,Hyogoken-Nambu earthquake,,0.3508380397961172,
+HU-117,Hyogoken-Nambu earthquake,Nishinomiya Expressway 17,6.9,0.53,2.0,3.3,0,,vs_screening_score,0.6259747281758579,Hyogoken-Nambu earthquake,,-0.0196927778256153,
+HU-118,Hyogoken-Nambu earthquake,Nishinomiya Expressway 23,6.9,0.63,2.9,4.0,0,,vs_screening_score,0.8430613108958422,Hyogoken-Nambu earthquake,,0.5262435636561378,
+HU-119,Hyogoken-Nambu earthquake,Nishinomiya Expressway 28,6.9,0.65,2.2,6.0,0,,vs_screening_score,0.8900285738492668,Hyogoken-Nambu earthquake,,0.7181074122146152,
+HU-120,Hyogoken-Nambu earthquake,"LPG Tank Yard, Kobe",6.9,0.5,1.5,4.0,1,,vs_screening_score,0.8950125336790485,Hyogoken-Nambu earthquake,,0.7424333871969909,
+HU-121,Hyogoken-Nambu earthquake,"Port Island 1C, Instrumented array",6.9,0.5,3.0,8.6,1,,vs_screening_score,0.7774706253580032,Hyogoken-Nambu earthquake,,0.324853573911934,
+HU-122,Hyogoken-Nambu earthquake,"Port Island Common Factory, 1",6.9,0.5,3.2,9.0,0,,vs_screening_score,0.6063048162571845,Hyogoken-Nambu earthquake,,-0.058632473914046,
+HU-123,Hyogoken-Nambu earthquake,"Port Island Common Factory, 2",6.9,0.5,3.2,9.2,0,,vs_screening_score,0.665256865345922,Hyogoken-Nambu earthquake,,0.0607433909828911,
+HU-124,Hyogoken-Nambu earthquake,Port Island Dhole Array 91,6.9,0.5,2.4,7.2,1,,vs_screening_score,0.7551868460699535,Hyogoken-Nambu earthquake,,0.2665630653759295,
+HU-125,Hyogoken-Nambu earthquake,Port Island Dhole Array 95,6.9,0.5,2.4,7.8,1,,vs_screening_score,0.8379980442599665,Hyogoken-Nambu earthquake,,0.508558829895651,
+HU-126,Hyogoken-Nambu earthquake,SGK Technical Research Center (TRC) 1,6.9,0.45,7.0,8.5,0,,vs_screening_score,0.2748419469545601,Hyogoken-Nambu earthquake,,-0.7149554081391833,
+HU-127,Hyogoken-Nambu earthquake,SGK Technical Research Center (TRC) 2,6.9,0.4,7.0,9.0,0,,vs_screening_score,0.30571797951614627,Hyogoken-Nambu earthquake,,-0.6447455635429031,
+HU-193,Izmit-Kocaeli earthquake,"Hotel Sapanca, SH-4",7.4,0.3,0.5,1.6,1,,vs_screening_score,0.5383114908493623,Izmit-Kocaeli earthquake,,-0.1203809217359131,
+HU-194,Izmit-Kocaeli earthquake,"Hotel Sapanca, SH-7",7.4,0.4,1.25,1.3,1,,vs_screening_score,0.4946048326251164,Izmit-Kocaeli earthquake,,-0.2077710900858195,
+HU-195,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS4",7.4,0.4,0.75,2.77,1,,vs_screening_score,0.7451366973122729,Izmit-Kocaeli earthquake,,0.3383521543631133,
+HU-196,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS5",7.4,0.4,0.75,2.25,1,,vs_screening_score,0.6470234825881606,Izmit-Kocaeli earthquake,,0.1053864915232222,
+HU-197,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS7",7.4,0.4,0.3,4.15,1,,vs_screening_score,0.8264511123292424,Izmit-Kocaeli earthquake,,0.5817878546459331,
+HU-198,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS9",7.4,0.4,0.75,7.57,1,,vs_screening_score,0.8609121639555632,Izmit-Kocaeli earthquake,,0.7126299645302466,
+HU-199,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS12",7.4,0.4,0.6,2.77,0,,vs_screening_score,0.5881671678414377,Izmit-Kocaeli earthquake,,-0.0191591421275292,
+HU-200,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS13",7.4,0.4,0.0,5.7,1,,vs_screening_score,0.8632881470201389,Izmit-Kocaeli earthquake,,0.7226032222864721,
+HU-201,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S1/8",7.4,0.5,0.5,1.15,1,,vs_screening_score,0.7745686990611137,Izmit-Kocaeli earthquake,,0.418916968656034,
+HU-202,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S2/3",7.4,0.4,0.4,9.2,1,,vs_screening_score,0.8524842816624337,Izmit-Kocaeli earthquake,,0.6783648090152944,
+HU-203,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S4/3",7.4,0.4,1.3,3.2,1,,vs_screening_score,0.6939037741665831,Izmit-Kocaeli earthquake,,0.2114017084927752,
+HU-219,Kaikora earthquake,Wellington Site 1,7.8,0.24,2.6,5.5,1,,vs_screening_score,0.7208584451336216,Kaikora earthquake,,0.2499666312835508,
+HU-220,Kaikora earthquake,Wellington Site 2,7.8,0.24,2.8,3.8,1,,vs_screening_score,0.6636786323298628,Kaikora earthquake,,0.1195451093238505,
+HU-132,Loma Prieta earthquake,"Coyote creek, SR1",7.0,0.18,2.4,4.6,0,,vs_screening_score,0.5159091734079317,Loma Prieta earthquake,,-0.2065457904842307,
+HU-133,Loma Prieta earthquake,"Coyote creek, R1-R2",7.0,0.18,2.4,4.2,0,,vs_screening_score,0.4356660967301738,Loma Prieta earthquake,,-0.3651028344109207,
+HU-134,Loma Prieta earthquake,"Coyote creek, R1-R3",7.0,0.18,2.4,4.2,0,,vs_screening_score,0.411502839520862,Loma Prieta earthquake,,-0.4137802141091332,
+HU-135,Loma Prieta earthquake,"Coyote creek, R2-R3",7.0,0.18,2.4,4.6,0,,vs_screening_score,0.40329831470694166,Loma Prieta earthquake,,-0.430492453862137,
+HU-216,Muisne earthquake,Manta DPT-1 & Vs-4,7.8,0.46,3.8,5.2,1,,vs_screening_score,0.6815008656108842,Muisne earthquake,,0.1631766376438934,
+HU-217,Muisne earthquake,Manta DPT-2 & Vs-4,7.8,0.46,3.6,5.4,1,,vs_screening_score,0.6955316605801535,Muisne earthquake,,0.195067233068841,
+HU-218,Muisne earthquake,Manta DPT-3 & Vs-9,7.8,0.46,3.8,5.6,1,,vs_screening_score,0.72398581069367,Muisne earthquake,,0.2624291492407025,
+HU-204,Nihonkai-Chubu earthquake,"Noshiro-N2, B.H.78",7.7,0.25,2.9,3.0,0,,vs_screening_score,0.26942773664077735,Nihonkai-Chubu earthquake,,-0.7115722154919446,
+HU-205,Nihonkai-Chubu earthquake,"Noshiro-N2, B.H.84",7.7,0.25,2.9,4.0,0,,vs_screening_score,0.323962273617316,Nihonkai-Chubu earthquake,,-0.583594767607197,
+HU-128,"San Francisco, California earthquake","Coyote creek, SR1",7.9,0.36,2.4,4.6,1,,vs_screening_score,0.777187465202099,"San Francisco, California earthquake",,0.4067285768160527,
+HU-129,"San Francisco, California earthquake","Coyote creek, R1-R2",7.9,0.36,2.4,4.2,1,,vs_screening_score,0.7105347328794286,"San Francisco, California earthquake",,0.2345262563237852,
+HU-130,"San Francisco, California earthquake","Coyote creek, R1-R3",7.9,0.36,2.4,4.2,1,,vs_screening_score,0.6902720764525456,"San Francisco, California earthquake",,0.1871879450337936,
+HU-131,"San Francisco, California earthquake","Coyote creek, R2-R3",7.9,0.36,2.4,4.6,1,,vs_screening_score,0.6790661660431188,"San Francisco, California earthquake",,0.1617483218996966,
+HU-158,Tohoku earthquake,"Chiba-ken, CH350",9.0,0.143,0.32,19.75,0,,vs_screening_score,0.6062248844644944,Tohoku earthquake,,-0.117853061147344,
+HU-159,Tohoku earthquake,"Chiba-ken, CH344",9.0,0.196,1.75,12.6,0,,vs_screening_score,0.6567101627165791,Tohoku earthquake,,-0.0259701864399465,
+HU-160,Tohoku earthquake,"Gunma-ken, GU001",9.0,0.177,11.7,12.25,0,,vs_screening_score,0.1533514293376026,Tohoku earthquake,,-1.023169152843758,
+HU-161,Tohoku earthquake,"Gunma-ken, GU002",9.0,0.177,8.5,9.25,0,,vs_screening_score,0.18365620198949706,Tohoku earthquake,,-0.9314610739315486,
+HU-162,Tohoku earthquake,"Gunma-ken, GU003",9.0,0.201,9.0,16.25,0,,vs_screening_score,0.18542819402401323,Tohoku earthquake,,-0.9264797036468032,
+HU-163,Tohoku earthquake,"Ibaraki-ken, IB014",9.0,0.201,1.15,12.25,0,,vs_screening_score,0.7473040232794608,Tohoku earthquake,,0.1583133924689372,
+HU-164,Tohoku earthquake,"Ibaraki-ken, IB021",9.0,0.356,4.5,7.25,1,,vs_screening_score,0.8444320384528111,Tohoku earthquake,,0.4152241655125727,
+HU-165,Tohoku earthquake,"Ibaraki-ken, IB022",9.0,0.38,3.61,11.25,1,,vs_screening_score,0.9055778931439429,Tohoku earthquake,,0.6560255435317534,
+HU-166,Tohoku earthquake,"Ibaraki-ken, IB023",9.0,0.38,2.4,11.75,0,,vs_screening_score,0.9389096684879078,Tohoku earthquake,,0.8555175241595133,
+HU-167,Tohoku earthquake,"Ibaraki-ken, IB025",9.0,0.84,7.1,8.75,1,,vs_screening_score,0.9850629756701613,Tohoku earthquake,,1.4716740630626564,
+HU-168,Tohoku earthquake,"Ibaraki-ken, IB027",9.0,0.77,4.5,11.25,0,,vs_screening_score,0.9973857684310334,Tohoku earthquake,,2.2142383161378767,
+HU-169,Tohoku earthquake,"Ibaraki-ken, IB028",9.0,0.77,4.8,6.75,1,,vs_screening_score,0.9889803032257604,Tohoku earthquake,,1.602024354069144,
+HU-170,Tohoku earthquake,"Kanagawa-ken, KA001",9.0,0.092,0.33,8.75,0,,vs_screening_score,0.5760096064940121,Tohoku earthquake,,-0.1707573926216304,
+HU-171,Tohoku earthquake,"Kanagawa-ken, KA002",9.0,0.093,0.55,4.75,0,,vs_screening_score,0.6138557668815675,Tohoku earthquake,,-0.1042827854711402,
+HU-172,Tohoku earthquake,"Kanagawa-ken, KA003",9.0,0.074,0.5,12.75,0,,vs_screening_score,0.40000449972558305,Tohoku earthquake,,-0.4719026431196852,
+HU-173,Tohoku earthquake,"Kanagawa-ken, KA005",9.0,0.182,1.0,1.9,0,,vs_screening_score,0.7444385326311465,Tohoku earthquake,,0.1519180115586098,
+HU-174,Tohoku earthquake,"Kanagawa-ken, KA008",9.0,0.14,2.8,22.25,0,,vs_screening_score,0.35615625347917534,Tohoku earthquake,,-0.5508589060614231,
+HU-175,Tohoku earthquake,"Kanagawa-ken, KA010",9.0,0.125,0.0,12.75,0,,vs_screening_score,0.6093828258784649,Tohoku earthquake,,-0.1122487711969821,
+HU-176,Tohoku earthquake,"Kanagawa-ken, KA011",9.0,0.148,9.38,11.75,0,,vs_screening_score,0.1153460793099079,Tohoku earthquake,,-1.162224972674137,
+HU-177,Tohoku earthquake,"Saitama-ken, SA001",9.0,0.259,3.4,7.75,0,,vs_screening_score,0.7452041244379702,Tohoku earthquake,,0.1536220623762154,
+HU-178,Tohoku earthquake,"Saitama-ken, SA003",9.0,0.167,8.52,15.25,0,,vs_screening_score,0.12842189337434132,Tohoku earthquake,,-1.1104977815069623,
+HU-179,Tohoku earthquake,"Tochiki-ken, TC002",9.0,0.367,5.96,7.25,0,,vs_screening_score,0.6001220678514264,Tohoku earthquake,,-0.1286394361222746,
+HU-180,Tohoku earthquake,"Tokyo, TO001",9.0,0.118,2.15,24.75,0,,vs_screening_score,0.3241250266752264,Tohoku earthquake,,-0.6112657530997528,
+HU-181,Tohoku earthquake,"Tokyo, TO025",9.0,0.158,2.5,25.75,0,,vs_screening_score,0.3940524011350724,Tohoku earthquake,,-0.4824207955504623,
+HU-001,Wenchuan earthquake,"Guoyuan village, Deyang, DY-28",7.9,0.21,1.5,1.9,1,,vs_screening_score,0.3835665465675604,Wenchuan earthquake,,-0.3166317595695924,
+HU-002,Wenchuan earthquake,"Songbai village, Deyang, DY-45",7.9,0.24,0.8,4.6,1,,vs_screening_score,0.5519635771621435,Wenchuan earthquake,,0.0240605479988806,
+HU-003,Wenchuan earthquake,"Qingliang Village, Deyang, DY-06",7.9,0.24,1.0,4.0,1,,vs_screening_score,0.47916655953033305,Wenchuan earthquake,,-0.1215793919617528,
+HU-004,Wenchuan earthquake,"Nangui village, Deyang",7.9,0.24,4.7,11.9,0,,vs_screening_score,0.21650525024931647,Wenchuan earthquake,,-0.7215014740908205,
+HU-005,Wenchuan earthquake,"Jinqiao village, Deyang, DY-38",7.9,0.139,2.2,5.1,1,,vs_screening_score,0.41479512614471625,Wenchuan earthquake,,-0.2516600733690479,
+HU-006,Wenchuan earthquake,"Shenghua Village, Deyang",7.9,0.18,2.0,5.0,0,,vs_screening_score,0.2901200053866076,Wenchuan earthquake,,-0.5263029266218145,
+HU-007,Wenchuan earthquake,"Baijiang Village, Deyang, DY-24",7.9,0.23,2.2,4.1,1,,vs_screening_score,0.5567790396910796,Wenchuan earthquake,,0.0337831124735641,
+HU-008,Wenchuan earthquake,"Anping Village, Deyang, DY-35",7.9,0.139,1.8,3.3,1,,vs_screening_score,0.4412080386099071,Wenchuan earthquake,,-0.1978329521965192,
+HU-009,Wenchuan earthquake,"Shengli village, Deyang, DY-07",7.9,0.21,1.9,3.7,1,,vs_screening_score,0.40194942607953044,Wenchuan earthquake,,-0.278181343599718,
+HU-010,Wenchuan earthquake,"Changzheng village, Deyang",7.9,0.2,1.0,2.0,1,,vs_screening_score,0.4385275052582794,Wenchuan earthquake,,-0.2032594893695545,
+HU-011,Wenchuan earthquake,"Qifu Elementary School, Mianzhu, DY-26",7.9,0.3,3.5,5.3,1,,vs_screening_score,0.473162306891539,Wenchuan earthquake,,-0.1335861416109311,
+HU-012,Wenchuan earthquake,"Dacheng village, Deyang",7.9,0.32,4.5,6.8,0,,vs_screening_score,0.2601512209409438,Wenchuan earthquake,,-0.6013108968044655,
+HU-013,Wenchuan earthquake,"Wulang village, Deyang",7.9,0.2,5.0,9.0,0,,vs_screening_score,0.16129306396350643,Wenchuan earthquake,,-0.9023053532200964,
+HU-014,Wenchuan earthquake,"Yangjia railway station, Deyang",7.9,0.2,6.1,7.4,0,,vs_screening_score,0.1894882723993061,Wenchuan earthquake,,-0.8048928512018303,
+HU-015,Wenchuan earthquake,"Heping village, Deyang",7.9,0.18,3.7,10.8,0,,vs_screening_score,0.16262305185126558,Wenchuan earthquake,,-0.8974177652704894,
+HU-016,Wenchuan earthquake,"Min'an village, Deyang",7.9,0.25,3.7,8.2,0,,vs_screening_score,0.2374851993568444,Wenchuan earthquake,,-0.6618303861776937,
+HU-017,Wenchuan earthquake,"Xiaojia village, Chengdu, CD-08",7.9,0.17,1.4,1.8,1,,vs_screening_score,0.2959925524831073,Wenchuan earthquake,,-0.5121640535156665,
+HU-018,Wenchuan earthquake,"Jingxing village, Pixian, CD-01",7.9,0.21,0.9,3.5,1,,vs_screening_score,0.4504468663838564,Wenchuan earthquake,,-0.1791806987367737,
+HU-019,Wenchuan earthquake,"Qingbaijiang Bridge, Pengzhou",7.9,0.21,3.0,3.7,0,,vs_screening_score,0.1612026641005236,Wenchuan earthquake,,-0.9026387438016484,
+HU-020,Wenchuan earthquake,"Lingfeng machinery company, Mianyang",7.9,0.2,4.1,6.1,0,,vs_screening_score,0.2264577830397426,Wenchuan earthquake,,-0.692707701394817,
+HU-021,Wenchuan earthquake,"Yongquan Village, Mianyang, MY-02",7.9,0.24,1.3,4.0,1,,vs_screening_score,0.6224816307628696,Wenchuan earthquake,,0.169449994225985,
+HU-022,Wenchuan earthquake,"Jushui valliage, Kaijiang bridge, Mianyang",7.9,0.295,0.8,4.1,0,,vs_screening_score,0.16493711351774348,Wenchuan earthquake,,-0.888989997186836,
+HU-023,Wenchuan earthquake,"Xiangliu village, Mianzhu, DY-03",7.9,0.295,3.4,4.8,1,,vs_screening_score,0.2969491194411154,Wenchuan earthquake,,-0.5098765344033952,
+HU-024,Wenchuan earthquake,"Anren Village, Mianzhu, DY-02",7.9,0.295,4.0,5.0,1,,vs_screening_score,0.20761177046848162,Wenchuan earthquake,,-0.7480528080747267,
+HU-025,Wenchuan earthquake,"Chuanmu village, Mianzhu",7.9,0.41,8.0,9.2,0,,vs_screening_score,0.16475661920401966,Wenchuan earthquake,,-0.8896439251432917,
+HU-026,Wenchuan earthquake,"Yongfeng Village, Mianzhu, DY-04",7.9,0.34,2.8,6.0,1,,vs_screening_score,0.43542711534527945,Wenchuan earthquake,,-0.2095450814169032,
+HU-027,Wenchuan earthquake,"Shuangquan Village, Mianzhu, DY-30",7.9,0.49,2.5,3.3,1,,vs_screening_score,0.608274489599776,Wenchuan earthquake,,0.1395079395243777,
+HU-028,Wenchuan earthquake,"Tonglin village, Mianzhu",7.9,0.48,2.0,10.2,0,,vs_screening_score,0.8050770497692357,Wenchuan earthquake,,0.6274534626009706,
+HU-029,Wenchuan earthquake,"Wudu Village, Mianzhu, DY-31",7.9,0.48,1.6,6.3,1,,vs_screening_score,0.8967954294428869,Wenchuan earthquake,,0.9984400729223754,
+HU-030,Wenchuan earthquake,"Linfa village, Mianzhu",7.9,0.47,4.3,6.3,0,,vs_screening_score,0.21397590445462428,Wenchuan earthquake,,-0.7289705122327806,
+HU-031,Wenchuan earthquake,"Changning Tianqi Village, Mianzhu, DY-29",7.9,0.43,4.0,5.0,0,,vs_screening_score,0.18798189418097047,Wenchuan earthquake,,-0.8098000510286953,
+HU-032,Wenchuan earthquake,"Linyan Village, Mianzhu, DY-10",7.9,0.594,6.0,7.0,1,,vs_screening_score,0.4582803518970864,Wenchuan earthquake,,-0.163420177010604,
+HU-033,Wenchuan earthquake,"Xinglong village, Mianzhu, DY-08",7.9,0.42,2.4,6.8,1,,vs_screening_score,0.7256948940080931,Wenchuan earthquake,,0.4052723081822293,
+HU-034,Wenchuan earthquake,"Bayi village, Mianzhu",7.9,0.43,6.2,6.7,0,,vs_screening_score,0.270653483119501,Wenchuan earthquake,,-0.5744398051324551,
+HU-035,Wenchuan earthquake,"Pharmaceutical factory, Mianzhu",7.9,0.37,3.4,5.4,0,,vs_screening_score,0.27118655912438006,Wenchuan earthquake,,-0.5730936778605034,
+HU-036,Wenchuan earthquake,"Xinshi School, Mianzhu, DY-27",7.9,0.34,1.0,3.0,1,,vs_screening_score,0.7567418290482174,Wenchuan earthquake,,0.4860805136393876,
+HU-037,Wenchuan earthquake,"Shihu village, Mianzhu, DY-22",7.9,0.33,2.9,4.4,1,,vs_screening_score,0.5876568001453195,Wenchuan earthquake,,0.0967232897062176,
+HU-038,Wenchuan earthquake,"Banqiao School, Mianzhu, DY-09",7.9,0.37,3.0,4.6,1,,vs_screening_score,0.611172820445565,Wenchuan earthquake,,0.1455830947079162,
+HU-039,Wenchuan earthquake,"Baiyang Village, Mianzhu",7.9,0.35,1.5,3.8,1,,vs_screening_score,0.7164239095261434,Wenchuan earthquake,,0.38227977952288,
+HU-040,Wenchuan earthquake,"Guihua village, Mianzhu, DY-41",7.9,0.39,0.6,2.2,1,,vs_screening_score,0.785016585364627,Wenchuan earthquake,,0.5660083346508858,
+HU-041,Wenchuan earthquake,"Yongning village, Mianzhu",7.9,0.41,1.4,10.2,0,,vs_screening_score,0.5135297894756464,Wenchuan earthquake,,-0.0529893027993727,
+HU-042,Wenchuan earthquake,"Sangyuan village, Mianzhu, DY-44",7.9,0.29,2.8,3.5,1,,vs_screening_score,0.33054963824810785,Wenchuan earthquake,,-0.4319821822741905,
+HU-043,Wenchuan earthquake,"Wufang village, Mianzhu",7.9,0.27,2.0,4.6,0,,vs_screening_score,0.5164472340938759,Wenchuan earthquake,,-0.047163343502955,
+HU-044,Wenchuan earthquake,"Baihutou Village, Shifang, DY-39",7.9,0.594,1.2,2.2,1,,vs_screening_score,0.8199352726539382,Wenchuan earthquake,,0.6761225754109482,
+HU-045,Wenchuan earthquake,"Siyuan Village, Shifang, DY-11",7.9,0.41,1.5,3.0,1,,vs_screening_score,0.7089256456438575,Wenchuan earthquake,,0.3640144524857694,
+HU-046,Wenchuan earthquake,"Zhenjiang village, Shifang, DY-42",7.9,0.29,0.9,2.4,1,,vs_screening_score,0.44080644155899146,Wenchuan earthquake,,-0.1986455053723176,
+HU-047,Wenchuan earthquake,"Quezhu village, Shifang",7.9,0.26,6.0,10.5,0,,vs_screening_score,0.13897512177750573,Wenchuan earthquake,,-0.989687501419879,
+HU-048,Wenchuan earthquake,"Jiangyou Train Station−1, MY-13",7.9,0.52,2.4,4.7,1,,vs_screening_score,0.6989576323538633,Wenchuan earthquake,,0.3401561901343556,
+HU-049,Wenchuan earthquake,"Jiangyou rail station line−2, MY-12",7.9,0.52,3.0,6.5,0,,vs_screening_score,0.6586452817186668,Wenchuan earthquake,,0.2478430257842184,
+HU-050,Wenchuan earthquake,"Yongshou Village, Dujiangyan, CD-17",7.9,0.25,2.1,2.9,1,,vs_screening_score,0.16710150427438397,Wenchuan earthquake,,-0.8811927841874804,
+HU-051,Wenchuan earthquake,"Quanshui village, Dujiangyan, CD-03",7.9,0.24,0.9,1.7,1,,vs_screening_score,0.24885101893667147,Wenchuan earthquake,,-0.6310219460025864,
+HU-052,Wenchuan earthquake,"Fengle valliage, Dujiangyan, CD-04",7.9,0.25,1.4,2.1,1,,vs_screening_score,0.3155413898475275,Wenchuan earthquake,,-0.4662178355180527,
+HU-053,Wenchuan earthquake,"Jingyu village, Pixian, CD-26",7.9,0.2,1.5,2.6,0,,vs_screening_score,0.2999553846619281,Wenchuan earthquake,,-0.5027149168279127,
+HU-054,Wenchuan earthquake,"Business College, Dujiangyan",7.9,0.27,2.3,3.5,0,,vs_screening_score,0.3316282850514341,Wenchuan earthquake,,-0.4295528907287445,
+HU-055,Wenchuan earthquake,"Ruikang garden, Dujiangyan",7.9,0.31,5.4,6.9,0,,vs_screening_score,0.0629389722733838,Wenchuan earthquake,,-1.4269992066228436,
+HU-056,Wenchuan earthquake,"Zipingpu village, Dujiangyan, B-1",7.9,0.37,3.0,4.2,0,,vs_screening_score,0.27507544806611195,Wenchuan earthquake,,-0.5633231693859294,
+HU-057,Wenchuan earthquake,"Yutang village, Dujiangyan, A-1",7.9,0.32,1.5,2.0,0,,vs_screening_score,0.3045732056854334,Wenchuan earthquake,,-0.4917935039085278,
+HU-058,Wenchuan earthquake,"Finance building, Dujiangyan",7.9,0.31,2.7,3.8,0,,vs_screening_score,0.2087555883335484,Wenchuan earthquake,,-0.7445918225594571,
+HU-059,Wenchuan earthquake,"Pilu Elementary School, Guanghan, DY-17",7.9,0.22,1.4,5.2,1,,vs_screening_score,0.5990242462941672,Wenchuan earthquake,,0.1202230447326987,
+HU-060,Wenchuan earthquake,"Xinyi kindergarten, Pengzhou, B-2",7.9,0.26,1.4,2.1,0,,vs_screening_score,0.18572338430283855,Wenchuan earthquake,,-0.8172143655854854,
+HU-061,Wenchuan earthquake,"Lichun village, Pengzhou, CD-25",7.9,0.24,2.4,4.1,1,,vs_screening_score,0.5694025161093991,Wenchuan earthquake,,0.0593776603401208,
+HU-062,Wenchuan earthquake,"Sandaoyan village, Pixian",7.9,0.18,2.1,4.2,0,,vs_screening_score,0.3868290067629583,Wenchuan earthquake,,-0.3097604239164253,
+HU-063,Wenchuan earthquake,"Majiamiao village, Pixian",7.9,0.2,2.4,3.2,0,,vs_screening_score,0.15241468898718655,Wenchuan earthquake,,-0.9357978067909352,
+HU-064,Wenchuan earthquake,"Shidimiao village, Pixian",7.9,0.18,4.0,7.0,0,,vs_screening_score,0.08583966014601625,Wenchuan earthquake,,-1.2598773882001104,
+HU-065,Wenchuan earthquake,"Yongsheng village, Pixian",7.9,0.17,3.4,7.1,0,,vs_screening_score,0.07803549704877921,Wenchuan earthquake,,-1.3116602547149234,
+HU-066,Wenchuan earthquake,"Xinlian village, Emei, LS-01",7.9,0.13,1.8,2.5,1,,vs_screening_score,0.2602980302819132,Wenchuan earthquake,,-0.6009305160026154,
+HU-067,Wenchuan earthquake,"Wuli villiage, Suining, SN-01",7.9,0.09,1.0,5.0,1,,vs_screening_score,0.4899229002520928,Wenchuan earthquake,,-0.1000976410473233,
+HU-221,Wenchuan earthquake,"Baijiang Village, Deyang",7.9,0.23,2.2,4.5,1,,vs_screening_score,0.4200661063566101,Wenchuan earthquake,,-0.2408487916895015,
+HU-222,Wenchuan earthquake,"Anping Village, Deyang",7.9,0.139,1.8,3.9,1,,vs_screening_score,0.4649484797006354,Wenchuan earthquake,,-0.1500372560675842,
+HU-223,Wenchuan earthquake,"Shengli village, Deyang",7.9,0.21,1.9,5.4,1,,vs_screening_score,0.4857911613234293,Wenchuan earthquake,,-0.1083459462415055,
+HU-224,Wenchuan earthquake,"Changzheng village, Deyang",7.9,0.2,1.0,5.3,1,,vs_screening_score,0.516086643972718,Wenchuan earthquake,,-0.0478835332147288,
+HU-225,Wenchuan earthquake,"Yongfeng Village, Mianzhu",7.9,0.34,2.8,6.6,1,,vs_screening_score,0.5469688129167479,Wenchuan earthquake,,0.0139967113540411,
+HU-226,Wenchuan earthquake,"Baihutou Village, Shifang",7.9,0.594,1.2,3.4,1,,vs_screening_score,0.8586954560665097,Wenchuan earthquake,,0.8200657949533781,
+HU-227,Wenchuan earthquake,"Linyan Village, Mianzhu",7.9,0.594,3.7,8.3,1,,vs_screening_score,0.8389799861364285,Wenchuan earthquake,,0.7433334026028843,
+HU-228,Wenchuan earthquake,"Siyuan Village, Shifang",7.9,0.41,3.2,5.8,1,,vs_screening_score,0.5569603505200404,Wenchuan earthquake,,0.0341495938139229,
+HU-229,Wenchuan earthquake,"Anren Village, Mianzhu",7.9,0.295,4.0,7.4,1,,vs_screening_score,0.35868503520136746,Wenchuan earthquake,,-0.3698215615913742,
+HU-230,Wenchuan earthquake,"Wudu Village, Mianzhu",7.9,0.48,1.6,6.3,1,,vs_screening_score,0.8950257880550357,Wenchuan earthquake,,0.988974723297328,
+HU-231,Wenchuan earthquake,"Shuangquan Village, Mianzhu",7.9,0.49,2.5,7.9,1,,vs_screening_score,0.7505375443098499,Wenchuan earthquake,,0.4694123301982807,
+HU-232,Wenchuan earthquake,"Shenghua Village, Deyang",7.9,0.18,2.0,4.8,0,,vs_screening_score,0.32217162690107515,Wenchuan earthquake,,-0.450990635024077,
+HU-233,Wenchuan earthquake,"Lingfeng machinery company, Mianyang",7.9,0.2,4.1,6.6,0,,vs_screening_score,0.23659125322703417,Wenchuan earthquake,,-0.6642958789824519,
+HU-234,Wenchuan earthquake,"Tianqi Village, Mianzhu",7.9,0.43,4.0,6.6,0,,vs_screening_score,0.47421073129236707,Wenchuan earthquake,,-0.1314885790794843,
+HU-184,Alaska earthquake,"Matanuska river, MP 147.4, B.H.17",9.2,0.21,0.0,6.68,1,,static_limit_state_pf_proxy,0.7000505268257537,Alaska earthquake,,,0.9996735680872058
+HU-185,Alaska earthquake,"Matanuska river, MP 147.5, B.H.18",9.2,0.21,0.0,13.2,1,,static_limit_state_pf_proxy,0.70024292824544,Alaska earthquake,,,0.99999999606671
+HU-186,Alaska earthquake,"Twenty-Mile river, MP 64.7, B.H.20",9.2,0.31,0.0,3.05,1,,static_limit_state_pf_proxy,0.681079303578218,Alaska earthquake,,,0.9680434614503378
+HU-187,Alaska earthquake,"Twenty-Mile river, MP 64.7, B.H.24",9.2,0.31,4.42,5.7,1,,static_limit_state_pf_proxy,0.6991385251334892,Alaska earthquake,,,0.9981278915992392
+HU-188,Alaska earthquake,"Portage Creek, MP 63.0, B.H.25",9.2,0.31,2.74,19.82,0,,static_limit_state_pf_proxy,0.7002429304695782,Alaska earthquake,,,0.9999999998408722
+HU-189,Alaska earthquake,"Portage Creek, MP 63.5, B.H.28",9.2,0.31,3.05,4.57,1,,static_limit_state_pf_proxy,0.7002424982191212,Alaska earthquake,,,0.999999266351097
+HU-068,"Borah Peak, Idaho earthquake","Andersen Bar, SA-1",6.9,0.29,0.8,1.9,1,,static_limit_state_pf_proxy,0.6150263470738538,"Borah Peak, Idaho earthquake",,,0.9981544477557832
+HU-069,"Borah Peak, Idaho earthquake","Andersen Bar, X1-X2",6.9,0.29,0.8,2.0,1,,static_limit_state_pf_proxy,0.6151871678618387,"Borah Peak, Idaho earthquake",,,0.9984439146849496
+HU-070,"Borah Peak, Idaho earthquake","Goddard Ranch, SA-2",6.9,0.3,1.2,2.4,1,,static_limit_state_pf_proxy,0.6119641324535842,"Borah Peak, Idaho earthquake",,,0.9926512024560202
+HU-071,"Borah Peak, Idaho earthquake","Goddard Ranch, SA-4",6.9,0.3,1.2,2.4,1,,static_limit_state_pf_proxy,0.6158281861548551,"Borah Peak, Idaho earthquake",,,0.9995981567596346
+HU-072,"Borah Peak, Idaho earthquake","Mackay Dam, downstream toe,",6.9,0.23,2.3,2.8,0,,static_limit_state_pf_proxy,0.1330970038284246,"Borah Peak, Idaho earthquake",,,9.973108237026906e-07
+HU-073,"Borah Peak, Idaho earthquake","North Gravel Bar, Bar Site",6.9,0.46,1.0,2.4,0,,static_limit_state_pf_proxy,0.17053771298887502,"Borah Peak, Idaho earthquake",,,0.1244443152164911
+HU-074,"Borah Peak, Idaho earthquake","North Gravel Bar, Tarrace",6.9,0.46,3.0,3.65,0,,static_limit_state_pf_proxy,0.13586784782747777,"Borah Peak, Idaho earthquake",,,0.0101455183282561
+HU-075,"Borah Peak, Idaho earthquake","Pence Ranch, SA1",6.9,0.36,1.7,2.8,1,,static_limit_state_pf_proxy,0.6151795556267432,"Borah Peak, Idaho earthquake",,,0.9984302121373916
+HU-076,"Borah Peak, Idaho earthquake","Pence Ranch, SA2",6.9,0.36,1.5,3.1,1,,static_limit_state_pf_proxy,0.6156669598643517,"Borah Peak, Idaho earthquake",,,0.9993077785076254
+HU-077,"Borah Peak, Idaho earthquake","Pence Ranch, SA3",6.9,0.36,1.4,2.4,1,,static_limit_state_pf_proxy,0.6139556595573185,"Borah Peak, Idaho earthquake",,,0.9962284292557112
+HU-078,"Borah Peak, Idaho earthquake","Pence Ranch, SA4",6.9,0.36,1.8,3.1,1,,static_limit_state_pf_proxy,0.6154673668729667,"Borah Peak, Idaho earthquake",,,0.9989483629091268
+HU-079,"Borah Peak, Idaho earthquake","Pence Ranch, SA5",6.9,0.36,1.5,3.0,1,,static_limit_state_pf_proxy,0.6156275071878557,"Borah Peak, Idaho earthquake",,,0.9992367288358656
+HU-080,"Borah Peak, Idaho earthquake","Pence Ranch, SA-A",6.9,0.36,2.0,2.8,1,,static_limit_state_pf_proxy,0.6120534963623924,"Borah Peak, Idaho earthquake",,,0.9928115750558066
+HU-081,"Borah Peak, Idaho earthquake","Pence Ranch, SA-B",6.9,0.36,1.5,2.1,1,,static_limit_state_pf_proxy,0.5938861076948355,"Borah Peak, Idaho earthquake",,,0.960468619740312
+HU-082,"Borah Peak, Idaho earthquake","Pence Ranch, SA-C",6.9,0.36,1.5,2.1,1,,static_limit_state_pf_proxy,0.5935179800407984,"Borah Peak, Idaho earthquake",,,0.9598182911718078
+HU-083,"Borah Peak, Idaho earthquake","Pence Ranch, SA-D",6.9,0.36,1.5,2.1,1,,static_limit_state_pf_proxy,0.5940087874190446,"Borah Peak, Idaho earthquake",,,0.9606853851976076
+HU-084,"Borah Peak, Idaho earthquake","Pence Ranch, SA-E",6.9,0.36,1.7,2.3,1,,static_limit_state_pf_proxy,0.597679469441174,"Borah Peak, Idaho earthquake",,,0.9671809226304158
+HU-085,"Borah Peak, Idaho earthquake","Pence Ranch, XDXE",6.9,0.36,1.5,3.4,1,,static_limit_state_pf_proxy,0.6131763139745734,"Borah Peak, Idaho earthquake",,,0.9948277421930822
+HU-086,"Borah Peak, Idaho earthquake","Pence Ranch, HY1-C",6.9,0.35,1.65,2.7,1,,static_limit_state_pf_proxy,0.6135592963221119,"Borah Peak, Idaho earthquake",,,0.9955159305810718
+HU-087,"Borah Peak, Idaho earthquake","Pence Ranch, HY2-C",6.9,0.35,1.45,2.5,1,,static_limit_state_pf_proxy,0.6132292250347494,"Borah Peak, Idaho earthquake",,,0.9949228041058094
+HU-088,"Borah Peak, Idaho earthquake","Pence Ranch, HY3-C",6.9,0.35,1.35,1.95,1,,static_limit_state_pf_proxy,0.6032207357043851,"Borah Peak, Idaho earthquake",,,0.977023617714174
+HU-089,"Borah Peak, Idaho earthquake","Pence Ranch, PH1-C",6.9,0.35,1.1,1.75,1,,static_limit_state_pf_proxy,0.6031613881323097,"Borah Peak, Idaho earthquake",,,0.9769179568492452
+HU-090,"Borah Peak, Idaho earthquake","Pence Ranch, HY1-D",6.9,0.35,1.65,4.3,0,,static_limit_state_pf_proxy,0.17769555007298704,"Borah Peak, Idaho earthquake",,,0.1456582571850512
+HU-091,"Borah Peak, Idaho earthquake","Pence Ranch, HY2-D",6.9,0.35,1.45,4.55,0,,static_limit_state_pf_proxy,0.1871416375315051,"Borah Peak, Idaho earthquake",,,0.1726530281902424
+HU-092,"Borah Peak, Idaho earthquake","Pence Ranch, HY3-D",6.9,0.35,1.35,4.15,0,,static_limit_state_pf_proxy,0.1400991475625175,"Borah Peak, Idaho earthquake",,,0.0253058278901174
+HU-093,"Borah Peak, Idaho earthquake","Pence Ranch, BR1-D",6.9,0.35,1.85,6.15,0,,static_limit_state_pf_proxy,0.17086565007633187,"Borah Peak, Idaho earthquake",,,0.1254314799021993
+HU-094,"Borah Peak, Idaho earthquake","Pence Ranch, PH1-D",6.9,0.35,1.1,3.9,0,,static_limit_state_pf_proxy,0.16697056678080366,"Borah Peak, Idaho earthquake",,,0.1136075894766449
+HU-095,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.1",6.9,0.6,1.0,1.13,1,,static_limit_state_pf_proxy,0.1674146330107303,"Borah Peak, Idaho earthquake",,,0.1149666346198631
+HU-096,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.2",6.9,0.35,1.52,3.35,1,,static_limit_state_pf_proxy,0.5890015517624375,"Borah Peak, Idaho earthquake",,,0.9518544896974098
+HU-097,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.3",6.9,0.6,7.0,8.08,1,,static_limit_state_pf_proxy,0.6156859297890661,"Borah Peak, Idaho earthquake",,,0.9993419421064832
+HU-098,"Borah Peak, Idaho earthquake","Whiskey Springs, B.H.4",6.9,0.6,9.36,11.43,1,,static_limit_state_pf_proxy,0.6157699276587925,"Borah Peak, Idaho earthquake",,,0.9994932244162906
+HU-099,"Borah Peak, Idaho earthquake","Whiskey Springs, WS1B-C1",6.9,0.5,0.8,2.9,1,,static_limit_state_pf_proxy,0.4005687140494762,"Borah Peak, Idaho earthquake",,,0.626740754508576
+HU-100,"Borah Peak, Idaho earthquake","Whiskey Springs, WS1B-D",6.9,0.5,0.8,6.050000000000001,0,,static_limit_state_pf_proxy,0.5963760078936446,"Borah Peak, Idaho earthquake",,,0.9648721753045952
+HU-101,"Borah Peak, Idaho earthquake","Whiskey Springs, WS2B-C1",6.9,0.5,2.4,3.35,1,,static_limit_state_pf_proxy,0.4755461548801661,"Borah Peak, Idaho earthquake",,,0.7567983428823788
+HU-102,"Borah Peak, Idaho earthquake","Whiskey Springs, WS3B-C1",6.9,0.5,6.7,7.25,1,,static_limit_state_pf_proxy,0.6117313780118016,"Borah Peak, Idaho earthquake",,,0.992233564403152
+HU-103,"Borah Peak, Idaho earthquake",Whiskey Springs Site 1 Unit C1,6.9,0.5,0.8,2.4000000000000004,1,,static_limit_state_pf_proxy,0.5088213995871103,"Borah Peak, Idaho earthquake",,,0.8135522157474374
+HU-104,"Borah Peak, Idaho earthquake",Whiskey Springs Site 2 Unit C1,6.9,0.5,2.4,3.35,1,,static_limit_state_pf_proxy,0.39954996752780736,"Borah Peak, Idaho earthquake",,,0.6249319936207826
+HU-105,"Borah Peak, Idaho earthquake",Whiskey Springs Site 3 Unit C1,6.9,0.5,6.8,7.3,1,,static_limit_state_pf_proxy,0.6078961864683309,"Borah Peak, Idaho earthquake",,,0.985364965801698
+HU-106,"Borah Peak, Idaho earthquake","Larter Ranch, X3X4",6.9,0.5,0.8,2.85,1,,static_limit_state_pf_proxy,0.5498791713096568,"Borah Peak, Idaho earthquake",,,0.8838190563894956
+HU-107,"Borah Peak, Idaho earthquake","Larter Ranch, SA1, 85",6.9,0.5,0.8,2.85,1,,static_limit_state_pf_proxy,0.606733899514298,"Borah Peak, Idaho earthquake",,,0.9832881266975768
+HU-108,"Borah Peak, Idaho earthquake","Larter Ranch, SA1, 90",6.9,0.5,0.8,2.85,1,,static_limit_state_pf_proxy,0.49147392543941254,"Borah Peak, Idaho earthquake",,,0.7839797595982794
+HU-139,Chi-Chi earthquake,"NanTou, B-1",7.6,0.428,1.5,5.0,0,,static_limit_state_pf_proxy,0.7550882398876747,Chi-Chi earthquake,,,0.998572814482754
+HU-140,Chi-Chi earthquake,"NanTou, B-2",7.6,0.428,1.8,7.3,0,,static_limit_state_pf_proxy,0.7414237390737869,Chi-Chi earthquake,,,0.9745605332208565
+HU-141,Chi-Chi earthquake,"NanTou, BH-2",7.6,0.428,1.7,7.2,0,,static_limit_state_pf_proxy,0.7357164999429795,Chi-Chi earthquake,,,0.9647778370637607
+HU-142,Chi-Chi earthquake,"NanTou, BH-3",7.6,0.428,4.0,17.2,0,,static_limit_state_pf_proxy,0.5541823915227106,Chi-Chi earthquake,,,0.6979508860601251
+HU-143,Chi-Chi earthquake,"NanTou, BH-4",7.6,0.428,5.0,7.2,0,,static_limit_state_pf_proxy,0.7509564980357537,Chi-Chi earthquake,,,0.9912202011742292
+HU-144,Chi-Chi earthquake,"NanTou, BH-5",7.6,0.428,2.8,17.8,0,,static_limit_state_pf_proxy,0.49636669668083266,Chi-Chi earthquake,,,0.6211309638306949
+HU-145,Chi-Chi earthquake,"NanTou, BH-6",7.6,0.428,1.2,3.3,1,,static_limit_state_pf_proxy,0.7558789477552528,Chi-Chi earthquake,,,0.9999894217396488
+HU-146,Chi-Chi earthquake,"NanTou, BH-7",7.6,0.428,0.65,16.2,0,,static_limit_state_pf_proxy,0.6648047224034298,Chi-Chi earthquake,,,0.8525707837442715
+HU-147,Chi-Chi earthquake,"NanTou, BH-8",7.6,0.428,5.0,8.8,0,,static_limit_state_pf_proxy,0.7514084369859532,Chi-Chi earthquake,,,0.9920204399505536
+HU-148,Chi-Chi earthquake,"NanTou, BH-9",7.6,0.428,9.6,16.2,0,,static_limit_state_pf_proxy,0.31669615080511165,Chi-Chi earthquake,,,0.3714391493356913
+HU-149,Chi-Chi earthquake,"NanTou, BH-10",7.6,0.428,2.4,5.8,0,,static_limit_state_pf_proxy,0.7488859886256969,Chi-Chi earthquake,,,0.9875663333874544
+HU-150,Chi-Chi earthquake,"NanTou, BH-14",7.6,0.428,1.5,18.8,0,,static_limit_state_pf_proxy,0.7558795162413204,Chi-Chi earthquake,,,0.9999904413373156
+HU-152,Chi-Chi earthquake,"WuFeng, BH-3",7.6,0.789,1.3,11.0,0,,static_limit_state_pf_proxy,0.7558665717377452,Chi-Chi earthquake,,,0.9999672253608788
+HU-153,Chi-Chi earthquake,"WuFeng, BH-14",7.6,0.79,3.5,7.0,1,,static_limit_state_pf_proxy,0.7558810213815405,Chi-Chi earthquake,,,0.9999931408614672
+HU-154,Chi-Chi earthquake,WuFeng -Fu Tin Bridge,7.6,0.79,4.5,5.5,1,,static_limit_state_pf_proxy,0.7558848045337082,Chi-Chi earthquake,,,0.9999999261333006
+HU-155,Chi-Chi earthquake,"YuanLin, BH-02",7.6,0.19,7.0,16.2,0,,static_limit_state_pf_proxy,0.13370520003642725,Chi-Chi earthquake,,,0.0075263370518456
+HU-156,Chi-Chi earthquake,"YuanLin, BH-14",7.6,0.19,1.6,12.8,0,,static_limit_state_pf_proxy,0.1776360679086278,Chi-Chi earthquake,,,0.1187734123337744
+HU-157,Chi-Chi earthquake,"YuanLin, BH-40",7.6,0.19,1.2,12.2,0,,static_limit_state_pf_proxy,0.31481688049511203,Chi-Chi earthquake,,,0.3685604694547674
+HU-190,"Friuli, Italy earthquake",Avasinis village,6.4,0.2,2.7,7.0,1,,static_limit_state_pf_proxy,0.12599659519184772,"Friuli, Italy earthquake",,,0.0586602057853458
+HU-210,"Friuli, Italy earthquake",Avasinis Site 1,6.4,0.47,0.2,2.5,1,,static_limit_state_pf_proxy,0.691125758609001,"Friuli, Italy earthquake",,,0.9747047887201354
+HU-136,Guatemala earthquake,Lake Amatitlan B-1,7.5,0.12,1.6,8.73,1,,static_limit_state_pf_proxy,0.689780001950369,Guatemala earthquake,,,0.9760606388586244
+HU-137,Guatemala earthquake,Lake Amatitlan B-2,7.5,0.12,2.51,9.0,1,,static_limit_state_pf_proxy,0.40459591189641664,Guatemala earthquake,,,0.5600180276555297
+HU-138,Guatemala earthquake,Lake Amatitlan B-4,7.5,0.12,3.35,10.8,0,,static_limit_state_pf_proxy,0.44677057399716735,Guatemala earthquake,,,0.6206020734192185
+HU-182,Hokkaido-Nansei-Oki earthquake,"Pension House, BH1",8.3,0.19,1.0,2.0,1,,static_limit_state_pf_proxy,0.7019454056302196,Hokkaido-Nansei-Oki earthquake,,,0.9999955733761318
+HU-183,Hokkaido-Nansei-Oki earthquake,"Pension House, BH2",8.3,0.19,0.7,6.1,1,,static_limit_state_pf_proxy,0.7019239245475162,Hokkaido-Nansei-Oki earthquake,,,0.9999591405287164
+HU-109,Hyogoken-Nambu earthquake,Hanshin Expressway 5.3,6.9,0.5,2.1,5.6,1,,static_limit_state_pf_proxy,0.7313999340460193,Hyogoken-Nambu earthquake,,,0.9990852105547304
+HU-110,Hyogoken-Nambu earthquake,Hanshin Expressway 5.10,6.9,0.58,1.8,5.5,1,,static_limit_state_pf_proxy,0.7319279665636874,Hyogoken-Nambu earthquake,,,0.999999993843022
+HU-111,Hyogoken-Nambu earthquake,Hanshin Expressway 5.14,6.9,0.63,4.3,6.5,1,,static_limit_state_pf_proxy,0.7318810382475867,Hyogoken-Nambu earthquake,,,0.999918647289374
+HU-112,Hyogoken-Nambu earthquake,Hanshin Expressway 5.25,6.9,0.65,3.2,8.8,1,,static_limit_state_pf_proxy,0.7319279528963686,Hyogoken-Nambu earthquake,,,0.9999999701504836
+HU-113,Hyogoken-Nambu earthquake,Hanshin Expressway 5.29,6.9,0.65,2.5,7.2,1,,static_limit_state_pf_proxy,0.7319277099342729,Hyogoken-Nambu earthquake,,,0.9999995489715297
+HU-114,Hyogoken-Nambu earthquake,KNK Kainan Port Sub-station (KPS) 1,6.9,0.12,2.0,6.6,0,,static_limit_state_pf_proxy,0.401515378376922,Hyogoken-Nambu earthquake,,,0.5225963589916677
+HU-115,Hyogoken-Nambu earthquake,KNK Kainan Port Sub-station (KPS) 2,6.9,0.12,2.0,10.4,0,,static_limit_state_pf_proxy,0.37055129945081206,Hyogoken-Nambu earthquake,,,0.478141903111594
+HU-116,Hyogoken-Nambu earthquake,Nishinomiya Expressway 3,6.9,0.63,3.7,7.0,0,,static_limit_state_pf_proxy,0.7319271051784072,Hyogoken-Nambu earthquake,,,0.9999985006179296
+HU-117,Hyogoken-Nambu earthquake,Nishinomiya Expressway 17,6.9,0.53,2.0,3.3,0,,static_limit_state_pf_proxy,0.5038188171041492,Hyogoken-Nambu earthquake,,,0.6635576597445751
+HU-118,Hyogoken-Nambu earthquake,Nishinomiya Expressway 23,6.9,0.63,2.9,4.0,0,,static_limit_state_pf_proxy,0.7319274970884986,Hyogoken-Nambu earthquake,,,0.9999991799999334
+HU-119,Hyogoken-Nambu earthquake,Nishinomiya Expressway 28,6.9,0.65,2.2,6.0,0,,static_limit_state_pf_proxy,0.7319279548245782,Hyogoken-Nambu earthquake,,,0.9999999734930688
+HU-120,Hyogoken-Nambu earthquake,"LPG Tank Yard, Kobe",6.9,0.5,1.5,4.0,1,,static_limit_state_pf_proxy,0.7319279609067606,Hyogoken-Nambu earthquake,,,0.9999999840366394
+HU-121,Hyogoken-Nambu earthquake,"Port Island 1C, Instrumented array",6.9,0.5,3.0,8.6,1,,static_limit_state_pf_proxy,0.731911725251226,Hyogoken-Nambu earthquake,,,0.9999718397812056
+HU-122,Hyogoken-Nambu earthquake,"Port Island Common Factory, 1",6.9,0.5,3.2,9.0,0,,static_limit_state_pf_proxy,0.7315172691396782,Hyogoken-Nambu earthquake,,,0.9992883877953408
+HU-123,Hyogoken-Nambu earthquake,"Port Island Common Factory, 2",6.9,0.5,3.2,9.2,0,,static_limit_state_pf_proxy,0.7319149585976086,Hyogoken-Nambu earthquake,,,0.9999774446505496
+HU-124,Hyogoken-Nambu earthquake,Port Island Dhole Array 91,6.9,0.5,2.4,7.2,1,,static_limit_state_pf_proxy,0.7317036022432989,Hyogoken-Nambu earthquake,,,0.9996111574071236
+HU-125,Hyogoken-Nambu earthquake,Port Island Dhole Array 95,6.9,0.5,2.4,7.8,1,,static_limit_state_pf_proxy,0.731927420851724,Hyogoken-Nambu earthquake,,,0.9999990478422952
+HU-126,Hyogoken-Nambu earthquake,SGK Technical Research Center (TRC) 1,6.9,0.45,7.0,8.5,0,,static_limit_state_pf_proxy,0.7284168463778021,Hyogoken-Nambu earthquake,,,0.9939384012315692
+HU-127,Hyogoken-Nambu earthquake,SGK Technical Research Center (TRC) 2,6.9,0.4,7.0,9.0,0,,static_limit_state_pf_proxy,0.7313363618924897,Hyogoken-Nambu earthquake,,,0.9989751525836824
+HU-193,Izmit-Kocaeli earthquake,"Hotel Sapanca, SH-4",7.4,0.3,0.5,1.6,1,,static_limit_state_pf_proxy,0.2839869083058002,Izmit-Kocaeli earthquake,,,0.4350969827157124
+HU-194,Izmit-Kocaeli earthquake,"Hotel Sapanca, SH-7",7.4,0.4,1.25,1.3,1,,static_limit_state_pf_proxy,0.20180703066502886,Izmit-Kocaeli earthquake,,,0.2875904875783667
+HU-195,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS4",7.4,0.4,0.75,2.77,1,,static_limit_state_pf_proxy,0.641816153148481,Izmit-Kocaeli earthquake,,,0.9291217424520172
+HU-196,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS5",7.4,0.4,0.75,2.25,1,,static_limit_state_pf_proxy,0.20526415455121239,Izmit-Kocaeli earthquake,,,0.2945769382772206
+HU-197,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS7",7.4,0.4,0.3,4.15,1,,static_limit_state_pf_proxy,0.6831843597279676,Izmit-Kocaeli earthquake,,,0.9897891778796576
+HU-198,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS9",7.4,0.4,0.75,7.57,1,,static_limit_state_pf_proxy,0.6898906312111323,Izmit-Kocaeli earthquake,,,0.9999981887239524
+HU-199,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS12",7.4,0.4,0.6,2.77,0,,static_limit_state_pf_proxy,0.2459329308778599,Izmit-Kocaeli earthquake,,,0.3710019240296444
+HU-200,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. JS13",7.4,0.4,0.0,5.7,1,,static_limit_state_pf_proxy,0.6885604024598948,Izmit-Kocaeli earthquake,,,0.9979636776028504
+HU-201,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S1/8",7.4,0.5,0.5,1.15,1,,static_limit_state_pf_proxy,0.31348880063410783,Izmit-Kocaeli earthquake,,,0.4812591399647623
+HU-202,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S2/3",7.4,0.4,0.4,9.2,1,,static_limit_state_pf_proxy,0.6898847980501498,Izmit-Kocaeli earthquake,,,0.9999892567691052
+HU-203,Izmit-Kocaeli earthquake,"Sapanca Lake, B.H. S4/3",7.4,0.4,1.3,3.2,1,,static_limit_state_pf_proxy,0.5639536355647109,Izmit-Kocaeli earthquake,,,0.8223146184463859
+HU-132,Loma Prieta earthquake,"Coyote creek, SR1",7.0,0.18,2.4,4.6,0,,static_limit_state_pf_proxy,0.6438308382913228,Loma Prieta earthquake,,,0.8868130200300771
+HU-133,Loma Prieta earthquake,"Coyote creek, R1-R2",7.0,0.18,2.4,4.2,0,,static_limit_state_pf_proxy,0.4008653897744798,Loma Prieta earthquake,,,0.5307003703653452
+HU-134,Loma Prieta earthquake,"Coyote creek, R1-R3",7.0,0.18,2.4,4.2,0,,static_limit_state_pf_proxy,0.31216371219534583,Loma Prieta earthquake,,,0.3916211460506307
+HU-135,Loma Prieta earthquake,"Coyote creek, R2-R3",7.0,0.18,2.4,4.6,0,,static_limit_state_pf_proxy,0.29592151262497013,Loma Prieta earthquake,,,0.3641134417130567
+HU-204,Nihonkai-Chubu earthquake,"Noshiro-N2, B.H.78",7.7,0.25,2.9,3.0,0,,static_limit_state_pf_proxy,0.1267656001921708,Nihonkai-Chubu earthquake,,,0.0003490951036699
+HU-205,Nihonkai-Chubu earthquake,"Noshiro-N2, B.H.84",7.7,0.25,2.9,4.0,0,,static_limit_state_pf_proxy,0.1345439313951958,Nihonkai-Chubu earthquake,,,0.0247536509800481
+HU-128,"San Francisco, California earthquake","Coyote creek, SR1",7.9,0.36,2.4,4.6,1,,static_limit_state_pf_proxy,0.6969678603386462,"San Francisco, California earthquake",,,0.9999992476981444
+HU-129,"San Francisco, California earthquake","Coyote creek, R1-R2",7.9,0.36,2.4,4.2,1,,static_limit_state_pf_proxy,0.6968964325140315,"San Francisco, California earthquake",,,0.9998777608120092
+HU-130,"San Francisco, California earthquake","Coyote creek, R1-R3",7.9,0.36,2.4,4.2,1,,static_limit_state_pf_proxy,0.6966996641196753,"San Francisco, California earthquake",,,0.9995431740291836
+HU-131,"San Francisco, California earthquake","Coyote creek, R2-R3",7.9,0.36,2.4,4.6,1,,static_limit_state_pf_proxy,0.6962997491000334,"San Francisco, California earthquake",,,0.9988635322698508
+HU-158,Tohoku earthquake,"Chiba-ken, CH350",9.0,0.143,0.32,19.75,0,,static_limit_state_pf_proxy,0.6805408995204961,Tohoku earthquake,,,0.8635008974888139
+HU-159,Tohoku earthquake,"Chiba-ken, CH344",9.0,0.196,1.75,12.6,0,,static_limit_state_pf_proxy,0.7358943271918666,Tohoku earthquake,,,0.9524898475083494
+HU-160,Tohoku earthquake,"Gunma-ken, GU001",9.0,0.177,11.7,12.25,0,,static_limit_state_pf_proxy,0.733023839875689,Tohoku earthquake,,,0.9476113476765432
+HU-161,Tohoku earthquake,"Gunma-ken, GU002",9.0,0.177,8.5,9.25,0,,static_limit_state_pf_proxy,0.62126157023212,Tohoku earthquake,,,0.7768740022609077
+HU-162,Tohoku earthquake,"Gunma-ken, GU003",9.0,0.201,9.0,16.25,0,,static_limit_state_pf_proxy,0.4814504713745517,Tohoku earthquake,,,0.5882293540640127
+HU-163,Tohoku earthquake,"Ibaraki-ken, IB014",9.0,0.201,1.15,12.25,0,,static_limit_state_pf_proxy,0.7570280110657837,Tohoku earthquake,,,0.98951911997097
+HU-164,Tohoku earthquake,"Ibaraki-ken, IB021",9.0,0.356,4.5,7.25,1,,static_limit_state_pf_proxy,0.762796720543418,Tohoku earthquake,,,0.999999769744609
+HU-165,Tohoku earthquake,"Ibaraki-ken, IB022",9.0,0.38,3.61,11.25,1,,static_limit_state_pf_proxy,0.7627960077102379,Tohoku earthquake,,,0.9999984639213017
+HU-166,Tohoku earthquake,"Ibaraki-ken, IB023",9.0,0.38,2.4,11.75,0,,static_limit_state_pf_proxy,0.7591168099349029,Tohoku earthquake,,,0.9932942256309264
+HU-167,Tohoku earthquake,"Ibaraki-ken, IB025",9.0,0.84,7.1,8.75,1,,static_limit_state_pf_proxy,0.7627968462368688,Tohoku earthquake,,,0.9999999999999368
+HU-168,Tohoku earthquake,"Ibaraki-ken, IB027",9.0,0.77,4.5,11.25,0,,static_limit_state_pf_proxy,0.7627968462367863,Tohoku earthquake,,,0.9999999999997858
+HU-169,Tohoku earthquake,"Ibaraki-ken, IB028",9.0,0.77,4.8,6.75,1,,static_limit_state_pf_proxy,0.7627968462368887,Tohoku earthquake,,,0.9999999999999734
+HU-170,Tohoku earthquake,"Kanagawa-ken, KA001",9.0,0.092,0.33,8.75,0,,static_limit_state_pf_proxy,0.5496485195948949,Tohoku earthquake,,,0.6788770088793242
+HU-171,Tohoku earthquake,"Kanagawa-ken, KA002",9.0,0.093,0.55,4.75,0,,static_limit_state_pf_proxy,0.46111952408800305,Tohoku earthquake,,,0.5611810728528543
+HU-172,Tohoku earthquake,"Kanagawa-ken, KA003",9.0,0.074,0.5,12.75,0,,static_limit_state_pf_proxy,0.16546927770543846,Tohoku earthquake,,,0.0765097180162597
+HU-173,Tohoku earthquake,"Kanagawa-ken, KA005",9.0,0.182,1.0,1.9,0,,static_limit_state_pf_proxy,0.7576224330859274,Tohoku earthquake,,,0.9905911685434444
+HU-176,Tohoku earthquake,"Kanagawa-ken, KA011",9.0,0.148,9.38,11.75,0,,static_limit_state_pf_proxy,0.5203489561776233,Tohoku earthquake,,,0.6398281702113011
+HU-177,Tohoku earthquake,"Saitama-ken, SA001",9.0,0.259,3.4,7.75,0,,static_limit_state_pf_proxy,0.762741476506759,Tohoku earthquake,,,0.9998985774318
+HU-178,Tohoku earthquake,"Saitama-ken, SA003",9.0,0.167,8.52,15.25,0,,static_limit_state_pf_proxy,0.5746680620722511,Tohoku earthquake,,,0.712576855989463
+HU-179,Tohoku earthquake,"Tochiki-ken, TC002",9.0,0.367,5.96,7.25,0,,static_limit_state_pf_proxy,0.7627892551605422,Tohoku earthquake,,,0.9999860942092604
+HU-180,Tohoku earthquake,"Tokyo, TO001",9.0,0.118,2.15,24.75,0,,static_limit_state_pf_proxy,0.2136708071932025,Tohoku earthquake,,,0.1809665702190588
+HU-002,Wenchuan earthquake,"Songbai village, Deyang, DY-45",7.9,0.24,0.8,4.6,1,,static_limit_state_pf_proxy,0.6897718364136581,Wenchuan earthquake,,,0.9971127273651792
+HU-003,Wenchuan earthquake,"Qingliang Village, Deyang, DY-06",7.9,0.24,1.0,4.0,1,,static_limit_state_pf_proxy,0.3143628613104918,Wenchuan earthquake,,,0.4499832002207306
+HU-004,Wenchuan earthquake,"Nangui village, Deyang",7.9,0.24,4.7,11.9,0,,static_limit_state_pf_proxy,0.6568317558374364,Wenchuan earthquake,,,0.9451857794138534
+HU-006,Wenchuan earthquake,"Shenghua Village, Deyang",7.9,0.18,2.0,5.0,0,,static_limit_state_pf_proxy,0.32304150717460534,Wenchuan earthquake,,,0.4638347517943194
+HU-009,Wenchuan earthquake,"Shengli village, Deyang, DY-07",7.9,0.21,1.9,3.7,1,,static_limit_state_pf_proxy,0.5511484930246116,Wenchuan earthquake,,,0.7913602191660695
+HU-010,Wenchuan earthquake,"Changzheng village, Deyang",7.9,0.2,1.0,2.0,1,,static_limit_state_pf_proxy,0.1649057765889314,Wenchuan earthquake,,,0.1580717913313206
+HU-011,Wenchuan earthquake,"Qifu Elementary School, Mianzhu, DY-26",7.9,0.3,3.5,5.3,1,,static_limit_state_pf_proxy,0.6664708261381831,Wenchuan earthquake,,,0.9601072569832804
+HU-012,Wenchuan earthquake,"Dacheng village, Deyang",7.9,0.32,4.5,6.8,0,,static_limit_state_pf_proxy,0.2124261041433944,Wenchuan earthquake,,,0.2661242337689151
+HU-014,Wenchuan earthquake,"Yangjia railway station, Deyang",7.9,0.2,6.1,7.4,0,,static_limit_state_pf_proxy,0.11599458953666002,Wenchuan earthquake,,,0.0164254395707343
+HU-015,Wenchuan earthquake,"Heping village, Deyang",7.9,0.18,3.7,10.8,0,,static_limit_state_pf_proxy,0.11492799284871211,Wenchuan earthquake,,,0.0128063606724184
+HU-016,Wenchuan earthquake,"Min'an village, Deyang",7.9,0.25,3.7,8.2,0,,static_limit_state_pf_proxy,0.41167905591228704,Wenchuan earthquake,,,0.5964889243763186
+HU-018,Wenchuan earthquake,"Jingxing village, Pixian, CD-01",7.9,0.21,0.9,3.5,1,,static_limit_state_pf_proxy,0.5162979629457206,Wenchuan earthquake,,,0.7428114979250344
+HU-019,Wenchuan earthquake,"Qingbaijiang Bridge, Pengzhou",7.9,0.21,3.0,3.7,0,,static_limit_state_pf_proxy,0.11123753176540956,Wenchuan earthquake,,,5.420157112884239e-05
+HU-020,Wenchuan earthquake,"Lingfeng machinery company, Mianyang",7.9,0.2,4.1,6.1,0,,static_limit_state_pf_proxy,0.1508504266497205,Wenchuan earthquake,,,0.1214165140808966
+HU-022,Wenchuan earthquake,"Jushui valliage, Kaijiang bridge, Mianyang",7.9,0.295,0.8,4.1,0,,static_limit_state_pf_proxy,0.15817820774692182,Wenchuan earthquake,,,0.1408573572068402
+HU-023,Wenchuan earthquake,"Xiangliu village, Mianzhu, DY-03",7.9,0.295,3.4,4.8,1,,static_limit_state_pf_proxy,0.2563657914138433,Wenchuan earthquake,,,0.3511707680561648
+HU-024,Wenchuan earthquake,"Anren Village, Mianzhu, DY-02",7.9,0.295,4.0,5.0,1,,static_limit_state_pf_proxy,0.1146135843980988,Wenchuan earthquake,,,0.0117339634404469
+HU-025,Wenchuan earthquake,"Chuanmu village, Mianzhu",7.9,0.41,8.0,9.2,0,,static_limit_state_pf_proxy,0.542880951284955,Wenchuan earthquake,,,0.7797977132241545
+HU-026,Wenchuan earthquake,"Yongfeng Village, Mianzhu, DY-04",7.9,0.34,2.8,6.0,1,,static_limit_state_pf_proxy,0.6819260008782069,Wenchuan earthquake,,,0.9844933627242348
+HU-027,Wenchuan earthquake,"Shuangquan Village, Mianzhu, DY-30",7.9,0.49,2.5,3.3,1,,static_limit_state_pf_proxy,0.6417245589993896,Wenchuan earthquake,,,0.922193125794031
+HU-028,Wenchuan earthquake,"Tonglin village, Mianzhu",7.9,0.48,2.0,10.2,0,,static_limit_state_pf_proxy,0.6831994323900619,Wenchuan earthquake,,,0.9865300477455244
+HU-029,Wenchuan earthquake,"Wudu Village, Mianzhu, DY-31",7.9,0.48,1.6,6.3,1,,static_limit_state_pf_proxy,0.6915519076587711,Wenchuan earthquake,,,0.9999999992894572
+HU-030,Wenchuan earthquake,"Linfa village, Mianzhu",7.9,0.47,4.3,6.3,0,,static_limit_state_pf_proxy,0.4440793984366465,Wenchuan earthquake,,,0.6423725261818547
+HU-031,Wenchuan earthquake,"Changning Tianqi Village, Mianzhu, DY-29",7.9,0.43,4.0,5.0,0,,static_limit_state_pf_proxy,0.14174026349675284,Wenchuan earthquake,,,0.0961318725136538
+HU-032,Wenchuan earthquake,"Linyan Village, Mianzhu, DY-10",7.9,0.594,6.0,7.0,1,,static_limit_state_pf_proxy,0.6852167675416612,Wenchuan earthquake,,,0.9897655246479492
+HU-033,Wenchuan earthquake,"Xinglong village, Mianzhu, DY-08",7.9,0.42,2.4,6.8,1,,static_limit_state_pf_proxy,0.6915503216110966,Wenchuan earthquake,,,0.999997422629656
+HU-034,Wenchuan earthquake,"Bayi village, Mianzhu",7.9,0.43,6.2,6.7,0,,static_limit_state_pf_proxy,0.6700651877595094,Wenchuan earthquake,,,0.9657259494574176
+HU-035,Wenchuan earthquake,"Pharmaceutical factory, Mianzhu",7.9,0.37,3.4,5.4,0,,static_limit_state_pf_proxy,0.6606789252876801,Wenchuan earthquake,,,0.9511164402737728
+HU-036,Wenchuan earthquake,"Xinshi School, Mianzhu, DY-27",7.9,0.34,1.0,3.0,1,,static_limit_state_pf_proxy,0.6914766788844382,Wenchuan earthquake,,,0.9998777922802784
+HU-038,Wenchuan earthquake,"Banqiao School, Mianzhu, DY-09",7.9,0.37,3.0,4.6,1,,static_limit_state_pf_proxy,0.6884833114251177,Wenchuan earthquake,,,0.9950284293333151
+HU-039,Wenchuan earthquake,"Baiyang Village, Mianzhu",7.9,0.35,1.5,3.8,1,,static_limit_state_pf_proxy,0.6915133669020757,Wenchuan earthquake,,,0.9999373888617044
+HU-040,Wenchuan earthquake,"Guihua village, Mianzhu, DY-41",7.9,0.39,0.6,2.2,1,,static_limit_state_pf_proxy,0.6897986744546662,Wenchuan earthquake,,,0.9971561906759204
+HU-041,Wenchuan earthquake,"Yongning village, Mianzhu",7.9,0.41,1.4,10.2,0,,static_limit_state_pf_proxy,0.36844164659961975,Wenchuan earthquake,,,0.5334611576070662
+HU-042,Wenchuan earthquake,"Sangyuan village, Mianzhu, DY-44",7.9,0.29,2.8,3.5,1,,static_limit_state_pf_proxy,0.49373769041791077,Wenchuan earthquake,,,0.7115312530686123
+HU-044,Wenchuan earthquake,"Baihutou Village, Shifang, DY-39",7.9,0.594,1.2,2.2,1,,static_limit_state_pf_proxy,0.6785079109727936,Wenchuan earthquake,,,0.979047934523328
+HU-045,Wenchuan earthquake,"Siyuan Village, Shifang, DY-11",7.9,0.41,1.5,3.0,1,,static_limit_state_pf_proxy,0.6891064189250649,Wenchuan earthquake,,,0.9960357662916516
+HU-046,Wenchuan earthquake,"Zhenjiang village, Shifang, DY-42",7.9,0.29,0.9,2.4,1,,static_limit_state_pf_proxy,0.6452528795175845,Wenchuan earthquake,,,0.9275228510304808
+HU-047,Wenchuan earthquake,"Quezhu village, Shifang",7.9,0.26,6.0,10.5,0,,static_limit_state_pf_proxy,0.1977567818790158,Wenchuan earthquake,,,0.2349322162584368
+HU-048,Wenchuan earthquake,"Jiangyou Train Station−1, MY-13",7.9,0.52,2.4,4.7,1,,static_limit_state_pf_proxy,0.685781465239938,Wenchuan earthquake,,,0.9906732107197794
+HU-049,Wenchuan earthquake,"Jiangyou rail station line−2, MY-12",7.9,0.52,3.0,6.5,0,,static_limit_state_pf_proxy,0.689437103510727,Wenchuan earthquake,,,0.996570812274854
+HU-050,Wenchuan earthquake,"Yongshou Village, Dujiangyan, CD-17",7.9,0.25,2.1,2.9,1,,static_limit_state_pf_proxy,0.13564552836476346,Wenchuan earthquake,,,0.0784490582128479
+HU-051,Wenchuan earthquake,"Quanshui village, Dujiangyan, CD-03",7.9,0.24,0.9,1.7,1,,static_limit_state_pf_proxy,0.20061076896814717,Wenchuan earthquake,,,0.2411326141242527
+HU-052,Wenchuan earthquake,"Fengle valliage, Dujiangyan, CD-04",7.9,0.25,1.4,2.1,1,,static_limit_state_pf_proxy,0.6521118522454936,Wenchuan earthquake,,,0.9379528854243891
+HU-053,Wenchuan earthquake,"Jingyu village, Pixian, CD-26",7.9,0.2,1.5,2.6,0,,static_limit_state_pf_proxy,0.317520697282011,Wenchuan earthquake,,,0.4550465798940051
+HU-054,Wenchuan earthquake,"Business College, Dujiangyan",7.9,0.27,2.3,3.5,0,,static_limit_state_pf_proxy,0.13137000685079978,Wenchuan earthquake,,,0.0656405513243973
+HU-055,Wenchuan earthquake,"Ruikang garden, Dujiangyan",7.9,0.31,5.4,6.9,0,,static_limit_state_pf_proxy,0.11295298161176619,Wenchuan earthquake,,,0.0060270334424753
+HU-056,Wenchuan earthquake,"Zipingpu village, Dujiangyan, B-1",7.9,0.37,3.0,4.2,0,,static_limit_state_pf_proxy,0.14198672701031262,Wenchuan earthquake,,,0.0968334473959964
+HU-057,Wenchuan earthquake,"Yutang village, Dujiangyan, A-1",7.9,0.32,1.5,2.0,0,,static_limit_state_pf_proxy,0.1154365279975192,Wenchuan earthquake,,,0.0145355021097345
+HU-058,Wenchuan earthquake,"Finance building, Dujiangyan",7.9,0.31,2.7,3.8,0,,static_limit_state_pf_proxy,0.11470928588954592,Wenchuan earthquake,,,0.0120606568009785
+HU-059,Wenchuan earthquake,"Pilu Elementary School, Guanghan, DY-17",7.9,0.22,1.4,5.2,1,,static_limit_state_pf_proxy,0.6810041227207158,Wenchuan earthquake,,,0.9830216555093084
+HU-060,Wenchuan earthquake,"Xinyi kindergarten, Pengzhou, B-2",7.9,0.26,1.4,2.1,0,,static_limit_state_pf_proxy,0.11207030162592965,Wenchuan earthquake,,,0.0029637056621996
+HU-061,Wenchuan earthquake,"Lichun village, Pengzhou, CD-25",7.9,0.24,2.4,4.1,1,,static_limit_state_pf_proxy,0.635392851159352,Wenchuan earthquake,,,0.912686224565806
+HU-062,Wenchuan earthquake,"Sandaoyan village, Pixian",7.9,0.18,2.1,4.2,0,,static_limit_state_pf_proxy,0.11133828138047659,Wenchuan earthquake,,,0.0004072080646852
+HU-063,Wenchuan earthquake,"Majiamiao village, Pixian",7.9,0.2,2.4,3.2,0,,static_limit_state_pf_proxy,0.11124978448798967,Wenchuan earthquake,,,9.71475950714007e-05
+HU-064,Wenchuan earthquake,"Shidimiao village, Pixian",7.9,0.18,4.0,7.0,0,,static_limit_state_pf_proxy,0.11123113316896596,Wenchuan earthquake,,,3.17727249136146e-05
+HU-065,Wenchuan earthquake,"Yongsheng village, Pixian",7.9,0.17,3.4,7.1,0,,static_limit_state_pf_proxy,0.11130618016853497,Wenchuan earthquake,,,0.0002947621839708
+HU-225,Wenchuan earthquake,"Yongfeng Village, Mianzhu",7.9,0.34,2.8,6.6,1,,static_limit_state_pf_proxy,0.686004941865435,Wenchuan earthquake,,,0.9910326674513326
+HU-232,Wenchuan earthquake,"Shenghua Village, Deyang",7.9,0.18,2.0,4.8,0,,static_limit_state_pf_proxy,0.2992093124363364,Wenchuan earthquake,,,0.4252872186204987
+HU-233,Wenchuan earthquake,"Lingfeng machinery company, Mianyang",7.9,0.2,4.1,6.6,0,,static_limit_state_pf_proxy,0.18224383589190155,Wenchuan earthquake,,,0.1999858883407921
+HU-234,Wenchuan earthquake,"Tianqi Village, Mianzhu",7.9,0.43,4.0,6.6,0,,static_limit_state_pf_proxy,0.6538942255821015,Wenchuan earthquake,,,0.9406787661919364
